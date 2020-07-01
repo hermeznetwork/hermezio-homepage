@@ -1,0 +1,20 @@
+{
+  "name": "hermez-landing",
+  "version": "1.0.0",
+  "description": "Landing page for the Hermez project",
+  "author": "iden3",
+  "scripts": {
+    "lint-css": "stylelint '**/*.css' --fix",
+    "start:dev": "live-server --port=3000 --mount=/:src --watch=src",
+    "start:prod": "serve -s src -l 80"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "normalize.css": "^8.0.1",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
