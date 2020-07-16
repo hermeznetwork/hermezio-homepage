@@ -1,7 +1,12 @@
-@import "../node_modules/normalize.css/normalize.css";
 @import "typography.css";
 @import "variables.css";
 
+/* BROWSER OVERRIDES */
+a {
+  text-decoration: none;
+}
+
+/* DEFAULT STYLES */
 body {
   font-family:
     "Modern Era",
@@ -15,8 +20,130 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 24px;
+  position: relative;
   width: 100%;
+  min-height: 100vh;
   height: 100%;
-  color: var(--typography);
+  color: var(--black);
+}
+
+/* CUSTOM STYLES */
+.header {
+  background: var(--primary);
+  padding: 2.5rem 1.25rem 2rem;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.27px;
+  margin: 0;
+}
+
+.section-container {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cover {
+  padding-top: 1rem;
+}
+
+.section--primary {
+  background-color: var(--primary);
+}
+
+.section-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.section-title {
+  font-size: 1.625rem;
+  line-height: 1.23;
+  font-weight: 800;
+  max-width: 704px;
+  margin: 0 auto 3rem;
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-link {
+  font-weight: 800;
+  color: var(--black);
+}
+
+.section-text:not(:last-of-type) {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 380px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .cover {
+    padding-top: 2.5rem;
+  }
+
+  .section-image {
+    margin: 0 auto 4rem;
+  }
+
+  .header {
+    padding: 2.5rem 1.75rem 1rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    line-height: 1.21;
+  }
+
+  .section-text {
+    font-size: 1.5rem;
+    line-height: 1.67;
+  }
+}
+
+@media (min-width: 769px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .cover {
+    padding-top: 4rem;
+  }
+
+  .section-image {
+    margin: 0 auto 5rem;
+  }
+
+  .header {
+    padding: 2.5rem 2.25rem 1rem;
+  }
 }
