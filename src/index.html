@@ -19,46 +19,233 @@
     <div class="header-container">
       <img src="img/hermez-logo.svg"
            class="header-logo" />
+      <button class="header-burger-menu"
+              onclick="onOpenBurgerMenu()">
+        <img src="img/hamburger-menu.svg"
+             alt="Burger menu" />
+      </button>
+      <nav class="header-nav-container">
+        <button class="header-close-burger-menu"
+                onclick="onCloseBurgerMenu()">
+          <img src="img/close.svg"
+               alt="Close menu" />
+        </button>
+        <ul class="header-nav">
+          <li class="header-nav-link-container">
+            <a data-scroll
+               href="#features"
+               class="header-nav-link"
+               onclick="onCloseBurgerMenu()">
+              Features
+            </a>
+          </li>
+          <li class="header-nav-link-container">
+            <a href="https://docs.hermez.io"
+               target="_blank"
+               class="header-nav-link"
+               onclick="onCloseBurgerMenu()">
+              Docs
+            </a>
+          </li>
+          <li class="header-nav-link-container">
+            <a href="https://github.com/iden3"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="header-nav-link"
+               onclick="onCloseBurgerMenu()">
+              Github
+            </a>
+          </li>
+          <li class="header-nav-link-container">
+            <a data-scroll
+               href="#contact"
+               class="header-nav-link"
+               onclick="onCloseBurgerMenu()">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <section class="section section--primary cover">
+  <section class="section section--secondary cover">
     <div class="section-container">
       <img class="section-image"
-           src="img/scalable-payments.svg"
+           src="img/scalable-payments-on-ethereum.svg"
            alt="Scalable payments on Ethereum" />
-      <h2 class="section-title">
-        Scalable token transfers on the wings of Ethereum.
-      </h2>
+      <h2 class="section-title">Scalable token transfers on the wings of Ethereum</h2>
       <p class="section-text">
-        Hermez is a zk-rollup focused on scaling payments and token transfers on top of Ethereum.
-        It can handle up to 2000 transactions-per-second, and is designed with high-frequency tokens like ETH, DAI,
-        and wBTC in mind.
+        Hermez is a decentralized zk-rollup focused on scaling payments and token transfers on top of Ethereum.
       </p>
-      <br>
-      <a href="mailto:info@hermez.network"
+      <p class="section-text">
+        It can handle up to 2000 transactions per second, and is designed with high-frequency tokens like ETH, DAI, and
+        wBTC in mind.
+      </p>
+    </div>
+  </section>
+  <section class="section section--primary">
+    <div class="section-container">
+      <img class="section-image"
+           src="img/community-first.svg"
+           alt="Community first" />
+      <h2 class="section-title">Community first</h2>
+      <p class="section-text">
+        One of the most important things about Hermez is the way it decides who the next block creator should be.
+      </p>
+      <p class="section-text">
+        In a sentence, block creators are selected via a burn auction, except rather than burning tokens, a 40% of the
+        winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.
+      </p>
+      <p class="section-text">
+        We call this mechanism proof-of-donation.
+      </p>
+    </div>
+  </section>
+  <section class="section section--secondary"
+           id="features">
+    <div class="section-container">
+      <img class="section-image"
+           src="img/higher-purpose-network.svg"
+           alt="Higher purpose network" />
+      <h2 class="section-title">Decentralized</h2>
+      <div class="section-features">
+        <div class="features-wrapper">
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Permissionless</h3>
+                <p class="feature-text">
+                  Becoming a coordinator (rollup block creator) is entirely permissionless, and we will open source
+                  software to make it possible for anyone to participate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Social Responsibility</h3>
+                <p class="feature-text">
+                  Becoming a coordinator (rollup block creator) is entirely permissionless, and we will open source
+                  software to make it possible for anyone to participate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Secure and immutable</h3>
+                <p class="feature-text">
+                  Security and censorship resistance are ensured by both Ethereum and battle-tested zk-SNARKs protocols
+                  as used in Zcash. Hermez has its own zk-SNARKs implementation which uses iden3's tooling (Circom and
+                  SnarkJS).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--primary">
+    <div class="section-container">
+      <img class="section-image"
+           src="img/designed-for-convenience.svg"
+           alt="Designed for convenience" />
+      <h2 class="section-title">Convenient</h2>
+      <div class="section-features">
+        <div class="features-wrapper">
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Non-custodial Ethereum L2</h3>
+                <p class="feature-text">
+                  You can think of Hermez as a scalability extension of Ethereum. As such, you can use your Ethereum
+                  address to transact and maintain custodianship over your funds at all times.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Cheap transactions</h3>
+                <p class="feature-text">
+                  With a throughput of up to 2000 transactions per second, transactions on Hermez will be fast and
+                  cheap, potentially reducing the transaction load on Ethereum network.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-wrapper">
+            <div class="feature">
+              <div class="feature-content">
+                <h3 class="feature-title">Atomic swaps</h3>
+                <p class="feature-text">
+                  Thanks to atomic transactions, you can make sure that a series of transactions will execute together
+                  and at the same time without a need for a third party escrow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--secondary">
+    <div class="section-container">
+      <h2 class="section-title">Learn more</h2>
+      <a href="https://docs.hermez.io"
          target="_blank"
-         class="section-link">
-        info@hermez.network
-      </a>
-      <br>
-      <a href="https://twitter.com/hermez_network"
-         target="_blank"
-         class="section-link">
-        @hermez_network
-      </a>
-      <br>
-      <a href="https://blog.hermez.io"
-         target="_blank"
-         class="section-link">
-        Blog
-      </a>
-      <br>
-      <br>
+         class="button">Documentation</a>
+    </div>
+  </section>
+  <section class="section section--primary"
+           id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Contact us</h2>
+      <p class="section-text">
+        Reach out to learn more or follow Hermez for project updates.
+      </p>
+      <p class="section-text contact-link">
+        <span>
+          <a href="mailto:info@hermez.network"
+             target="_blank"
+             class="section-link">
+            info@hermez.network
+          </a>
+        </span>
+      </p>
+      <p class="section-text contact-link">
+        Check out our initial PoC at
+        <span>
+          <a href="https://github.com/iden3/rollup"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="section-link">
+            Github
+          </a>
+        </span>
+      </p>
+      <p class="section-text">
+        Follow us on
+        <span>
+          <a href="https://twitter.com/hermez_network"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="section-link">
+            Twitter
+          </a>
+        </span>
+      </p>
       <p class="section-text">
         Hermez is powered by iden3.
       </p>
     </div>
   </section>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
