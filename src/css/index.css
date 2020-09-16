@@ -46,13 +46,22 @@ body {
   padding: 2rem 1.25rem;
 }
 
-.header-container {
+.main-header-container {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.legal-disclaimer-header-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header-logo {
@@ -84,6 +93,10 @@ body {
   padding-top: 7rem;
   background: var(--secondary);
   border-radius: 4px;
+}
+
+.header-go-back-button {
+  background: transparent;
 }
 
 .header-burger-menu {
