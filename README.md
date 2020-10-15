@@ -4,8 +4,11 @@ Source code for the Hermez website.
 
 ## Development
 
-If you want to run the website locally you can just run: `npm start`. It will launch a
-development server with hot-reloading on `http://localhost:3000`.
+First you will need to install the project dependencies running `npm i` from the root
+of the project.
+
+Then, you need to run `npm start` to launch a development server with hot-reloading.
+It will be listening on `http://localhost:3000`.
 
 ## Deployment
 
