@@ -4,14 +4,23 @@
   "description": "Landing page for the Hermez project",
   "author": "iden3",
   "scripts": {
-    "lint-css": "stylelint '**/*.css' --fix",
-    "start": "live-server --port=3000 --mount=/:src --watch=src",
-    "deploy": "gh-pages -d src"
+    "start": "live-server --port=3000 --mount=/:src --watch=src"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "live-server": "^1.2.1",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ]
   }
 }
