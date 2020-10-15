@@ -6,7 +6,7 @@
   "scripts": {
     "lint-css": "stylelint '**/*.css' --fix",
     "start": "live-server --port=3000 --mount=/:src --watch=src",
-    "deploy": "gh-pages -d src -b master"
+    "deploy": "gh-pages -d src"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
