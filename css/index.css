@@ -247,6 +247,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.total-hez {
+  margin: 0;
+}
+
 @media (min-width: 380px) {
   .section {
     padding: 5rem 0;
