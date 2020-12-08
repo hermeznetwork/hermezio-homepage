@@ -43,10 +43,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:first-child': {
       paddingLeft: 0,
       marginRight: 'auto',
-      fontWeight: 700,
-      '&::before': {
-        content: 'url(\'../../assets/images/logo.svg\')'
-      }
+      fontWeight: 700
     },
     '&:last-child': {
       border: `2px solid ${theme.palette.black}`,
@@ -65,7 +62,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       left: '50%',
       transform: 'translateX(-50%)',
       transition: 'all 0.25s ease',
-      content: '\'\''
+      content: '""'
     }
   },
   link: {

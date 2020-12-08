@@ -4,6 +4,7 @@ import { Menu } from 'react-feather'
 
 import { useHeaderStyles } from './header.styles'
 import { useTheme } from 'react-jss'
+import Logo from '../../assets/images/logo.inline.svg'
 
 export const Header = ({ routes, onOpenMobileMenu }) => {
   const theme = useTheme()
@@ -22,6 +23,9 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                   to={route.to}
                   activeClassName={classes.activeLink}
                 >
+                  {route.label === 'Hermez' ? (
+                    <Logo />
+                  ) : <></>}
                   {route.label}
                 </Link>
               </li>
