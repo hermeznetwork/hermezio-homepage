@@ -45,10 +45,11 @@ export const useHeaderStyles = createUseStyles(theme => ({
       marginRight: 'auto',
       fontWeight: 700
     },
-    '&:last-child': {
+    '&:last-child a': {
       border: `2px solid ${theme.palette.black}`,
       borderRadius: 15,
-      padding: `${theme.spacing(1.5)}px ${theme.spacing(3.5)}px`
+      padding: `${theme.spacing(1.5)}px ${theme.spacing(3.5)}px`,
+      marginTop: theme.spacing(1.5)
     },
     color: theme.palette.black,
     fontSize: theme.spacing(2),

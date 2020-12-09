@@ -70,9 +70,9 @@ export const useLayoutStyles = createUseStyles(theme => ({
   },
   layout: {
     width: '100%',
-    margin: 'auto',
+    padding: '40px 72px 0',
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: '990px'
+    maxWidth: '1350px'
   }
 }))

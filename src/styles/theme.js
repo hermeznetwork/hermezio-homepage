@@ -15,6 +15,7 @@ export const theme = {
     }
   },
   headerHeight: 100,
+  colWidth: '33%',
   fontWeights: {
     normal: '400',
     medium: '500',
