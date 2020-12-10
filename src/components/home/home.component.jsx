@@ -22,8 +22,6 @@ const Home = () => {
           <Button
             type='primary'
             text='Create account'
-            icon=''
-            onClick=''
           />
           <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
             Create account
@@ -50,8 +48,6 @@ const Home = () => {
           <Button
             type='secondary'
             text='Hermez Network'
-            icon=''
-            onClick=''
           />
           <Link to='/payments-network' className={`${classes.buttonLink} ${classes.primary}`}>
             Hermez Network

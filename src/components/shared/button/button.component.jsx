@@ -29,7 +29,7 @@ function Button ({ icon, text, onClick, className, type }) {
 Button.propTypes = {
   icon: PropTypes.element,
   text: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   className: PropTypes.string,
   type: PropTypes.string
 }

@@ -21,7 +21,6 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 <Link
                   className={classes.link}
                   to={route.to}
-                  activeClassName={classes.activeLink}
                 >
                   {route.label === 'Hermez' ? (
                     <Logo />
@@ -32,31 +31,33 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
             ))}
 
             <li className={classes.linkWrapper}>
-              <Link
+              <a
+                href='https://blog.hermez.io/'
+                target='_blank'
+                rel='noopener noreferrer'
                 className={classes.link}
-                to='https://blog.hermez.io/'
-                activeClassName={classes.activeLink}
               >
-                  Blog
-              </Link>
+                Blog
+              </a>
             </li>
             <li className={classes.linkWrapper}>
-              <Link
+              <a
+                href='https://hermez.io/'
+                target='_blank'
+                rel='noopener noreferrer'
                 className={classes.link}
-                to='https://hermez.io/'// TODO: add a proper link to the Network explorer
-                activeClassName={classes.activeLink}
               >
-                  Network explorer
-              </Link>
+                Network explorer
+              </a>
             </li>
             <li className={classes.linkWrapper}>
-              <Link
+              <a
+                href='https://hermez.io/'
+                target='_blank' rel='noopener noreferrer'
                 className={classes.link}
-                to='https://hermez.io/'// TODO: add a proper link to the Wallet
-                activeClassName={classes.activeLink}
               >
-                  Wallet
-              </Link>
+                Wallet
+              </a>
             </li>
           </ul>
         </nav>
