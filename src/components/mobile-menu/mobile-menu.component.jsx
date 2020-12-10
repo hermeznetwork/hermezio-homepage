@@ -27,12 +27,20 @@ export const MobileMenu = ({ routes, isOpen, onClose }) => {
   return (
     isOpen && (
       <>
-        <div className={classes.background} onClick={onClose} />
+        <div
+          className={classes.background}
+          onClick={onClose}
+          onKeyDown={onClose}
+          role='button'
+          tabIndex={0}
+          aria-label='Close'
+        />
         <div
           tabIndex={0}
           className={classes.sidebar}
           ref={sidebarRef}
           onKeyDown={handleBackgroundKeyDown}
+          role='button'
         >
           <div className={classes.sidebarHeader}>
             <h2 className={classes.title}>Menú</h2>
