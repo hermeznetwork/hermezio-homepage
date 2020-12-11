@@ -10,6 +10,9 @@ const useHomeStyles = createUseStyles(theme => ({
     '& > div': {
       marginRight: 'auto',
       marginLeft: 0
+    },
+    '& > div a': {
+      marginLeft: 0
     }
   },
   section2: {
@@ -22,6 +25,9 @@ const useHomeStyles = createUseStyles(theme => ({
     '& >:last-child': {
       margin: '124px auto 0',
       height: '42px'
+    },
+    '& >div div': {
+      textAlign: 'center'
     }
   },
   section2Image1: {
@@ -54,6 +60,13 @@ const useHomeStyles = createUseStyles(theme => ({
   section4: {
     '& >div': {
       paddingTop: '48px'
+    },
+    '& $col2': { // TODO refactor all inheritance
+      color: '#778499',
+      lineHeight: '29px'
+    },
+    '& $col3': {
+      marginTop: 0
     }
   },
   section5: {
@@ -73,7 +86,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   col3: {
     margin: 'auto',
-    textAlign: 'center',
+    // textAlign: 'center',
     width: '33%'
   },
   buttonLink: {
@@ -127,6 +140,11 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '24px',
     height: '24px',
     marginLeft: '16px'
+  },
+  divider: {
+    width: '100%',
+    height: '1px',
+    background: '#dee0e9'
   }
 }))
 
