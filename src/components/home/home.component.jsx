@@ -131,6 +131,9 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.row}>
+          <span className={classes.divider} />
+        </div>
+        <div className={classes.row}>
           <div className={classes.col2}>
             <h3>Permissionless auctions for validators</h3>
             <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
@@ -139,6 +142,9 @@ const Home = () => {
               <ArrowCirclePrimary className={classes.linkIcon} />
             </a>
           </div>
+        </div>
+        <div className={classes.row}>
+          <span className={classes.divider} />
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
@@ -157,27 +163,44 @@ const Home = () => {
             <Title>Blog</Title>
           </div>
           <div className={classes.col2}>
-            <a href='https://blog.hermez.io/hermez-massive-migrations-mechanism/' target='_blank' rel='noopener noreferrer'>
-              Introducing the First L2 Interoperability Mechanism with Hermez Massive Migrations
-            </a>
+            <h3>
+              <a href='https://blog.hermez.io/hermez-massive-migrations-mechanism/' target='_blank' rel='noopener noreferrer'>
+                Introducing the First L2 Interoperability Mechanism with Hermez Massive Migrations
+              </a>
+            </h3>
             <p>27 November 2020</p>
           </div>
         </div>
         <div className={classes.row}>
+          <span className={classes.divider} />
+        </div>
+        <div className={classes.row}>
           <div className={classes.col2}>
-            <a href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/' target='_blank' rel='noopener noreferrer'>
-              Hermez zk-rollup Circom Circuits Are Now Public!
-            </a>
+            <h3>
+              <a href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/' target='_blank' rel='noopener noreferrer'>
+                Hermez zk-rollup Circom Circuits Are Now Public!
+              </a>
+            </h3>
             <p>23 November 2020</p>
           </div>
         </div>
         <div className={classes.row}>
+          <span className={classes.divider} />
+        </div>
+        <div className={classes.row}>
           <div className={classes.col2}>
-            <a href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/' target='_blank' rel='noopener noreferrer'>
-              Hermez in Depth: Bootstrapping Security Measures
-            </a>
+            <h3>
+              <a href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/' target='_blank' rel='noopener noreferrer'>
+                Hermez in Depth: Bootstrapping Security Measures
+              </a>
+            </h3>
             <p>19 November 2020</p>
           </div>
+        </div>
+        <div className={classes.row}>
+          <span className={classes.divider} />
+        </div>
+        <div className={classes.row}>
           <a href='https://blog.hermez.io/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
             View all posts
             <ArrowCirclePrimary className={classes.linkIcon} />

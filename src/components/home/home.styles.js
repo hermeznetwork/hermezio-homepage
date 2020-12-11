@@ -77,9 +77,63 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundColor: '#f6f7fa'
   },
   section6: {
+    '& >div': {
+      paddingTop: '48px'
+    },
+    '& $col2': { // TODO refactor all inheritance
+      color: '#778499',
+      lineHeight: '29px'
+    },
+    '& $col3': {
+      marginTop: 0,
+      marginRight: '60px',
+      '&:last-child': {
+        marginRight: 0
+      }
+    },
+    '& h3': {
+      color: '#000',
+      fontSize: '24px'
+    },
+    '& a': {
+      marginTop: '26px'
+    },
+    '& $divider': {
+      width: '50%',
+      marginLeft: 'auto'
+    }
   },
   section7: {
-    backgroundColor: '#f6f7fa'
+    backgroundColor: '#f6f7fa',
+    '& >div': {
+      paddingTop: '32px',
+      '&:last-child': {
+        width: '50%',
+        marginLeft: 'auto'
+      }
+    },
+    '& $col2': { // TODO refactor all inheritance
+      color: '#778499',
+      lineHeight: '29px'
+    },
+    '& $col3': {
+      marginTop: 0,
+      marginRight: '60px',
+      '&:last-child': {
+        marginRight: 0
+      }
+    },
+    '& h3': {
+      color: '#000',
+      fontSize: '24px'
+    },
+    '& a': {
+      marginTop: '26px'
+    },
+    '& $divider': {
+      width: '50%',
+      marginLeft: 'auto'
+    }
   },
   row: {
     display: 'flex'
