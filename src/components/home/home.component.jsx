@@ -91,19 +91,19 @@ const Home = () => {
         <div className={classes.row}>
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              Hermez Network White Paper
+              <span>Hermez Network White Paper</span>
               <ArrowCircleSecondary />
             </a>
           </div>
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              Technical Documentation
+              <span>Technical Documentation</span>
               <ArrowCircleSecondary />
             </a>
           </div>
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              Github Repository
+              <span>Github Repository</span>
               <ArrowCircleSecondary />
             </a>
           </div>

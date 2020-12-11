@@ -66,7 +66,11 @@ const useHomeStyles = createUseStyles(theme => ({
       lineHeight: '29px'
     },
     '& $col3': {
-      marginTop: 0
+      marginTop: 0,
+      marginRight: '60px',
+      '&:last-child': {
+        marginRight: 0
+      }
     }
   },
   section5: {
@@ -144,7 +148,19 @@ const useHomeStyles = createUseStyles(theme => ({
   boxLink: {
     padding: '35px 32px 33px 40px',
     borderRadius: 20,
-    backgroundColor: '#f6f7fa'
+    backgroundColor: '#f6f7fa',
+    color: '#667285',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    lineHeight: '29px',
+    height: '128px',
+    marginTop: '96px',
+    marginBottom: '48px',
+    '& >span': {
+      width: '140px',
+      paddingRight: '16px'
+    }
   },
   divider: {
     width: '100%',
@@ -154,17 +170,3 @@ const useHomeStyles = createUseStyles(theme => ({
 }))
 
 export default useHomeStyles
-
-// primary: {
-//     light: '#f6f7fa',
-//     main: '#dee0e9'
-//   },
-//   white: '#ffffff',
-//   black: '#2b2b2b',
-//   gray: {
-//     main: '#667285',
-//     lighter: '#8d95a3'
-//   },
-//   orange: {
-//     main: '#e75a2b'
-//   }
