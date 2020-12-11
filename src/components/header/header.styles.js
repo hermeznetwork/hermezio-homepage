@@ -5,7 +5,8 @@ export const useHeaderStyles = createUseStyles(theme => ({
     height: theme.headerHeight
   },
   content: {
-    width: '100%'
+    width: '100%',
+    padding: `${theme.spacing(5)}px ${theme.spacing(9)}px 0`
   },
   nav: {
     display: 'none',
@@ -43,7 +44,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:first-child': {
       paddingLeft: 0,
       marginRight: 'auto',
-      fontWeight: 700
+      fontWeight: theme.fontWeights.bold
     },
     '&:last-child a': {
       border: `2px solid ${theme.palette.black}`,

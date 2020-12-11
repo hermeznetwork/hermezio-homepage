@@ -2,9 +2,10 @@ import { createUseStyles } from 'react-jss'
 
 const useHomeStyles = createUseStyles(theme => ({
   section: {
-    margin: '88px 0'
+    padding: '96px 72px'
   },
   section1: {
+    backgroundImage: 'url("../../assets/images/home/section1.svg")',
     display: 'flex',
     '& > div': {
       marginRight: 'auto',
@@ -14,11 +15,36 @@ const useHomeStyles = createUseStyles(theme => ({
   section2: {
     display: 'flex',
     flexDirection: 'column',
+    '& >:first-child': {
+      textAlign: 'center',
+      marginBottom: '106px'
+    },
     '& >:last-child': {
-      margin: '152px auto 0'
+      margin: '124px auto 0',
+      height: '42px'
     }
   },
+  section2Image1: {
+    width: '142px',
+    height: '147px'
+  },
+  section2Image2: {
+    width: '162px',
+    height: '147px'
+  },
+  section2Image3: {
+    width: '141px',
+    height: '147px'
+  },
+  section2Text: {
+    width: '245px',
+    margin: '50px auto 0',
+    fontWeight: '500',
+    fontSize: '23px',
+    lineHeight: '35px'
+  },
   section3: {
+    backgroundColor: '#f6f7fa'
   },
   section4: {
   },
@@ -41,13 +67,15 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '33%'
   },
   buttonLink: {
-    // padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
-    padding: '32px 40px',
+    padding: '26px 28px',
+    fontWeight: '700',
+    // padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
+    // fontWeight: theme.fontWeights.bold,
     margin: 'auto',
     borderRadius: 26,
     cursor: 'pointer',
-    width: '285px',
-    height: '92px',
+    width: '204px',
+    height: '70px',
     '&:focus': {
       outline: 'none'
     },
@@ -55,12 +83,26 @@ const useHomeStyles = createUseStyles(theme => ({
       // background: theme.palette.primary.dark
     }
   },
+  buttonLinkIcon: {
+    width: '13px',
+    height: '12px',
+    marginLeft: '12px'
+  },
   primary: {
+    border: '1px solid #e75a2b',
+    background: '#e75a2b',
+    color: 'white',
+    marginTop: '40px',
     // border: `1px solid ${theme.palette.orange.main}`,
     // background: theme.palette.orange.main,
-    // color: theme.palette.white
+    // color: theme.palette.white,
+    // marginTop: theme.spacing(5),
+    display: 'block'
   },
   secondary: {
+    border: '1px solid #dee0e9',
+    background: 'white',
+    color: '#667285'
     // border: `1px solid ${theme.palette.primary.main}`,
     // background: theme.palette.white,
     // color: theme.palette.gray.main

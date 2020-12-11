@@ -4,7 +4,10 @@ import { Link } from 'gatsby'
 import useHomeStyles from './home.styles'
 import { Layout } from '../layout/layout.component'
 import Title from '../shared/title/title.component'
-import Button from '../shared/button/button.component'
+import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
+import ArrowSecondary from '../../assets/images/icons/arrow-secondary.inline.svg'
+// import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
+// import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
 import Section21 from '../../assets/images/home/section2_1.inline.svg'
 import Section22 from '../../assets/images/home/section2_2.inline.svg'
 import Section23 from '../../assets/images/home/section2_3.inline.svg'
@@ -19,12 +22,9 @@ const Home = () => {
         <div className={classes.col3}>
           <Title>Open and low-cost payments network for everyone.</Title>
           <p>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
-          <Button
-            type='primary'
-            text='Create account'
-          />
           <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
             Create account
+            <ArrowPrimary className={classes.buttonLinkIcon} />
           </a>
         </div>
       </section>
@@ -32,25 +32,22 @@ const Home = () => {
         <Title>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</Title>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <Section21 />
-            <div>Cost efficient token transfers and swaps with high throughput.</div>
+            <Section21 className={classes.section2Image1} />
+            <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
           </div>
           <div className={classes.col3}>
-            <Section22 />
-            <div>Decentalised and open-source architecture.</div>
+            <Section22 className={classes.section2Image2} />
+            <div className={classes.section2Text}>Decentalised and open-source architecture.</div>
           </div>
           <div className={classes.col3}>
-            <Section23 />
-            <div>Computational integrity for secure transactions.</div>
+            <Section23 className={classes.section2Image3} />
+            <div className={classes.section2Text}>Computational integrity for secure transactions.</div>
           </div>
         </div>
         <div>
-          <Button
-            type='secondary'
-            text='Hermez Network'
-          />
-          <Link to='/payments-network' className={`${classes.buttonLink} ${classes.primary}`}>
+          <Link to='/payments-network' className={`${classes.buttonLink} ${classes.secondary}`}>
             Hermez Network
+            <ArrowSecondary className={classes.buttonLinkIcon} />
           </Link>
         </div>
       </section>
@@ -61,7 +58,6 @@ const Home = () => {
             <p>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
             <a href='/' target='_blank' rel='noopener noreferrer' className={classes.link}>
               Values and guiding principles
-              {/* TODO arrow icon */}
             </a>
           </div>
           <div className={classes.col2}>
@@ -105,8 +101,9 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.row}>
-          <Link to='/developers' className={`${classes.buttonLink} ${classes.primary}`}>
+          <Link to='/developers' className={`${classes.buttonLink} ${classes.secondary}`}>
             Developers
+            <ArrowSecondary className={classes.buttonLinkIcon} />
           </Link>
         </div>
       </section>

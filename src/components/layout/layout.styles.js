@@ -70,7 +70,6 @@ export const useLayoutStyles = createUseStyles(theme => ({
   },
   layout: {
     width: '100%',
-    padding: '40px 72px 0',
     display: 'flex',
     flexDirection: 'column',
     maxWidth: '1350px'
