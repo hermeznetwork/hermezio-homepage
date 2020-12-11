@@ -141,6 +141,11 @@ const useHomeStyles = createUseStyles(theme => ({
     height: '24px',
     marginLeft: '16px'
   },
+  boxLink: {
+    padding: '35px 32px 33px 40px',
+    borderRadius: 20,
+    backgroundColor: '#f6f7fa'
+  },
   divider: {
     width: '100%',
     height: '1px',
