@@ -46,13 +46,23 @@ const useHomeStyles = createUseStyles(theme => ({
   section3: {
     backgroundColor: '#f6f7fa'
   },
+  section3Text: {
+    color: '#778499',
+    lineHeight: '29px',
+    margin: '24px 0'
+  },
   section4: {
+    '& >div': {
+      paddingTop: '48px'
+    }
   },
   section5: {
+    backgroundColor: '#f6f7fa'
   },
   section6: {
   },
   section7: {
+    backgroundColor: '#f6f7fa'
   },
   row: {
     display: 'flex'
@@ -76,6 +86,7 @@ const useHomeStyles = createUseStyles(theme => ({
     cursor: 'pointer',
     width: '204px',
     height: '70px',
+    textAlign: 'center',
     '&:focus': {
       outline: 'none'
     },
@@ -106,6 +117,16 @@ const useHomeStyles = createUseStyles(theme => ({
     // border: `1px solid ${theme.palette.primary.main}`,
     // background: theme.palette.white,
     // color: theme.palette.gray.main
+  },
+  link: {
+    color: '#e75a2b',
+    display: 'flex',
+    alignItems: 'center'
+  },
+  linkIcon: {
+    width: '24px',
+    height: '24px',
+    marginLeft: '16px'
   }
 }))
 

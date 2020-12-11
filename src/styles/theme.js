@@ -8,6 +8,7 @@ export const theme = {
     black: '#2b2b2b',
     gray: {
       main: '#667285',
+      light: '#778499',
       lighter: '#8d95a3'
     },
     orange: {

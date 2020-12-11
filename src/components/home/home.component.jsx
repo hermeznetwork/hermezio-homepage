@@ -6,8 +6,8 @@ import { Layout } from '../layout/layout.component'
 import Title from '../shared/title/title.component'
 import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import ArrowSecondary from '../../assets/images/icons/arrow-secondary.inline.svg'
-// import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
-// import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
+import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
+import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
 import Section21 from '../../assets/images/home/section2_1.inline.svg'
 import Section22 from '../../assets/images/home/section2_2.inline.svg'
 import Section23 from '../../assets/images/home/section2_3.inline.svg'
@@ -55,9 +55,10 @@ const Home = () => {
         <div className={classes.row}>
           <div className={classes.col2}>
             <Title>Prosperitity for all</Title>
-            <p>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
+            <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
             <a href='/' target='_blank' rel='noopener noreferrer' className={classes.link}>
               Values and guiding principles
+              <ArrowCirclePrimary className={classes.linkIcon} />
             </a>
           </div>
           <div className={classes.col2}>
@@ -87,16 +88,19 @@ const Home = () => {
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
               Hermez Network White Paper
+              <ArrowCircleSecondary />
             </a>
           </div>
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
               Technical Documentation
+              <ArrowCircleSecondary />
             </a>
           </div>
           <div className={classes.col3}>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
               Github Repository
+              <ArrowCircleSecondary />
             </a>
           </div>
         </div>
@@ -118,6 +122,7 @@ const Home = () => {
             <p>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants. We call this mechanism proof-of-donation.</p>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
               More about proof-of-donation
+              <ArrowCirclePrimary className={classes.linkIcon} />
             </a>
           </div>
         </div>
@@ -127,6 +132,7 @@ const Home = () => {
             <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
               How to become a coordinator
+              <ArrowCirclePrimary className={classes.linkIcon} />
             </a>
           </div>
         </div>
@@ -135,7 +141,8 @@ const Home = () => {
             <h3>HEZ Token</h3>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
             <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
-            More about HEZ
+              More about HEZ
+              <ArrowCirclePrimary className={classes.linkIcon} />
             </a>
           </div>
         </div>
@@ -169,6 +176,7 @@ const Home = () => {
           </div>
           <a href='https://blog.hermez.io/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
             View all posts
+            <ArrowCirclePrimary className={classes.linkIcon} />
           </a>
         </div>
       </section>
