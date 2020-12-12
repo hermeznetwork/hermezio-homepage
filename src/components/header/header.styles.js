@@ -44,8 +44,11 @@ export const useHeaderStyles = createUseStyles(theme => ({
     textAlign: 'center',
     '&:first-child': {
       paddingLeft: 0,
-      marginRight: 'auto',
-      fontWeight: theme.fontWeights.bold
+      marginRight: 'auto'
+    },
+    '&:first-child a': {
+      top: '-3px',
+      position: 'relative'
     },
     '&:last-child a': {
       border: `2px solid ${theme.palette.black}`,

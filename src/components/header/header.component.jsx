@@ -24,8 +24,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 >
                   {route.label === 'Hermez' ? (
                     <Logo />
-                  ) : <></>}
-                  {route.label}
+                  ) : route.label}
                 </Link>
               </li>
             ))}

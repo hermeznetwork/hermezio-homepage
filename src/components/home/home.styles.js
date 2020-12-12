@@ -6,7 +6,9 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section1: {
     paddingTop: '320px',
-    backgroundImage: 'url("../../assets/images/home/section1.svg")',
+    backgroundImage: 'url(./home-background.svg)',
+    backgroundPosition: 'bottom',
+    backgroundSize: 'cover',
     display: 'flex',
     '& > div': {
       marginRight: 'auto',
@@ -15,6 +17,12 @@ const useHomeStyles = createUseStyles(theme => ({
     '& > div a': {
       marginLeft: 0
     }
+  },
+  section1Image1: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: '100vw'
   },
   section2: {
     display: 'flex',
