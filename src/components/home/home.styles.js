@@ -1,11 +1,17 @@
 import { createUseStyles } from 'react-jss'
+const intViewportWidth = window.innerWidth
+const widthRatio = 1561 / intViewportWidth
+const imgHeight = 825 / widthRatio
 
 const useHomeStyles = createUseStyles(theme => ({
   section: {
     padding: '96px 72px'
   },
   section1: {
-    backgroundImage: 'url("../../assets/images/home/section1.svg")',
+    paddingTop: '320px',
+    backgroundImage: 'url(./home-background.svg)',
+    backgroundPosition: 'bottom',
+    backgroundSize: 'cover',
     display: 'flex',
     '& > div': {
       marginRight: 'auto',
@@ -14,6 +20,13 @@ const useHomeStyles = createUseStyles(theme => ({
     '& > div a': {
       marginLeft: 0
     }
+  },
+  section1Image1: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: '100vw',
+    height: `${imgHeight}px`
   },
   section2: {
     display: 'flex',
