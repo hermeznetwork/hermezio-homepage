@@ -5,6 +5,7 @@ const useHomeStyles = createUseStyles(theme => ({
     padding: '96px 72px'
   },
   section1: {
+    paddingTop: '320px',
     backgroundImage: 'url("../../assets/images/home/section1.svg")',
     display: 'flex',
     '& > div': {

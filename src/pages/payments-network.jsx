@@ -1,13 +1,11 @@
 import React from 'react'
 
-import { Layout } from '../components/layout/layout.component'
+import PaymentsNetwork from '../components/payments-network/payments-network.component'
 
-const Home = () => {
+const PaymentsNetworkPAge = () => {
   return (
-    <Layout>
-      Payments Network
-    </Layout>
+    <PaymentsNetwork />
   )
 }
 
-export default Home
+export default PaymentsNetworkPAge
