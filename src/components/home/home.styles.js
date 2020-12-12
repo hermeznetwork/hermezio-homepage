@@ -1,7 +1,6 @@
 import { createUseStyles } from 'react-jss'
-const intViewportWidth = window.innerWidth
-const widthRatio = 1561 / intViewportWidth
-const imgHeight = 825 / widthRatio
+
+const homeBackgroundDynamicHeight = 825 / (1561 / window.innerWidth)
 
 const useHomeStyles = createUseStyles(theme => ({
   section: {
@@ -26,7 +25,7 @@ const useHomeStyles = createUseStyles(theme => ({
     top: 0,
     right: 0,
     width: '100vw',
-    height: `${imgHeight}px`
+    height: `${homeBackgroundDynamicHeight}px`
   },
   section2: {
     display: 'flex',

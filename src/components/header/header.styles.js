@@ -2,7 +2,8 @@ import { createUseStyles } from 'react-jss'
 
 export const useHeaderStyles = createUseStyles(theme => ({
   header: {
-    height: theme.headerHeight
+    height: theme.headerHeight,
+    position: 'absolute'
   },
   content: {
     width: '100%',

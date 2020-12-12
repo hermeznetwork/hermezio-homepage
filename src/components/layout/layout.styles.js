@@ -55,7 +55,8 @@ export const useLayoutStyles = createUseStyles(theme => ({
       fontFamily: 'Modern Era',
       fontWeight: 400,
       fontSize: 16,
-      minHeight: '100vh'
+      minHeight: '100vh',
+      margin: 0
     },
     a: {
       textDecoration: 'none',
