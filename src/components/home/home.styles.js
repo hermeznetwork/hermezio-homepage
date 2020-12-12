@@ -1,7 +1,5 @@
 import { createUseStyles } from 'react-jss'
 
-const homeBackgroundDynamicHeight = 825 / (1561 / window.innerWidth)
-
 const useHomeStyles = createUseStyles(theme => ({
   section: {
     padding: '96px 72px'
@@ -24,8 +22,7 @@ const useHomeStyles = createUseStyles(theme => ({
     position: 'absolute',
     top: 0,
     right: 0,
-    width: '100vw',
-    height: `${homeBackgroundDynamicHeight}px`
+    width: '100vw'
   },
   section2: {
     display: 'flex',
