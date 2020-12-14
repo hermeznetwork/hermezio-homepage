@@ -1,7 +1,6 @@
 import React from 'react'
 
 import usePaymentsNetworkStyles from './payments-network.styles'
-import { Layout } from '../layout/layout.component'
 import Title from '../shared/title/title.component'
 import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
@@ -13,7 +12,7 @@ const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
 
   return (
-    <Layout>
+    <>
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={classes.col3}>
           <Title>Secure layer 2 designed for mass adoption</Title>
@@ -27,7 +26,6 @@ const PaymentsNetwork = () => {
         </div>
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
-
         <div className={classes.row}>
           <div className={classes.col2}>
             <Title>Powerful and trustless</Title>
@@ -43,6 +41,9 @@ const PaymentsNetwork = () => {
           </div>
         </div>
         <div className={classes.row}>
+          <span className={classes.divider} />
+        </div>
+        <div className={classes.row}>
           <div className={classes.col2}>
             <Title>Ready to be integrated</Title>
           </div>
@@ -56,6 +57,9 @@ const PaymentsNetwork = () => {
               <li>Simple web and mobile app wallet</li>
             </ul>
           </div>
+        </div>
+        <div className={classes.row}>
+          <span className={classes.divider} />
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
@@ -124,9 +128,6 @@ const PaymentsNetwork = () => {
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           </div>
         </div>
-        <div className={classes.row}>
-          <span className={classes.divider} />
-        </div>
       </section>
       <section className={`${classes.section} ${classes.section5}`}>
         <div className={classes.col23}>
@@ -147,7 +148,7 @@ const PaymentsNetwork = () => {
           {/* TODO add <Section5 /> once svg is availble in zeplin  */}
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 

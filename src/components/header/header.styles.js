@@ -11,7 +11,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
   },
   nav: {
     display: 'none',
-    [theme.breakpoints.upMd]: {
+    [theme.breakpoints.md]: {
       display: 'flex',
       alignItems: 'center'
     }
@@ -26,7 +26,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:focus': {
       outline: 'none'
     },
-    [theme.breakpoints.upMd]: {
+    [theme.breakpoints.md]: {
       display: 'none'
     }
   },

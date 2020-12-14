@@ -73,6 +73,9 @@ export const useLayoutStyles = createUseStyles(theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: '1350px'
+    '@media (min-width: 992px)': {
+      maxWidth: '12000px'
+    },
+    maxWidth: '1440px'
   }
 }))

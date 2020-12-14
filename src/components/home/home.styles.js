@@ -2,10 +2,16 @@ import { createUseStyles } from 'react-jss'
 
 const useHomeStyles = createUseStyles(theme => ({
   section: {
-    padding: '96px 72px'
+    padding: '16px',
+    [theme.breakpoints.sm]: {
+      padding: '96px 72px'
+    }
   },
   section1: {
-    paddingTop: '320px',
+    paddingTop: '86px',
+    [theme.breakpoints.sm]: {
+      paddingTop: '320px'
+    },
     backgroundImage: 'url(./home-background.svg)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',

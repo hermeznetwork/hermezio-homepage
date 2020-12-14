@@ -2,10 +2,16 @@ import { createUseStyles } from 'react-jss'
 
 const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section: {
-    padding: '96px 72px'
+    padding: '96px 72px',
+    [theme.breakpoints.sm]: {
+      padding: '96px 72px'
+    }
   },
   section1: {
-    paddingTop: '320px',
+    paddingTop: '86px',
+    [theme.breakpoints.sm]: {
+      // paddingTop: '320px',
+    },
     backgroundColor: '#f6f7fa',
     display: 'flex',
     '& > div': {
@@ -17,19 +23,61 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   section2: {
-
+    '& $col2': {
+      paddingTop: theme.spacing(10),
+      paddingBottom: theme.spacing(10)
+    },
+    '& li': {
+      color: '#667285',
+      fontSize: theme.spacing(2),
+      lineHeight: `${theme.spacing(3.5)}px`,
+      paddingBottom: theme.spacing(1)
+    }
   },
   section3: {
-
-  },
-  section3Text: {
-    backgroundColor: '#f6f7fa'
+    backgroundColor: '#f6f7fa',
+    textAlign: 'center',
+    '& p': {
+      color: '#778499'
+    }
   },
   section4: {
-
+    '& >div': {
+      paddingTop: '48px'
+    },
+    '& $col2': { // TODO refactor all inheritance
+      color: '#778499',
+      lineHeight: '29px'
+    },
+    '& $col3': {
+      marginTop: 0,
+      marginRight: '60px',
+      '&:last-child': {
+        marginRight: 0
+      }
+    },
+    '& h3': {
+      color: '#000',
+      fontSize: '24px'
+    },
+    '& $divider': {
+      width: '50%',
+      marginLeft: 'auto'
+    }
   },
   section5: {
-    backgroundColor: '#f6f7fa'
+    backgroundColor: '#f6f7fa',
+    '& p': {
+      color: '#778499',
+      lineHeight: '29px',
+      paddingBottom: theme.spacing(2)
+    },
+    '& div div': {
+      display: 'flex'
+    },
+    '& a': {
+      paddingRight: theme.spacing(10)
+    }
   },
   row: {
     display: 'flex'

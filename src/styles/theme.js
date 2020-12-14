@@ -24,10 +24,10 @@ export const theme = {
     extraBold: '800'
   },
   breakpoints: {
-    upSm: '@media (min-width: 576px)',
-    upMd: '@media (min-width: 768px)',
-    upLg: '@media (min-width: 992px)',
-    upXl: '@media (min-width: 1200px)'
+    sm: '@media (min-width: 576px)',
+    md: '@media (min-width: 768px)',
+    lg: '@media (min-width: 992px)',
+    xl: '@media (min-width: 1200px)'
   },
   spacing: (value) => value * 8
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { ThemeProvider } from 'react-jss'
 
 import { theme } from '../../styles/theme'
 import { Header } from '../header/header.component'
@@ -35,17 +34,15 @@ export const Layout = ({ children }) => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.layout}>
-        <Header onOpenMobileMenu={handleMobileMenuToggle} routes={routes} />
-        <MobileMenu
-          isOpen={isMobileMenuOpen}
-          onClose={handleMobileMenuToggle}
-          routes={routes}
-        />
-        <Main>{children}</Main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className={classes.layout} theme={theme}>
+      <Header onOpenMobileMenu={handleMobileMenuToggle} routes={routes} />
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={handleMobileMenuToggle}
+        routes={routes}
+      />
+      <Main>{children}</Main>
+      <Footer />
+    </div>
   )
 }

@@ -9,7 +9,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     left: 0,
     background: theme.palette.black,
     opacity: 0.2,
-    [theme.breakpoints.upMd]: {
+    [theme.breakpoints.md]: {
       display: 'none'
     }
   },
@@ -26,12 +26,12 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     '&:focus': {
       outline: 'none'
     },
-    [theme.breakpoints.upSm]: {
+    [theme.breakpoints.sm]: {
       width: 400,
       right: 'auto',
       padding: `0 ${theme.spacing(8)}px`
     },
-    [theme.breakpoints.upMd]: {
+    [theme.breakpoints.md]: {
       display: 'none'
     }
   },
@@ -62,7 +62,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     margin: 0,
     marginTop: theme.spacing(2),
     paddingLeft: 0,
-    [theme.breakpoints.upSm]: {
+    [theme.breakpoints.sm]: {
       marginTop: theme.spacing(4)
     }
   },
