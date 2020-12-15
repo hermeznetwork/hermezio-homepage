@@ -72,8 +72,7 @@ const Home = () => {
             <Title>Zero-knowledge cryptography</Title>
           </div>
           <div className={classes.col2}>
-            <p>ZK-Rollups are one of the options being developed for layer 2 construction that increases scalability through mass transfer processing rolled into a single transaction.</p>
-            <br />
+            <p className={classes.paragraphMargin}>ZK-Rollups are one of the options being developed for layer 2 construction that increases scalability through mass transfer processing rolled into a single transaction.</p>
             <p>A "zero knowledge proof" approach is used to present and publicly record the validity of the block on the Ethereum blockchain. ZK reduces computing and storage resources for validating the block by reducing the amount of data held in a transaction; zero knowledge of the entire data is needed.</p>
           </div>
         </div>

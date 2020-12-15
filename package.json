@@ -1,7 +1,7 @@
 {
   "name": "hermez.io",
   "version": "1.0.0",
-  "description": "Web page of the Hermez project",
+  "description": "Hermez Homepage",
   "author": "iden3",
   "scripts": {
     "build": "gatsby build",
