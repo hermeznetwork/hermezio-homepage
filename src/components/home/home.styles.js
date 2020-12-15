@@ -236,6 +236,9 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '100%',
     height: '1px',
     background: '#dee0e9'
+  },
+  paragraphMargin: {
+    marginBottom: 16
   }
 }))
 

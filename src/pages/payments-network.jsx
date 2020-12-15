@@ -2,10 +2,10 @@ import React from 'react'
 
 import PaymentsNetwork from '../components/payments-network/payments-network.component'
 
-const PaymentsNetworkPAge = () => {
+const PaymentsNetworkPage = () => {
   return (
     <PaymentsNetwork />
   )
 }
 
-export default PaymentsNetworkPAge
+export default PaymentsNetworkPage
