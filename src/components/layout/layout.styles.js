@@ -55,9 +55,14 @@ export const useLayoutStyles = createUseStyles(theme => ({
     body: {
       fontFamily: 'Modern Era',
       fontWeight: 400,
-      fontSize: 17,
       minHeight: '100vh',
-      margin: 0
+      margin: 0,
+      fontSize: theme.spacing(2),
+      lineHeight: `${theme.spacing(3)}px`,
+      [theme.breakpoints.sm]: {
+        fontSize: (theme.spacing(2) + 1),
+        lineHeight: '29px'
+      }
     },
     a: {
       textDecoration: 'none',
