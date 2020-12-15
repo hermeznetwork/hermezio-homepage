@@ -12,7 +12,7 @@ const useHomeStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       paddingTop: '320px'
     },
-    backgroundImage: 'url(./home-background.svg)',
+    backgroundImage: 'url(./home-background.png)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
     display: 'flex',
@@ -82,7 +82,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: '40px',
       '&:last-child': {
         marginRight: 0
       }
@@ -168,7 +168,7 @@ const useHomeStyles = createUseStyles(theme => ({
     // padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
     // fontWeight: theme.fontWeights.bold,
     margin: 'auto',
-    borderRadius: 26,
+    borderRadius: 20,
     cursor: 'pointer',
     width: '204px',
     height: '70px',
@@ -197,6 +197,7 @@ const useHomeStyles = createUseStyles(theme => ({
     display: 'block'
   },
   secondary: {
+    padding: '28px 32px',
     border: '1px solid #dee0e9',
     background: 'white',
     color: '#667285'

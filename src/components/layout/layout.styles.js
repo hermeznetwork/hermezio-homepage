@@ -49,12 +49,13 @@ export const useLayoutStyles = createUseStyles(theme => ({
     },
     html: {
       minHeight: '100vh',
-      height: '100%'
+      height: '100%',
+      margin: 0
     },
     body: {
       fontFamily: 'Modern Era',
       fontWeight: 400,
-      fontSize: 16,
+      fontSize: 17,
       minHeight: '100vh',
       margin: 0
     },

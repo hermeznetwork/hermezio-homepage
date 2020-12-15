@@ -101,7 +101,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     // padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
     // fontWeight: theme.fontWeights.bold,
     margin: 'auto',
-    borderRadius: 26,
+    borderRadius: 20,
     cursor: 'pointer',
     width: '204px',
     height: '70px',
