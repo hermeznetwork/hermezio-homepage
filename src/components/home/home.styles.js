@@ -82,7 +82,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '40px',
+      marginRight: theme.spacing(4),
       '&:last-child': {
         marginRight: 0
       }
@@ -206,7 +206,7 @@ const useHomeStyles = createUseStyles(theme => ({
     marginLeft: theme.spacing(2)
   },
   boxLink: {
-    padding: '35px 32px 33px 40px',
+    padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
     borderRadius: 20,
     backgroundColor: '#f6f7fa',
     color: '#667285',
