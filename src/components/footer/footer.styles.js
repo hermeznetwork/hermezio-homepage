@@ -28,7 +28,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     '& :first-child': {
       fontWeight: theme.fontWeights.bold,
       fontSize: theme.spacing(3),
-      lineHeight: `${theme.spacing(4)}px`
+      lineHeight: `${theme.spacing(4) - 1}px`
     },
     '& > *': {
       lineHeight: `${theme.spacing(3)}px`,
@@ -40,15 +40,19 @@ export const useFooterStyles = createUseStyles(theme => ({
     margin: 0
   },
   listItem: {
-    lineHeight: `${theme.spacing(3)}px`,
-    '& :first-child': {
-      color: theme.palette.white,
-      fontWeight: theme.fontWeights.bold,
-      paddingBottom: theme.spacing(2)
-    }
+    lineHeight: `${theme.spacing(3)}px`
   },
-  copyrightText: {
-    color: theme.palette.gray.main
+  listItemHead: {
+    color: theme.palette.white,
+    fontWeight: theme.fontWeights.bold,
+    paddingBottom: theme.spacing(2)
+  },
+  logoAndText: {
+    color: theme.palette.gray.main,
+    display: 'flex',
+    '& span': {
+      marginLeft: theme.spacing(0.5)
+    }
   },
   legalLink: {
     textDecoration: 'none',

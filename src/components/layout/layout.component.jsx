@@ -42,7 +42,7 @@ export const Layout = ({ children }) => {
         routes={routes}
       />
       <Main>{children}</Main>
-      <Footer />
+      <Footer routes={routes} />
     </div>
   )
 }
