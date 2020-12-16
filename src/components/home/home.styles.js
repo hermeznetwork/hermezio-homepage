@@ -73,8 +73,8 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: '24px 0'
   },
   section4: {
-    '& >div': {
-      paddingTop: '48px'
+    '& $divider': {
+      margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`
     },
     '& $col2': { // TODO refactor all inheritance
       color: '#778499',
@@ -92,8 +92,10 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundColor: '#f6f7fa'
   },
   section6: {
-    '& >div': {
-      paddingTop: '48px'
+    '& $divider': {
+      margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`,
+      width: '50%',
+      marginLeft: 'auto'
     },
     '& $col2': { // TODO refactor all inheritance
       color: '#778499',
@@ -108,20 +110,22 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& h3': {
       color: '#000',
-      fontSize: '24px'
+      fontSize: '23px',
+      fontWeight: theme.fontWeights.medium,
+      lineHeight: '35px',
+      marginTop: 0
     },
     '& a': {
       marginTop: '26px'
-    },
-    '& $divider': {
-      width: '50%',
-      marginLeft: 'auto'
     }
   },
   section7: {
     backgroundColor: '#f6f7fa',
+    '& $divider': {
+      width: '50%',
+      margin: `${theme.spacing(4)}px 0 ${theme.spacing(5)}px auto`
+    },
     '& >div': {
-      paddingTop: '32px',
       '&:last-child': {
         width: '50%',
         marginLeft: 'auto'
@@ -140,14 +144,13 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& h3': {
       color: '#000',
-      fontSize: '24px'
+      fontSize: '23px',
+      fontWeight: theme.fontWeights.medium,
+      lineHeight: '35px',
+      marginTop: 0
     },
     '& a': {
       marginTop: '26px'
-    },
-    '& $divider': {
-      width: '50%',
-      marginLeft: 'auto'
     }
   },
   row: {
