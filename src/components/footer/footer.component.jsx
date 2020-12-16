@@ -12,41 +12,41 @@ export const Footer = () => {
       {/* <Container> */}
       <div className={classes.content}>
         <div className={classes.topSection}>
-          <div>
+          <div className={classes.head}>
             <p>Start your integration</p>
             <p>Contact us to learn more about Hermez network.</p>
             <a href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'>hello@hermez.io</a>
           </div>
           <div>
-            <ul>
-              <li>Hermez</li>
-              <li>Hermez Network</li>
-              <li>Hermez Wallet</li>
-              <li>Network explorer</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Hermez</li>
+              <li className={classes.listItem}>Hermez Network</li>
+              <li className={classes.listItem}>Hermez Wallet</li>
+              <li className={classes.listItem}>Network explorer</li>
             </ul>
           </div>
           <div>
-            <ul>
-              <li>Specification</li>
-              <li>Whitepaper</li>
-              <li>Documentation</li>
-              <li>Github</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Specification</li>
+              <li className={classes.listItem}>Whitepaper</li>
+              <li className={classes.listItem}>Documentation</li>
+              <li className={classes.listItem}>Github</li>
             </ul>
           </div>
           <div>
-            <ul>
-              <li>Project</li>
-              <li>About us</li>
-              <li>Mediakit</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Project</li>
+              <li className={classes.listItem}>About us</li>
+              <li className={classes.listItem}>Mediakit</li>
             </ul>
           </div>
           <div>
-            <ul>
-              <li>Social</li>
-              <li>Blog</li>
-              <li>Telegram</li>
-              <li>Discord</li>
-              <li>Twitter</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Social</li>
+              <li className={classes.listItem}>Blog</li>
+              <li className={classes.listItem}>Telegram</li>
+              <li className={classes.listItem}>Discord</li>
+              <li className={classes.listItem}>Twitter</li>
             </ul>
           </div>
         </div>
