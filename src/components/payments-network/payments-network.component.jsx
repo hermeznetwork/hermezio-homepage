@@ -6,7 +6,6 @@ import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
-// import Section5 from '../../assets/images/payments-network/section5.inline.svg'
 
 const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
