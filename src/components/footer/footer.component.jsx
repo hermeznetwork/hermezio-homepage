@@ -2,14 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { useFooterStyles } from './footer.styles'
-// import { Container } from "../../shared/container/container.component"
 
 export const Footer = () => {
   const classes = useFooterStyles()
 
   return (
     <footer className={classes.footer}>
-      {/* <Container> */}
       <div className={classes.content}>
         <div className={classes.topSection}>
           <div className={classes.head}>
@@ -59,7 +57,6 @@ export const Footer = () => {
           </Link>
         </div>
       </div>
-      {/* </Container> */}
     </footer>
   )
 }
