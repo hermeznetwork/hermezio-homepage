@@ -9,9 +9,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section1: {
     paddingTop: '86px',
-    [theme.breakpoints.sm]: {
-      // paddingTop: '320px',
-    },
     backgroundColor: '#f6f7fa',
     display: 'flex',
     '& > div': {

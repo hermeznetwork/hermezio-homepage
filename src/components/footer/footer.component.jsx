@@ -11,7 +11,6 @@ export const Footer = ({ routes }) => {
 
   return (
     <footer className={classes.footer}>
-      {/* <Container> */}
       <div className={classes.content}>
         <div className={classes.topSection}>
           <div className={classes.head}>
@@ -144,7 +143,6 @@ export const Footer = ({ routes }) => {
           </Link>
         </div>
       </div>
-      {/* </Container> */}
     </footer>
   )
 }

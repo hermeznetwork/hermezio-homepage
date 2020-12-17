@@ -80,7 +80,7 @@ export const useLayoutStyles = createUseStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     '@media (min-width: 992px)': {
-      maxWidth: '12000px'
+      maxWidth: '1200px'
     },
     maxWidth: '1440px'
   }
