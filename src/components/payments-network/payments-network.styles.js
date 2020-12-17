@@ -9,9 +9,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section1: {
     paddingTop: '86px',
-    [theme.breakpoints.sm]: {
-      // paddingTop: '320px',
-    },
     backgroundColor: '#f6f7fa',
     display: 'flex',
     '& > div': {
@@ -92,14 +89,11 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   col3: {
     margin: 'auto',
-    // textAlign: 'center',
     width: '33%'
   },
   buttonLink: {
     padding: '26px 28px',
     fontWeight: '700',
-    // padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
-    // fontWeight: theme.fontWeights.bold,
     margin: 'auto',
     borderRadius: 20,
     cursor: 'pointer',
@@ -108,9 +102,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     textAlign: 'center',
     '&:focus': {
       outline: 'none'
-    },
-    '&:hover': {
-      // background: theme.palette.primary.dark
     }
   },
   buttonLinkIcon: {
@@ -119,14 +110,10 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     marginLeft: '12px'
   },
   primary: {
-    border: '1px solid #e75a2b',
-    background: '#e75a2b',
-    color: 'white',
-    marginTop: '40px',
-    // border: `1px solid ${theme.palette.orange.main}`,
-    // background: theme.palette.orange.main,
-    // color: theme.palette.white,
-    // marginTop: theme.spacing(5),
+    border: `1px solid ${theme.palette.orange.main}`,
+    background: theme.palette.orange.main,
+    color: theme.palette.white,
+    marginTop: theme.spacing(5),
     display: 'block'
   },
   link: {
