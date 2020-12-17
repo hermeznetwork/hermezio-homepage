@@ -12,7 +12,6 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
 
   return (
     <header className={classes.header}>
-      {/* <Container> */}
       <div className={classes.content}>
         <nav className={classes.nav}>
           <ul className={classes.linkList}>
@@ -64,7 +63,6 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
           <Menu size={theme.spacing(4)} />
         </button>
       </div>
-      {/* </Container> */}
     </header>
   )
 }

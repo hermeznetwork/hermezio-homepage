@@ -2,7 +2,7 @@ import { createUseStyles } from 'react-jss'
 
 const useHomeStyles = createUseStyles(theme => ({
   section: {
-    padding: '16px',
+    padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
       padding: '96px 72px'
     }
@@ -159,14 +159,11 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   col3: {
     margin: 'auto',
-    // textAlign: 'center',
     width: '33%'
   },
   buttonLink: {
-    padding: '26px 28px',
-    fontWeight: '700',
-    // padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
-    // fontWeight: theme.fontWeights.bold,
+    padding: `${theme.spacing(3.25)}px ${theme.spacing(3.5)}px`,
+    fontWeight: theme.fontWeights.bold,
     margin: 'auto',
     borderRadius: 20,
     cursor: 'pointer',
@@ -175,9 +172,6 @@ const useHomeStyles = createUseStyles(theme => ({
     textAlign: 'center',
     '&:focus': {
       outline: 'none'
-    },
-    '&:hover': {
-      // background: theme.palette.primary.dark
     }
   },
   buttonLinkIcon: {
@@ -186,24 +180,17 @@ const useHomeStyles = createUseStyles(theme => ({
     marginLeft: '12px'
   },
   primary: {
-    border: '1px solid #e75a2b',
-    background: '#e75a2b',
-    color: 'white',
-    marginTop: '40px',
-    // border: `1px solid ${theme.palette.orange.main}`,
-    // background: theme.palette.orange.main,
-    // color: theme.palette.white,
-    // marginTop: theme.spacing(5),
+    border: `1px solid ${theme.palette.orange.main}`,
+    background: theme.palette.orange.main,
+    color: theme.palette.white,
+    marginTop: theme.spacing(5),
     display: 'block'
   },
   secondary: {
-    padding: '28px 32px',
-    border: '1px solid #dee0e9',
-    background: 'white',
-    color: '#667285'
-    // border: `1px solid ${theme.palette.primary.main}`,
-    // background: theme.palette.white,
-    // color: theme.palette.gray.main
+    padding: `${theme.spacing(3.5)}px ${theme.spacing(4)}px`,
+    border: `1px solid ${theme.palette.primary.main}`,
+    background: theme.palette.white,
+    color: theme.palette.gray.main
   },
   link: {
     color: '#e75a2b',
@@ -211,9 +198,9 @@ const useHomeStyles = createUseStyles(theme => ({
     alignItems: 'center'
   },
   linkIcon: {
-    width: '24px',
-    height: '24px',
-    marginLeft: '16px'
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+    marginLeft: theme.spacing(2)
   },
   boxLink: {
     padding: '35px 32px 33px 40px',
