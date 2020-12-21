@@ -10,7 +10,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section1: {
     paddingTop: '86px',
     [theme.breakpoints.sm]: {
-      paddingTop: '320px'
+      paddingTop: theme.spacing(40)
     },
     backgroundImage: 'url(./home-background.png)',
     backgroundPosition: 'bottom',
@@ -65,10 +65,10 @@ const useHomeStyles = createUseStyles(theme => ({
     lineHeight: '35px'
   },
   section3: {
-    backgroundColor: '#f6f7fa'
+    backgroundColor: theme.palette.primary.light
   },
   section3Text: {
-    color: '#778499',
+    color: theme.palette.gray.light,
     lineHeight: '29px',
     margin: '24px 0'
   },
@@ -77,7 +77,7 @@ const useHomeStyles = createUseStyles(theme => ({
       margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`
     },
     '& $col2': { // TODO refactor all inheritance
-      color: '#778499',
+      color: theme.palette.gray.light,
       lineHeight: '29px'
     },
     '& $col3': {
@@ -89,7 +89,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section5: {
-    backgroundColor: '#f6f7fa'
+    backgroundColor: theme.palette.primary.light
   },
   section6: {
     '& $divider': {
@@ -98,7 +98,7 @@ const useHomeStyles = createUseStyles(theme => ({
       marginLeft: 'auto'
     },
     '& $col2': { // TODO refactor all inheritance
-      color: '#778499',
+      color: theme.palette.gray.light,
       lineHeight: '29px'
     },
     '& $col3': {
@@ -109,7 +109,7 @@ const useHomeStyles = createUseStyles(theme => ({
       }
     },
     '& h3': {
-      color: '#000',
+      color: theme.palette.black,
       fontSize: '23px',
       fontWeight: theme.fontWeights.medium,
       lineHeight: '35px',
@@ -120,7 +120,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section7: {
-    backgroundColor: '#f6f7fa',
+    backgroundColor: theme.palette.primary.light,
     '& $divider': {
       width: '50%',
       margin: `${theme.spacing(4)}px 0 ${theme.spacing(5)}px auto`
@@ -132,7 +132,7 @@ const useHomeStyles = createUseStyles(theme => ({
       }
     },
     '& $col2': { // TODO refactor all inheritance
-      color: '#778499',
+      color: theme.palette.gray.light,
       lineHeight: '29px'
     },
     '& $col3': {
@@ -143,7 +143,7 @@ const useHomeStyles = createUseStyles(theme => ({
       }
     },
     '& h3': {
-      color: '#000',
+      color: theme.palette.black,
       fontSize: '23px',
       fontWeight: theme.fontWeights.medium,
       lineHeight: '35px',
@@ -196,7 +196,7 @@ const useHomeStyles = createUseStyles(theme => ({
     color: theme.palette.gray.main
   },
   link: {
-    color: '#e75a2b',
+    color: theme.palette.orange.main,
     display: 'flex',
     alignItems: 'center'
   },
@@ -208,8 +208,8 @@ const useHomeStyles = createUseStyles(theme => ({
   boxLink: {
     padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
     borderRadius: 20,
-    backgroundColor: '#f6f7fa',
-    color: '#667285',
+    backgroundColor: theme.palette.primary.light,
+    color: theme.palette.gray.main,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -225,7 +225,7 @@ const useHomeStyles = createUseStyles(theme => ({
   divider: {
     width: '100%',
     height: '1px',
-    background: '#dee0e9'
+    background: theme.palette.primary.main
   },
   paragraphMargin: {
     marginBottom: 16

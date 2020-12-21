@@ -79,7 +79,7 @@ export const useLayoutStyles = createUseStyles(theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    '@media (min-width: 992px)': {
+    [theme.breakpoints.lg]: {
       maxWidth: '1200px'
     },
     maxWidth: '1440px'

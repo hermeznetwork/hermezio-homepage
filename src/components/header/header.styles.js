@@ -74,11 +74,5 @@ export const useHeaderStyles = createUseStyles(theme => ({
       transition: 'all 0.25s ease',
       content: '""'
     }
-  },
-  link: {
-
-  },
-  activeLink: {
-
   }
 }))
