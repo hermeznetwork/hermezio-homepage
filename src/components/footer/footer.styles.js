@@ -4,7 +4,8 @@ export const useFooterStyles = createUseStyles(theme => ({
   footer: {
     background: theme.palette.black,
     color: theme.palette.gray.lighter,
-    fontSize: theme.spacing(2)
+    fontSize: '15px',
+    lineHeight: '23px'
   },
   content: {
     width: '100%',

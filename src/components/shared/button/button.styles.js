@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss'
 const useButtonStyles = createUseStyles(theme => ({
   root: {
     padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
-    borderRadius: 26,
+    borderRadius: 20,
     cursor: 'pointer',
     width: '285px',
     height: '92px',

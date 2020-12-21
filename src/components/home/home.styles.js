@@ -12,7 +12,7 @@ const useHomeStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       paddingTop: '320px'
     },
-    backgroundImage: 'url(./home-background.svg)',
+    backgroundImage: 'url(./home-background.png)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
     display: 'flex',

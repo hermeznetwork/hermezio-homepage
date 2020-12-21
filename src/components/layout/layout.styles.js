@@ -49,12 +49,13 @@ export const useLayoutStyles = createUseStyles(theme => ({
     },
     html: {
       minHeight: '100vh',
-      height: '100%'
+      height: '100%',
+      margin: 0
     },
     body: {
       fontFamily: 'Modern Era',
       fontWeight: 400,
-      fontSize: 16,
+      fontSize: 17,
       minHeight: '100vh',
       margin: 0
     },
@@ -73,6 +74,9 @@ export const useLayoutStyles = createUseStyles(theme => ({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: '1350px'
+    '@media (min-width: 992px)': {
+      maxWidth: '1200px'
+    },
+    maxWidth: '1440px'
   }
 }))

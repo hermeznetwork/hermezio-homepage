@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import useHomeStyles from './home.styles'
-import { Layout } from '../layout/layout.component'
 import Title from '../shared/title/title.component'
 import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import ArrowSecondary from '../../assets/images/icons/arrow-secondary.inline.svg'
@@ -17,7 +16,7 @@ const Home = () => {
   const classes = useHomeStyles()
 
   return (
-    <Layout>
+    <>
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={classes.col3}>
           <Title>Open and low-cost payments network for everyone.</Title>
@@ -206,7 +205,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 
