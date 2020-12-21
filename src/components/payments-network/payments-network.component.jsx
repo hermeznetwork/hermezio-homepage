@@ -13,7 +13,7 @@ const PaymentsNetwork = () => {
   return (
     <>
       <section className={`${classes.section} ${classes.section1}`}>
-        <div className={classes.col3}>
+        <div className={`${classes.col3} ${classes.content}`}>
           <Title>Secure layer 2 designed for mass adoption</Title>
           <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
             Join Hermez
