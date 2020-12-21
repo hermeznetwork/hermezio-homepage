@@ -11,11 +11,11 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     paddingTop: '86px',
     backgroundColor: '#f6f7fa',
     display: 'flex',
-    '& > div': {
+    '& $content': {
       marginRight: 'auto',
       marginLeft: 0
     },
-    '& > div a': {
+    '& $buttonLink': {
       marginLeft: 0
     }
   },
