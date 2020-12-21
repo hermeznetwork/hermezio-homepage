@@ -22,7 +22,7 @@ export const Footer = ({ routes }) => {
                 Hermez
               </li>
               <li className={classes.listItem}>
-                <Link to={routes.find(el => el.label === 'Payments network').to}>
+                <Link to={routes.find(el => el.id === 2).to}>
                   {routes.find(el => el.label === 'Payments network').label}
                 </Link>
               </li>

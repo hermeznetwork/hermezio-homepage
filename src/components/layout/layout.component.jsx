@@ -12,18 +12,22 @@ export const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const routes = [
     {
+      id: 1,
       label: 'Hermez',
       to: '/'
     },
     {
+      id: 2,
       label: 'Payments network',
       to: '/payments-network'
     },
     {
+      id: 3,
       label: 'Developers',
       to: '/developers'
     },
     {
+      id: 4,
       label: 'Project',
       to: '/project'
     }
