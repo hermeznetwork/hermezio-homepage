@@ -7,8 +7,6 @@ import Logo from '../../assets/images/logo-black-and-white.inline.svg'
 export const Footer = ({ routes }) => {
   const classes = useFooterStyles()
 
-  console.log('routes: ', JSON.stringify(routes))
-
   return (
     <footer className={classes.footer}>
       <div className={classes.content}>
