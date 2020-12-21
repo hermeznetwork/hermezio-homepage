@@ -20,7 +20,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     marginTop: theme.spacing(12)
   },
   head: {
-    maxWidth: 'calc(100vw/5)', // TODO: update when Chami sends new design
+    maxWidth: 'calc(100vw/5)',
     marginRight: 'auto',
     '& :first-child, & :last-child': {
       color: theme.palette.white

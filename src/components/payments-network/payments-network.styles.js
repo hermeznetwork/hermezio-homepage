@@ -63,6 +63,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   section5: {
+    display: 'flex',
     backgroundColor: '#f6f7fa',
     '& p': {
       color: '#778499',
@@ -75,6 +76,9 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     },
     '& a': {
       paddingRight: theme.spacing(10)
+    },
+    '& $col2': {
+      marginLeft: 0
     }
   },
   row: {

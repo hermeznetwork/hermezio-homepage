@@ -6,6 +6,7 @@ import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
+import Section5 from '../../assets/images/payments-network/section5.inline.svg'
 
 const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
@@ -129,7 +130,7 @@ const PaymentsNetwork = () => {
         </div>
       </section>
       <section className={`${classes.section} ${classes.section5}`}>
-        <div className={classes.col23}>
+        <div className={classes.col2}>
           <Title>HEZ - Hermez Network token</Title>
           <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           <div>
@@ -144,7 +145,7 @@ const PaymentsNetwork = () => {
           </div>
         </div>
         <div className={classes.col3}>
-          {/* TODO add <Section5 /> once svg is availble in zeplin  */}
+          <Section5 />
         </div>
       </section>
     </>
