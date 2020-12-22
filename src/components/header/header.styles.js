@@ -3,7 +3,8 @@ import { createUseStyles } from 'react-jss'
 export const useHeaderStyles = createUseStyles(theme => ({
   header: {
     height: theme.headerHeight,
-    position: 'absolute'
+    position: 'absolute',
+    width: '100%'
   },
   content: {
     width: '100%',
@@ -38,8 +39,8 @@ export const useHeaderStyles = createUseStyles(theme => ({
     width: '100%'
   },
   linkWrapper: {
-    paddingLeft: theme.spacing(2.5),
-    paddingRight: theme.spacing(2.5),
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
     paddingTop: theme.spacing(1.5),
     textAlign: 'center',
     '&:first-child': {
@@ -50,6 +51,9 @@ export const useHeaderStyles = createUseStyles(theme => ({
       top: '-3px',
       position: 'relative'
     },
+    '&:last-child': {
+      display: 'none'// TODO: put it back once Wallet is released, so it can be linked
+    },
     '&:last-child a': {
       border: `2px solid ${theme.palette.black}`,
       borderRadius: 15,
@@ -57,7 +61,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       marginTop: theme.spacing(1.5)
     },
     color: theme.palette.black,
-    fontSize: theme.spacing(2),
+    fontSize: '15px',
     lineHeight: `${theme.spacing(2.5)}px`,
     '&::after': {
       position: 'absolute',
@@ -70,11 +74,5 @@ export const useHeaderStyles = createUseStyles(theme => ({
       transition: 'all 0.25s ease',
       content: '""'
     }
-  },
-  link: {
-
-  },
-  activeLink: {
-
   }
 }))

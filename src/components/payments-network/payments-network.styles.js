@@ -9,7 +9,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section1: {
     paddingTop: '86px',
-    backgroundColor: '#f6f7fa',
+    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     '& $content': {
       marginRight: 'auto',
@@ -25,36 +25,36 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       paddingBottom: theme.spacing(10)
     },
     '& li': {
-      color: '#667285',
+      color: theme.palette.gray.main,
       fontSize: theme.spacing(2),
       lineHeight: `${theme.spacing(3.5)}px`,
       paddingBottom: theme.spacing(1)
     }
   },
   section3: {
-    backgroundColor: '#f6f7fa',
+    backgroundColor: theme.palette.primary.light,
     textAlign: 'center',
     '& p': {
-      color: '#778499'
+      color: theme.palette.gray.light
     }
   },
   section4: {
     '& >div': {
-      paddingTop: '48px'
+      paddingTop: theme.spacing(6)
     },
     '& $col2': { // TODO refactor all inheritance
-      color: '#778499',
+      color: theme.palette.gray.light,
       lineHeight: '29px'
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: theme.spacing(7.5),
       '&:last-child': {
         marginRight: 0
       }
     },
     '& h3': {
-      color: '#000',
+      color: theme.palette.black,
       fontSize: '24px'
     },
     '& $divider': {
@@ -63,9 +63,10 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   section5: {
-    backgroundColor: '#f6f7fa',
+    display: 'flex',
+    backgroundColor: theme.palette.primary.light,
     '& p': {
-      color: '#778499',
+      color: theme.palette.gray.light,
       lineHeight: '29px',
       paddingTop: theme.spacing(2),
       paddingBottom: theme.spacing(4)
@@ -75,6 +76,9 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     },
     '& a': {
       paddingRight: theme.spacing(10)
+    },
+    '& $col2': {
+      marginLeft: 0
     }
   },
   row: {
@@ -92,8 +96,8 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     width: '33%'
   },
   buttonLink: {
-    padding: '26px 28px',
-    fontWeight: '700',
+    padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
+    fontWeight: theme.fontWeights.bold,
     margin: 'auto',
     borderRadius: 20,
     cursor: 'pointer',
@@ -117,19 +121,19 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     display: 'block'
   },
   link: {
-    color: '#e75a2b',
+    color: theme.palette.orange.main,
     display: 'flex',
     alignItems: 'center'
   },
   linkIcon: {
-    width: '24px',
-    height: '24px',
-    marginLeft: '16px'
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+    marginLeft: theme.spacing(2)
   },
   divider: {
     width: '100%',
     height: '1px',
-    background: '#dee0e9'
+    background: theme.palette.primary.main
   }
 }))
 
