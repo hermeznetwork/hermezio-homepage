@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { useFooterStyles } from './footer.styles'
+import Logo from '../../assets/images/logo-black-and-white.inline.svg'
 
-export const Footer = () => {
+export const Footer = ({ routes }) => {
   const classes = useFooterStyles()
 
   return (
@@ -17,40 +18,123 @@ export const Footer = () => {
           </div>
           <div>
             <ul className={classes.list}>
-              <li className={classes.listItem}>Hermez</li>
-              <li className={classes.listItem}>Hermez Network</li>
-              <li className={classes.listItem}>Hermez Wallet</li>
-              <li className={classes.listItem}>Network explorer</li>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>
+                Hermez
+              </li>
+              <li className={classes.listItem}>
+                <Link to={routes.find(el => el.id === 2).to}>
+                  {routes.find(el => el.label === 'Payments network').label}
+                </Link>
+              </li>
+              {/* TODO show Wallet link, once Wallet is published */}
+              {/* <li className={classes.listItem}>
+                <Link to={routes.find(el => el.label === "Hermez Wallet").to}>
+                  {routes.find(el => el.label === "Hermez Wallet").label}
+                </Link>
+              </li> */}
+              {/* TODO show Wallet link, once Network explorer is published */}
+              {/* <li className={classes.listItem}>
+                <Link to={routes.find(el => el.label === "Network explorer").to}>
+                  {routes.find(el => el.label === "Network explorer").label}
+                </Link>
+              </li> */}
             </ul>
           </div>
           <div>
             <ul className={classes.list}>
-              <li className={classes.listItem}>Specification</li>
-              <li className={classes.listItem}>Whitepaper</li>
-              <li className={classes.listItem}>Documentation</li>
-              <li className={classes.listItem}>Github</li>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
+              <li className={classes.listItem}>
+                <a
+                  href='/hermez-whitepaper.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Whitepaper
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://docs.hermez.io/#/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Documentation
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://github.com/hermeznetwork/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Github
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <ul className={classes.list}>
-              <li className={classes.listItem}>Project</li>
-              <li className={classes.listItem}>About us</li>
-              <li className={classes.listItem}>Mediakit</li>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>
+                Project
+              </li>
+              <li className={classes.listItem}>About us MISSING LINK</li>
+              <li className={classes.listItem}>Mediakit MISSING LINK</li>
             </ul>
           </div>
           <div>
             <ul className={classes.list}>
-              <li className={classes.listItem}>Social</li>
-              <li className={classes.listItem}>Blog</li>
-              <li className={classes.listItem}>Telegram</li>
-              <li className={classes.listItem}>Discord</li>
-              <li className={classes.listItem}>Twitter</li>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>Social</li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://blog.hermez.io/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Blog
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://t.me/hermez_network'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Telegram
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://discord.com/invite/AczuUXDA2N'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Discord
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://twitter.com/hermez_network'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Twitter
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className={classes.bottomSection}>
-          <p className={classes.copyrightText}>
-              Powered by Iden3
+          <p className={classes.logoAndText}>
+            <Logo />
+            <span>
+              <a
+                href='https://iden3.io/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Powered by Iden3
+              </a>
+            </span>
           </p>
           <Link to='/legal-disclamer' className={classes.legalLink}>
               Legal disclamer
