@@ -15,8 +15,8 @@ const useButtonStyles = createUseStyles(theme => ({
     }
   },
   primary: {
-    border: `1px solid ${theme.palette.orange.main}`,
-    background: theme.palette.orange.main,
+    border: `1px solid ${theme.palette.orange}`,
+    background: theme.palette.orange,
     color: theme.palette.white
   },
   secondary: {
