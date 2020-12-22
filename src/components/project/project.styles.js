@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss'
 
-const useHomeStyles = createUseStyles(theme => ({
+const useProjectStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
@@ -9,4 +9,4 @@ const useHomeStyles = createUseStyles(theme => ({
   }
 }))
 
-export default useHomeStyles
+export default useProjectStyles

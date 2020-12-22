@@ -5,7 +5,7 @@ import Title from '../shared/title/title.component'
 import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import Section1 from '../../assets/images/project/section1.inline.svg'
 
-const Home = () => {
+const Project = () => {
   const classes = useProjectStyles()
 
   return (
@@ -95,4 +95,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Project

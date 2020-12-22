@@ -100,7 +100,7 @@ const Home = () => {
             </a>
           </div>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
+            <a href='https://github.com/hermeznetwork' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
               <span>Github Repository</span>
               <ArrowCircleSecondary />
             </a>
