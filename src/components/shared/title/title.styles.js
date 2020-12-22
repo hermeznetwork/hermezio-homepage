@@ -9,7 +9,8 @@ const useTitleStyles = createUseStyles(theme => ({
     lineHeight: `${theme.spacing(5.25)}px`,
     fontStretch: 'normal',
     fontStyle: 'normal',
-    letterSpacing: 'normal'
+    letterSpacing: 'normal',
+    color: theme.palette.black
   }
 }))
 
