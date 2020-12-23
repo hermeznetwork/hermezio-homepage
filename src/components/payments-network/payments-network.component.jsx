@@ -2,7 +2,7 @@ import React from 'react'
 
 import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
-import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
+import Button from '../shared/button/button.component'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
@@ -16,10 +16,7 @@ const PaymentsNetwork = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={`${classes.col3} ${classes.content}`}>
           <Title>Secure layer 2 designed for mass adoption</Title>
-          <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-            Join Hermez
-            <ArrowPrimary className={classes.buttonLinkIcon} />
-          </a>
+          <Button to='/' text='Join Hermez' />
         </div>
         <div className={classes.col23}>
           <Section1 />

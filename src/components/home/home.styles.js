@@ -164,38 +164,6 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '33%'
   },
-  buttonLink: {
-    padding: `${theme.spacing(3.25)}px ${theme.spacing(3.5)}px`,
-    lineHeight: '18px',
-    fontWeight: theme.fontWeights.bold,
-    margin: 'auto',
-    borderRadius: 20,
-    cursor: 'pointer',
-    width: '204px',
-    height: '70px',
-    textAlign: 'center',
-    '&:focus': {
-      outline: 'none'
-    }
-  },
-  buttonLinkIcon: {
-    width: '13px',
-    height: '12px',
-    marginLeft: '12px'
-  },
-  primary: {
-    border: `1px solid ${theme.palette.orange}`,
-    background: theme.palette.orange,
-    color: theme.palette.white,
-    marginTop: theme.spacing(5),
-    display: 'block'
-  },
-  secondary: {
-    padding: `${theme.spacing(3.5)}px ${theme.spacing(4)}px`,
-    border: `1px solid ${theme.palette.primary.main}`,
-    background: theme.palette.white,
-    color: theme.palette.gray.main
-  },
   link: {
     color: theme.palette.orange,
     display: 'flex',

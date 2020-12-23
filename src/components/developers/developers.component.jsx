@@ -2,7 +2,7 @@ import React from 'react'
 
 import usedevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
-import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
+import Button from '../shared/button/button.component'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
 import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
 import Section1 from '../../assets/images/developers/section1.inline.svg'
@@ -17,10 +17,7 @@ const Developers = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={`${classes.col3} ${classes.content}`}>
           <Title>Convenient and accessible token transfers with zkRollup</Title>
-          <a href='https://docs.hermez.io/#/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-            Documentation
-            <ArrowPrimary className={classes.buttonLinkIcon} />
-          </a>
+          <Button to='https://docs.hermez.io/#/' text='Documentation' />
         </div>
         <div className={classes.col23}>
           <Section1 />
@@ -143,10 +140,7 @@ const Developers = () => {
             <p>Take part in shaping Hermez's future and join the conversation.</p>
           </div>
           <div className={classes.col4}>
-            <a href='https://discord.com/invite/AczuUXDA2N' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-                    Discord chat
-              <ArrowPrimary className={classes.buttonLinkIcon} />
-            </a>
+            <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
           </div>
         </div>
       </section>

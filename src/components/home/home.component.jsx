@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
-import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
-import ArrowSecondary from '../../assets/images/icons/arrow-secondary.inline.svg'
+import Button from '../shared/button/button.component'
 import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
 import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
 import Section21 from '../../assets/images/home/section2_1.inline.svg'
@@ -21,10 +19,7 @@ const Home = () => {
         <div className={classes.col3}>
           <Title>Open and low-cost payments network for everyone.</Title>
           <p>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
-          <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-            Create account
-            <ArrowPrimary className={classes.buttonLinkIcon} />
-          </a>
+          <Button to='/' text='Create account' />
         </div>
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
@@ -44,10 +39,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <Link to='/payments-network' className={`${classes.buttonLink} ${classes.secondary}`}>
-            Hermez Network
-            <ArrowSecondary className={classes.buttonLinkIcon} />
-          </Link>
+          <Button internalLink to='/payments-network' text='Hermez Network' />
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
@@ -107,10 +99,7 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.row}>
-          <Link to='/developers' className={`${classes.buttonLink} ${classes.secondary}`}>
-            Developers
-            <ArrowSecondary className={classes.buttonLinkIcon} />
-          </Link>
+          <Button internalLink to='/developers' text='Developers' />
         </div>
       </section>
       <section className={`${classes.section} ${classes.section5}`} />

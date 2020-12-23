@@ -14,9 +14,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     '& $content': {
       marginRight: 'auto',
       marginLeft: 0
-    },
-    '& $buttonLink': {
-      marginLeft: 0
     }
   },
   section2: {
@@ -94,32 +91,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   col3: {
     margin: 'auto',
     width: '33%'
-  },
-  buttonLink: {
-    padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
-    lineHeight: '18px',
-    fontWeight: theme.fontWeights.bold,
-    margin: 'auto',
-    borderRadius: 20,
-    cursor: 'pointer',
-    width: '204px',
-    height: '70px',
-    textAlign: 'center',
-    '&:focus': {
-      outline: 'none'
-    }
-  },
-  buttonLinkIcon: {
-    width: '13px',
-    height: '12px',
-    marginLeft: '12px'
-  },
-  primary: {
-    border: `1px solid ${theme.palette.orange}`,
-    background: theme.palette.orange,
-    color: theme.palette.white,
-    marginTop: theme.spacing(5),
-    display: 'block'
   },
   link: {
     color: theme.palette.orange,
