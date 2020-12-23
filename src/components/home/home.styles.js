@@ -166,6 +166,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   buttonLink: {
     padding: `${theme.spacing(3.25)}px ${theme.spacing(3.5)}px`,
+    lineHeight: '18px',
     fontWeight: theme.fontWeights.bold,
     margin: 'auto',
     borderRadius: 20,
@@ -183,8 +184,8 @@ const useHomeStyles = createUseStyles(theme => ({
     marginLeft: '12px'
   },
   primary: {
-    border: `1px solid ${theme.palette.orange.main}`,
-    background: theme.palette.orange.main,
+    border: `1px solid ${theme.palette.orange}`,
+    background: theme.palette.orange,
     color: theme.palette.white,
     marginTop: theme.spacing(5),
     display: 'block'
@@ -196,7 +197,7 @@ const useHomeStyles = createUseStyles(theme => ({
     color: theme.palette.gray.main
   },
   link: {
-    color: theme.palette.orange.main,
+    color: theme.palette.orange,
     display: 'flex',
     alignItems: 'center'
   },
