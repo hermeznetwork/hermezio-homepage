@@ -33,7 +33,7 @@ function TextLink ({
 TextLink.propTypes = {
   to: PropTypes.string.isRequired,
   text: PropTypes.string,
-  box: PropTypes.string
+  box: PropTypes.bool
 }
 
 export default TextLink

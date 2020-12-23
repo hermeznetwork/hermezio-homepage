@@ -10,9 +10,12 @@ function Button ({
   to,
   text,
   hideIcon = false,
-  internalLink = false
+  internalLink = false,
+  marginLeft
 }) {
-  const classes = useButtonStyles()
+  const classes = useButtonStyles({
+    marginLeft
+  })
 
   return (
     <>
@@ -45,7 +48,8 @@ Button.propTypes = {
   to: PropTypes.string.isRequired,
   text: PropTypes.string,
   hideIcon: PropTypes.bool,
-  internalLink: PropTypes.bool
+  internalLink: PropTypes.bool,
+  marginLeft: PropTypes.number
 }
 
 export default Button

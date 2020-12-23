@@ -16,7 +16,7 @@ const PaymentsNetwork = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={`${classes.col3} ${classes.content}`}>
           <Title>Secure layer 2 designed for mass adoption</Title>
-          <Button to='/' text='Join Hermez' />
+          <Button to='/' text='Join Hermez' marginLeft={0} />
         </div>
         <div className={classes.col23}>
           <Section1 />

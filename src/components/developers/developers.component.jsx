@@ -18,7 +18,7 @@ const Developers = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={`${classes.col3} ${classes.content}`}>
           <Title>Convenient and accessible token transfers with zkRollup</Title>
-          <Button to='https://docs.hermez.io/#/' text='Documentation' />
+          <Button to='https://docs.hermez.io/#/' text='Documentation' marginLeft={0} />
         </div>
         <div className={classes.col23}>
           <Section1 />

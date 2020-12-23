@@ -24,6 +24,10 @@ const useHomeStyles = createUseStyles(theme => ({
       marginLeft: 0
     }
   },
+  section1Text: {
+    color: theme.palette.black,
+    marginTop: theme.spacing(2)
+  },
   section1Image1: {
     position: 'absolute',
     top: 0,

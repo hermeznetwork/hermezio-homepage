@@ -45,8 +45,8 @@ function Title ({
 }
 
 Title.propTypes = {
-  marginTop: PropTypes.string,
-  marginBottom: PropTypes.string
+  marginTop: PropTypes.number,
+  marginBottom: PropTypes.number
 }
 
 export default Title

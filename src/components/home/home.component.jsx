@@ -17,8 +17,8 @@ const Home = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={classes.col3}>
           <Title>Open and low-cost payments network for everyone.</Title>
-          <p>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
-          <Button to='/' text='Create account' />
+          <p className={classes.section1Text}>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
+          <Button to='/' text='Create account' marginLeft={0} />
         </div>
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
