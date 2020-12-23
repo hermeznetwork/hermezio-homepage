@@ -171,7 +171,7 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: 'auto',
     borderRadius: 20,
     cursor: 'pointer',
-    width: '204px',
+    width: 'fit-content',
     height: '70px',
     textAlign: 'center',
     '&:focus': {
