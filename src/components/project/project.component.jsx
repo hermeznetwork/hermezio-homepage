@@ -4,6 +4,7 @@ import useProjectStyles from './project.styles'
 import Title from '../shared/title/title.component'
 import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
 import Section1 from '../../assets/images/project/section1.inline.svg'
+import Profile1 from '../../assets/images/project/profiles/profile1.inline.jpg'
 
 const Project = () => {
   const classes = useProjectStyles()
@@ -89,7 +90,28 @@ const Project = () => {
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
         <Title>Team</Title>
-
+        <div className={classes.row}>
+          <div className={classes.profile}>
+            <Profile1 />
+            <h4 className={classes.name}>Jordi Baylina</h4>
+            <p className={classes.title}>Technical Lead</p>
+          </div>
+          <div className={classes.profile}>
+            <Profile1 />
+            <h4 className={classes.name} />
+            <p className={classes.title} />
+          </div>
+          <div className={classes.profile}>
+            <Profile1 />
+            <h4 className={classes.name} />
+            <p className={classes.title} />
+          </div>
+          <div className={classes.profile}>
+            <Profile1 />
+            <h4 className={classes.name} />
+            <p className={classes.title} />
+          </div>
+        </div>
       </section>
     </>
   )
