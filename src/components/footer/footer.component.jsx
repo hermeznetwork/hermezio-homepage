@@ -78,7 +78,11 @@ export const Footer = ({ routes }) => {
                 Project
               </li>
               <li className={classes.listItem}>About us MISSING LINK</li>
-              <li className={classes.listItem}>Mediakit MISSING LINK</li>
+              <li className={classes.listItem}>
+                <Link to='/media-inquiries'>
+                  Mediakit
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

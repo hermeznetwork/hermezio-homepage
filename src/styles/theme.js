@@ -11,9 +11,7 @@ export const theme = {
       light: '#778499',
       lighter: '#8d95a3'
     },
-    orange: {
-      main: '#e75a2b'
-    }
+    orange: '#e75a2b'
   },
   headerHeight: 100,
   colWidth: '33%',
