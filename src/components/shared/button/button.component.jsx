@@ -9,7 +9,6 @@ import useButtonStyles from './button.styles'
 function Button ({
   to,
   text,
-  type = 'primary',
   hideIcon = false,
   internalLink = false
 }) {
@@ -43,9 +42,8 @@ function Button ({
 }
 
 Button.propTypes = {
-  href: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   text: PropTypes.string,
-  type: PropTypes.string,
   hideIcon: PropTypes.bool,
   internalLink: PropTypes.bool
 }

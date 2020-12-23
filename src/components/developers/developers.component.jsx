@@ -3,8 +3,7 @@ import React from 'react'
 import usedevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
-import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
-import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
+import TextLink from '../shared/text-link/text-link.component'
 import Section1 from '../../assets/images/developers/section1.inline.svg'
 import Section31 from '../../assets/images/developers/section3_1.inline.svg'
 import Section32 from '../../assets/images/developers/section3_2.inline.svg'
@@ -69,10 +68,7 @@ const Developers = () => {
             <p>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
             <p className={classes.paragraphMargin}>In a sentence, block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
             <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
-            <a href='https://docs.hermez.io/#/' target='_blank' rel='noopener noreferrer' className={classes.link}>
-                    More in documentation
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
           </div>
           <div className={classes.col2}>
             <Section32 />
@@ -83,38 +79,23 @@ const Developers = () => {
         <Title>Developer Resources</Title>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Hermez API Reference</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Hermez API Reference' />
           </div>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Technical Documentation</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Technical Documentation' />
           </div>
           <div className={classes.col3}>
-            <a href='https://github.com/hermeznetwork' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Github Repository</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='https://github.com/hermeznetwork' text='Github Repository' />
           </div>
         </div>
 
         <Title>Tools</Title>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Mainnet Wallet</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Mainnet Wallet' />
           </div>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Network Explorer</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Network Explorer' />
           </div>
         </div>
 
@@ -122,16 +103,10 @@ const Developers = () => {
         <p>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Circom Documentation</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Circom Documentation' />
           </div>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>SnarkJS Documentation</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='SnarkJS Documentation' />
           </div>
         </div>
 

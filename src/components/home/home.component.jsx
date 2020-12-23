@@ -3,8 +3,7 @@ import React from 'react'
 import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
-import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
-import ArrowCircleSecondary from '../../assets/images/icons/arrow-circle-secondary.inline.svg'
+import TextLink from '../shared/text-link/text-link.component'
 import Section21 from '../../assets/images/home/section2_1.inline.svg'
 import Section22 from '../../assets/images/home/section2_2.inline.svg'
 import Section23 from '../../assets/images/home/section2_3.inline.svg'
@@ -47,10 +46,7 @@ const Home = () => {
           <div className={classes.col2}>
             <Title>Prosperitity for all</Title>
             <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={classes.link}>
-              Values and guiding principles
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='/' text='Values and guiding principles' />
           </div>
           <div className={classes.col2}>
             <Section31 />
@@ -80,22 +76,13 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Hermez Network White Paper</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Hermez Network White Paper' />
           </div>
           <div className={classes.col3}>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Technical Documentation</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='/' text='Technical Documentation' />
           </div>
           <div className={classes.col3}>
-            <a href='https://github.com/hermeznetwork' target='_blank' rel='noopener noreferrer' className={`${classes.boxLink}`}>
-              <span>Github Repository</span>
-              <ArrowCircleSecondary />
-            </a>
+            <TextLink box to='https://github.com/hermeznetwork' text='Github Repository' />
           </div>
         </div>
         <div className={classes.row}>
@@ -111,10 +98,7 @@ const Home = () => {
           <div className={classes.col2}>
             <h3>Hermez is giving back</h3>
             <p>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants. We call this mechanism proof-of-donation.</p>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
-              More about proof-of-donation
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='/' text='More about proof-of-donation' />
           </div>
         </div>
         <div className={classes.row}>
@@ -124,10 +108,7 @@ const Home = () => {
           <div className={classes.col2}>
             <h3>Permissionless auctions for validators</h3>
             <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
-              How to become a coordinator
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='/' text='How to become a coordinator' />
           </div>
         </div>
         <div className={classes.row}>
@@ -137,10 +118,7 @@ const Home = () => {
           <div className={classes.col2}>
             <h3>HEZ Token</h3>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
-              More about HEZ
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='/' text='More about HEZ' />
           </div>
         </div>
       </section>
@@ -188,10 +166,7 @@ const Home = () => {
           <span className={classes.divider} />
         </div>
         <div className={classes.row}>
-          <a href='https://blog.hermez.io/' target='_blank' rel='noopener noreferrer' className={`${classes.link}`}>
-            View all posts
-            <ArrowCirclePrimary className={classes.linkIcon} />
-          </a>
+          <TextLink to='https://blog.hermez.io/' text='View all posts' />
         </div>
       </section>
     </>
