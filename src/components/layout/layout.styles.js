@@ -59,6 +59,7 @@ export const useLayoutStyles = createUseStyles(theme => ({
       margin: 0,
       fontSize: theme.spacing(2),
       lineHeight: `${theme.spacing(3)}px`,
+      color: theme.palette.gray.light,
       [theme.breakpoints.sm]: {
         fontSize: (theme.spacing(2) + 1),
         lineHeight: '29px'
@@ -82,6 +83,9 @@ export const useLayoutStyles = createUseStyles(theme => ({
     [theme.breakpoints.lg]: {
       maxWidth: '1200px'
     },
-    maxWidth: '1440px'
+    [theme.breakpoints.xl]: {
+      maxWidth: '1440px'
+    },
+    maxWidth: '100%'
   }
 }))

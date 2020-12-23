@@ -27,10 +27,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section3: {
     backgroundColor: theme.palette.primary.light,
-    textAlign: 'center',
-    '& p': {
-      color: theme.palette.gray.light
-    }
+    textAlign: 'center'
   },
   section4: {
     '& >div': {
@@ -88,16 +85,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   col3: {
     margin: 'auto',
     width: '33%'
-  },
-  link: {
-    color: theme.palette.orange,
-    display: 'flex',
-    alignItems: 'center'
-  },
-  linkIcon: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
-    marginLeft: theme.spacing(2)
   },
   divider: {
     width: '100%',

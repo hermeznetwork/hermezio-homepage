@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTheme } from 'react-jss'
 
 import usedevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
@@ -9,6 +10,7 @@ import Section31 from '../../assets/images/developers/section3_1.inline.svg'
 import Section32 from '../../assets/images/developers/section3_2.inline.svg'
 
 const Developers = () => {
+  const theme = useTheme()
   const classes = usedevelopersStyles()
 
   return (
@@ -28,34 +30,34 @@ const Developers = () => {
             <Title>Smooth integration</Title>
           </div>
           <div className={classes.col2}>
-            <p>Focus on developer experience + protocol simplicity, developer-friendly API ...</p>
+            <p className={classes.paragraphMargin}>Focus on developer experience + protocol simplicity, developer-friendly API ...</p>
             <p className={classes.paragraphMargin}>By architecting Hermez as a network that is private-by-default, open-source, and built for the web, we believe Hermez is uniquely positioned to address the shortcomings of blockchain adoption. With Hermez, users have access to a world of truly personalized web services without giving up control of their private data.</p>
-            <p className={classes.paragraphMargin}>We believe Hermez will reshape the role decentralized systems play in our society and introduce new experiences never before seen on the web.</p>
+            <p>We believe Hermez will reshape the role decentralized systems play in our society and introduce new experiences never before seen on the web.</p>
           </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
         <Title>Layer 2 scalability solution</Title>
-        <p>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
+        <p className={classes.section2Text}>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
         <Section31 />
-        <Title>Results</Title>
+        <Title marginTop={theme.spacing(16)} marginBottom={theme.spacing(8)}>Results</Title>
         <div className={classes.row}>
           <div className={classes.col3}>
             <div className={classes.box}>
-              <span>133x</span>
-              <p>throughput improvement</p>
+              <span className={classes.highlightedText}>133x </span>
+              <span>throughput improvement</span>
             </div>
           </div>
           <div className={classes.col3}>
             <div className={classes.box}>
-              <span>97%</span>
-              <p>token transfer cost reduction</p>
+              <span className={classes.highlightedText}>97% </span>
+              <span>token transfer cost reduction</span>
             </div>
           </div>
           <div className={classes.col3}>
             <div className={classes.box}>
-              <span>40%</span>
-              <p>reinvested in ecosystem development</p>
+              <span className={classes.highlightedText}>40% </span>
+              <span>reinvested in ecosystem development</span>
             </div>
           </div>
         </div>
@@ -64,8 +66,8 @@ const Developers = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Community centric protocol</h3>
-            <p>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
+            <Title marginBottom={theme.spacing(3)}>Community centric protocol</Title>
+            <p className={classes.paragraphMargin}>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
             <p className={classes.paragraphMargin}>In a sentence, block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
             <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
             <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
@@ -100,7 +102,7 @@ const Developers = () => {
         </div>
 
         <Title>Circom Language</Title>
-        <p>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
+        <p className={classes.circomText}>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
         <div className={classes.row}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Circom Documentation' />
@@ -111,10 +113,10 @@ const Developers = () => {
         </div>
 
         <div className={`${classes.row} ${classes.discordHiglight}`}>
-          <div className={classes.col34}>
-            <p>Take part in shaping Hermez's future and join the conversation.</p>
+          <div className={classes.col23}>
+            <p className={classes.discordText}>Take part in shaping Hermez's future and join the conversation.</p>
           </div>
-          <div className={classes.col4}>
+          <div className={classes.col3}>
             <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
           </div>
         </div>
