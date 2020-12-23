@@ -2,13 +2,10 @@ import { createUseStyles } from 'react-jss'
 
 const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section: {
-    padding: '96px 72px',
-    [theme.breakpoints.sm]: {
-      padding: '96px 72px'
-    }
+    padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
   },
   section1: {
-    paddingTop: '86px',
+    paddingTop: theme.spacing(11),
     backgroundColor: theme.palette.primary.light,
     display: 'flex',
     '& $content': {

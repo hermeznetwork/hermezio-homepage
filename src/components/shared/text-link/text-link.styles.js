@@ -20,13 +20,13 @@ const useTextLinkStyles = createUseStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     lineHeight: '29px',
-    height: '128px',
-    marginTop: '96px',
-    marginBottom: '48px'
+    height: theme.spacing(16),
+    marginTop: theme.spacing(12),
+    marginBottom: theme.spacing(6)
   },
   boxLinkText: {
-    width: '140px',
-    paddingRight: '16px'
+    width: theme.spacing(17.5),
+    paddingRight: theme.spacing(2)
   }
 }))
 

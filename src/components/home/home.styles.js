@@ -4,11 +4,11 @@ const useHomeStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
-      padding: '96px 72px'
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
     }
   },
   section1: {
-    paddingTop: '86px',
+    paddingTop: theme.spacing(11),
     [theme.breakpoints.sm]: {
       paddingTop: theme.spacing(40)
     },
@@ -70,7 +70,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section3Text: {
     color: theme.palette.gray.light,
     lineHeight: '29px',
-    margin: '24px 0'
+    margin: `${theme.spacing(3)}px 0`
   },
   section4: {
     '& $divider': {
@@ -103,7 +103,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: theme.spacing(7.5),
       '&:last-child': {
         marginRight: 0
       }
@@ -116,7 +116,7 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     '& a': {
-      marginTop: '26px'
+      marginTop: theme.spacing(3.25)
     }
   },
   section7: {
@@ -137,7 +137,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: theme.spacing(7.5),
       '&:last-child': {
         marginRight: 0
       }
@@ -150,7 +150,7 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     '& a': {
-      marginTop: '26px'
+      marginTop: theme.spacing(3.25)
     }
   },
   row: {
