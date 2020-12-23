@@ -18,7 +18,7 @@ const MediaInquiries = () => {
             and click below to download our media kit for Hermez logos and illustrations kit.
         </p>
         {/* TODO: add link to zip file, once it is ready */}
-        <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
+        <a href='/hermez_mediakit.zip' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
             Download Mediakit
         </a>
       </div>
