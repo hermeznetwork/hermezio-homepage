@@ -8,7 +8,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
   },
   content: {
     width: '100%',
-    padding: `${theme.spacing(5)}px ${theme.spacing(9)}px 0`
+    padding: `${theme.spacing(3)}px ${theme.spacing(2)}px 0`
   },
   nav: {
     display: 'none',
@@ -24,6 +24,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
     cursor: 'pointer',
     color: theme.palette.black,
     padding: 0,
+    marginLeft: 'auto',
     '&:focus': {
       outline: 'none'
     },
