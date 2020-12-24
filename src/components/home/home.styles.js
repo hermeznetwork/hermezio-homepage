@@ -103,7 +103,7 @@ const useHomeStyles = createUseStyles(theme => ({
     color: theme.palette.black
   },
   barHighlightedText: {
-    fontWeight: 700
+    fontWeight: theme.fontWeights.bold
   },
   barL1: {
     borderRadius: 15,
