@@ -8,6 +8,7 @@ import Section21 from '../../assets/images/home/section2_1.inline.svg'
 import Section22 from '../../assets/images/home/section2_2.inline.svg'
 import Section23 from '../../assets/images/home/section2_3.inline.svg'
 import Section31 from '../../assets/images/home/section3.inline.svg'
+import Section5 from '../../assets/images/home/section5.inline.svg'
 
 const Home = () => {
   const classes = useHomeStyles()
@@ -89,7 +90,25 @@ const Home = () => {
           <Button internalLink to='/developers' text='Developers' />
         </div>
       </section>
-      <section className={`${classes.section} ${classes.section5}`} />
+      <section className={`${classes.section} ${classes.section5}`}>
+        <div className={classes.row}>
+          <div className={classes.col2}>
+            <Title>More than 90% transfer cost reduction</Title>
+            <p className={classes.section5Text}>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin.</p>
+            <p className={classes.barText}>
+              L1 Ethereum - <span className={classes.barHighlightedText}>100% gas per TX</span>
+            </p>
+            <div className={classes.barL1} />
+            <p className={classes.barText}>
+              L2 Hermez - <span className={classes.barHighlightedText}>10% gas per TX</span>
+            </p>
+            <div className={classes.barL2} />
+          </div>
+          <div className={classes.col2}>
+            <Section5 />
+          </div>
+        </div>
+      </section>
       <section className={`${classes.section} ${classes.section6}`}>
         <div className={classes.row}>
           <div className={classes.col3}>
