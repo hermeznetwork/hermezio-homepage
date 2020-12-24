@@ -11,6 +11,10 @@ const useTitleStyles = createUseStyles(theme => ({
     fontStyle: 'normal',
     letterSpacing: 'normal',
     color: theme.palette.black
+  },
+  titleSecondary: {
+    fontSize: theme.spacing(3),
+    lineHeight: 'inherit'
   }
 }))
 
