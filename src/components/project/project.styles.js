@@ -4,7 +4,7 @@ const useProjectStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
-      padding: '96px 72px'
+      padding: `${theme.spacing(12)} ${theme.spacing(9)}`
     }
   },
   section1: {
@@ -57,7 +57,7 @@ const useProjectStyles = createUseStyles(theme => ({
     marginBottom: theme.spacing(8)
   },
   profile: {
-    width: '214px'
+    width: theme.spacing(26.75)
   },
   image: {
     width: '100%'
@@ -67,7 +67,7 @@ const useProjectStyles = createUseStyles(theme => ({
     marginBottom: theme.spacing(1),
     color: theme.palette.black,
     fontSize: '23px',
-    fontWeight: 500,
+    fontWeight: theme.fontWeights.medium,
     display: 'block'
   }
 }))
