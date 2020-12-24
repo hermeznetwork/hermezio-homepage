@@ -95,6 +95,31 @@ const useHomeStyles = createUseStyles(theme => ({
   section5: {
     backgroundColor: theme.palette.primary.light
   },
+  section5Text: {
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(6)
+  },
+  barText: {
+    color: theme.palette.black
+  },
+  barHighlightedText: {
+    fontWeight: theme.fontWeights.bold
+  },
+  barL1: {
+    borderRadius: 15,
+    height: theme.spacing(2),
+    background: theme.palette.black,
+    marginTop: theme.spacing(1.5),
+    marginBottom: theme.spacing(3),
+    width: '100%'
+  },
+  barL2: {
+    borderRadius: 15,
+    height: theme.spacing(2),
+    background: theme.palette.orange,
+    marginTop: theme.spacing(1.5),
+    width: '10%'
+  },
   section6: {
     '& $divider': {
       margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`,
