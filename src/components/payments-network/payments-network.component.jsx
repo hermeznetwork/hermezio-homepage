@@ -2,8 +2,8 @@ import React from 'react'
 
 import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
-import ArrowPrimary from '../../assets/images/icons/arrow-primary.inline.svg'
-import ArrowCirclePrimary from '../../assets/images/icons/arrow-circle-primary.inline.svg'
+import Button from '../shared/button/button.component'
+import TextLink from '../shared/text-link/text-link.component'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
 import Section5 from '../../assets/images/payments-network/section5.inline.svg'
@@ -16,10 +16,7 @@ const PaymentsNetwork = () => {
       <section className={`${classes.section} ${classes.section1}`}>
         <div className={`${classes.col3} ${classes.content}`}>
           <Title>Secure layer 2 designed for mass adoption</Title>
-          <a href='/' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-            Join Hermez
-            <ArrowPrimary className={classes.buttonLinkIcon} />
-          </a>
+          <Button to='/' text='Join Hermez' marginLeft={0} />
         </div>
         <div className={classes.col23}>
           <Section1 />
@@ -134,14 +131,8 @@ const PaymentsNetwork = () => {
           <Title>HEZ - Hermez Network token</Title>
           <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           <div>
-            <a href='/' target='_blank' rel='noopener noreferrer' className={classes.link}>
-                Token contract
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
-            <a href='https://coinmarketcap.com/currencies/hermez-network/' target='_blank' rel='noopener noreferrer' className={classes.link}>
-                    HEZ in Coinmarketcap
-              <ArrowCirclePrimary className={classes.linkIcon} />
-            </a>
+            <TextLink to='/' text='Token contract' />
+            <TextLink to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
           </div>
         </div>
         <div className={classes.col3}>

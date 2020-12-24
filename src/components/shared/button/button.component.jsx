@@ -1,37 +1,55 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import clsx from 'clsx'
+import { Link } from 'gatsby'
 
+import ArrowPrimary from '../../../assets/images/icons/arrow-primary.inline.svg'
+import ArrowSecondary from '../../../assets/images/icons/arrow-secondary.inline.svg'
 import useButtonStyles from './button.styles'
 
-function Button ({ icon, text, onClick, className, type }) {
-  const classes = useButtonStyles()
+function Button ({
+  to,
+  text,
+  hideIcon = false,
+  internalLink = false,
+  marginLeft
+}) {
+  const classes = useButtonStyles({
+    marginLeft
+  })
 
   return (
-    <div className={className}>
-      <button
-        onClick={onClick}
-        className={clsx({
-          [classes.root]: true,
-          [classes.primary]: type === 'primary',
-          [classes.secondary]: type === 'secondary'
-        })}
-      >
-        <span className={clsx({ [classes.textSpacer]: icon !== undefined })}>
-          {text}
-        </span>
-        {icon || <></>}
-      </button>
-    </div>
+    <>
+      {internalLink
+        ? (
+          <Link
+            to={to}
+            className={`${classes.root} ${classes.secondary}`}
+          >
+            {text}
+            {hideIcon ? <></> : <ArrowSecondary className={classes.icon} />}
+          </Link>
+        )
+        : (
+          <a
+            href={to}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={`${classes.root} ${classes.primary}`}
+          >
+            {text}
+            {hideIcon ? <></> : <ArrowPrimary className={classes.icon} />}
+          </a>
+        )}
+    </>
   )
 }
 
 Button.propTypes = {
-  icon: PropTypes.element,
+  to: PropTypes.string.isRequired,
   text: PropTypes.string,
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  type: PropTypes.string
+  hideIcon: PropTypes.bool,
+  internalLink: PropTypes.bool,
+  marginLeft: PropTypes.number
 }
 
 export default Button

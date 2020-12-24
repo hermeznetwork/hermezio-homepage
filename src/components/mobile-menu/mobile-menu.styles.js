@@ -27,7 +27,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
       outline: 'none'
     },
     [theme.breakpoints.sm]: {
-      width: 400,
+      width: theme.spacing(50),
       right: 'auto',
       padding: `0 ${theme.spacing(8)}px`
     },

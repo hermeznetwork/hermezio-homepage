@@ -2,6 +2,7 @@ import React from 'react'
 
 import useMediaInquiriesStyles from './media-inquiries.styles'
 import Title from '../shared/title/title.component'
+import Button from '../shared/button/button.component'
 
 const MediaInquiries = () => {
   const classes = useMediaInquiriesStyles()
@@ -18,9 +19,7 @@ const MediaInquiries = () => {
             and click below to download our media kit for Hermez logos and illustrations kit.
         </p>
         {/* TODO: add link to zip file, once it is ready */}
-        <a href='/hermez_mediakit.zip' target='_blank' rel='noopener noreferrer' className={`${classes.buttonLink} ${classes.primary}`}>
-            Download Mediakit
-        </a>
+        <Button to='/hermez_mediakit.zip' text='Download Mediakit' hideIcon />
       </div>
     </section>
   )
