@@ -4,7 +4,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
-      padding: '96px 72px'
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
     }
   },
   section1: {
@@ -45,7 +45,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
   },
   highlightedText: {
     fontSize: theme.spacing(4.25),
-    fontWeight: 700
+    fontWeight: theme.fontWeights.bold
   },
   section4: {
     '& $col3': {
@@ -91,7 +91,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
   discordText: {
     color: theme.palette.black,
     fontSize: theme.spacing(5.25),
-    fontWeight: 700,
+    fontWeight: theme.fontWeights.bold,
     lineHeight: `${theme.spacing(7)}px`
   }
 }))

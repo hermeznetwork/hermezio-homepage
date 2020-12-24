@@ -64,7 +64,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2Text: {
     width: '245px',
     margin: '50px auto 0',
-    fontWeight: '500',
+    fontWeight: theme.fontWeights.medium,
     fontSize: '23px',
     lineHeight: '35px'
   },
