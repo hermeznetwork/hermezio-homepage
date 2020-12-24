@@ -170,16 +170,6 @@ const useHomeStyles = createUseStyles(theme => ({
       '&:last-child': {
         marginRight: 0
       }
-    },
-    '& h3': {
-      color: theme.palette.black,
-      fontSize: '23px',
-      fontWeight: theme.fontWeights.medium,
-      lineHeight: '35px',
-      marginTop: 0
-    },
-    '& a': {
-      marginTop: theme.spacing(3.25)
     }
   },
   row: {
@@ -200,6 +190,32 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   paragraphMargin: {
     marginBottom: 16
+  },
+  blogTitle: {
+    color: theme.palette.black,
+    fontSize: '23px',
+    fontWeight: theme.fontWeights.medium,
+    lineHeight: '35px',
+    marginTop: 0,
+    display: 'flex',
+    position: 'relative',
+    '&::after': {
+      position: 'absolute',
+      height: '2px',
+      bottom: 0,
+      backgroundColor: theme.palette.black,
+      width: 0,
+      left: '50%',
+      transform: 'translateX(-50%)',
+      transition: 'all 0.25s ease',
+      content: '""'
+    },
+    '&:hover::after': {
+      width: '100%'
+    }
+  },
+  blogLink: {
+    marginTop: theme.spacing(3.25)
   }
 }))
 
