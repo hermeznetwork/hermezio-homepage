@@ -4,6 +4,7 @@ import { useTheme } from 'react-jss'
 import { Link } from 'gatsby'
 
 import { useMobileMenuStyles } from './mobile-menu.styles'
+import Logo from '../../assets/images/logo.inline.svg'
 
 const CLOSE_KEY = 'Escape'
 
@@ -43,7 +44,7 @@ export const MobileMenu = ({ routes, isOpen, onClose }) => {
           role='button'
         >
           <div className={classes.sidebarHeader}>
-            <h2 className={classes.title}>Menú</h2>
+            <h2 className={classes.title}><Logo /></h2>
             <button className={classes.closeButton} onClick={onClose}>
               <X size={theme.spacing(4)} />
             </button>

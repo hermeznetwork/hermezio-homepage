@@ -71,12 +71,13 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
   },
   link: {
     textDecoration: 'none',
-    color: 'inherit',
     width: '100%',
     padding: theme.spacing(2),
-    borderRadius: theme.borderRadius
+    color: theme.palette.black,
+    fontSize: theme.spacing(3.5),
+    lineHeight: `${theme.spacing(4.5)}px`
   },
   activeLink: {
-    color: theme.palette.primary.main
+    color: theme.palette.orange
   }
 }))
