@@ -4,11 +4,11 @@ const useHomeStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
-      padding: '96px 72px'
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
     }
   },
   section1: {
-    paddingTop: '86px',
+    paddingTop: theme.spacing(11),
     [theme.breakpoints.sm]: {
       paddingTop: theme.spacing(40)
     },
@@ -23,6 +23,10 @@ const useHomeStyles = createUseStyles(theme => ({
     '& > div a': {
       marginLeft: 0
     }
+  },
+  section1Text: {
+    color: theme.palette.black,
+    marginTop: theme.spacing(2)
   },
   section1Image1: {
     position: 'absolute',
@@ -60,7 +64,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2Text: {
     width: '245px',
     margin: '50px auto 0',
-    fontWeight: '500',
+    fontWeight: theme.fontWeights.medium,
     fontSize: '23px',
     lineHeight: '35px'
   },
@@ -70,7 +74,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section3Text: {
     color: theme.palette.gray.light,
     lineHeight: '29px',
-    margin: '24px 0'
+    margin: `${theme.spacing(3)}px 0`
   },
   section4: {
     '& $divider': {
@@ -103,7 +107,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: theme.spacing(7.5),
       '&:last-child': {
         marginRight: 0
       }
@@ -116,7 +120,7 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     '& a': {
-      marginTop: '26px'
+      marginTop: theme.spacing(3.25)
     }
   },
   section7: {
@@ -137,7 +141,7 @@ const useHomeStyles = createUseStyles(theme => ({
     },
     '& $col3': {
       marginTop: 0,
-      marginRight: '60px',
+      marginRight: theme.spacing(7.5),
       '&:last-child': {
         marginRight: 0
       }
@@ -150,7 +154,7 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     '& a': {
-      marginTop: '26px'
+      marginTop: theme.spacing(3.25)
     }
   },
   row: {
@@ -163,65 +167,6 @@ const useHomeStyles = createUseStyles(theme => ({
   col3: {
     margin: 'auto',
     width: '33%'
-  },
-  buttonLink: {
-    padding: `${theme.spacing(3.25)}px ${theme.spacing(3.5)}px`,
-    lineHeight: '18px',
-    fontWeight: theme.fontWeights.bold,
-    margin: 'auto',
-    borderRadius: 20,
-    cursor: 'pointer',
-    width: '204px',
-    height: '70px',
-    textAlign: 'center',
-    '&:focus': {
-      outline: 'none'
-    }
-  },
-  buttonLinkIcon: {
-    width: '13px',
-    height: '12px',
-    marginLeft: '12px'
-  },
-  primary: {
-    border: `1px solid ${theme.palette.orange}`,
-    background: theme.palette.orange,
-    color: theme.palette.white,
-    marginTop: theme.spacing(5),
-    display: 'block'
-  },
-  secondary: {
-    padding: `${theme.spacing(3.5)}px ${theme.spacing(4)}px`,
-    border: `1px solid ${theme.palette.primary.main}`,
-    background: theme.palette.white,
-    color: theme.palette.gray.main
-  },
-  link: {
-    color: theme.palette.orange,
-    display: 'flex',
-    alignItems: 'center'
-  },
-  linkIcon: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
-    marginLeft: theme.spacing(2)
-  },
-  boxLink: {
-    padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
-    borderRadius: 20,
-    backgroundColor: theme.palette.primary.light,
-    color: theme.palette.gray.main,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    lineHeight: '29px',
-    height: '128px',
-    marginTop: '96px',
-    marginBottom: '48px',
-    '& >span': {
-      width: '140px',
-      paddingRight: '16px'
-    }
   },
   divider: {
     width: '100%',

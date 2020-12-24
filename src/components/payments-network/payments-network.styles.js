@@ -2,20 +2,14 @@ import { createUseStyles } from 'react-jss'
 
 const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section: {
-    padding: '96px 72px',
-    [theme.breakpoints.sm]: {
-      padding: '96px 72px'
-    }
+    padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
   },
   section1: {
-    paddingTop: '86px',
+    paddingTop: theme.spacing(11),
     backgroundColor: theme.palette.primary.light,
     display: 'flex',
     '& $content': {
       marginRight: 'auto',
-      marginLeft: 0
-    },
-    '& $buttonLink': {
       marginLeft: 0
     }
   },
@@ -33,10 +27,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section3: {
     backgroundColor: theme.palette.primary.light,
-    textAlign: 'center',
-    '& p': {
-      color: theme.palette.gray.light
-    }
+    textAlign: 'center'
   },
   section4: {
     '& >div': {
@@ -94,42 +85,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   col3: {
     margin: 'auto',
     width: '33%'
-  },
-  buttonLink: {
-    padding: `${theme.spacing(3)}px ${theme.spacing(3.5)}px`,
-    lineHeight: '18px',
-    fontWeight: theme.fontWeights.bold,
-    margin: 'auto',
-    borderRadius: 20,
-    cursor: 'pointer',
-    width: '204px',
-    height: '70px',
-    textAlign: 'center',
-    '&:focus': {
-      outline: 'none'
-    }
-  },
-  buttonLinkIcon: {
-    width: '13px',
-    height: '12px',
-    marginLeft: '12px'
-  },
-  primary: {
-    border: `1px solid ${theme.palette.orange}`,
-    background: theme.palette.orange,
-    color: theme.palette.white,
-    marginTop: theme.spacing(5),
-    display: 'block'
-  },
-  link: {
-    color: theme.palette.orange,
-    display: 'flex',
-    alignItems: 'center'
-  },
-  linkIcon: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
-    marginLeft: theme.spacing(2)
   },
   divider: {
     width: '100%',
