@@ -4,7 +4,7 @@ const useProjectStyles = createUseStyles(theme => ({
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)} ${theme.spacing(9)}`
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
     }
   },
   section1: {
