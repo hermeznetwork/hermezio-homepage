@@ -1,14 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-    <g fill="none" fill-rule="evenodd">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="current" fill-rule="evenodd">
         <g>
             <g>
-                <g transform="translate(-618 -2835) translate(280 2835) translate(338)">
-                    <circle cx="16" cy="16" r="16" fill="#E75A2B"/>
-                    <g stroke="#FFF" stroke-linecap="round" stroke-width="2">
-                        <path d="M6.857 0L11.429 4.571" transform="translate(9.905 11.429)"/>
-                        <path d="M7.162 4.571L11.733 9.143" transform="translate(9.905 11.429) matrix(-1 0 0 1 18.59 0)"/>
-                        <path d="M0.305 4.571L10.971 4.571" transform="translate(9.905 11.429)"/>
-                    </g>
+                <g>
+                    <path fill="current" d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm.916 7.905c-.283-.146-.638-.1-.875.136-.293.293-.293.768 0 1.06l2.149 2.148-6.533.001-.102.007c-.366.05-.648.363-.648.743 0 .414.336.75.75.75h6.533l-2.149 2.148-.073.084c-.217.294-.193.71.073.977.293.293.768.293 1.06 0l3.43-3.429.072-.084c.218-.293.194-.71-.073-.976L13.102 8.04l-.084-.073z" transform="translate(-803 -953) translate(551 953) translate(252)"/>
                 </g>
             </g>
         </g>

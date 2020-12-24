@@ -116,7 +116,7 @@ const useHomeStyles = createUseStyles(theme => ({
   barL2: {
     borderRadius: 15,
     height: theme.spacing(2),
-    background: theme.palette.orange,
+    background: theme.palette.orange.main,
     marginTop: theme.spacing(1.5),
     width: '10%'
   },
