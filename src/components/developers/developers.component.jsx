@@ -41,7 +41,7 @@ const Developers = () => {
         <p className={classes.section2Text}>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
         <Section31 />
         <Title marginTop={theme.spacing(16)} marginBottom={theme.spacing(8)}>Results</Title>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <div className={classes.box}>
               <span className={classes.highlightedText}>133x </span>
@@ -79,7 +79,7 @@ const Developers = () => {
       </section>
       <section className={`${classes.section} ${classes.section4}`}>
         <Title>Developer Resources</Title>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Hermez API Reference' />
           </div>
@@ -92,7 +92,7 @@ const Developers = () => {
         </div>
 
         <Title>Tools</Title>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Mainnet Wallet' />
           </div>
@@ -103,7 +103,7 @@ const Developers = () => {
 
         <Title>Circom Language</Title>
         <p className={classes.circomText}>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Circom Documentation' />
           </div>

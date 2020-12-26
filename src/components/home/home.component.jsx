@@ -24,7 +24,7 @@ const Home = () => {
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
         <Title>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</Title>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <Section21 className={classes.section2Image1} />
             <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
@@ -75,7 +75,7 @@ const Home = () => {
             <p>Explanation of validity proofs + data availability on L1. The SNARK proof is a hash that represents the delta of the blockchain state. State refers to "state of being." SNARK proof compares a snapshot of the blockchain before the transfers to a snapshot of the blockchain after the transfers (i.e. wallet values) and reports only the changes in a verifiable hash to the mainnet.</p>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Hermez Network White Paper' />
           </div>

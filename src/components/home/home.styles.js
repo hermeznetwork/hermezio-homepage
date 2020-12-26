@@ -185,13 +185,23 @@ const useHomeStyles = createUseStyles(theme => ({
   row: {
     display: 'flex'
   },
+  invertedRow: {
+    flexDirection: 'column',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    }
+  },
   col2: {
-    width: '50%',
-    marginLeft: 'auto'
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      marginLeft: 'auto'
+    }
   },
   col3: {
-    margin: 'auto',
-    width: '33%'
+    [theme.breakpoints.sm]: {
+      margin: 'auto',
+      width: '33%'
+    }
   },
   divider: {
     width: '100%',

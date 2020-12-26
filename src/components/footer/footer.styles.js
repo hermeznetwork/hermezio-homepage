@@ -12,7 +12,9 @@ export const useFooterStyles = createUseStyles(theme => ({
     padding: `${theme.spacing(11)}px ${theme.spacing(6)}px ${theme.spacing(6)}px`
   },
   topSection: {
-    display: 'flex'
+    [theme.breakpoints.sm]: {
+      display: 'flex'
+    }
   },
   bottomSection: {
     display: 'flex',
@@ -20,7 +22,10 @@ export const useFooterStyles = createUseStyles(theme => ({
     marginTop: theme.spacing(12)
   },
   head: {
-    maxWidth: 'calc(100vw/5)',
+    [theme.breakpoints.sm]: {
+      maxWidth: 'calc(100%/5)'
+    },
+    maxWidth: '100%',
     marginRight: 'auto',
     '& :first-child, & :last-child': {
       color: theme.palette.white
