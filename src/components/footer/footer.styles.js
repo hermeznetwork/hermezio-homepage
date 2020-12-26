@@ -17,6 +17,11 @@ export const useFooterStyles = createUseStyles(theme => ({
     }
   },
   bottomSection: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    },
     display: 'flex',
     justifyContent: 'space-between',
     marginTop: theme.spacing(12)
@@ -53,11 +58,20 @@ export const useFooterStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacing(2)
   },
   logoAndText: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    },
     color: theme.palette.gray.main,
-    display: 'flex',
-    '& span': {
-      marginLeft: theme.spacing(0.5)
-    }
+    display: 'flex'
+  },
+  text: {
+    marginTop: theme.spacing(2.5),
+    [theme.breakpoints.sm]: {
+      marginTop: 0
+    },
+    marginLeft: theme.spacing(0.5)
   },
   legalLink: {
     textDecoration: 'none',

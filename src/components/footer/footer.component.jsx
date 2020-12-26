@@ -130,7 +130,7 @@ export const Footer = ({ routes }) => {
         <div className={classes.bottomSection}>
           <p className={classes.logoAndText}>
             <Logo />
-            <span>
+            <span className={classes.text}>
               <a
                 href='https://iden3.io/'
                 target='_blank'
