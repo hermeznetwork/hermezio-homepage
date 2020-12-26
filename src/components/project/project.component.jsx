@@ -85,7 +85,7 @@ const Project = () => {
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
         <Title>Team</Title>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
@@ -123,7 +123,7 @@ const Project = () => {
             <span>Advisor</span>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
@@ -161,7 +161,7 @@ const Project = () => {
             <span>Software Engineer</span>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
@@ -199,7 +199,7 @@ const Project = () => {
             <span>Software Engineer</span>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
@@ -237,7 +237,7 @@ const Project = () => {
             <span>Software Engineer</span>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
@@ -275,7 +275,7 @@ const Project = () => {
             <span>Head of Communications</span>
           </div>
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.invertedRow}`}>
           <div className={classes.profile}>
             <img
               className={classes.image}
