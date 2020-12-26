@@ -54,9 +54,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   row: {
-    display: 'flex'
-  },
-  invertedRow: {
+    display: 'flex',
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       flexDirection: 'row'

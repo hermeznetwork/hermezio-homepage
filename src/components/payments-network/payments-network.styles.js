@@ -49,7 +49,9 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       fontSize: '24px'
     },
     '& $divider': {
-      width: '50%',
+      [theme.breakpoints.sm]: {
+        width: '50%'
+      },
       marginLeft: 'auto'
     }
   },
@@ -73,18 +75,28 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   row: {
-    display: 'flex'
+    display: 'flex',
+    flexDirection: 'column',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    }
   },
   col23: {
-    width: '67%'
+    [theme.breakpoints.sm]: {
+      width: '67%'
+    }
   },
   col2: {
-    width: '50%',
-    marginLeft: 'auto'
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      marginLeft: 'auto'
+    }
   },
   col3: {
-    margin: 'auto',
-    width: '33%'
+    [theme.breakpoints.sm]: {
+      margin: 'auto',
+      width: '33%'
+    }
   },
   divider: {
     width: '100%',

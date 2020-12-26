@@ -151,7 +151,9 @@ const useHomeStyles = createUseStyles(theme => ({
   section7: {
     backgroundColor: theme.palette.primary.light,
     '& $divider': {
-      width: '50%',
+      [theme.breakpoints.sm]: {
+        width: '50%'
+      },
       margin: `${theme.spacing(4)}px 0 ${theme.spacing(5)}px auto`
     },
     '& >div': {
@@ -183,9 +185,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   row: {
-    display: 'flex'
-  },
-  invertedRow: {
+    display: 'flex',
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       flexDirection: 'row'

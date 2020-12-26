@@ -30,9 +30,7 @@ const useProjectStyles = createUseStyles(theme => ({
     }
   },
   row: {
-    display: 'flex'
-  },
-  invertedRow: {
+    display: 'flex',
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       flexDirection: 'row'
@@ -56,9 +54,11 @@ const useProjectStyles = createUseStyles(theme => ({
     }
   },
   divider: {
+    [theme.breakpoints.sm]: {
+      width: '50%'
+    },
     background: theme.palette.primary.main,
     height: '1px',
-    width: '50%',
     marginLeft: 'auto',
     marginTop: theme.spacing(4),
     marginBottom: theme.spacing(5)
