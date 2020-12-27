@@ -2,6 +2,12 @@ import { createUseStyles } from 'react-jss'
 
 const useMediaInquiriesStyles = createUseStyles(theme => ({
   section: {
+    paddingRight: theme.spacing(4) - 3,
+    paddingLeft: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      paddingRight: 0,
+      paddingLeft: 0
+    },
     background: theme.palette.primary.light,
     color: theme.palette.gray.light,
     paddingTop: theme.spacing(34),
