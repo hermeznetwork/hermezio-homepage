@@ -94,7 +94,9 @@ const Project = () => {
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
-        <Title>Team</Title>
+        <div className={classes.profilesTitle}>
+          <Title>Team</Title>
+        </div>
         <div className={`${classes.row} ${classes.profilesRow}`}>
           <div className={classes.profile}>
             <img

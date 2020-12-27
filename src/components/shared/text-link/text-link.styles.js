@@ -21,8 +21,12 @@ const useTextLinkStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     lineHeight: '29px',
     height: theme.spacing(16),
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(9)
+    marginTop: theme.spacing(0),
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(8),
+      marginBottom: theme.spacing(9)
+    }
   },
   boxLinkText: {
     width: theme.spacing(17.5),

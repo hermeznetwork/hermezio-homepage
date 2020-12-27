@@ -1,65 +1,6 @@
 import { createUseStyles } from 'react-jss'
 
 const useProjectStyles = createUseStyles(theme => ({
-  section: {
-    padding: theme.spacing(2),
-    flexDirection: 'column',
-    [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
-      flexDirection: 'row'
-    }
-  },
-  section1: {
-    backgroundColor: theme.palette.primary.light,
-    display: 'flex',
-    flexDirection: 'column-reverse',
-    paddingTop: theme.spacing(7),
-    paddingBottom: theme.spacing(6),
-    textAlign: 'center',
-    [theme.breakpoints.sm]: {
-      flexDirection: 'row',
-      paddingTop: theme.spacing(23),
-      paddingBottom: 'inherit',
-      textAlign: 'left',
-      '& $col23': {
-        paddingLeft: theme.spacing(20)
-      }
-    }
-  },
-  buttonWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
-    [theme.breakpoints.sm]: {
-      justifyContent: 'left'
-    }
-  },
-  section2: {
-    paddingTop: theme.spacing(6),
-    paddingBottom: theme.spacing(6),
-    [theme.breakpoints.sm]: {
-      paddingTop: theme.spacing(12),
-      paddingBottom: theme.spacing(9)
-    }
-  },
-  title: {
-    marginBottom: theme.spacing(2),
-    [theme.breakpoints.sm]: {
-      marginBottom: 'inherit'
-    }
-  },
-  subTitle: {
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(1),
-    [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(0),
-      marginBottom: theme.spacing(2.5)
-    }
-  },
-  section3: {
-    backgroundColor: theme.palette.primary.light,
-    paddingTop: theme.spacing(5),
-    paddingBottom: theme.spacing(6)
-  },
   row: {
     display: 'flex',
     flexDirection: 'column',
@@ -84,6 +25,59 @@ const useProjectStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  section: {
+    padding: `${theme.spacing(8)}px ${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    flexDirection: 'column',
+    [theme.breakpoints.sm]: {
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
+      flexDirection: 'row'
+    }
+  },
+  section1: {
+    backgroundColor: theme.palette.primary.light,
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    textAlign: 'center',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row',
+      paddingTop: theme.spacing(23),
+      paddingBottom: 'inherit',
+      textAlign: 'left',
+      '& $col23': {
+        paddingLeft: theme.spacing(20)
+      }
+    }
+  },
+  buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.sm]: {
+      justifyContent: 'left'
+    }
+  },
+  section2: {
+    [theme.breakpoints.sm]: {
+      paddingTop: theme.spacing(12),
+      paddingBottom: theme.spacing(9)
+    }
+  },
+  title: {
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      marginBottom: 'inherit'
+    }
+  },
+  subTitle: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(1),
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(0),
+      marginBottom: theme.spacing(2.5)
+    }
+  },
+  section3: {
+    backgroundColor: theme.palette.primary.light
+  },
   divider: {
     background: theme.palette.primary.main,
     height: '1px',
@@ -104,6 +98,12 @@ const useProjectStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       marginTop: theme.spacing(10),
       marginBottom: theme.spacing(8)
+    }
+  },
+  profilesTitle: {
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      marginBottom: 0
     }
   },
   profilesRow: {

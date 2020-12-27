@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTheme } from 'react-jss'
 
 import usedevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
@@ -10,15 +9,16 @@ import Section31 from '../../assets/images/developers/section3_1.inline.svg'
 import Section32 from '../../assets/images/developers/section3_2.inline.svg'
 
 const Developers = () => {
-  const theme = useTheme()
   const classes = usedevelopersStyles()
 
   return (
     <>
       <section className={`${classes.section} ${classes.section1}`}>
-        <div className={`${classes.col3} ${classes.content}`}>
+        <div className={`${classes.col3} ${classes.mainTitle}`}>
           <Title>Convenient and accessible token transfers with zkRollup</Title>
-          <Button to='https://docs.hermez.io/#/' text='Documentation' marginLeft={0} />
+          <div className={classes.buttonWrapper}>
+            <Button to='https://docs.hermez.io/#/' text='Documentation' marginLeft={0} />
+          </div>
         </div>
         <div className={classes.col23}>
           <Section1 />
@@ -26,7 +26,7 @@ const Developers = () => {
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
         <div className={classes.row}>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section2Title}`}>
             <Title>Smooth integration</Title>
           </div>
           <div className={classes.col2}>
@@ -37,10 +37,12 @@ const Developers = () => {
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
-        <Title>Layer 2 scalability solution</Title>
+        <Title>Open ecosystem</Title>
         <p className={classes.section2Text}>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
         <Section31 />
-        <Title marginTop={theme.spacing(16)} marginBottom={theme.spacing(8)}>Results</Title>
+        <div className={classes.section3Title}>
+          <Title>Results</Title>
+        </div>
         <div className={classes.row}>
           <div className={classes.col3}>
             <div className={classes.box}>
@@ -66,19 +68,23 @@ const Developers = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <Title marginBottom={theme.spacing(3)}>Community centric protocol</Title>
+            <div className={classes.section3SubTitle}>
+              <Title>Community centric protocol</Title>
+            </div>
             <p className={classes.paragraphMargin}>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
             <p className={classes.paragraphMargin}>In a sentence, block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
             <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
             <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
           </div>
-          <div className={classes.col2}>
+          <div className={`${classes.col2} ${classes.webOnly}`}>
             <Section32 />
           </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section4}`}>
-        <Title>Developer Resources</Title>
+        <div className={classes.section4SubTitle}>
+          <Title>Developer Resources</Title>
+        </div>
         <div className={classes.row}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Hermez API Reference' />
@@ -91,7 +97,9 @@ const Developers = () => {
           </div>
         </div>
 
-        <Title>Tools</Title>
+        <div className={classes.section4SubTitle}>
+          <Title>Tools</Title>
+        </div>
         <div className={classes.row}>
           <div className={classes.col3}>
             <TextLink box to='/' text='Mainnet Wallet' />
@@ -101,7 +109,9 @@ const Developers = () => {
           </div>
         </div>
 
-        <Title>Circom Language</Title>
+        <div className={classes.section4SubTitle}>
+          <Title>Circom Language</Title>
+        </div>
         <p className={classes.circomText}>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
         <div className={classes.row}>
           <div className={classes.col3}>
@@ -117,7 +127,9 @@ const Developers = () => {
             <p className={classes.discordText}>Take part in shaping Hermez's future and join the conversation.</p>
           </div>
           <div className={classes.col3}>
-            <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
+            <div className={classes.buttonWrapper}>
+              <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
+            </div>
           </div>
         </div>
       </section>
