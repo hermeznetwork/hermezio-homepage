@@ -13,7 +13,6 @@ export const theme = {
     },
     orange: '#e75a2b'
   },
-  headerHeight: 100,
   colWidth: '33%',
   fontWeights: {
     normal: '400',

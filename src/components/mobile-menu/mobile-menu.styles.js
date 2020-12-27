@@ -36,10 +36,10 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     }
   },
   sidebarHeader: {
-    height: theme.headerHeight,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    paddingTop: theme.spacing(3)
   },
   title: {
     margin: 0

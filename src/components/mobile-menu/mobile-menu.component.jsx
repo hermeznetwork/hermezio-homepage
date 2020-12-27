@@ -44,7 +44,7 @@ export const MobileMenu = ({ routes, isOpen, onClose }) => {
           role='button'
         >
           <div className={classes.sidebarHeader}>
-            <h2 className={classes.title}><Logo /></h2>
+            <Logo />
             <button className={classes.closeButton} onClick={onClose}>
               <X size={theme.spacing(4)} />
             </button>

@@ -5,6 +5,7 @@ import { Menu } from 'react-feather'
 import { useHeaderStyles } from './header.styles'
 import { useTheme } from 'react-jss'
 import Logo from '../../assets/images/logo.inline.svg'
+import LogoWithText from '../../assets/images/logo-text.inline.svg'
 
 export const Header = ({ routes, onOpenMobileMenu }) => {
   const theme = useTheme()
@@ -22,7 +23,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                   to={route.to}
                 >
                   {route.label === 'Hermez' ? (
-                    <Logo />
+                    <LogoWithText />
                   ) : route.label}
                 </Link>
               </li>
@@ -60,6 +61,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
           </ul>
         </nav>
         <button className={classes.mobileMenu} onClick={onOpenMobileMenu}>
+          <Logo />
           <Menu size={theme.spacing(4)} />
         </button>
       </div>
