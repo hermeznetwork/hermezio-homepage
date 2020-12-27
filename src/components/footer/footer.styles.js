@@ -26,12 +26,18 @@ export const useFooterStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     marginTop: theme.spacing(12)
   },
+  col3: {
+    display: 'flex',
+    [theme.breakpoints.sm]: {
+      margin: 'auto',
+      width: '33%'
+    }
+  },
   head: {
     [theme.breakpoints.sm]: {
-      maxWidth: 'calc(100%/5)'
+      marginRight: '50%'
     },
-    maxWidth: '100%',
-    marginRight: 'auto',
+    marginBottom: theme.spacing(4),
     '& :first-child, & :last-child': {
       color: theme.palette.white
     },
@@ -47,7 +53,18 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   list: {
     listStyle: 'none',
-    margin: 0
+    margin: 0,
+    marginBottom: theme.spacing(4),
+    width: '45%',
+    '&:first-child': {
+      marginRight: '10%'
+    },
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      '&:first-child': {
+        marginRight: 0
+      }
+    }
   },
   listItem: {
     lineHeight: `${theme.spacing(3)}px`
