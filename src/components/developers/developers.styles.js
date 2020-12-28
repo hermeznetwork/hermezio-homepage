@@ -57,9 +57,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
       justifyContent: 'left'
     }
   },
-  section2: {
-
-  },
   section2Title: {
     marginBottom: theme.spacing(2),
     [theme.breakpoints.sm]: {
@@ -177,7 +174,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
       lineHeight: `${theme.spacing(7)}px`
     }
   },
-  webOnly: {
+  onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
       display: 'inline-grid'

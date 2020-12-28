@@ -28,6 +28,28 @@ export const Footer = ({ routes }) => {
                 Hermez
               </li>
               <li className={classes.listItem}>
+                {/* Routes are passed from layout component
+              {
+                id: 1,
+                label: 'Hermez',
+                to: '/'
+              },
+              {
+                id: 2,
+                label: 'Payments network',
+                to: '/payments-network'
+              },
+              {
+                id: 3,
+                label: 'Developers',
+                to: '/developers'
+              },
+              {
+                id: 4,
+                label: 'Project',
+                to: '/project'
+              }
+              */}
                 <Link to={routes.find(el => el.id === 2).to}>
                   {routes.find(el => el.id === 2).label}
                 </Link>

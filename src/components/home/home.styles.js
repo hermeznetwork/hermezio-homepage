@@ -260,7 +260,7 @@ const useHomeStyles = createUseStyles(theme => ({
   blogLink: {
     marginTop: theme.spacing(3.25)
   },
-  webOnly: {
+  onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
       display: 'inline-grid'

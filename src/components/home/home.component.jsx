@@ -53,7 +53,7 @@ const Home = () => {
             <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
             <TextLink to='/' text='Values and guiding principles' />
           </div>
-          <div className={`${classes.col2} ${classes.webOnly}`}>
+          <div className={`${classes.col2} ${classes.onlyDesktop}`}>
             <Section31 />
           </div>
         </div>
@@ -114,7 +114,7 @@ const Home = () => {
             </p>
             <div className={classes.barL2} />
           </div>
-          <div className={`${classes.col2} ${classes.webOnly}`}>
+          <div className={`${classes.col2} ${classes.onlyDesktop}`}>
             <Section5 />
           </div>
         </div>

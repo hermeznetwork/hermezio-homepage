@@ -18,6 +18,28 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
           <ul className={classes.linkList}>
             {routes.map((route, index) => (
               <li key={index} className={classes.linkWrapper}>
+                {/* Routes are passed from layout component
+              {
+                id: 1,
+                label: 'Hermez',
+                to: '/'
+              },
+              {
+                id: 2,
+                label: 'Payments network',
+                to: '/payments-network'
+              },
+              {
+                id: 3,
+                label: 'Developers',
+                to: '/developers'
+              },
+              {
+                id: 4,
+                label: 'Project',
+                to: '/project'
+              }
+              */}
                 {route.id === 1
                   ? <Link to={route.to}><LogoWithText /></Link>
                   : <Link className={classes.link} to={route.to}>{route.label}</Link>}

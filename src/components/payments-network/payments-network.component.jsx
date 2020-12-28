@@ -143,7 +143,7 @@ const PaymentsNetwork = () => {
             </div>
           </div>
         </div>
-        <div className={`${classes.col3} ${classes.webOnly}`}>
+        <div className={`${classes.col3} ${classes.onlyDesktop}`}>
           <Section5 />
         </div>
       </section>

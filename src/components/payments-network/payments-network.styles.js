@@ -60,9 +60,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       justifyContent: 'left'
     }
   },
-  section2: {
-
-  },
   list: {
     marginTop: theme.spacing(2),
     paddingInline: theme.spacing(2)
@@ -138,7 +135,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       marginBottom: theme.spacing(8)
     }
   },
-  webOnly: {
+  onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
       display: 'inline-block'
