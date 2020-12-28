@@ -20,7 +20,7 @@ const Home = () => {
           <Title>Open and low-cost payments network for everyone.</Title>
           <p className={classes.section1Text}>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
           <div className={classes.buttonWrapper}>
-            <Button to='/' text='Create account' marginLeft={0} />
+            <Button to='/' text='Create account' />
           </div>
         </div>
       </section>
