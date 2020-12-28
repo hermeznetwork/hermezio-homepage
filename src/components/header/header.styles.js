@@ -62,7 +62,12 @@ export const useHeaderStyles = createUseStyles(theme => ({
     },
     color: theme.palette.black,
     fontSize: '15px',
-    lineHeight: `${theme.spacing(2.5)}px`,
+    lineHeight: `${theme.spacing(2.5)}px`
+  },
+  link: {
+    display: 'flex',
+    position: 'relative',
+    paddingBottom: theme.spacing(0.75),
     '&::after': {
       position: 'absolute',
       height: '2px',
@@ -73,6 +78,9 @@ export const useHeaderStyles = createUseStyles(theme => ({
       transform: 'translateX(-50%)',
       transition: 'all 0.25s ease',
       content: '""'
+    },
+    '&:hover::after': {
+      width: '100%'
     }
   }
 }))

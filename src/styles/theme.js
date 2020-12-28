@@ -7,14 +7,17 @@ export const theme = {
     white: '#ffffff',
     black: '#2b2b2b',
     gray: {
-      main: '#667285',
+      lighter: '#8d95a3',
       light: '#778499',
-      lighter: '#8d95a3'
+      main: '#667285',
+      dark: '#dfe2ea'
     },
-    orange: '#e75a2b'
+    orange: {
+      main: '#e75a2b',
+      dark: '#d44d20'
+    }
   },
   headerHeight: 100,
-  colWidth: '33%',
   fontWeights: {
     normal: '400',
     medium: '500',

@@ -14,7 +14,11 @@ export const Footer = ({ routes }) => {
           <div className={classes.head}>
             <p>Start your integration</p>
             <p>Contact us to learn more about Hermez network.</p>
-            <a href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'>hello@hermez.io</a>
+            <a
+              href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'
+              className={classes.emailLink}
+            >hello@hermez.io
+            </a>
           </div>
           <div>
             <ul className={classes.list}>
