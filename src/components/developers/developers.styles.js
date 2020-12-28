@@ -41,12 +41,14 @@ const useDevelopersStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       flexDirection: 'row',
       paddingTop: theme.spacing(23),
-      paddingBottom: 'inherit',
       textAlign: 'left'
     }
   },
   mainTitle: {
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto'
+    }
   },
   buttonWrapper: {
     display: 'flex',

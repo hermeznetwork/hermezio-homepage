@@ -48,7 +48,10 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   mainTitle: {
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto'
+    }
   },
   buttonWrapper: {
     display: 'flex',
