@@ -21,9 +21,11 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section: {
-    padding: theme.spacing(2),
+    padding: `${theme.spacing(8)}px ${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
+      flexDirection: 'row'
     }
   },
   section1: {
@@ -33,9 +35,11 @@ const useHomeStyles = createUseStyles(theme => ({
     display: 'flex',
     paddingTop: theme.spacing(11),
     textAlign: 'center',
+    height: theme.spacing(85),
     [theme.breakpoints.sm]: {
       paddingTop: theme.spacing(40),
-      textAlign: 'left'
+      textAlign: 'left',
+      height: 'auto'
     },
     '& $col3': {
       marginLeft: 0
@@ -61,16 +65,24 @@ const useHomeStyles = createUseStyles(theme => ({
   section2: {
     display: 'flex',
     flexDirection: 'column',
-    '& >:first-child': {
-      textAlign: 'center',
-      marginBottom: '106px'
-    },
-    '& >:last-child': {
-      margin: '124px auto 0',
-      height: '42px'
-    },
-    '& >div div': {
-      textAlign: 'center'
+    color: theme.palette.black
+  },
+  section2Title: {
+    textAlign: 'center',
+    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacing(2.5),
+    lineHeight: `${theme.spacing(4)}px`,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(4.25),
+      lineHeight: `${theme.spacing(5.75)}px`,
+      marginBottom: theme.spacing(13)
+    }
+  },
+  section2Box: {
+    textAlign: 'center',
+    marginTop: theme.spacing(5),
+    [theme.breakpoints.sm]: {
+      marginTop: 0
     }
   },
   section2Image1: {
@@ -87,10 +99,15 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section2Text: {
     width: '245px',
-    margin: '50px auto 0',
     fontWeight: theme.fontWeights.medium,
-    fontSize: '23px',
-    lineHeight: '35px'
+    fontSize: theme.spacing(2.5),
+    lineHeight: `${theme.spacing(4)}px`,
+    margin: `${theme.spacing(3)}px auto 0`,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(3) - 1,
+      lineHeight: `${theme.spacing(4.5) - 1}px`,
+      margin: `${theme.spacing(6.25)}px auto 0`
+    }
   },
   section3: {
     backgroundColor: theme.palette.primary.light
@@ -102,14 +119,23 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section4: {
     '& $divider': {
-      margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`
-    },
-    '& $col2': { // TODO refactor all inheritance
-      color: theme.palette.gray.light,
-      lineHeight: '29px'
-    },
-    '& $col3': {
-      marginTop: 0,
+      [theme.breakpoints.sm]: {
+        margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`
+      }
+    }
+  },
+  section4Title: {
+    marginBottom: theme.spacing(2)
+  },
+  section4BoxWrapper: {
+    marginTop: theme.spacing(5),
+    [theme.breakpoints.sm]: {
+      marginTop: 'inherit'
+    }
+  },
+  section4Box: {
+    marginTop: 0,
+    [theme.breakpoints.sm]: {
       marginRight: theme.spacing(4),
       '&:last-child': {
         marginRight: 0
@@ -202,8 +228,8 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '100%',
     height: '1px',
     background: theme.palette.primary.main,
-    marginTop: theme.spacing(0),
-    marginBottom: theme.spacing(5),
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(3),
     [theme.breakpoints.sm]: {
       marginTop: theme.spacing(9),
       marginBottom: theme.spacing(16)
@@ -212,10 +238,13 @@ const useHomeStyles = createUseStyles(theme => ({
   paragraphMargin: {
     marginBottom: 16
   },
-  webOnly: {
-    display: 'none',
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
+    marginTop: theme.spacing(7),
     [theme.breakpoints.sm]: {
-      display: 'inline-grid'
+      marginTop: theme.spacing(12)
     }
   },
   blogTitle: {
@@ -243,6 +272,12 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   blogLink: {
     marginTop: theme.spacing(3.25)
+  },
+  webOnly: {
+    display: 'none',
+    [theme.breakpoints.sm]: {
+      display: 'inline-grid'
+    }
   }
 }))
 

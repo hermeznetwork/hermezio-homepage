@@ -25,23 +25,25 @@ const Home = () => {
         </div>
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
-        <Title>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</Title>
+        <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</div>
         <div className={classes.row}>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section2Box}`}>
             <Section21 className={classes.section2Image1} />
             <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
           </div>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section2Box}`}>
             <Section22 className={classes.section2Image2} />
             <div className={classes.section2Text}>Decentalised and open-source architecture.</div>
           </div>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section2Box}`}>
             <Section23 className={classes.section2Image3} />
             <div className={classes.section2Text}>Computational integrity for secure transactions.</div>
           </div>
         </div>
         <div>
-          <Button internalLink to='/payments-network' text='Hermez Network' />
+          <div className={`${classes.buttonWrapper} ${classes.button}`}>
+            <Button internalLink to='/payments-network' text='Hermez Network' />
+          </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
@@ -59,7 +61,9 @@ const Home = () => {
       <section className={`${classes.section} ${classes.section4}`}>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <Title>Zero-knowledge cryptography</Title>
+            <div className={classes.section4Title}>
+              <Title>Zero-knowledge cryptography</Title>
+            </div>
           </div>
           <div className={classes.col2}>
             <p className={classes.paragraphMargin}>ZK-Rollups are one of the options being developed for layer 2 construction that increases scalability through mass transfer processing rolled into a single transaction.</p>
@@ -71,31 +75,35 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col3}>
-            <Title>Universal scalability with validity proofs</Title>
+            <div className={classes.section4Title}>
+              <Title>Universal scalability with validity proofs</Title>
+            </div>
           </div>
           <div className={classes.col2}>
             <p>Explanation of validity proofs + data availability on L1. The SNARK proof is a hash that represents the delta of the blockchain state. State refers to "state of being." SNARK proof compares a snapshot of the blockchain before the transfers to a snapshot of the blockchain after the transfers (i.e. wallet values) and reports only the changes in a verifiable hash to the mainnet.</p>
           </div>
         </div>
-        <div className={classes.row}>
-          <div className={classes.col3}>
+        <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
+          <div className={`${classes.col3} ${classes.section4Box}`}>
             <TextLink box to='/' text='Hermez Network White Paper' />
           </div>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section4Box}`}>
             <TextLink box to='/' text='Technical Documentation' />
           </div>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section4Box}`}>
             <TextLink box to='https://github.com/hermeznetwork' text='Github Repository' />
           </div>
         </div>
         <div className={classes.row}>
-          <Button internalLink to='/developers' text='Developers' />
+          <div className={`${classes.buttonWrapper} ${classes.button}`}>
+            <Button internalLink to='/developers' text='Developers' />
+          </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section5}`}>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <Title>More than 90% transfer cost reduction</Title>
+            <Title>97% transfer cost reduction</Title>
             <p className={classes.section5Text}>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin.</p>
             <p className={classes.barText}>
               L1 Ethereum - <span className={classes.barHighlightedText}>100% gas per TX</span>
@@ -106,7 +114,7 @@ const Home = () => {
             </p>
             <div className={classes.barL2} />
           </div>
-          <div className={classes.col2}>
+          <div className={`${classes.col2} ${classes.webOnly}`}>
             <Section5 />
           </div>
         </div>
