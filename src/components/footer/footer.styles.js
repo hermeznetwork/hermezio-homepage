@@ -67,7 +67,10 @@ export const useFooterStyles = createUseStyles(theme => ({
     }
   },
   listItem: {
-    lineHeight: `${theme.spacing(3)}px`
+    lineHeight: `${theme.spacing(3)}px`,
+    '&:hover': {
+      color: theme.palette.white
+    }
   },
   listItemHead: {
     color: theme.palette.white,
@@ -93,5 +96,10 @@ export const useFooterStyles = createUseStyles(theme => ({
   legalLink: {
     textDecoration: 'none',
     color: theme.palette.gray.main
+  },
+  emailLink: {
+    '&:hover': {
+      color: theme.palette.orange.main
+    }
   }
 }))

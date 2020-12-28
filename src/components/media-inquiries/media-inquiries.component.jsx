@@ -15,11 +15,14 @@ const MediaInquiries = () => {
         </div>
         <p className={classes.text}>
             Thank you for your interest in learning more about Hermez. For media inquiries, please email us at
-          <a className={classes.email} href='mailto:hello@hermez.io'> hello@hermez.io </a>
+          <a className={classes.email} href='mailto:hello@hermez.io'>
+            hello@hermez.io
+          </a>
             and click below to download our media kit for Hermez logos and illustrations kit.
         </p>
-        {/* TODO: add link to zip file, once it is ready */}
-        <Button to='/hermez_mediakit.zip' text='Download Mediakit' hideIcon />
+        <div className={classes.buttonWrapper}>
+          <Button to='/hermez_mediakit.zip' text='Download Mediakit' hideIcon />
+        </div>
       </div>
     </section>
   )

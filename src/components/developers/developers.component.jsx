@@ -17,7 +17,7 @@ const Developers = () => {
         <div className={`${classes.col3} ${classes.mainTitle}`}>
           <Title>Convenient and accessible token transfers with zkRollup</Title>
           <div className={classes.buttonWrapper}>
-            <Button to='https://docs.hermez.io/#/' text='Documentation' marginLeft={0} />
+            <Button to='https://docs.hermez.io/#/' text='Documentation' />
           </div>
         </div>
         <div className={classes.col23}>

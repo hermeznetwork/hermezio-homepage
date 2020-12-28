@@ -18,14 +18,9 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
           <ul className={classes.linkList}>
             {routes.map((route, index) => (
               <li key={index} className={classes.linkWrapper}>
-                <Link
-                  className={classes.link}
-                  to={route.to}
-                >
-                  {route.label === 'Hermez' ? (
-                    <LogoWithText />
-                  ) : route.label}
-                </Link>
+                {route.id === 1
+                  ? <Link to={route.to}><LogoWithText /></Link>
+                  : <Link className={classes.link} to={route.to}>{route.label}</Link>}
               </li>
             ))}
 

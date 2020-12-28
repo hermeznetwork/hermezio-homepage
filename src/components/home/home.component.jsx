@@ -149,8 +149,13 @@ const Home = () => {
             <Title>Blog</Title>
           </div>
           <div className={classes.col2}>
-            <h3>
-              <a href='https://blog.hermez.io/hermez-massive-migrations-mechanism/' target='_blank' rel='noopener noreferrer'>
+            <h3 className={classes.blogTitle}>
+              <a
+                href='https://blog.hermez.io/hermez-massive-migrations-mechanism/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={classes.blogLink}
+              >
                 Introducing the First L2 Interoperability Mechanism with Hermez Massive Migrations
               </a>
             </h3>
@@ -162,8 +167,13 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>
-              <a href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/' target='_blank' rel='noopener noreferrer'>
+            <h3 className={classes.blogTitle}>
+              <a
+                href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={classes.blogLink}
+              >
                 Hermez zk-rollup Circom Circuits Are Now Public!
               </a>
             </h3>
@@ -175,8 +185,13 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>
-              <a href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/' target='_blank' rel='noopener noreferrer'>
+            <h3 className={classes.blogTitle}>
+              <a
+                href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={classes.blogLink}
+              >
                 Hermez in Depth: Bootstrapping Security Measures
               </a>
             </h3>

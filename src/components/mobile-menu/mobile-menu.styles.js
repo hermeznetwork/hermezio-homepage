@@ -78,6 +78,6 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     lineHeight: `${theme.spacing(4.5)}px`
   },
   activeLink: {
-    color: theme.palette.orange
+    color: theme.palette.orange.main
   }
 }))
