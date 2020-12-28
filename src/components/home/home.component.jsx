@@ -19,7 +19,9 @@ const Home = () => {
         <div className={classes.col3}>
           <Title>Open and low-cost payments network for everyone.</Title>
           <p className={classes.section1Text}>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
-          <Button to='/' text='Create account' marginLeft={0} />
+          <div className={classes.buttonWrapper}>
+            <Button to='/' text='Create account' marginLeft={0} />
+          </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section2}`}>
@@ -49,7 +51,7 @@ const Home = () => {
             <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
             <TextLink to='/' text='Values and guiding principles' />
           </div>
-          <div className={classes.col2}>
+          <div className={`${classes.col2} ${classes.webOnly}`}>
             <Section31 />
           </div>
         </div>

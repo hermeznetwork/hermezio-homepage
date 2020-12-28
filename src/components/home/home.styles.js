@@ -1,6 +1,25 @@
 import { createUseStyles } from 'react-jss'
 
 const useHomeStyles = createUseStyles(theme => ({
+  row: {
+    display: 'flex',
+    flexDirection: 'column',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    }
+  },
+  col2: {
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      marginLeft: 'auto'
+    }
+  },
+  col3: {
+    [theme.breakpoints.sm]: {
+      margin: 'auto',
+      width: '33%'
+    }
+  },
   section: {
     padding: theme.spacing(2),
     [theme.breakpoints.sm]: {
@@ -8,19 +27,17 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section1: {
-    paddingTop: theme.spacing(11),
-    [theme.breakpoints.sm]: {
-      paddingTop: theme.spacing(40)
-    },
     backgroundImage: 'url(./home-background.png)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
     display: 'flex',
-    '& > div': {
-      marginRight: 'auto',
-      marginLeft: 0
+    paddingTop: theme.spacing(11),
+    textAlign: 'center',
+    [theme.breakpoints.sm]: {
+      paddingTop: theme.spacing(40),
+      textAlign: 'left'
     },
-    '& > div a': {
+    '& $col3': {
       marginLeft: 0
     }
   },
@@ -33,6 +50,13 @@ const useHomeStyles = createUseStyles(theme => ({
     top: 0,
     right: 0,
     width: '100vw'
+  },
+  buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.sm]: {
+      justifyContent: 'left'
+    }
   },
   section2: {
     display: 'flex',
@@ -184,32 +208,25 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: theme.spacing(3.25)
     }
   },
-  row: {
-    display: 'flex',
-    flexDirection: 'column',
-    [theme.breakpoints.sm]: {
-      flexDirection: 'row'
-    }
-  },
-  col2: {
-    [theme.breakpoints.sm]: {
-      width: '50%',
-      marginLeft: 'auto'
-    }
-  },
-  col3: {
-    [theme.breakpoints.sm]: {
-      margin: 'auto',
-      width: '33%'
-    }
-  },
   divider: {
     width: '100%',
     height: '1px',
-    background: theme.palette.primary.main
+    background: theme.palette.primary.main,
+    marginTop: theme.spacing(0),
+    marginBottom: theme.spacing(5),
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(9),
+      marginBottom: theme.spacing(16)
+    }
   },
   paragraphMargin: {
     marginBottom: 16
+  },
+  webOnly: {
+    display: 'none',
+    [theme.breakpoints.sm]: {
+      display: 'inline-grid'
+    }
   }
 }))
 
