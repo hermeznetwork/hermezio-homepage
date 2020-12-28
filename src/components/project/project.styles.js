@@ -91,7 +91,7 @@ const useProjectStyles = createUseStyles(theme => ({
       width: '50%'
     }
   },
-  full: {
+  dividerFullWidth: {
     width: '100%',
     marginTop: theme.spacing(4),
     marginBottom: theme.spacing(3),

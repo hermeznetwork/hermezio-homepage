@@ -14,9 +14,11 @@ const PaymentsNetwork = () => {
   return (
     <>
       <section className={`${classes.section} ${classes.section1}`}>
-        <div className={`${classes.col3} ${classes.content}`}>
+        <div className={`${classes.col3} ${classes.mainTitle}`}>
           <Title>Secure layer 2 designed for mass adoption</Title>
-          <Button to='/' text='Join Hermez' marginLeft={0} />
+          <div className={classes.buttonWrapper}>
+            <Button to='/' text='Join Hermez' />
+          </div>
         </div>
         <div className={classes.col23}>
           <Section1 />
@@ -28,12 +30,12 @@ const PaymentsNetwork = () => {
             <Title>Powerful and trustless</Title>
           </div>
           <div className={classes.col2}>
-            <ul>
-              <li>Ethereum-level security guaranteed by zk-SNARKs</li>
-              <li>High throughput of 2000 TPS</li>
-              <li>Non-custodial architecture</li>
-              <li>Full ownership and control of assets (censorship resistant)</li>
-              <li>Data availability on Ethereum mainnet </li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Ethereum-level security guaranteed by zk-SNARKs</li>
+              <li className={classes.listItem}>High throughput of 2000 TPS</li>
+              <li className={classes.listItem}>Non-custodial architecture</li>
+              <li className={classes.listItem}>Full ownership and control of assets (censorship resistant)</li>
+              <li className={classes.listItem}>Data availability on Ethereum mainnet </li>
             </ul>
           </div>
         </div>
@@ -45,13 +47,13 @@ const PaymentsNetwork = () => {
             <Title>Ready to be integrated</Title>
           </div>
           <div className={classes.col2}>
-            <ul>
-              <li>Fully open source and community-driven</li>
-              <li>Seamless integration with Hermez REST API</li>
-              <li>Permissionless network of coordinators</li>
-              <li>Decentralised auction model with validation reward token</li>
-              <li>Strategy towards governance minimisation</li>
-              <li>Simple web and mobile app wallet</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Fully open source and community-driven</li>
+              <li className={classes.listItem}>Seamless integration with Hermez REST API</li>
+              <li className={classes.listItem}>Permissionless network of coordinators</li>
+              <li className={classes.listItem}>Decentralised auction model with validation reward token</li>
+              <li className={classes.listItem}>Strategy towards governance minimisation</li>
+              <li className={classes.listItem}>Simple web and mobile app wallet</li>
             </ul>
           </div>
         </div>
@@ -63,29 +65,31 @@ const PaymentsNetwork = () => {
             <Title>Token transfers simplified</Title>
           </div>
           <div className={classes.col2}>
-            <ul>
-              <li>Low-cost token transfer ~ 0.1 USD </li>
-              <li>ETH and ERC-20 tokens transfer</li>
-              <li>Atomic swaps</li>
-              <li>Fees payable in single currency</li>
-              <li>Low cost deposits and withdrawals</li>
-              <li>Fast capital-efficient exit (withdrawal) in a few minutes</li>
+            <ul className={classes.list}>
+              <li className={classes.listItem}>Low-cost token transfer ~ 0.1 USD </li>
+              <li className={classes.listItem}>ETH and ERC-20 tokens transfer</li>
+              <li className={classes.listItem}>Atomic swaps</li>
+              <li className={classes.listItem}>Fees payable in single currency</li>
+              <li className={classes.listItem}>Low cost deposits and withdrawals</li>
+              <li className={classes.listItem}>Fast capital-efficient exit (withdrawal) in a few minutes</li>
             </ul>
           </div>
         </div>
       </section>
       <section className={`${classes.section} ${classes.section3}`}>
         <Title>Open ecosystem</Title>
-        <p>Cryptocurrency exchange (EX) used as an example of a transaction aggregator.</p>
+        <div className={classes.section3Text}>
+          <p>Cryptocurrency exchange (EX) used as an example of a transaction aggregator.</p>
+        </div>
         <Section3 />
       </section>
       <section className={`${classes.section} ${classes.section4}`}>
         <div className={classes.row}>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section4Title}`}>
             <Title>Benefits of integration and using Hermez</Title>
           </div>
           <div className={classes.col2}>
-            <h3>Exchanges and wallet providers</h3>
+            <Title type='h3'>Exchanges and wallet providers</Title>
             <p>Participate in Hermez permissionless auctions to produce blocks and earn HEZ tokens. Low-entry barrier to be profitable...</p>
           </div>
         </div>
@@ -94,7 +98,7 @@ const PaymentsNetwork = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Validators / network coordinators</h3>
+            <Title type='h3'>Validators / network coordinators</Title>
             <p>Participate in Hermez permissionless auctions to produce blocks and earn HEZ tokens. Low-entry barrier to be profitable...</p>
           </div>
         </div>
@@ -103,7 +107,7 @@ const PaymentsNetwork = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Community</h3>
+            <Title type='h3'>Community</Title>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           </div>
         </div>
@@ -112,7 +116,7 @@ const PaymentsNetwork = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Individuals</h3>
+            <Title type='h3'>Individuals</Title>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           </div>
         </div>
@@ -121,7 +125,7 @@ const PaymentsNetwork = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Token issuers</h3>
+            <Title type='h3'>Token issuers</Title>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
           </div>
         </div>
@@ -129,13 +133,17 @@ const PaymentsNetwork = () => {
       <section className={`${classes.section} ${classes.section5}`}>
         <div className={classes.col2}>
           <Title>HEZ - Hermez Network token</Title>
-          <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
-          <div>
-            <TextLink to='/' text='Token contract' />
-            <TextLink to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
+          <p className={classes.section5Text}>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+          <div className={classes.linksWrapper}>
+            <div className={classes.link}>
+              <TextLink to='/' text='Token contract' />
+            </div>
+            <div className={classes.link}>
+              <TextLink to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
+            </div>
           </div>
         </div>
-        <div className={classes.col3}>
+        <div className={`${classes.col3} ${classes.webOnly}`}>
           <Section5 />
         </div>
       </section>

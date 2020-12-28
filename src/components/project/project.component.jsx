@@ -32,7 +32,7 @@ const Project = () => {
           </div>
         </div>
         <div className={classes.row}>
-          <span className={`${classes.divider} ${classes.full}`} />
+          <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
