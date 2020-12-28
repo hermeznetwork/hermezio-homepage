@@ -243,9 +243,9 @@ const Project = () => {
             <img
               className={classes.image}
               src='./profiles/arnaub.jpg'
-              alt='Arnau Benassar'
+              alt='Arnau Bennassar'
             />
-            <span className={classes.name}>Arnau Benassar</span>
+            <span className={classes.name}>Arnau Bennassar</span>
             <span>Software Engineer</span>
           </div>
         </div>
