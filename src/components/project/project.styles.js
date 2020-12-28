@@ -93,8 +93,6 @@ const useProjectStyles = createUseStyles(theme => ({
   },
   dividerFullWidth: {
     width: '100%',
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(3),
     [theme.breakpoints.sm]: {
       marginTop: theme.spacing(10),
       marginBottom: theme.spacing(8)

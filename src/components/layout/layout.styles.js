@@ -72,8 +72,10 @@ export const useLayoutStyles = createUseStyles(theme => ({
     p: {
       margin: 0
     },
-    h1: {
-      margin: 0
+    'h1, h2, h3, h4': {
+      margin: 0,
+      marginBlockStart: 0,
+      marginBlockEnd: 0
     },
     ul: {
       marginBlock: 0,

@@ -29,13 +29,13 @@ function Title ({
       )
     case 'h3':
       return (
-        <h3 className={classes.title}>
+        <h3 className={`${classes.title} ${classes.titleSecondary}`}>
           {children}
         </h3>
       )
     case 'h4':
       return (
-        <h4 className={`${classes.title} ${classes.titleSecondary}`}>
+        <h4 className={`${classes.title} ${classes.titleTertiary}`}>
           {children}
         </h4>
       )

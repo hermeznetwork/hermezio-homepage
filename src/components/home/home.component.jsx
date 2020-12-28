@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.row}>
-          <span className={classes.divider} />
+          <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
         </div>
         <div className={classes.row}>
           <div className={classes.col3}>
@@ -121,13 +121,15 @@ const Home = () => {
       </section>
       <section className={`${classes.section} ${classes.section6}`}>
         <div className={classes.row}>
-          <div className={classes.col3}>
+          <div className={`${classes.col3} ${classes.section6Title}`}>
             <Title>Designed for collaborative economy</Title>
           </div>
           <div className={classes.col2}>
-            <h3>Hermez is giving back</h3>
+            <Title type='h3'>Hermez is giving back</Title>
             <p>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants. We call this mechanism proof-of-donation.</p>
-            <TextLink to='/' text='More about proof-of-donation' />
+            <div className={classes.section6link}>
+              <TextLink to='/' text='More about proof-of-donation' />
+            </div>
           </div>
         </div>
         <div className={classes.row}>
@@ -135,9 +137,11 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>Permissionless auctions for validators</h3>
+            <Title type='h3'>Permissionless auctions for validators</Title>
             <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
-            <TextLink to='/' text='How to become a coordinator' />
+            <div className={classes.section6link}>
+              <TextLink to='/' text='How to become a coordinator' />
+            </div>
           </div>
         </div>
         <div className={classes.row}>
@@ -145,9 +149,11 @@ const Home = () => {
         </div>
         <div className={classes.row}>
           <div className={classes.col2}>
-            <h3>HEZ Token</h3>
+            <Title type='h3'>HEZ Token</Title>
             <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
-            <TextLink to='/' text='More about HEZ' />
+            <div className={classes.section6link}>
+              <TextLink to='/' text='More about HEZ' />
+            </div>
           </div>
         </div>
       </section>
@@ -209,7 +215,7 @@ const Home = () => {
         <div className={classes.row}>
           <span className={classes.divider} />
         </div>
-        <div className={classes.row}>
+        <div className={`${classes.row} ${classes.allBlogPostsLink}`}>
           <TextLink to='https://blog.hermez.io/' text='View all posts' />
         </div>
       </section>
