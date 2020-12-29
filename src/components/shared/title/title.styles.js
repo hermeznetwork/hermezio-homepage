@@ -11,7 +11,7 @@ const useTitleStyles = createUseStyles(theme => ({
     color: theme.palette.black,
     [theme.breakpoints.sm]: {
       fontSize: theme.spacing(3.5),
-      lineHeight: `${theme.spacing(4.5)}`
+      lineHeight: `${theme.spacing(4.5)}px`
     }
   },
   titleSecondary: {
@@ -31,7 +31,7 @@ const useTitleStyles = createUseStyles(theme => ({
     lineHeight: 'inherit',
     [theme.breakpoints.sm]: {
       fontSize: theme.spacing(2.5),
-      lineHeight: `${theme.spacing(4)}`
+      lineHeight: `${theme.spacing(4)}px`
     }
   }
 }))
