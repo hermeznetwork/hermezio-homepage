@@ -1,26 +1,46 @@
 import { createUseStyles } from 'react-jss'
 
 const useHomeStyles = createUseStyles(theme => ({
-  section: {
-    padding: theme.spacing(2),
+  row: {
+    display: 'flex',
+    flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`
+      flexDirection: 'row'
+    }
+  },
+  col2: {
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      marginLeft: 'auto'
+    }
+  },
+  col3: {
+    [theme.breakpoints.sm]: {
+      width: '33%'
+    }
+  },
+  section: {
+    padding: `${theme.spacing(8)}px ${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    flexDirection: 'column',
+    [theme.breakpoints.sm]: {
+      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
+      flexDirection: 'row'
     }
   },
   section1: {
-    paddingTop: theme.spacing(11),
-    [theme.breakpoints.sm]: {
-      paddingTop: theme.spacing(40)
-    },
     backgroundImage: 'url(./home-background.png)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
     display: 'flex',
-    '& > div': {
-      marginRight: 'auto',
-      marginLeft: 0
+    paddingTop: theme.spacing(11),
+    textAlign: 'center',
+    height: theme.spacing(85),
+    [theme.breakpoints.sm]: {
+      paddingTop: theme.spacing(40),
+      textAlign: 'left',
+      height: 'auto'
     },
-    '& > div a': {
+    '& $col3': {
       marginLeft: 0
     }
   },
@@ -34,19 +54,34 @@ const useHomeStyles = createUseStyles(theme => ({
     right: 0,
     width: '100vw'
   },
+  buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.sm]: {
+      justifyContent: 'left'
+    }
+  },
   section2: {
     display: 'flex',
     flexDirection: 'column',
-    '& >:first-child': {
-      textAlign: 'center',
-      marginBottom: '106px'
-    },
-    '& >:last-child': {
-      margin: '124px auto 0',
-      height: '42px'
-    },
-    '& >div div': {
-      textAlign: 'center'
+    color: theme.palette.black
+  },
+  section2Title: {
+    textAlign: 'center',
+    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacing(2.5),
+    lineHeight: `${theme.spacing(4)}px`,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(4.25),
+      lineHeight: `${theme.spacing(5.75)}px`,
+      marginBottom: theme.spacing(13)
+    }
+  },
+  section2Box: {
+    textAlign: 'center',
+    marginTop: theme.spacing(5),
+    [theme.breakpoints.sm]: {
+      marginTop: 0
     }
   },
   section2Image1: {
@@ -63,10 +98,15 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section2Text: {
     width: '245px',
-    margin: '50px auto 0',
     fontWeight: theme.fontWeights.medium,
-    fontSize: '23px',
-    lineHeight: '35px'
+    fontSize: theme.spacing(2.5),
+    lineHeight: `${theme.spacing(4)}px`,
+    margin: `${theme.spacing(3)}px auto 0`,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(3) - 1,
+      lineHeight: `${theme.spacing(4.5) - 1}px`,
+      margin: `${theme.spacing(6.25)}px auto 0`
+    }
   },
   section3: {
     backgroundColor: theme.palette.primary.light
@@ -78,14 +118,23 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section4: {
     '& $divider': {
-      margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`
-    },
-    '& $col2': { // TODO refactor all inheritance
-      color: theme.palette.gray.light,
-      lineHeight: '29px'
-    },
-    '& $col3': {
-      marginTop: 0,
+      [theme.breakpoints.sm]: {
+        margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px auto`
+      }
+    }
+  },
+  section4Title: {
+    marginBottom: theme.spacing(2)
+  },
+  section4BoxWrapper: {
+    marginTop: theme.spacing(5),
+    [theme.breakpoints.sm]: {
+      marginTop: 'inherit'
+    }
+  },
+  section4Box: {
+    marginTop: 0,
+    [theme.breakpoints.sm]: {
       marginRight: theme.spacing(4),
       '&:last-child': {
         marginRight: 0
@@ -122,74 +171,68 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section6: {
     '& $divider': {
-      margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px`,
-      width: '50%',
-      marginLeft: 'auto'
-    },
-    '& $col2': { // TODO refactor all inheritance
-      color: theme.palette.gray.light,
-      lineHeight: '29px'
-    },
-    '& $col3': {
-      marginTop: 0,
-      marginRight: theme.spacing(7.5),
-      '&:last-child': {
-        marginRight: 0
+      [theme.breakpoints.sm]: {
+        marginTop: theme.spacing(7),
+        marginBottom: theme.spacing(8)
       }
-    },
-    '& h3': {
-      color: theme.palette.black,
-      fontSize: '23px',
-      fontWeight: theme.fontWeights.medium,
-      lineHeight: '35px',
-      marginTop: 0
-    },
-    '& a': {
+    }
+  },
+  section6Title: {
+    marginBottom: theme.spacing(2)
+  },
+  section6link: {
+    marginTop: theme.spacing(2.25),
+    [theme.breakpoints.sm]: {
       marginTop: theme.spacing(3.25)
     }
   },
   section7: {
     backgroundColor: theme.palette.primary.light,
     '& $divider': {
-      width: '50%',
-      margin: `${theme.spacing(4)}px 0 ${theme.spacing(5)}px auto`
-    },
-    '& >div': {
-      '&:last-child': {
-        width: '50%',
-        marginLeft: 'auto'
-      }
-    },
-    '& $col2': { // TODO refactor all inheritance
-      color: theme.palette.gray.light,
-      lineHeight: '29px'
-    },
-    '& $col3': {
-      marginTop: 0,
-      marginRight: theme.spacing(7.5),
-      '&:last-child': {
-        marginRight: 0
+      [theme.breakpoints.sm]: {
+        marginTop: theme.spacing(4),
+        marginBottom: theme.spacing(5)
       }
     }
   },
-  row: {
-    display: 'flex'
-  },
-  col2: {
-    width: '50%',
-    marginLeft: 'auto'
-  },
-  col3: {
-    margin: 'auto',
-    width: '33%'
+  allBlogPostsLink: {
+    marginLeft: 0,
+    [theme.breakpoints.sm]: {
+      marginLeft: 'auto',
+      width: '50%'
+    }
   },
   divider: {
-    width: '100%',
+    background: theme.palette.primary.main,
     height: '1px',
-    background: theme.palette.primary.main
+    marginLeft: 'auto',
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(3),
+    width: '100%',
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(4),
+      marginBottom: theme.spacing(5),
+      width: '50%'
+    }
+  },
+  dividerFullWidth: {
+    width: '100%',
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(9),
+      marginBottom: theme.spacing(16)
+    }
   },
   paragraphMargin: {
     marginBottom: 16
+  },
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
+    marginTop: theme.spacing(7),
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacing(12)
+    }
   },
   blogTitle: {
     color: theme.palette.black,
@@ -216,6 +259,12 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   blogLink: {
     marginTop: theme.spacing(3.25)
+  },
+  onlyDesktop: {
+    display: 'none',
+    [theme.breakpoints.sm]: {
+      display: 'inline-grid'
+    }
   }
 }))
 

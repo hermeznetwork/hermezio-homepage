@@ -10,12 +10,9 @@ function Button ({
   to,
   text,
   hideIcon = false,
-  internalLink = false,
-  marginLeft
+  internalLink = false
 }) {
-  const classes = useButtonStyles({
-    marginLeft
-  })
+  const classes = useButtonStyles()
 
   return (
     <>

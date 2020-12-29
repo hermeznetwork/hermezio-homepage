@@ -17,7 +17,6 @@ export const theme = {
       dark: '#d44d20'
     }
   },
-  headerHeight: 100,
   fontWeights: {
     normal: '400',
     medium: '500',

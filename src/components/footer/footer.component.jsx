@@ -11,23 +11,47 @@ export const Footer = ({ routes }) => {
     <footer className={classes.footer}>
       <div className={classes.content}>
         <div className={classes.topSection}>
-          <div className={classes.head}>
-            <p>Start your integration</p>
-            <p>Contact us to learn more about Hermez network.</p>
-            <a
-              href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'
-              className={classes.emailLink}
-            >hello@hermez.io
-            </a>
+          <div className={classes.col3}>
+            <div className={classes.head}>
+              <p>Start your integration</p>
+              <p>Contact us to learn more about Hermez network.</p>
+              <a
+                href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'
+                className={classes.emailLink}
+              >hello@hermez.io
+              </a>
+            </div>
           </div>
-          <div>
+          <div className={classes.col3}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Hermez
               </li>
               <li className={classes.listItem}>
+                {/* Routes are passed from layout component
+              {
+                id: 1,
+                label: 'Hermez',
+                to: '/'
+              },
+              {
+                id: 2,
+                label: 'Payments network',
+                to: '/payments-network'
+              },
+              {
+                id: 3,
+                label: 'Developers',
+                to: '/developers'
+              },
+              {
+                id: 4,
+                label: 'Project',
+                to: '/project'
+              }
+              */}
                 <Link to={routes.find(el => el.id === 2).to}>
-                  {routes.find(el => el.label === 'Payments network').label}
+                  {routes.find(el => el.id === 2).label}
                 </Link>
               </li>
               {/* TODO show Wallet link, once Wallet is published */}
@@ -43,8 +67,6 @@ export const Footer = ({ routes }) => {
                 </Link>
               </li> */}
             </ul>
-          </div>
-          <div>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
               <li className={classes.listItem}>
@@ -76,7 +98,7 @@ export const Footer = ({ routes }) => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className={classes.col3}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Project
@@ -88,8 +110,6 @@ export const Footer = ({ routes }) => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Social</li>
               <li className={classes.listItem}>
@@ -134,7 +154,7 @@ export const Footer = ({ routes }) => {
         <div className={classes.bottomSection}>
           <p className={classes.logoAndText}>
             <Logo />
-            <span>
+            <span className={classes.text}>
               <a
                 href='https://iden3.io/'
                 target='_blank'

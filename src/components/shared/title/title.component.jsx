@@ -1,18 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import useTitleStyles from './title.styles'
 
 function Title ({
   children,
-  type = 'h2',
-  marginTop,
-  marginBottom
+  type = 'h2'
 }) {
-  const classes = useTitleStyles({
-    marginTop,
-    marginBottom
-  })
+  const classes = useTitleStyles()
 
   switch (type) {
     case 'h1':
@@ -29,24 +23,19 @@ function Title ({
       )
     case 'h3':
       return (
-        <h3 className={classes.title}>
+        <h3 className={`${classes.title} ${classes.titleSecondary}`}>
           {children}
         </h3>
       )
     case 'h4':
       return (
-        <h4 className={`${classes.title} ${classes.titleSecondary}`}>
+        <h4 className={`${classes.title} ${classes.titleTertiary}`}>
           {children}
         </h4>
       )
     default:
       break
   }
-}
-
-Title.propTypes = {
-  marginTop: PropTypes.number,
-  marginBottom: PropTypes.number
 }
 
 export default Title

@@ -2,13 +2,12 @@ import { createUseStyles } from 'react-jss'
 
 export const useHeaderStyles = createUseStyles(theme => ({
   header: {
-    height: theme.headerHeight,
     position: 'absolute',
     width: '100%'
   },
   content: {
     width: '100%',
-    padding: `${theme.spacing(5)}px ${theme.spacing(9)}px 0`
+    padding: `${theme.spacing(3)}px ${theme.spacing(2)}px 0`
   },
   nav: {
     display: 'none',
@@ -19,11 +18,13 @@ export const useHeaderStyles = createUseStyles(theme => ({
   },
   mobileMenu: {
     display: 'flex',
+    justifyContent: 'space-between',
     background: 'transparent',
     border: 'none',
     cursor: 'pointer',
     color: theme.palette.black,
     padding: 0,
+    width: '100%',
     '&:focus': {
       outline: 'none'
     },

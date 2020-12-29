@@ -20,7 +20,9 @@ const MediaInquiries = () => {
           </a>
             and click below to download our media kit for Hermez logos and illustrations kit.
         </p>
-        <Button to='/hermez_mediakit.zip' text='Download Mediakit' hideIcon />
+        <div className={classes.buttonWrapper}>
+          <Button to='/hermez_mediakit.zip' text='Download Mediakit' hideIcon />
+        </div>
       </div>
     </section>
   )

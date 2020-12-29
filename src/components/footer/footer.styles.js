@@ -12,16 +12,32 @@ export const useFooterStyles = createUseStyles(theme => ({
     padding: `${theme.spacing(11)}px ${theme.spacing(6)}px ${theme.spacing(6)}px`
   },
   topSection: {
-    display: 'flex'
+    [theme.breakpoints.sm]: {
+      display: 'flex'
+    }
   },
   bottomSection: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    },
     display: 'flex',
     justifyContent: 'space-between',
     marginTop: theme.spacing(12)
   },
+  col3: {
+    display: 'flex',
+    [theme.breakpoints.sm]: {
+      margin: 'auto',
+      width: '33%'
+    }
+  },
   head: {
-    maxWidth: 'calc(100vw/5)',
-    marginRight: 'auto',
+    [theme.breakpoints.sm]: {
+      marginRight: '50%'
+    },
+    marginBottom: theme.spacing(4),
     '& :first-child, & :last-child': {
       color: theme.palette.white
     },
@@ -37,7 +53,18 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   list: {
     listStyle: 'none',
-    margin: 0
+    margin: 0,
+    marginBottom: theme.spacing(4),
+    width: '45%',
+    '&:first-child': {
+      marginRight: '10%'
+    },
+    [theme.breakpoints.sm]: {
+      width: '50%',
+      '&:first-child': {
+        marginRight: 0
+      }
+    }
   },
   listItem: {
     lineHeight: `${theme.spacing(3)}px`,
@@ -51,11 +78,20 @@ export const useFooterStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacing(2)
   },
   logoAndText: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    [theme.breakpoints.sm]: {
+      flexDirection: 'row'
+    },
     color: theme.palette.gray.main,
-    display: 'flex',
-    '& span': {
-      marginLeft: theme.spacing(0.5)
-    }
+    display: 'flex'
+  },
+  text: {
+    marginTop: theme.spacing(2.5),
+    [theme.breakpoints.sm]: {
+      marginTop: 0
+    },
+    marginLeft: theme.spacing(0.5)
   },
   legalLink: {
     textDecoration: 'none',
