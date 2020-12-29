@@ -8,7 +8,11 @@ const useTitleStyles = createUseStyles(theme => ({
     fontStretch: 'normal',
     fontStyle: 'normal',
     letterSpacing: 'normal',
-    color: theme.palette.black
+    color: theme.palette.black,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(3.5),
+      lineHeight: `${theme.spacing(4.5)}`
+    }
   },
   titleSecondary: {
     color: theme.palette.black,
@@ -22,8 +26,13 @@ const useTitleStyles = createUseStyles(theme => ({
     }
   },
   titleTertiary: {
+    fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacing(3),
-    lineHeight: 'inherit'
+    lineHeight: 'inherit',
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacing(2.5),
+      lineHeight: `${theme.spacing(4)}`
+    }
   }
 }))
 
