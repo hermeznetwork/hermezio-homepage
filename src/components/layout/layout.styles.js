@@ -115,9 +115,6 @@ export const useLayoutStyles = createUseStyles((theme) => {
       [theme.breakpoints.lg]: {
         maxWidth: '1200px'
       },
-      [theme.breakpoints.xl]: {
-        maxWidth: '1440px'
-      },
       maxWidth: '100%'
     }
   }
