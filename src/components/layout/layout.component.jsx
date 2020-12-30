@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { theme } from '../../styles/theme'
 import { Header } from '../header/header.component'
 import { Main } from '../main/main.component'
 import { Footer } from '../footer/footer.component'
@@ -38,7 +37,7 @@ export const Layout = ({ children }) => {
   }
 
   return (
-    <div className={classes.layout} theme={theme}>
+    <div className={classes.layout}>
       <Header onOpenMobileMenu={handleMobileMenuToggle} routes={routes} />
       <MobileMenu
         isOpen={isMobileMenuOpen}

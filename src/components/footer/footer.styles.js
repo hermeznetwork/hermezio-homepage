@@ -9,7 +9,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   content: {
     width: '100%',
-    padding: `${theme.spacing(11)}px ${theme.spacing(6)}px ${theme.spacing(6)}px`
+    padding: `${theme.spacer * 11}px ${theme.spacer * 6}px ${theme.spacer * 6}px`
   },
   topSection: {
     [theme.breakpoints.sm]: {
@@ -24,7 +24,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     },
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: theme.spacing(12)
+    marginTop: theme.spacer * 12
   },
   col3: {
     display: 'flex',
@@ -37,24 +37,24 @@ export const useFooterStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       marginRight: '50%'
     },
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacer * 4,
     '& :first-child, & :last-child': {
       color: theme.palette.white
     },
     '& :first-child': {
       fontWeight: theme.fontWeights.bold,
-      fontSize: theme.spacing(3),
-      lineHeight: `${theme.spacing(4) - 1}px`
+      fontSize: theme.spacer * 3,
+      lineHeight: `${theme.spacer * 4 - 1}px`
     },
     '& > *': {
-      lineHeight: `${theme.spacing(3)}px`,
-      marginBottom: theme.spacing(2)
+      lineHeight: `${theme.spacer * 3}px`,
+      marginBottom: theme.spacer * 2
     }
   },
   list: {
     listStyle: 'none',
     margin: 0,
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacer * 4,
     width: '45%',
     '&:first-child': {
       marginRight: '10%'
@@ -67,7 +67,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     }
   },
   listItem: {
-    lineHeight: `${theme.spacing(3)}px`,
+    lineHeight: `${theme.spacer * 3}px`,
     '&:hover': {
       color: theme.palette.white
     }
@@ -75,7 +75,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   listItemHead: {
     color: theme.palette.white,
     fontWeight: theme.fontWeights.bold,
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacer * 2
   },
   logoAndText: {
     flexDirection: 'column',
@@ -87,11 +87,11 @@ export const useFooterStyles = createUseStyles(theme => ({
     display: 'flex'
   },
   text: {
-    marginTop: theme.spacing(2.5),
+    marginTop: theme.spacer * 2.5,
     [theme.breakpoints.sm]: {
       marginTop: 0
     },
-    marginLeft: theme.spacing(0.5)
+    marginLeft: theme.spacer * 0.5
   },
   legalLink: {
     textDecoration: 'none',
