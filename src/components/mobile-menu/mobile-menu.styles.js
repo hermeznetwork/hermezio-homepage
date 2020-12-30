@@ -20,16 +20,16 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     right: 0,
     left: 0,
     background: theme.palette.white,
-    padding: `0 ${theme.spacing(2)}px`,
+    padding: `0 ${theme.spacer * 2}px`,
     display: 'flex',
     flexDirection: 'column',
     '&:focus': {
       outline: 'none'
     },
     [theme.breakpoints.sm]: {
-      width: theme.spacing(50),
+      width: theme.spacer * 50,
       right: 'auto',
-      padding: `0 ${theme.spacing(8)}px`
+      padding: `0 ${theme.spacer * 8}px`
     },
     [theme.breakpoints.md]: {
       display: 'none'
@@ -39,7 +39,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingTop: theme.spacing(3)
+    paddingTop: theme.spacer * 3
   },
   title: {
     margin: 0
@@ -60,10 +60,10 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     flexDirection: 'column',
     listStyle: 'none',
     margin: 0,
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacer * 2,
     paddingLeft: 0,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(4)
+      marginTop: theme.spacer * 4
     }
   },
   linkWrapper: {
@@ -72,10 +72,10 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
   link: {
     textDecoration: 'none',
     width: '100%',
-    padding: theme.spacing(2),
+    padding: theme.spacer * 2,
     color: theme.palette.black,
-    fontSize: theme.spacing(3.5),
-    lineHeight: `${theme.spacing(4.5)}px`
+    fontSize: theme.spacer * 3.5,
+    lineHeight: `${theme.spacer * 4.5}px`
   },
   activeLink: {
     color: theme.palette.orange.main

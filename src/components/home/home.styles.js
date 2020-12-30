@@ -20,10 +20,10 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section: {
-    padding: `${theme.spacing(8)}px ${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
       flexDirection: 'row'
     }
   },
@@ -32,11 +32,11 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
     display: 'flex',
-    paddingTop: theme.spacing(11),
+    paddingTop: theme.spacer * 11,
     textAlign: 'center',
-    height: theme.spacing(85),
+    height: theme.spacer * 85,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacing(40),
+      paddingTop: theme.spacer * 40,
       textAlign: 'left',
       height: 'auto'
     },
@@ -46,7 +46,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section1Text: {
     color: theme.palette.black,
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacer * 2
   },
   section1Image1: {
     position: 'absolute',
@@ -69,17 +69,17 @@ const useHomeStyles = createUseStyles(theme => ({
   section2Title: {
     textAlign: 'center',
     fontWeight: theme.fontWeights.medium,
-    fontSize: theme.spacing(2.5),
-    lineHeight: `${theme.spacing(4)}px`,
+    fontSize: theme.spacer * 2.5,
+    lineHeight: `${theme.spacer * 4}px`,
     [theme.breakpoints.sm]: {
-      fontSize: theme.spacing(4.25),
-      lineHeight: `${theme.spacing(5.75)}px`,
-      marginBottom: theme.spacing(13)
+      fontSize: theme.spacer * 4.25,
+      lineHeight: `${theme.spacer * 5.75}px`,
+      marginBottom: theme.spacer * 13
     }
   },
   section2Box: {
     textAlign: 'center',
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacer * 5,
     [theme.breakpoints.sm]: {
       marginTop: 0
     }
@@ -99,13 +99,13 @@ const useHomeStyles = createUseStyles(theme => ({
   section2Text: {
     width: '245px',
     fontWeight: theme.fontWeights.medium,
-    fontSize: theme.spacing(2.5),
-    lineHeight: `${theme.spacing(4)}px`,
-    margin: `${theme.spacing(3)}px auto 0`,
+    fontSize: theme.spacer * 2.5,
+    lineHeight: `${theme.spacer * 4}px`,
+    margin: `${theme.spacer * 3}px auto 0`,
     [theme.breakpoints.sm]: {
-      fontSize: theme.spacing(3) - 1,
-      lineHeight: `${theme.spacing(4.5) - 1}px`,
-      margin: `${theme.spacing(6.25)}px auto 0`
+      fontSize: theme.spacer * 3 - 1,
+      lineHeight: `${theme.spacer * 4.5 - 1}px`,
+      margin: `${theme.spacer * 6.25}px auto 0`
     }
   },
   section3: {
@@ -114,20 +114,20 @@ const useHomeStyles = createUseStyles(theme => ({
   section3Text: {
     color: theme.palette.gray.light,
     lineHeight: '29px',
-    margin: `${theme.spacing(3)}px 0`
+    margin: `${theme.spacer * 3}px 0`
   },
   section4: {
     '& $divider': {
       [theme.breakpoints.sm]: {
-        margin: `${theme.spacing(7)}px 0 ${theme.spacing(8)}px auto`
+        margin: `${theme.spacer * 7}px 0 ${theme.spacer * 8}px auto`
       }
     }
   },
   section4Title: {
-    marginBottom: theme.spacing(2)
+    marginBottom: theme.spacer * 2
   },
   section4BoxWrapper: {
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacer * 5,
     [theme.breakpoints.sm]: {
       marginTop: 'inherit'
     }
@@ -135,7 +135,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section4Box: {
     marginTop: 0,
     [theme.breakpoints.sm]: {
-      marginRight: theme.spacing(4),
+      marginRight: theme.spacer * 4,
       '&:last-child': {
         marginRight: 0
       }
@@ -145,8 +145,8 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundColor: theme.palette.primary.light
   },
   section5Text: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(6)
+    marginTop: theme.spacer * 3,
+    marginBottom: theme.spacer * 6
   },
   barText: {
     color: theme.palette.black
@@ -156,42 +156,42 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   barL1: {
     borderRadius: 15,
-    height: theme.spacing(2),
+    height: theme.spacer * 2,
     background: theme.palette.black,
-    marginTop: theme.spacing(1.5),
-    marginBottom: theme.spacing(3),
+    marginTop: theme.spacer * 1.5,
+    marginBottom: theme.spacer * 3,
     width: '100%'
   },
   barL2: {
     borderRadius: 15,
-    height: theme.spacing(2),
+    height: theme.spacer * 2,
     background: theme.palette.orange.main,
-    marginTop: theme.spacing(1.5),
+    marginTop: theme.spacer * 1.5,
     width: '10%'
   },
   section6: {
     '& $divider': {
       [theme.breakpoints.sm]: {
-        marginTop: theme.spacing(7),
-        marginBottom: theme.spacing(8)
+        marginTop: theme.spacer * 7,
+        marginBottom: theme.spacer * 8
       }
     }
   },
   section6Title: {
-    marginBottom: theme.spacing(2)
+    marginBottom: theme.spacer * 2
   },
   section6link: {
-    marginTop: theme.spacing(2.25),
+    marginTop: theme.spacer * 2.25,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(3.25)
+      marginTop: theme.spacer * 3.25
     }
   },
   section7: {
     backgroundColor: theme.palette.primary.light,
     '& $divider': {
       [theme.breakpoints.sm]: {
-        marginTop: theme.spacing(4),
-        marginBottom: theme.spacing(5)
+        marginTop: theme.spacer * 4,
+        marginBottom: theme.spacer * 5
       }
     }
   },
@@ -206,20 +206,20 @@ const useHomeStyles = createUseStyles(theme => ({
     background: theme.palette.primary.main,
     height: '1px',
     marginLeft: 'auto',
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(3),
+    marginTop: theme.spacer * 4,
+    marginBottom: theme.spacer * 3,
     width: '100%',
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(4),
-      marginBottom: theme.spacing(5),
+      marginTop: theme.spacer * 4,
+      marginBottom: theme.spacer * 5,
       width: '50%'
     }
   },
   dividerFullWidth: {
     width: '100%',
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(9),
-      marginBottom: theme.spacing(16)
+      marginTop: theme.spacer * 9,
+      marginBottom: theme.spacer * 16
     }
   },
   paragraphMargin: {
@@ -229,9 +229,9 @@ const useHomeStyles = createUseStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
-    marginTop: theme.spacing(7),
+    marginTop: theme.spacer * 7,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(12)
+      marginTop: theme.spacer * 12
     }
   },
   blogTitle: {
@@ -258,7 +258,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   blogLink: {
-    marginTop: theme.spacing(3.25)
+    marginTop: theme.spacer * 3.25
   },
   onlyDesktop: {
     display: 'none',

@@ -26,10 +26,10 @@ const useProjectStyles = createUseStyles(theme => ({
     }
   },
   section: {
-    padding: `${theme.spacing(8)}px ${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacing(12)}px ${theme.spacing(9)}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
       flexDirection: 'row'
     }
   },
@@ -40,11 +40,11 @@ const useProjectStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.sm]: {
       flexDirection: 'row',
-      paddingTop: theme.spacing(23),
+      paddingTop: theme.spacer * 23,
       paddingBottom: 'inherit',
       textAlign: 'left',
       '& $col23': {
-        paddingLeft: theme.spacing(20)
+        paddingLeft: theme.spacer * 20
       }
     }
   },
@@ -57,22 +57,22 @@ const useProjectStyles = createUseStyles(theme => ({
   },
   section2: {
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacing(12),
-      paddingBottom: theme.spacing(9)
+      paddingTop: theme.spacer * 12,
+      paddingBottom: theme.spacer * 9
     }
   },
   title: {
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
       marginBottom: 'inherit'
     }
   },
   subTitle: {
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(1),
+    marginTop: theme.spacer * 2,
+    marginBottom: theme.spacer * 1,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(0),
-      marginBottom: theme.spacing(2.5)
+      marginTop: theme.spacer * 0,
+      marginBottom: theme.spacer * 2.5
     }
   },
   section3: {
@@ -82,24 +82,24 @@ const useProjectStyles = createUseStyles(theme => ({
     background: theme.palette.primary.main,
     height: '1px',
     marginLeft: 'auto',
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(3),
+    marginTop: theme.spacer * 4,
+    marginBottom: theme.spacer * 3,
     width: '100%',
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(4),
-      marginBottom: theme.spacing(5),
+      marginTop: theme.spacer * 4,
+      marginBottom: theme.spacer * 5,
       width: '50%'
     }
   },
   dividerFullWidth: {
     width: '100%',
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(10),
-      marginBottom: theme.spacing(8)
+      marginTop: theme.spacer * 10,
+      marginBottom: theme.spacer * 8
     }
   },
   profilesTitle: {
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
       marginBottom: 0
     }
@@ -110,24 +110,24 @@ const useProjectStyles = createUseStyles(theme => ({
     flexWrap: 'wrap',
     [theme.breakpoints.sm]: {
       flexWrap: 'initial',
-      paddingTop: theme.spacing(7)
+      paddingTop: theme.spacer * 7
     }
   },
   profile: {
     flex: '0 45%',
-    paddingBottom: theme.spacing(3),
+    paddingBottom: theme.spacer * 3,
     [theme.breakpoints.sm]: {
       flex: 'initial',
-      paddingBottom: theme.spacing(0),
-      width: theme.spacing(26.75)
+      paddingBottom: theme.spacer * 0,
+      width: theme.spacer * 26.75
     }
   },
   image: {
     width: '100%'
   },
   name: {
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(1),
+    marginTop: theme.spacer * 2,
+    marginBottom: theme.spacer * 1,
     color: theme.palette.black,
     fontSize: '23px',
     fontWeight: theme.fontWeights.medium,

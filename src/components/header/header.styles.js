@@ -7,7 +7,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
   },
   content: {
     width: '100%',
-    padding: `${theme.spacing(3)}px ${theme.spacing(2)}px 0`
+    padding: `${theme.spacer * 3}px ${theme.spacer * 2}px 0`
   },
   nav: {
     display: 'none',
@@ -40,9 +40,9 @@ export const useHeaderStyles = createUseStyles(theme => ({
     width: '100%'
   },
   linkWrapper: {
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
-    paddingTop: theme.spacing(1.5),
+    paddingLeft: theme.spacer * 2,
+    paddingRight: theme.spacer * 2,
+    paddingTop: theme.spacer * 1.5,
     textAlign: 'center',
     '&:first-child': {
       paddingLeft: 0,
@@ -58,17 +58,17 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:last-child a': {
       border: `2px solid ${theme.palette.black}`,
       borderRadius: 15,
-      padding: `${theme.spacing(1.5)}px ${theme.spacing(3.5)}px`,
-      marginTop: theme.spacing(1.5)
+      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`,
+      marginTop: theme.spacer * 1.5
     },
     color: theme.palette.black,
     fontSize: '15px',
-    lineHeight: `${theme.spacing(2.5)}px`
+    lineHeight: `${theme.spacer * 2.5}px`
   },
   link: {
     display: 'flex',
     position: 'relative',
-    paddingBottom: theme.spacing(0.75),
+    paddingBottom: theme.spacer * 0.75,
     '&::after': {
       position: 'absolute',
       height: '2px',

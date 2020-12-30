@@ -10,16 +10,16 @@ const useTextLinkStyles = createUseStyles(theme => ({
     }
   },
   linkIcon: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
-    marginLeft: theme.spacing(2),
+    width: theme.spacer * 3,
+    height: theme.spacer * 3,
+    marginLeft: theme.spacer * 2,
     fill: theme.palette.orange.main,
     '&:hover': {
       fill: theme.palette.orange.dark
     }
   },
   boxLink: {
-    padding: `${theme.spacing(4)}px ${theme.spacing(5)}px`,
+    padding: `${theme.spacer * 4}px ${theme.spacer * 5}px`,
     borderRadius: 20,
     backgroundColor: theme.palette.primary.light,
     color: theme.palette.gray.main,
@@ -27,20 +27,20 @@ const useTextLinkStyles = createUseStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     lineHeight: '29px',
-    height: theme.spacing(16),
-    marginTop: theme.spacing(0),
-    marginBottom: theme.spacing(2),
+    height: theme.spacer * 16,
+    marginTop: theme.spacer * 0,
+    marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacing(8),
-      marginBottom: theme.spacing(9)
+      marginTop: theme.spacer * 8,
+      marginBottom: theme.spacer * 9
     },
     '&:hover': {
       backgroundColor: theme.palette.gray.dark
     }
   },
   boxLinkText: {
-    width: theme.spacing(17.5),
-    paddingRight: theme.spacing(2)
+    width: theme.spacer * 17.5,
+    paddingRight: theme.spacer * 2
   }
 }))
 
