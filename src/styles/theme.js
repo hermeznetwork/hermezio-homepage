@@ -1,4 +1,4 @@
-export const theme = {
+module.exports = {
   palette: {
     primary: {
       light: '#f6f7fa',
@@ -29,5 +29,5 @@ export const theme = {
     lg: '@media (min-width: 992px)',
     xl: '@media (min-width: 1200px)'
   },
-  spacing: (value) => value * 8
+  spacer: 8
 }

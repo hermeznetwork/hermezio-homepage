@@ -1,4 +1,4 @@
-// const path = require(`path`)
+const theme = require('./src/styles/theme.js')
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +7,12 @@ module.exports = {
     siteUrl: process.env.GATSBY_SITE_URL
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-jss',
+      options: {
+        theme
+      }
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

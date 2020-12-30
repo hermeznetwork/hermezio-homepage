@@ -79,7 +79,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
         </nav>
         <button className={classes.mobileMenu} onClick={onOpenMobileMenu}>
           <Logo />
-          <Menu size={theme.spacing(4)} />
+          <Menu size={theme.spacer * 4} />
         </button>
       </div>
     </header>
