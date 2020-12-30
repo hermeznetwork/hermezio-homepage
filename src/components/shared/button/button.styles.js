@@ -8,7 +8,6 @@ const useButtonStyles = createUseStyles(theme => ({
     borderRadius: 20,
     cursor: 'pointer',
     width: 'fit-content',
-    height: '70px',
     textAlign: 'center',
     '&:focus': {
       outline: 'none'
