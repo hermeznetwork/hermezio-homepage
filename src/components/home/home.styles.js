@@ -40,7 +40,7 @@ const useHomeStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
-      width: '1020px'
+      width: theme.spacer * 127.5
     },
     margin: 'auto',
     width: '100%'

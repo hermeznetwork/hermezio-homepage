@@ -38,7 +38,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
-      width: '1020px'
+      width: theme.spacer * 127.5
     },
     margin: 'auto',
     width: '100%'
@@ -124,7 +124,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     textAlign: 'left',
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginBottom: theme.spacer * 0
+      marginBottom: 0
     }
   },
   highlightedText: {
@@ -149,8 +149,8 @@ const useDevelopersStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 0,
-      marginBottom: theme.spacer * 0
+      marginTop: 0,
+      marginBottom: 0
     }
   },
   circomText: {
@@ -164,7 +164,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     width: '100%',
     height: '1px',
     background: theme.palette.primary.main,
-    marginTop: theme.spacer * 0,
+    marginTop: 0,
     marginBottom: theme.spacer * 5,
     [theme.breakpoints.sm]: {
       marginTop: theme.spacer * 9,

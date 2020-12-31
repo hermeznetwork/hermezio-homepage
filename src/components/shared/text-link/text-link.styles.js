@@ -28,7 +28,7 @@ const useTextLinkStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     lineHeight: '29px',
     height: theme.spacer * 16,
-    marginTop: theme.spacer * 0,
+    marginTop: 0,
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
       marginTop: theme.spacer * 8,

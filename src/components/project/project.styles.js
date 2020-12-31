@@ -38,7 +38,7 @@ const useProjectStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
-      width: '1020px'
+      width: theme.spacer * 127.5
     },
     margin: 'auto',
     width: '100%'
@@ -80,7 +80,7 @@ const useProjectStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 2,
     marginBottom: theme.spacer * 1,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 0,
+      marginTop: 0,
       marginBottom: theme.spacer * 2.5
     }
   },
@@ -124,7 +124,7 @@ const useProjectStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacer * 3,
     [theme.breakpoints.sm]: {
       flex: 'initial',
-      paddingBottom: theme.spacer * 0,
+      paddingBottom: 0,
       width: '22.5%'
     }
   },

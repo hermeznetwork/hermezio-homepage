@@ -9,7 +9,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   content: {
     [theme.breakpoints.xl]: {
-      width: '1020px'
+      width: theme.spacer * 127.5
     },
     margin: 'auto',
     width: '100%',
