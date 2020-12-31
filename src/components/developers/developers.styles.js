@@ -25,16 +25,25 @@ const useDevelopersStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
@@ -47,7 +56,8 @@ const useDevelopersStyles = createUseStyles(theme => ({
   mainTitle: {
     marginTop: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginTop: 'auto'
+      marginTop: 'auto',
+      marginLeft: 0
     }
   },
   buttonWrapper: {
@@ -72,7 +82,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   section3: {
-    backgroundColor: theme.palette.primary.light,
     textAlign: 'center',
     '& $col2': {
       textAlign: 'left'
@@ -92,6 +101,18 @@ const useDevelopersStyles = createUseStyles(theme => ({
       marginBottom: theme.spacer * 3
     }
   },
+  boxes: {
+    [theme.breakpoints.sm]: {
+      display: 'flex',
+      justifyContent: 'space-between'
+    }
+  },
+  boxWrapper: {
+    [theme.breakpoints.sm]: {
+      width: '30%',
+      margin: 0
+    }
+  },
   box: {
     background: theme.palette.white,
     borderRadius: 20,
@@ -99,24 +120,26 @@ const useDevelopersStyles = createUseStyles(theme => ({
     lineHeight: '35px',
     color: theme.palette.black,
     maxHeight: theme.spacer * 30,
-    padding: `${theme.spacer * 8}px ${theme.spacer * 10}px ${theme.spacer * 8}px ${theme.spacer * 6.5}px`,
+    padding: `${theme.spacer * 8}px ${theme.spacer * 9.5}px ${theme.spacer * 8}px ${theme.spacer * 6.5}px`,
     textAlign: 'left',
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginBottom: theme.spacer * 0,
-      marginRight: theme.spacer * 4.5
+      marginBottom: 0
     }
   },
   highlightedText: {
     fontSize: theme.spacer * 4.25,
     fontWeight: theme.fontWeights.bold
   },
-  section4: {
-    '& $col3': {
-      [theme.breakpoints.sm]: {
-        margin: 0,
-        marginRight: theme.spacer * 4
-      }
+  section4Box: {
+    [theme.breakpoints.sm]: {
+      width: '31%'
+    },
+    '&:first-child': {
+      marginLeft: 0
+    },
+    '&:last-child': {
+      marginRight: 0
     }
   },
   section4SubTitle: {
@@ -126,8 +149,8 @@ const useDevelopersStyles = createUseStyles(theme => ({
       marginTop: 0
     },
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 0,
-      marginBottom: theme.spacer * 0
+      marginTop: 0,
+      marginBottom: 0
     }
   },
   circomText: {
@@ -141,7 +164,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     width: '100%',
     height: '1px',
     background: theme.palette.primary.main,
-    marginTop: theme.spacer * 0,
+    marginTop: 0,
     marginBottom: theme.spacer * 5,
     [theme.breakpoints.sm]: {
       marginTop: theme.spacer * 9,
@@ -155,7 +178,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     backgroundImage: 'url(./discord-link-background-mobile.svg)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
-    borderRadius: 20,
+    borderRadius: 30,
     padding: `${theme.spacer * 6}px ${theme.spacer * 3.5}px ${theme.spacer * 4.5}px`,
     marginTop: theme.spacer * 5,
     [theme.breakpoints.sm]: {
@@ -174,10 +197,32 @@ const useDevelopersStyles = createUseStyles(theme => ({
       lineHeight: `${theme.spacer * 7}px`
     }
   },
+  discordButton: {
+    [theme.breakpoints.sm]: {
+      margin: 0,
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      '& $buttonWrapper a': {
+        margin: 'auto'
+      }
+    }
+  },
+  inlineGraphicText: {
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto',
+      marginBottom: 'auto'
+    }
+  },
+  inlineGraphicImage: {
+    [theme.breakpoints.sm]: {
+      maxHeight: theme.spacer * 48
+    }
+  },
   onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
-      display: 'inline-grid'
+      display: 'block'
     }
   }
 }))

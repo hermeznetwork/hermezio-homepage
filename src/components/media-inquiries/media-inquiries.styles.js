@@ -14,7 +14,7 @@ const useMediaInquiriesStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacer * 36,
     textAlign: 'center'
   },
-  contentWrapper: {
+  content: {
     maxWidth: theme.spacer * 75,
     margin: 'auto'
   },

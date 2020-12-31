@@ -6,6 +6,10 @@ export const useHeaderStyles = createUseStyles(theme => ({
     width: '100%'
   },
   content: {
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
     width: '100%',
     padding: `${theme.spacer * 3}px ${theme.spacer * 2}px 0`
   },
@@ -81,7 +85,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       content: '""'
     },
     '&:hover::after': {
-      width: '100%'
+      width: '33%'
     }
   }
 }))

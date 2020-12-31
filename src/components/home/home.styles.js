@@ -19,24 +19,40 @@ const useHomeStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
+  section1Wrapper: {
+    backgroundImage: 'url(./home-background-mobile.png)',
+    [theme.breakpoints.sm]: {
+      backgroundImage: 'url(./home-background.png)'
+    },
+    backgroundPosition: 'bottom',
+    backgroundSize: 'cover'
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundImage: 'url(./home-background.png)',
-    backgroundPosition: 'bottom',
-    backgroundSize: 'cover',
     display: 'flex',
     paddingTop: theme.spacer * 11,
     textAlign: 'center',
     height: theme.spacer * 85,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 40,
+      paddingTop: theme.spacer * 20,
+      paddingBottom: theme.spacer * 20,
       textAlign: 'left',
       height: 'auto'
     },
@@ -108,9 +124,6 @@ const useHomeStyles = createUseStyles(theme => ({
       margin: `${theme.spacer * 6.25}px auto 0`
     }
   },
-  section3: {
-    backgroundColor: theme.palette.primary.light
-  },
   section3Text: {
     color: theme.palette.gray.light,
     lineHeight: '29px',
@@ -140,9 +153,6 @@ const useHomeStyles = createUseStyles(theme => ({
         marginRight: 0
       }
     }
-  },
-  section5: {
-    backgroundColor: theme.palette.primary.light
   },
   section5Text: {
     marginTop: theme.spacer * 3,
@@ -187,7 +197,6 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section7: {
-    backgroundColor: theme.palette.primary.light,
     '& $divider': {
       [theme.breakpoints.sm]: {
         marginTop: theme.spacer * 4,
@@ -258,12 +267,27 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   blogLink: {
-    marginTop: theme.spacer * 3.25
+    marginTop: theme.spacer * 3.25,
+    width: '100%',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
+  },
+  inlineGraphicText: {
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto',
+      marginBottom: 'auto'
+    }
+  },
+  inlineGraphicImage: {
+    [theme.breakpoints.sm]: {
+      maxHeight: theme.spacer * 48
+    }
   },
   onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
-      display: 'inline-grid'
+      display: 'block'
     }
   }
 }))

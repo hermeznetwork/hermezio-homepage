@@ -8,6 +8,10 @@ export const useFooterStyles = createUseStyles(theme => ({
     lineHeight: '23px'
   },
   content: {
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
     width: '100%',
     padding: `${theme.spacer * 11}px ${theme.spacer * 6}px ${theme.spacer * 6}px`
   },
@@ -29,7 +33,6 @@ export const useFooterStyles = createUseStyles(theme => ({
   col3: {
     display: 'flex',
     [theme.breakpoints.sm]: {
-      margin: 'auto',
       width: '33%'
     }
   },
@@ -48,7 +51,10 @@ export const useFooterStyles = createUseStyles(theme => ({
     },
     '& > *': {
       lineHeight: `${theme.spacer * 3}px`,
-      marginBottom: theme.spacer * 2
+      marginBottom: theme.spacer * 0.5,
+      [theme.breakpoints.sm]: {
+        marginBottom: theme.spacer
+      }
     }
   },
   list: {
@@ -66,16 +72,16 @@ export const useFooterStyles = createUseStyles(theme => ({
       }
     }
   },
+  listItemHead: {
+    color: theme.palette.white,
+    fontWeight: theme.fontWeights.bold
+  },
   listItem: {
     lineHeight: `${theme.spacer * 3}px`,
+    paddingBottom: theme.spacer,
     '&:hover': {
       color: theme.palette.white
     }
-  },
-  listItemHead: {
-    color: theme.palette.white,
-    fontWeight: theme.fontWeights.bold,
-    paddingBottom: theme.spacer * 2
   },
   logoAndText: {
     flexDirection: 'column',

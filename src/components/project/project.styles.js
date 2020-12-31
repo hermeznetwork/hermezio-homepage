@@ -25,16 +25,25 @@ const useProjectStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
@@ -71,12 +80,9 @@ const useProjectStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 2,
     marginBottom: theme.spacer * 1,
     [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 0,
+      marginTop: 0,
       marginBottom: theme.spacer * 2.5
     }
-  },
-  section3: {
-    backgroundColor: theme.palette.primary.light
   },
   divider: {
     background: theme.palette.primary.main,
@@ -118,20 +124,34 @@ const useProjectStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacer * 3,
     [theme.breakpoints.sm]: {
       flex: 'initial',
-      paddingBottom: theme.spacer * 0,
-      width: theme.spacer * 26.75
+      paddingBottom: 0,
+      width: '22.5%'
     }
   },
   image: {
     width: '100%'
   },
   name: {
-    marginTop: theme.spacer * 2,
-    marginBottom: theme.spacer * 1,
     color: theme.palette.black,
-    fontSize: '23px',
-    fontWeight: theme.fontWeights.medium,
-    display: 'block'
+    display: 'block',
+    marginTop: theme.spacer * 1.5,
+    fontSize: theme.spacer * 2,
+    lineHeight: `${theme.spacer * 2.5}px`,
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacer * 2,
+      marginBottom: theme.spacer * 0.5,
+      fontSize: theme.spacer * 3 - 1,
+      fontWeight: theme.fontWeights.medium
+    }
+  },
+  role: {
+    fontSize: theme.spacer * 2 - 1,
+    lineHeight: `${theme.spacer * 2.25}px`,
+    letterSpacing: 0,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacer * 2 + 1,
+      lineHeight: `${theme.spacer * 4 - 3}px`
+    }
   }
 }))
 

@@ -105,13 +105,6 @@ export const useLayoutStyles = createUseStyles((theme) => ({
   layout: {
     width: '100%',
     display: 'flex',
-    flexDirection: 'column',
-    [theme.breakpoints.lg]: {
-      maxWidth: '1200px'
-    },
-    [theme.breakpoints.xl]: {
-      maxWidth: '100%'
-    },
-    maxWidth: '100%'
+    flexDirection: 'column'
   }
 }))

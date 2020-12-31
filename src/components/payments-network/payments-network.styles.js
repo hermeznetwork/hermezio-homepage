@@ -25,16 +25,25 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 17}px ${theme.spacer * 9}px ${theme.spacer * 17}px`,
+      padding: `${theme.spacer * 17}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     flexDirection: 'column-reverse',
     paddingTop: theme.spacer * 8,
@@ -71,7 +80,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacer * 1
   },
   section3: {
-    backgroundColor: theme.palette.primary.light,
     textAlign: 'center'
   },
   section3Text: {
@@ -101,7 +109,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section5: {
     display: 'flex',
-    backgroundColor: theme.palette.primary.light,
     '& $col2': {
       marginLeft: 0
     }
@@ -115,7 +122,8 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      flexDirection: 'row'
+      flexDirection: 'row',
+      marginRight: theme.spacer * 7.5
     }
   },
   link: {
@@ -133,6 +141,17 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       marginTop: theme.spacer * 7,
       marginBottom: theme.spacer * 8
+    }
+  },
+  inlineGraphicText: {
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto',
+      marginBottom: 'auto'
+    }
+  },
+  inlineGraphicImage: {
+    [theme.breakpoints.sm]: {
+      maxHeight: theme.spacer * 48
     }
   },
   onlyDesktop: {
