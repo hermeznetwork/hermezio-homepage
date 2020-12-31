@@ -72,7 +72,7 @@ const Developers = () => {
             <span className={classes.divider} />
           </div>
           <div className={classes.row}>
-            <div className={classes.col2}>
+            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <div className={classes.section3SubTitle}>
                 <Title>Community centric protocol</Title>
               </div>
@@ -81,7 +81,7 @@ const Developers = () => {
               <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
               <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
             </div>
-            <div className={`${classes.col2} ${classes.onlyDesktop}`}>
+            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <Section32 />
             </div>
           </div>

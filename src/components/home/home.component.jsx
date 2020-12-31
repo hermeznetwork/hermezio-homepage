@@ -53,12 +53,12 @@ const Home = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
           <div className={classes.row}>
-            <div className={classes.col2}>
+            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <Title>Prosperitity for all</Title>
               <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
               <TextLink to='/' text='Values and guiding principles' />
             </div>
-            <div className={`${classes.col2} ${classes.onlyDesktop}`}>
+            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <Section31 />
             </div>
           </div>
@@ -111,7 +111,7 @@ const Home = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={classes.row}>
-            <div className={classes.col2}>
+            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <Title>97% transfer cost reduction</Title>
               <p className={classes.section5Text}>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin.</p>
               <p className={classes.barText}>
@@ -123,7 +123,7 @@ const Home = () => {
               </p>
               <div className={classes.barL2} />
             </div>
-            <div className={`${classes.col2} ${classes.onlyDesktop}`}>
+            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <Section5 />
             </div>
           </div>

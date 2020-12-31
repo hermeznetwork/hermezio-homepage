@@ -140,7 +140,7 @@ const PaymentsNetwork = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
-          <div className={classes.col2}>
+          <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
             <Title>HEZ - Hermez Network token</Title>
             <p className={classes.section5Text}>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
             <div className={classes.linksWrapper}>
@@ -152,7 +152,7 @@ const PaymentsNetwork = () => {
               </div>
             </div>
           </div>
-          <div className={`${classes.col3} ${classes.onlyDesktop}`}>
+          <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
             <Section5 />
           </div>
         </section>

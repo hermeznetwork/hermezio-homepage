@@ -208,10 +208,21 @@ const useDevelopersStyles = createUseStyles(theme => ({
       }
     }
   },
+  inlineGraphicText: {
+    [theme.breakpoints.sm]: {
+      marginTop: 'auto',
+      marginBottom: 'auto'
+    }
+  },
+  inlineGraphicImage: {
+    [theme.breakpoints.sm]: {
+      maxHeight: theme.spacer * 48
+    }
+  },
   onlyDesktop: {
     display: 'none',
     [theme.breakpoints.sm]: {
-      display: 'inline-grid'
+      display: 'block'
     }
   }
 }))

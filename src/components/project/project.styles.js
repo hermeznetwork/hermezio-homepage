@@ -132,11 +132,26 @@ const useProjectStyles = createUseStyles(theme => ({
     width: '100%'
   },
   name: {
-    marginTop: theme.spacer * 2,
     color: theme.palette.black,
-    fontSize: '23px',
-    fontWeight: theme.fontWeights.medium,
-    display: 'block'
+    display: 'block',
+    marginTop: theme.spacer * 1.5,
+    fontSize: theme.spacer * 2,
+    lineHeight: `${theme.spacer * 2.5}px`,
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacer * 2,
+      marginBottom: theme.spacer * 0.5,
+      fontSize: theme.spacer * 3 - 1,
+      fontWeight: theme.fontWeights.medium
+    }
+  },
+  role: {
+    fontSize: theme.spacer * 2 - 1,
+    lineHeight: `${theme.spacer * 2.25}px`,
+    letterSpacing: 0,
+    [theme.breakpoints.sm]: {
+      fontSize: theme.spacer * 2 + 1,
+      lineHeight: `${theme.spacer * 4 - 3}px`
+    }
   }
 }))
 
