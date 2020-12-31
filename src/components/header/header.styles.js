@@ -85,7 +85,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       content: '""'
     },
     '&:hover::after': {
-      width: '100%'
+      width: '33%'
     }
   }
 }))

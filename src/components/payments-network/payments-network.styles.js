@@ -34,7 +34,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 17}px ${theme.spacer * 9}px ${theme.spacer * 17}px`,
+      padding: `${theme.spacer * 17}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
@@ -122,7 +122,8 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      flexDirection: 'row'
+      flexDirection: 'row',
+      marginRight: theme.spacer * 7.5
     }
   },
   link: {

@@ -34,7 +34,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
@@ -56,7 +56,8 @@ const useDevelopersStyles = createUseStyles(theme => ({
   mainTitle: {
     marginTop: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginTop: 'auto'
+      marginTop: 'auto',
+      marginLeft: 0
     }
   },
   buttonWrapper: {
@@ -130,12 +131,15 @@ const useDevelopersStyles = createUseStyles(theme => ({
     fontSize: theme.spacer * 4.25,
     fontWeight: theme.fontWeights.bold
   },
-  section4: {
-    '& $col3': {
-      [theme.breakpoints.sm]: {
-        margin: 0,
-        marginRight: theme.spacer * 4
-      }
+  section4Box: {
+    [theme.breakpoints.sm]: {
+      width: '31%'
+    },
+    '&:first-child': {
+      marginLeft: 0
+    },
+    '&:last-child': {
+      marginRight: 0
     }
   },
   section4SubTitle: {
@@ -174,7 +178,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     backgroundImage: 'url(./discord-link-background-mobile.svg)',
     backgroundPosition: 'bottom',
     backgroundSize: 'cover',
-    borderRadius: 20,
+    borderRadius: 30,
     padding: `${theme.spacer * 6}px ${theme.spacer * 3.5}px ${theme.spacer * 4.5}px`,
     marginTop: theme.spacer * 5,
     [theme.breakpoints.sm]: {
@@ -191,6 +195,17 @@ const useDevelopersStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       fontSize: theme.spacer * 5.25,
       lineHeight: `${theme.spacer * 7}px`
+    }
+  },
+  discordButton: {
+    [theme.breakpoints.sm]: {
+      margin: 0,
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      '& $buttonWrapper a': {
+        margin: 'auto'
+      }
     }
   },
   onlyDesktop: {

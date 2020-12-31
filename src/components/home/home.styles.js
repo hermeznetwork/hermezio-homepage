@@ -25,7 +25,10 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section1Wrapper: {
-    backgroundImage: 'url(./home-background.png)',
+    backgroundImage: 'url(./home-background-mobile.png)',
+    [theme.breakpoints.sm]: {
+      backgroundImage: 'url(./home-background.png)'
+    },
     backgroundPosition: 'bottom',
     backgroundSize: 'cover'
   },
@@ -33,7 +36,7 @@ const useHomeStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
+      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
@@ -48,7 +51,8 @@ const useHomeStyles = createUseStyles(theme => ({
     textAlign: 'center',
     height: theme.spacer * 85,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 40,
+      paddingTop: theme.spacer * 20,
+      paddingBottom: theme.spacer * 20,
       textAlign: 'left',
       height: 'auto'
     },
@@ -263,7 +267,11 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   blogLink: {
-    marginTop: theme.spacer * 3.25
+    marginTop: theme.spacer * 3.25,
+    width: '100%',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
   },
   onlyDesktop: {
     display: 'none',

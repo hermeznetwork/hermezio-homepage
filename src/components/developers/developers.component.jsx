@@ -93,13 +93,13 @@ const Developers = () => {
             <Title>Developer Resources</Title>
           </div>
           <div className={classes.row}>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='/' text='Hermez API Reference' />
             </div>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='https://docs.hermez.io/' text='Technical Documentation' />
             </div>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='https://github.com/hermeznetwork' text='Github Repository' />
             </div>
           </div>
@@ -108,12 +108,13 @@ const Developers = () => {
             <Title>Tools</Title>
           </div>
           <div className={classes.row}>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='/' text='Mainnet Wallet' />
             </div>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='/' text='Network Explorer' />
             </div>
+            <div className={`${classes.col3} ${classes.section4Box}`} />
           </div>
 
           <div className={classes.section4SubTitle}>
@@ -121,19 +122,20 @@ const Developers = () => {
           </div>
           <p className={classes.circomText}>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
           <div className={classes.row}>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='/' text='Circom Documentation' />
             </div>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='/' text='SnarkJS Documentation' />
             </div>
+            <div className={`${classes.col3} ${classes.section4Box}`} />
           </div>
 
           <div className={`${classes.row} ${classes.discordHiglight}`}>
             <div className={classes.col23}>
               <p className={classes.discordText}>Take part in shaping Hermez's future and join the conversation.</p>
             </div>
-            <div className={classes.col3}>
+            <div className={`${classes.col3} ${classes.discordButton}`}>
               <div className={classes.buttonWrapper}>
                 <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
               </div>
