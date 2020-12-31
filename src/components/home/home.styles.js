@@ -19,18 +19,30 @@ const useHomeStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
+  section1Wrapper: {
+    backgroundImage: 'url(./home-background.png)',
+    backgroundPosition: 'bottom',
+    backgroundSize: 'cover'
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundImage: 'url(./home-background.png)',
-    backgroundPosition: 'bottom',
-    backgroundSize: 'cover',
     display: 'flex',
     paddingTop: theme.spacer * 11,
     textAlign: 'center',
@@ -108,9 +120,6 @@ const useHomeStyles = createUseStyles(theme => ({
       margin: `${theme.spacer * 6.25}px auto 0`
     }
   },
-  section3: {
-    backgroundColor: theme.palette.primary.light
-  },
   section3Text: {
     color: theme.palette.gray.light,
     lineHeight: '29px',
@@ -140,9 +149,6 @@ const useHomeStyles = createUseStyles(theme => ({
         marginRight: 0
       }
     }
-  },
-  section5: {
-    backgroundColor: theme.palette.primary.light
   },
   section5Text: {
     marginTop: theme.spacer * 3,
@@ -187,7 +193,6 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section7: {
-    backgroundColor: theme.palette.primary.light,
     '& $divider': {
       [theme.breakpoints.sm]: {
         marginTop: theme.spacer * 4,

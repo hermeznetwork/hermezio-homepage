@@ -25,16 +25,25 @@ const useDevelopersStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
@@ -72,7 +81,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   section3: {
-    backgroundColor: theme.palette.primary.light,
     textAlign: 'center',
     '& $col2': {
       textAlign: 'left'
@@ -92,6 +100,18 @@ const useDevelopersStyles = createUseStyles(theme => ({
       marginBottom: theme.spacer * 3
     }
   },
+  boxes: {
+    [theme.breakpoints.sm]: {
+      display: 'flex',
+      justifyContent: 'space-between'
+    }
+  },
+  boxWrapper: {
+    [theme.breakpoints.sm]: {
+      width: '30%',
+      margin: 0
+    }
+  },
   box: {
     background: theme.palette.white,
     borderRadius: 20,
@@ -99,12 +119,11 @@ const useDevelopersStyles = createUseStyles(theme => ({
     lineHeight: '35px',
     color: theme.palette.black,
     maxHeight: theme.spacer * 30,
-    padding: `${theme.spacer * 8}px ${theme.spacer * 10}px ${theme.spacer * 8}px ${theme.spacer * 6.5}px`,
+    padding: `${theme.spacer * 8}px ${theme.spacer * 9.5}px ${theme.spacer * 8}px ${theme.spacer * 6.5}px`,
     textAlign: 'left',
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginBottom: theme.spacer * 0,
-      marginRight: theme.spacer * 4.5
+      marginBottom: theme.spacer * 0
     }
   },
   highlightedText: {

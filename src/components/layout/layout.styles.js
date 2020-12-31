@@ -4,14 +4,14 @@ export const useLayoutStyles = createUseStyles((theme) => ({
   '@font-face': [
     {
       fontFamily: 'Modern Era',
-      src: "url('/fonts/modern-era/ModernEra-Regular.woff2') format('woff2')",
+      src: "url('./fonts/modern-era/ModernEra-Regular.woff2') format('woff2')",
       fallbacks: [
         {
-          src: "url('/fonts/modern-era/ModernEra-Regular.woff') format('woff')"
+          src: "url('./fonts/modern-era/ModernEra-Regular.woff') format('woff')"
         },
         {
           src:
-            "url('/fonts/modern-era/ModernEra-Regular.ttf') format('truetype')"
+            "url('./fonts/modern-era/ModernEra-Regular.ttf') format('truetype')"
         }
       ],
       fontWeight: 400,
@@ -19,14 +19,14 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     {
       fontFamily: 'Modern Era',
-      src: "url('/fonts/modern-era/ModernEra-Medium.woff2') format('woff2')",
+      src: "url('./fonts/modern-era/ModernEra-Medium.woff2') format('woff2')",
       fallbacks: [
         {
-          src: "url('/fonts/modern-era/ModernEra-Medium.woff') format('woff')"
+          src: "url('./fonts/modern-era/ModernEra-Medium.woff') format('woff')"
         },
         {
           src:
-            "url('/fonts/modern-era/ModernEra-Medium.ttf') format('truetype')"
+            "url('./fonts/modern-era/ModernEra-Medium.ttf') format('truetype')"
         }
       ],
       fontWeight: 500,
@@ -34,13 +34,13 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     {
       fontFamily: 'Modern Era',
-      src: "url('/fonts/modern-era/ModernEra-Bold.woff2') format('woff2')",
+      src: "url('./fonts/modern-era/ModernEra-Bold.woff2') format('woff2')",
       fallbacks: [
         {
-          src: "url('/fonts/modern-era/ModernEra-Bold.woff') format('woff')"
+          src: "url('./fonts/modern-era/ModernEra-Bold.woff') format('woff')"
         },
         {
-          src: "url('/fonts/modern-era/ModernEra-Bold.ttf') format('truetype')"
+          src: "url('./fonts/modern-era/ModernEra-Bold.ttf') format('truetype')"
         }
       ],
       fontWeight: 700,
@@ -48,15 +48,15 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     {
       fontFamily: 'Modern Era',
-      src: "url('/fonts/modern-era/ModernEra-ExtraBold.woff2') format('woff2')",
+      src: "url('./fonts/modern-era/ModernEra-ExtraBold.woff2') format('woff2')",
       fallbacks: [
         {
           src:
-            "url('/fonts/modern-era/ModernEra-ExtraBold.woff') format('woff')"
+            "url('./fonts/modern-era/ModernEra-ExtraBold.woff') format('woff')"
         },
         {
           src:
-            "url('/fonts/modern-era/ModernEra-ExtraBold.ttf') format('truetype')"
+            "url('./fonts/modern-era/ModernEra-ExtraBold.ttf') format('truetype')"
         }
       ],
       fontWeight: 800,
@@ -105,13 +105,6 @@ export const useLayoutStyles = createUseStyles((theme) => ({
   layout: {
     width: '100%',
     display: 'flex',
-    flexDirection: 'column',
-    [theme.breakpoints.lg]: {
-      maxWidth: '1200px'
-    },
-    [theme.breakpoints.xl]: {
-      maxWidth: '100%'
-    },
-    maxWidth: '100%'
+    flexDirection: 'column'
   }
 }))

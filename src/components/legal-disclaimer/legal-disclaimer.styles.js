@@ -9,6 +9,13 @@ const useLegalDisclaimerStyles = createUseStyles(theme => ({
     background: theme.palette.primary.light,
     color: theme.palette.gray.light
   },
+  content: {
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
+    width: '100%'
+  },
   title: {
     paddingTop: theme.spacer * 10,
     marginBottom: theme.spacer * 5

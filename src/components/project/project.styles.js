@@ -25,16 +25,25 @@ const useProjectStyles = createUseStyles(theme => ({
       width: '33%'
     }
   },
+  sectionWrapper: {
+    '&:nth-child(odd)': {
+      backgroundColor: theme.palette.primary.light
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.sm]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`,
       flexDirection: 'row'
-    }
+    },
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
+    width: '100%'
   },
   section1: {
-    backgroundColor: theme.palette.primary.light,
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
@@ -74,9 +83,6 @@ const useProjectStyles = createUseStyles(theme => ({
       marginTop: theme.spacer * 0,
       marginBottom: theme.spacer * 2.5
     }
-  },
-  section3: {
-    backgroundColor: theme.palette.primary.light
   },
   divider: {
     background: theme.palette.primary.main,
@@ -119,7 +125,7 @@ const useProjectStyles = createUseStyles(theme => ({
     [theme.breakpoints.sm]: {
       flex: 'initial',
       paddingBottom: theme.spacer * 0,
-      width: theme.spacer * 26.75
+      width: '22.5%'
     }
   },
   image: {

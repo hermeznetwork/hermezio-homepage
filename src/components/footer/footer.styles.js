@@ -8,6 +8,10 @@ export const useFooterStyles = createUseStyles(theme => ({
     lineHeight: '23px'
   },
   content: {
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
     width: '100%',
     padding: `${theme.spacer * 11}px ${theme.spacer * 6}px ${theme.spacer * 6}px`
   },

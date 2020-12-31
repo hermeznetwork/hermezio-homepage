@@ -9,7 +9,7 @@ const MediaInquiries = () => {
 
   return (
     <section className={classes.section}>
-      <div className={classes.contentWrapper}>
+      <div className={classes.content}>
         <div className={classes.title}>
           <Title>Media Inquiries</Title>
         </div>

@@ -6,6 +6,10 @@ export const useHeaderStyles = createUseStyles(theme => ({
     width: '100%'
   },
   content: {
+    [theme.breakpoints.xl]: {
+      width: '1020px'
+    },
+    margin: 'auto',
     width: '100%',
     padding: `${theme.spacer * 3}px ${theme.spacer * 2}px 0`
   },
