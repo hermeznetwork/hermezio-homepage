@@ -178,6 +178,42 @@ const Home = () => {
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
+                  href='https://blog.hermez.io/hermez-second-audit-by-trail-of-bits/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.blogLink}
+                >
+                  Hermez Second Audit, by Trail of Bits
+                </a>
+              </h3>
+              <p>30 December 2020</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col2}>
+              <h3 className={classes.blogTitle}>
+                <a
+                  href='https://blog.hermez.io/hermez-trusted-setup-phase-2/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.blogLink}
+                >
+                  Join Hermez Trusted Setup Phase 2 Ceremony!
+                </a>
+              </h3>
+              <p>21 December 2020</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col2}>
+              <h3 className={classes.blogTitle}>
+                <a
                   href='https://blog.hermez.io/hermez-massive-migrations-mechanism/'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -187,42 +223,6 @@ const Home = () => {
                 </a>
               </h3>
               <p>27 November 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Hermez zk-rollup Circom Circuits Are Now Public!
-                </a>
-              </h3>
-              <p>23 November 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Hermez in Depth: Bootstrapping Security Measures
-                </a>
-              </h3>
-              <p>19 November 2020</p>
             </div>
           </div>
           <div className={classes.row}>
