@@ -74,7 +74,9 @@ const Developers = () => {
             </div>
           </div>
 
-          <div className={classes.section4SubTitle}>
+          {/* Following two sections are hidden, and will be made visible once it is decided to do so. */}
+
+          {/* <div className={classes.section4SubTitle}>
             <Title>Tools</Title>
           </div>
           <div className={classes.row}>
@@ -85,9 +87,9 @@ const Developers = () => {
               <TextLink box to='/' text='Network Explorer' />
             </div>
             <div className={`${classes.col3} ${classes.section4Box}`} />
-          </div>
+          </div> */}
 
-          <div className={classes.section4SubTitle}>
+          {/* <div className={classes.section4SubTitle}>
             <Title>Circom Language</Title>
           </div>
           <p className={classes.circomText}>Circom is open-source circuit programming language and a compiler that allows programmers to design and create their own arithmetic circuits for zero-knowledge proofs.</p>
@@ -99,7 +101,7 @@ const Developers = () => {
               <TextLink box to='/' text='SnarkJS Documentation' />
             </div>
             <div className={`${classes.col3} ${classes.section4Box}`} />
-          </div>
+          </div> */}
 
           <div className={`${classes.row} ${classes.discordHiglight}`}>
             <div className={classes.col23}>
