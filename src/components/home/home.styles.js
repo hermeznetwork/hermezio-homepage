@@ -253,7 +253,7 @@ const useHomeStyles = createUseStyles(theme => ({
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
       marginBottom: 0,
-      minHeight: theme.spacer * 25,
+      minHeight: theme.spacer * 26.5,
       padding: `${theme.spacer * 4}px ${theme.spacer * 7.5}px ${theme.spacer * 5}px ${theme.spacer * 6}px `
     }
   },
