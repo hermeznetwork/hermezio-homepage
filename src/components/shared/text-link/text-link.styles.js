@@ -41,6 +41,9 @@ const useTextLinkStyles = createUseStyles(theme => ({
   boxLinkText: {
     width: theme.spacer * 17.5,
     paddingRight: theme.spacer * 2
+  },
+  white: {
+    backgroundColor: theme.palette.white
   }
 }))
 

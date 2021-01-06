@@ -5,7 +5,6 @@ import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Section1 from '../../assets/images/developers/section1.inline.svg'
-import Section31 from '../../assets/images/developers/section3_1.inline.svg'
 import Section32 from '../../assets/images/developers/section3_2.inline.svg'
 
 const Developers = () => {
@@ -42,38 +41,9 @@ const Developers = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
-          <Title>Open ecosystem</Title>
-          <p className={classes.section2Text}>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
-          <Section31 />
-          <div className={classes.section3Title}>
-            <Title>Results</Title>
-          </div>
-          <div className={`${classes.row} ${classes.boxes}`}>
-            <div className={`${classes.col3} ${classes.boxWrapper}`}>
-              <div className={classes.box}>
-                <span className={classes.highlightedText}>133x </span>
-                <span>throughput improvement</span>
-              </div>
-            </div>
-            <div className={`${classes.col3} ${classes.boxWrapper}`}>
-              <div className={classes.box}>
-                <span className={classes.highlightedText}>97% </span>
-                <span>token transfer cost reduction</span>
-              </div>
-            </div>
-            <div className={`${classes.col3} ${classes.boxWrapper}`}>
-              <div className={classes.box}>
-                <span className={classes.highlightedText}>40% </span>
-                <span>reinvested in ecosystem development</span>
-              </div>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <div className={classes.section3SubTitle}>
+              <div className={classes.section3Title}>
                 <Title>Community centric protocol</Title>
               </div>
               <p className={classes.paragraphMargin}>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>

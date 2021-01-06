@@ -9,7 +9,8 @@ import useTextLinkStyles from './text-link.styles'
 function TextLink ({
   to,
   text,
-  box = false
+  box = false,
+  white = false
 }) {
   const classes = useTextLinkStyles()
 
@@ -20,7 +21,8 @@ function TextLink ({
       rel='noopener noreferrer'
       className={clsx({
         [classes.link]: !box,
-        [classes.boxLink]: box
+        [classes.boxLink]: box,
+        [classes.white]: white
       })}
     >
       {!box
@@ -33,7 +35,8 @@ function TextLink ({
 TextLink.propTypes = {
   to: PropTypes.string.isRequired,
   text: PropTypes.string,
-  box: PropTypes.bool
+  box: PropTypes.bool,
+  white: PropTypes.bool
 }
 
 export default TextLink

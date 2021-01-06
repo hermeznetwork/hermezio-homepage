@@ -10,7 +10,8 @@ function Button ({
   to,
   text,
   hideIcon = false,
-  internalLink = false
+  internalLink = false,
+  transparent = false
 }) {
   const classes = useButtonStyles()
 
@@ -20,7 +21,7 @@ function Button ({
         ? (
           <Link
             to={to}
-            className={`${classes.root} ${classes.secondary}`}
+            className={`${classes.root} ${classes.secondary} ${classes.transparent}`}
           >
             {text}
             {hideIcon ? <></> : <ArrowSecondary className={classes.icon} />}
@@ -46,6 +47,7 @@ Button.propTypes = {
   text: PropTypes.string,
   hideIcon: PropTypes.bool,
   internalLink: PropTypes.bool,
+  transparent: PropTypes.bool,
   marginLeft: PropTypes.number
 }
 
