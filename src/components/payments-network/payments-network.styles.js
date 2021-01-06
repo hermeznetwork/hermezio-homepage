@@ -105,6 +105,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   section4Title: {
+    marginTop: 0,
     marginBottom: theme.spacer * 2
   },
   section5: {
