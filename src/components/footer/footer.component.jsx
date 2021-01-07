@@ -60,7 +60,7 @@ export const Footer = ({ routes }) => {
                   {routes.find(el => el.label === "Hermez Wallet").label}
                 </Link>
               </li> */}
-              {/* TODO show Wallet link, once Network explorer is published */}
+              {/* TODO show Network explorer link, once Network explorer is published */}
               {/* <li className={classes.listItem}>
                 <Link to={routes.find(el => el.label === "Network explorer").to}>
                   {routes.find(el => el.label === "Network explorer").label}
