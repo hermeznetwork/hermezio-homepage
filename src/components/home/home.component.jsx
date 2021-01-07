@@ -77,7 +77,7 @@ const Home = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section8}`}>
           <Title>Layer 2 scalability solution</Title>
-          <p className={classes.section8Text}>Scalable verification of computational integrity and data availability on-chain is guaranteed by zero-knowledge proofs technology.</p>
+          <p className={classes.section8Text}>Computational integrity and on-chain data availability are guaranteed by zero-knowledge proof technology while preserving the public blockchain properties of Ethereum.</p>
           <Section8 />
           <div className={classes.section8SubTitle}>
             <Title>Results</Title>

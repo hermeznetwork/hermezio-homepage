@@ -82,13 +82,8 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section3: {
     textAlign: 'center'
   },
-  section3Text: {
-    marginTop: theme.spacer * 2,
-    marginBottom: theme.spacer * 3,
-    [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 3,
-      marginBottom: theme.spacer * 10.5
-    }
+  section3Title: {
+    marginBottom: theme.spacer * 9
   },
   section4: {
     '& h3': {

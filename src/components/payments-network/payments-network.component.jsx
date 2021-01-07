@@ -5,7 +5,7 @@ import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
-// import Section3 from '../../assets/images/payments-network/section3.inline.svg'
+import Section3 from '../../assets/images/payments-network/section3.inline.svg'
 import Section5 from '../../assets/images/payments-network/section5.inline.svg'
 
 const PaymentsNetwork = () => {
@@ -80,16 +80,14 @@ const PaymentsNetwork = () => {
           </div>
         </section>
       </div>
-      {/* Hidden for now as requested in designs. */}
-      {/* <div className={classes.sectionWrapper}>
+      <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
-          <Title>Open ecosystem</Title>
-          <div className={classes.sectionText}>
-            <p>Cryptocurrency exchange (EX) used as an example of a transaction aggregator.</p>
+          <div className={classes.section3Title}>
+            <Title>Scalable payments and universal settlement layer for moving token-based digital currencies.</Title>
           </div>
           <Section3 />
         </section>
-      </div> */}
+      </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section4}`}>
           <div className={classes.row}>
