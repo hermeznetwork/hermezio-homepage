@@ -49,12 +49,12 @@ const useHomeStyles = createUseStyles(theme => ({
     display: 'flex',
     paddingTop: theme.spacer * 11,
     textAlign: 'center',
-    height: theme.spacer * 85,
+    height: theme.spacer * 89,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 20,
+      paddingTop: theme.spacer * 27.25,
       paddingBottom: theme.spacer * 20,
       textAlign: 'left',
-      height: 'auto'
+      height: theme.spacer * 103
     },
     '& $col3': {
       marginLeft: 0
