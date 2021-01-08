@@ -7,8 +7,9 @@ import TextLink from '../shared/text-link/text-link.component'
 import Section21 from '../../assets/images/home/section2_1.inline.svg'
 import Section22 from '../../assets/images/home/section2_2.inline.svg'
 import Section23 from '../../assets/images/home/section2_3.inline.svg'
-import Section31 from '../../assets/images/home/section3.inline.svg'
+import Section3 from '../../assets/images/home/section3.inline.svg'
 import Section5 from '../../assets/images/home/section5.inline.svg'
+import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = () => {
   const classes = useHomeStyles()
@@ -19,7 +20,7 @@ const Home = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={classes.col3}>
             <Title>Open and low-cost payments network for everyone.</Title>
-            <p className={classes.section1Text}>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
+            <p className={classes.section1Text}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</p>
             <div className={classes.buttonWrapper}>
               <Button to='/' text='Create account' />
             </div>
@@ -50,76 +51,19 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div className={classes.sectionWrapper}>
-        <section className={`${classes.section} ${classes.section3}`}>
-          <div className={classes.row}>
-            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <Title>Prosperitity for all</Title>
-              <p className={classes.section3Text}>Hermez mission is to create an inclusive, secure and borderless payments infrastructure to bring economic freedom to people all over the world.</p>
-              <TextLink to='/' text='Values and guiding principles' />
-            </div>
-            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-              <Section31 />
-            </div>
-          </div>
-        </section>
-      </div>
-      <div className={classes.sectionWrapper}>
-        <section className={`${classes.section} ${classes.section4}`}>
-          <div className={classes.row}>
-            <div className={classes.col3}>
-              <div className={classes.section4Title}>
-                <Title>Zero-knowledge cryptography</Title>
-              </div>
-            </div>
-            <div className={classes.col2}>
-              <p className={classes.paragraphMargin}>ZK-Rollups are one of the options being developed for layer 2 construction that increases scalability through mass transfer processing rolled into a single transaction.</p>
-              <p>A "zero knowledge proof" approach is used to present and publicly record the validity of the block on the Ethereum blockchain. ZK reduces computing and storage resources for validating the block by reducing the amount of data held in a transaction; zero knowledge of the entire data is needed.</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col3}>
-              <div className={classes.section4Title}>
-                <Title>Universal scalability with validity proofs</Title>
-              </div>
-            </div>
-            <div className={classes.col2}>
-              <p>Explanation of validity proofs + data availability on L1. The SNARK proof is a hash that represents the delta of the blockchain state. State refers to "state of being." SNARK proof compares a snapshot of the blockchain before the transfers to a snapshot of the blockchain after the transfers (i.e. wallet values) and reports only the changes in a verifiable hash to the mainnet.</p>
-            </div>
-          </div>
-          <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
-            <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box to='/hermez-whitepaper.pdf' text='Hermez Network White Paper' />
-            </div>
-            <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box to='https://docs.hermez.io/' text='Technical Documentation' />
-            </div>
-            <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box to='https://github.com/hermeznetwork' text='Github Repository' />
-            </div>
-          </div>
-          <div className={classes.row}>
-            <div className={`${classes.buttonWrapper} ${classes.button}`}>
-              <Button internalLink to='/developers' text='Developers' />
-            </div>
-          </div>
-        </section>
-      </div>
+
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <Title>97% transfer cost reduction</Title>
-              <p className={classes.section5Text}>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin.</p>
+              <Title>More than 90% transfer cost reduction</Title>
+              <p className={classes.section5Text}>By using zero-knowledge technology, transfer costs are significantly reduced, allowing more accessible financial services for mainstream adoption.</p>
               <p className={classes.barText}>
-                L1 Ethereum - <span className={classes.barHighlightedText}>100% gas per TX</span>
+                L1 Ethereum
               </p>
               <div className={classes.barL1} />
               <p className={classes.barText}>
-                L2 Hermez - <span className={classes.barHighlightedText}>10% gas per TX</span>
+                L2 Hermez
               </p>
               <div className={classes.barL2} />
             </div>
@@ -129,6 +73,50 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <div className={classes.sectionWrapper}>
+        <section className={`${classes.section} ${classes.section8}`}>
+          <Title>Layer 2 scalability solution</Title>
+          <p className={classes.section8Text}>Computational integrity and on-chain data availability are guaranteed by zero-knowledge proof technology while preserving the public blockchain properties of Ethereum.</p>
+          <Section8 />
+          <div className={classes.section8SubTitle}>
+            <Title>Results</Title>
+          </div>
+          <div className={`${classes.row} ${classes.boxes}`}>
+            <div className={`${classes.col3} ${classes.boxWrapper}`}>
+              <div className={classes.box}>
+                <span>Over 133x throughput improvement</span>
+              </div>
+            </div>
+            <div className={`${classes.col3} ${classes.boxWrapper}`}>
+              <div className={classes.box}>
+                <span>Over 90% reduction in token transfer costs</span>
+              </div>
+            </div>
+            <div className={`${classes.col3} ${classes.boxWrapper}`}>
+              <div className={classes.box}>
+                <span>Secure and fast withdrawals</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className={classes.sectionWrapper}>
+        <section className={`${classes.section} ${classes.section3}`}>
+          <div className={classes.row}>
+            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
+              <Title>Prosperitity for all</Title>
+              <p className={classes.section3Text}>Hermez's mission is to create an inclusive, resilient and highly efficient payment network for the next generation of digital currencies to ensure everyone has the freedom to transact.</p>
+              <TextLink to='/' text='Values and guiding principles' />
+            </div>
+            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
+              <Section3 />
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section6}`}>
           <div className={classes.row}>
@@ -137,7 +125,7 @@ const Home = () => {
             </div>
             <div className={classes.col2}>
               <Title type='h3'>Hermez is giving back</Title>
-              <p>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants. We call this mechanism proof-of-donation.</p>
+              <p>Block creators are selected through a burn auction, however rather than burning tokens, 40% of the winning bid is returned as a donation to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.  We call this mechanism Proof-of-Donation.</p>
               <div className={classes.section6link}>
                 <TextLink to='/' text='More about proof-of-donation' />
               </div>
@@ -149,7 +137,7 @@ const Home = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Permissionless auctions for validators</Title>
-              <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
+              <p>Anyone can bid in a decentralized auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
               <div className={classes.section6link}>
                 <TextLink to='/' text='How to become a coordinator' />
               </div>
@@ -169,12 +157,90 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <div className={classes.sectionWrapper}>
+        <section className={`${classes.section} ${classes.section4}`}>
+          <div className={classes.row}>
+            <div className={`${classes.col3} ${classes.section4Title}`}>
+              <Title>Future of payments</Title>
+            </div>
+            <div className={classes.col2}>
+              <Title type='h3'>Zero-knowledge cryptography</Title>
+              <p>Hermez zk-rollup is a layer 2 construction on top of Ethereum that solves its scalability through mass transfer processing rolled into a single transaction.</p>
+              <p>The "zero-knowledge proof" (ZK) technology is used to present and publicly record the validity and correctness of the rolled transfers processed on the Ethereum blockchain. By storing just the proof and the compressed data of a batch of transfers, the efficiency and the throughput of the network is multiplied.</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col2}>
+              <Title type='h3'>Universal scalability with validity proofs</Title>
+              <p>The consensus of status between Ethereum and Hermez is leveraging on zk-SNARKs validity proofs. Since validity is enforced by the zero-knowledge circuits, the L2 network status and the transactions can be considered as valid instantly once the corresponding block containing the proof is mined in L1.</p>
+              <p>All the data availability required to reconstruct the full state of Hermez network is implemented on Ethereum, and so any permissionless node can be deployed and synchronized from it.</p>
+            </div>
+          </div>
+          <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
+              <TextLink box white to='/hermez-whitepaper.pdf' text='Hermez Network White Paper' />
+            </div>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
+              <TextLink box white to='https://docs.hermez.io/' text='Technical Documentation' />
+            </div>
+            <div className={`${classes.col3} ${classes.section4Box}`}>
+              <TextLink box white to='https://github.com/hermeznetwork' text='Github Repository' />
+            </div>
+          </div>
+          <div className={classes.row}>
+            <div className={`${classes.buttonWrapper} ${classes.button}`}>
+              <Button internalLink transparent to='/developers' text='Developers' />
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
           <div className={classes.row}>
             <div className={classes.col3}>
               <Title>Blog</Title>
             </div>
+            <div className={classes.col2}>
+              <h3 className={classes.blogTitle}>
+                <a
+                  href='https://blog.hermez.io/hermez-second-audit-by-trail-of-bits/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.blogLink}
+                >
+                  Hermez Second Audit, by Trail of Bits
+                </a>
+              </h3>
+              <p>30 December 2020</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col2}>
+              <h3 className={classes.blogTitle}>
+                <a
+                  href='https://blog.hermez.io/hermez-trusted-setup-phase-2/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.blogLink}
+                >
+                  Join Hermez Trusted Setup Phase 2 Ceremony!
+                </a>
+              </h3>
+              <p>21 December 2020</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
@@ -187,42 +253,6 @@ const Home = () => {
                 </a>
               </h3>
               <p>27 November 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-zk-rollup-circom-circuits-github-public/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Hermez zk-rollup Circom Circuits Are Now Public!
-                </a>
-              </h3>
-              <p>23 November 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-in-depth-bootstrapping-security-measures/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Hermez in Depth: Bootstrapping Security Measures
-                </a>
-              </h3>
-              <p>19 November 2020</p>
             </div>
           </div>
           <div className={classes.row}>

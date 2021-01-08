@@ -41,7 +41,8 @@ export const useHeaderStyles = createUseStyles(theme => ({
     listStyle: 'none',
     margin: 0,
     paddingLeft: 0,
-    width: '100%'
+    width: '100%',
+    alignItems: 'center'
   },
   linkWrapper: {
     paddingLeft: theme.spacer * 2,

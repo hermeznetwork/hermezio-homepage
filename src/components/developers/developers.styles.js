@@ -67,6 +67,16 @@ const useDevelopersStyles = createUseStyles(theme => ({
       justifyContent: 'left'
     }
   },
+  section2: {
+    '& $divider': {
+      [theme.breakpoints.sm]: {
+        width: '50%'
+      },
+      marginLeft: 'auto',
+      marginTop: theme.spacer * 4,
+      marginBottom: theme.spacer * 5
+    }
+  },
   section2Title: {
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
@@ -88,48 +98,10 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   section3Title: {
-    marginTop: theme.spacer * 8,
-    marginBottom: theme.spacer * 4,
-    [theme.breakpoints.sm]: {
-      marginTop: theme.spacer * 16,
-      marginBottom: theme.spacer * 8
-    }
-  },
-  section3SubTitle: {
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {
       marginBottom: theme.spacer * 3
     }
-  },
-  boxes: {
-    [theme.breakpoints.sm]: {
-      display: 'flex',
-      justifyContent: 'space-between'
-    }
-  },
-  boxWrapper: {
-    [theme.breakpoints.sm]: {
-      width: '30%',
-      margin: 0
-    }
-  },
-  box: {
-    background: theme.palette.white,
-    borderRadius: 20,
-    fontSize: '23px',
-    lineHeight: '35px',
-    color: theme.palette.black,
-    maxHeight: theme.spacer * 30,
-    padding: `${theme.spacer * 8}px ${theme.spacer * 9.5}px ${theme.spacer * 8}px ${theme.spacer * 6.5}px`,
-    textAlign: 'left',
-    marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
-      marginBottom: 0
-    }
-  },
-  highlightedText: {
-    fontSize: theme.spacer * 4.25,
-    fontWeight: theme.fontWeights.bold
   },
   section4Box: {
     [theme.breakpoints.sm]: {

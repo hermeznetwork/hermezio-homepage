@@ -30,6 +30,7 @@ const useButtonStyles = createUseStyles(theme => ({
     }
   },
   secondary: {
+    fontWeight: theme.fontWeights.medium,
     padding: `${theme.spacer * 3.5}px ${theme.spacer * 4}px`,
     border: `1px solid ${theme.palette.primary.main}`,
     background: theme.palette.white,
@@ -38,6 +39,9 @@ const useButtonStyles = createUseStyles(theme => ({
       border: `1px solid ${theme.palette.black}`,
       color: theme.palette.black
     }
+  },
+  transparent: {
+    background: 'transparent'
   }
 }))
 

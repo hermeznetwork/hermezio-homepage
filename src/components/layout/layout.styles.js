@@ -74,12 +74,12 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     body: {
       fontFamily: 'Modern Era',
-      fontWeight: 400,
+      fontWeight: theme.fontWeights.normal,
       minHeight: '100vh',
       margin: 0,
       fontSize: theme.spacer * 2,
       lineHeight: `${theme.spacer * 3}px`,
-      color: theme.palette.gray.light,
+      color: theme.palette.gray.main,
       [theme.breakpoints.sm]: {
         fontSize: theme.spacer * 2 + 1,
         lineHeight: '29px'

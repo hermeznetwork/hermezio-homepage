@@ -22,7 +22,7 @@ export const Footer = ({ routes }) => {
               </a>
             </div>
           </div>
-          <div className={classes.col3}>
+          <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Hermez
@@ -41,8 +41,8 @@ export const Footer = ({ routes }) => {
               },
               {
                 id: 3,
-                label: 'Developers',
-                to: '/developers'
+                label: 'Technolgy',
+                to: '/technolgy'
               },
               {
                 id: 4,
@@ -60,13 +60,30 @@ export const Footer = ({ routes }) => {
                   {routes.find(el => el.label === "Hermez Wallet").label}
                 </Link>
               </li> */}
-              {/* TODO show Wallet link, once Network explorer is published */}
+              {/* TODO show Network explorer link, once Network explorer is published */}
               {/* <li className={classes.listItem}>
                 <Link to={routes.find(el => el.label === "Network explorer").to}>
                   {routes.find(el => el.label === "Network explorer").label}
                 </Link>
               </li> */}
             </ul>
+            <ul className={classes.list}>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>
+                Project
+              </li>
+              <li className={classes.listItem}>
+                <Link to='/project'>
+                  About us
+                </Link>
+              </li>
+              <li className={classes.listItem}>
+                <Link to='/media-inquiries'>
+                  Mediakit
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
               <li className={classes.listItem}>
@@ -95,19 +112,6 @@ export const Footer = ({ routes }) => {
                 >
                   Github
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div className={classes.col3}>
-            <ul className={classes.list}>
-              <li className={`${classes.listItem} ${classes.listItemHead}`}>
-                Project
-              </li>
-              <li className={classes.listItem}>About us MISSING LINK</li>
-              <li className={classes.listItem}>
-                <Link to='/media-inquiries'>
-                  Mediakit
-                </Link>
               </li>
             </ul>
             <ul className={classes.list}>

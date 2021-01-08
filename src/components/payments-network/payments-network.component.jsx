@@ -82,9 +82,8 @@ const PaymentsNetwork = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
-          <Title>Open ecosystem</Title>
-          <div className={classes.sectionText}>
-            <p>Cryptocurrency exchange (EX) used as an example of a transaction aggregator.</p>
+          <div className={classes.section3Title}>
+            <Title>Scalable payments and universal settlement layer for moving token-based digital currencies.</Title>
           </div>
           <Section3 />
         </section>
@@ -96,8 +95,8 @@ const PaymentsNetwork = () => {
               <Title>Benefits of integration and using Hermez</Title>
             </div>
             <div className={classes.col2}>
-              <Title type='h3'>Exchanges and wallet providers</Title>
-              <p>Participate in Hermez permissionless auctions to produce blocks and earn HEZ tokens. Low-entry barrier to be profitable...</p>
+              <Title type='h3'>Users</Title>
+              <p>Make secure payments in digital currencies using Ethereum borderless infrastructure, reducing transfer fees by over 90%.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -105,8 +104,8 @@ const PaymentsNetwork = () => {
           </div>
           <div className={classes.row}>
             <div className={classes.col2}>
-              <Title type='h3'>Validators / network coordinators</Title>
-              <p>Participate in Hermez permissionless auctions to produce blocks and earn HEZ tokens. Low-entry barrier to be profitable...</p>
+              <Title type='h3'>Coordinators (Validators)</Title>
+              <p>Earn the right to forge batches in an open and permissionless way and collect the fees of the processed transactions.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -115,7 +114,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Community</Title>
-              <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <p>Our smart contracts and Circom circuits are open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -123,8 +122,8 @@ const PaymentsNetwork = () => {
           </div>
           <div className={classes.row}>
             <div className={classes.col2}>
-              <Title type='h3'>Individuals</Title>
-              <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <Title type='h3'>Transaction aggregators</Title>
+              <p>An improved payment experience thanks to the low-cost transfers and swaps with all the security of Ethereum L1.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -132,8 +131,8 @@ const PaymentsNetwork = () => {
           </div>
           <div className={classes.row}>
             <div className={classes.col2}>
-              <Title type='h3'>Token issuers</Title>
-              <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <Title type='h3'>Token Issuers</Title>
+              <p>Add your token to Hermez Network to be available for scalable payments.</p>
             </div>
           </div>
         </section>

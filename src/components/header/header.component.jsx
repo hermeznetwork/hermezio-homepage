@@ -31,8 +31,8 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
               },
               {
                 id: 3,
-                label: 'Developers',
-                to: '/developers'
+                label: 'Technolgy',
+                to: '/technolgy'
               },
               {
                 id: 4,
@@ -56,7 +56,8 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 Blog
               </a>
             </li>
-            <li className={classes.linkWrapper}>
+            {/* TODO show Network explorer link, once Network explorer is published */}
+            {/* <li className={classes.linkWrapper}>
               <a
                 href='https://hermez.io/'
                 target='_blank'
@@ -65,7 +66,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
               >
                 Network explorer
               </a>
-            </li>
+            </li> */}
             <li className={classes.linkWrapper}>
               <a
                 href='https://hermez.io/'

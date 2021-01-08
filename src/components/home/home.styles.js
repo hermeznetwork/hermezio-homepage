@@ -49,12 +49,12 @@ const useHomeStyles = createUseStyles(theme => ({
     display: 'flex',
     paddingTop: theme.spacer * 11,
     textAlign: 'center',
-    height: theme.spacer * 85,
+    height: theme.spacer * 89,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 20,
+      paddingTop: theme.spacer * 27.25,
       paddingBottom: theme.spacer * 20,
       textAlign: 'left',
-      height: 'auto'
+      height: theme.spacer * 103
     },
     '& $col3': {
       marginLeft: 0
@@ -132,7 +132,8 @@ const useHomeStyles = createUseStyles(theme => ({
   section4: {
     '& $divider': {
       [theme.breakpoints.sm]: {
-        margin: `${theme.spacer * 7}px 0 ${theme.spacer * 8}px auto`
+        marginTop: theme.spacer * 7,
+        marginBottom: theme.spacer * 8
       }
     }
   },
@@ -142,7 +143,8 @@ const useHomeStyles = createUseStyles(theme => ({
   section4BoxWrapper: {
     marginTop: theme.spacer * 5,
     [theme.breakpoints.sm]: {
-      marginTop: 'inherit'
+      marginTop: 'inherit',
+      flexDirection: 'row'
     }
   },
   section4Box: {
@@ -159,9 +161,7 @@ const useHomeStyles = createUseStyles(theme => ({
     marginBottom: theme.spacer * 6
   },
   barText: {
-    color: theme.palette.black
-  },
-  barHighlightedText: {
+    color: theme.palette.black,
     fontWeight: theme.fontWeights.bold
   },
   barL1: {
@@ -211,6 +211,57 @@ const useHomeStyles = createUseStyles(theme => ({
       width: '50%'
     }
   },
+
+  section8: {
+    textAlign: 'center',
+    '& $col2': {
+      textAlign: 'left'
+    }
+  },
+  section8Text: {
+    margin: `${theme.spacer * 3}px auto ${theme.spacer * 10}px`,
+    maxWidth: theme.spacer * 80
+  },
+  section8SubTitle: {
+    marginTop: theme.spacer * 8,
+    marginBottom: theme.spacer * 4,
+    [theme.breakpoints.sm]: {
+      marginTop: theme.spacer * 16,
+      marginBottom: theme.spacer * 8
+    }
+  },
+  boxes: {
+    [theme.breakpoints.sm]: {
+      display: 'flex',
+      justifyContent: 'space-between'
+    }
+  },
+  boxWrapper: {
+    [theme.breakpoints.sm]: {
+      width: '30%',
+      margin: 0
+    }
+  },
+  box: {
+    background: theme.palette.primary.light,
+    borderRadius: 20,
+    fontSize: '23px',
+    lineHeight: '35px',
+    color: theme.palette.black,
+    padding: theme.spacer * 6,
+    textAlign: 'left',
+    marginBottom: theme.spacer * 2,
+    [theme.breakpoints.sm]: {
+      marginBottom: 0,
+      minHeight: theme.spacer * 26.5,
+      padding: `${theme.spacer * 4}px ${theme.spacer * 7.5}px ${theme.spacer * 5}px ${theme.spacer * 6}px `
+    }
+  },
+  highlightedText: {
+    fontSize: theme.spacer * 4.25,
+    fontWeight: theme.fontWeights.bold
+  },
+
   divider: {
     background: theme.palette.primary.main,
     height: '1px',
