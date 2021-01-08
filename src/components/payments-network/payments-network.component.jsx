@@ -114,7 +114,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Community</Title>
-              <p>Our smart contracts and Circom circuits is open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
+              <p>Our smart contracts and Circom circuits are open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -123,7 +123,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Transaction aggregators</Title>
-              <p>Improve payment experiences thanks to the low-cost transfers and swaps with all the security of Ethereum L1.</p>
+              <p>An improved payment experience thanks to the low-cost transfers and swaps with all the security of Ethereum L1.</p>
             </div>
           </div>
           <div className={classes.row}>

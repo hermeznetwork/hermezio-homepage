@@ -41,8 +41,8 @@ export const Footer = ({ routes }) => {
               },
               {
                 id: 3,
-                label: 'Developers',
-                to: '/developers'
+                label: 'Technolgy',
+                to: '/technolgy'
               },
               {
                 id: 4,
@@ -67,6 +67,23 @@ export const Footer = ({ routes }) => {
                 </Link>
               </li> */}
             </ul>
+            <ul className={classes.list}>
+              <li className={`${classes.listItem} ${classes.listItemHead}`}>
+                Project
+              </li>
+              <li className={classes.listItem}>
+                <Link to='/project'>
+                  About us
+                </Link>
+              </li>
+              <li className={classes.listItem}>
+                <Link to='/media-inquiries'>
+                  Mediakit
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className={classes.col3}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
               <li className={classes.listItem}>
@@ -95,23 +112,6 @@ export const Footer = ({ routes }) => {
                 >
                   Github
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div className={classes.col3}>
-            <ul className={classes.list}>
-              <li className={`${classes.listItem} ${classes.listItemHead}`}>
-                Project
-              </li>
-              <li className={classes.listItem}>
-                <Link to='/project'>
-                  About us
-                </Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link to='/media-inquiries'>
-                  Mediakit
-                </Link>
               </li>
             </ul>
             <ul className={classes.list}>

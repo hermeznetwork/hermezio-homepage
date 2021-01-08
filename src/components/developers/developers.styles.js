@@ -67,6 +67,16 @@ const useDevelopersStyles = createUseStyles(theme => ({
       justifyContent: 'left'
     }
   },
+  section2: {
+    '& $divider': {
+      [theme.breakpoints.sm]: {
+        width: '50%'
+      },
+      marginLeft: 'auto',
+      marginTop: theme.spacer * 4,
+      marginBottom: theme.spacer * 5
+    }
+  },
   section2Title: {
     marginBottom: theme.spacer * 2,
     [theme.breakpoints.sm]: {

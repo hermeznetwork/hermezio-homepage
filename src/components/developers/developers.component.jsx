@@ -29,12 +29,21 @@ const Developers = () => {
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Title}`}>
-              <Title>Smooth integration</Title>
+              <Title>Payments cryptosystem for adoption</Title>
             </div>
             <div className={classes.col2}>
-              <p className={classes.paragraphMargin}>Focus on developer experience + protocol simplicity, developer-friendly API ...</p>
-              <p className={classes.paragraphMargin}>By architecting Hermez as a network that is private-by-default, open-source, and built for the web, we believe Hermez is uniquely positioned to address the shortcomings of blockchain adoption. With Hermez, users have access to a world of truly personalized web services without giving up control of their private data.</p>
-              <p>We believe Hermez will reshape the role decentralized systems play in our society and introduce new experiences never before seen on the web.</p>
+              <Title type='h3'>Smooth integration</Title>
+              <p>Hermez REST API and JavaScript SDK allow developers to easily integrate payment methods for any project to harness the power of decentralisation and cutting-edge cryptography for maximum security.</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col2}>
+              <Title type='h3'>L2 Interoperability based on mass migration mechanism</Title>
+              <p>With Massive Migrations (MM), users will be able to deal with external L1 Smart Contracts in the same way that they transfer tokens to another Layer 2 network user.</p>
+              <p>This is possible because the Hermez protocol includes in the aggregated withdrawal transaction the information required to reconstruct at the destination the original transfers in Hermez L2 and the corresponding account information. This could be done as a circuit processing in the destination L2 (if supported).</p>
             </div>
           </div>
         </section>
@@ -47,7 +56,7 @@ const Developers = () => {
                 <Title>Community centric protocol</Title>
               </div>
               <p className={classes.paragraphMargin}>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
-              <p className={classes.paragraphMargin}>In a sentence, block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
+              <p className={classes.paragraphMargin}>In a sentence, block creators are selected via burn auction, except rather than burning tokens, 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
               <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
               <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
             </div>

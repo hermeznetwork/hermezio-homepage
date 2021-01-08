@@ -20,7 +20,7 @@ const Home = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={classes.col3}>
             <Title>Open and low-cost payments network for everyone.</Title>
-            <p className={classes.section1Text}>Hermez is a trustless zk-rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
+            <p className={classes.section1Text}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</p>
             <div className={classes.buttonWrapper}>
               <Button to='/' text='Create account' />
             </div>
@@ -85,7 +85,7 @@ const Home = () => {
           <div className={`${classes.row} ${classes.boxes}`}>
             <div className={`${classes.col3} ${classes.boxWrapper}`}>
               <div className={classes.box}>
-                <span>133x throughput improvement</span>
+                <span>Over 133x throughput improvement</span>
               </div>
             </div>
             <div className={`${classes.col3} ${classes.boxWrapper}`}>
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
             <div className={classes.col2}>
               <Title type='h3'>Hermez is giving back</Title>
-              <p>Block creators are selected via a burn auction, except rather than burning tokens, a 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants. We call this mechanism proof-of-donation.</p>
+              <p>Block creators are selected through a burn auction, however rather than burning tokens, 40% of the winning bid is returned as a donation to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.  We call this mechanism Proof-of-Donation.</p>
               <div className={classes.section6link}>
                 <TextLink to='/' text='More about proof-of-donation' />
               </div>
@@ -137,7 +137,7 @@ const Home = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Permissionless auctions for validators</Title>
-              <p>Everyone can bid in a decentralized auction to create the next batch on Hermez Network. A successful validation is rewarded with HEZ tokens.</p>
+              <p>Anyone can bid in a decentralized auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
               <div className={classes.section6link}>
                 <TextLink to='/' text='How to become a coordinator' />
               </div>
@@ -167,7 +167,7 @@ const Home = () => {
             <div className={classes.col2}>
               <Title type='h3'>Zero-knowledge cryptography</Title>
               <p>Hermez zk-rollup is a layer 2 construction on top of Ethereum that solves its scalability through mass transfer processing rolled into a single transaction.</p>
-              <p>The "zero knowledge proof" (ZK) technology is used to present and publicly record the validity and correctness of the rolled transfers processed on the Ethereum blockchain. By storing just the proof and the compressed data of a batch of transfers, the efficiency and the throughput of the network is simply multiplied.</p>
+              <p>The "zero-knowledge proof" (ZK) technology is used to present and publicly record the validity and correctness of the rolled transfers processed on the Ethereum blockchain. By storing just the proof and the compressed data of a batch of transfers, the efficiency and the throughput of the network is multiplied.</p>
             </div>
           </div>
           <div className={classes.row}>

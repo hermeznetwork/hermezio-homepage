@@ -86,10 +86,6 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     marginBottom: theme.spacer * 9
   },
   section4: {
-    '& h3': {
-      fontSize: '23px',
-      marginBottom: theme.spacer * 2.5
-    },
     '& $divider': {
       [theme.breakpoints.sm]: {
         width: '50%'

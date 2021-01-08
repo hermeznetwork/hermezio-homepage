@@ -31,8 +31,8 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
               },
               {
                 id: 3,
-                label: 'Developers',
-                to: '/developers'
+                label: 'Technolgy',
+                to: '/technolgy'
               },
               {
                 id: 4,
