@@ -22,7 +22,7 @@ export const Footer = ({ routes }) => {
               </a>
             </div>
           </div>
-          <div className={classes.col3}>
+          <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Hermez
@@ -83,7 +83,7 @@ export const Footer = ({ routes }) => {
               </li>
             </ul>
           </div>
-          <div className={classes.col3}>
+          <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
               <li className={classes.listItem}>

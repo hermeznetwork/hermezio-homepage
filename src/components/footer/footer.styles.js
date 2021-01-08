@@ -17,7 +17,8 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   topSection: {
     [theme.breakpoints.sm]: {
-      display: 'flex'
+      display: 'flex',
+      justifyContent: 'space-between'
     }
   },
   bottomSection: {
@@ -57,6 +58,12 @@ export const useFooterStyles = createUseStyles(theme => ({
       }
     }
   },
+  listCol: {
+    display: 'flex',
+    [theme.breakpoints.sm]: {
+      display: 'contents'
+    }
+  },
   list: {
     listStyle: 'none',
     margin: 0,
@@ -66,8 +73,9 @@ export const useFooterStyles = createUseStyles(theme => ({
       marginRight: '10%'
     },
     [theme.breakpoints.sm]: {
-      width: '50%',
-      '&:first-child': {
+      marginRight: theme.spacer * 13,
+      width: 'auto',
+      '&:last-child, &:first-child': {
         marginRight: 0
       }
     }
