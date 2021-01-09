@@ -142,7 +142,6 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '100%',
     height: '100%',
     [theme.breakpoints.sm]: {
-      width: '415px',
       height: '390px'
     }
   },
@@ -259,7 +258,6 @@ const useHomeStyles = createUseStyles(theme => ({
     width: '100%',
     height: '100%',
     [theme.breakpoints.sm]: {
-      width: '774px',
       height: '684px'
     }
   },

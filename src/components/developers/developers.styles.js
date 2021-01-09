@@ -62,7 +62,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
     width: '100%',
     height: '237px',
     [theme.breakpoints.sm]: {
-      width: '663px',
       height: '548px'
     }
   },
@@ -119,7 +118,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
     width: '100%',
     height: '100%',
     [theme.breakpoints.sm]: {
-      width: '390px',
       height: '390px'
     }
   },

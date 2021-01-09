@@ -139,16 +139,13 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.lg]: {
       flexDirection: 'row',
       marginRight: theme.spacer * 7.5
     }
   },
   link: {
-    marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
-      marginBottom: 0
-    }
+    marginBottom: theme.spacer * 2
   },
   divider: {
     width: '100%',

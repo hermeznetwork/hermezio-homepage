@@ -55,6 +55,11 @@ const useProjectStyles = createUseStyles(theme => ({
       '& $col23': {
         paddingLeft: theme.spacer * 20
       }
+    },
+    [theme.breakpoints.md]: {
+      '& $col23': {
+        paddingLeft: theme.spacer * 10
+      }
     }
   },
   section1img: {
@@ -66,7 +71,6 @@ const useProjectStyles = createUseStyles(theme => ({
     width: '100%',
     height: '384px',
     [theme.breakpoints.sm]: {
-      width: '519px',
       height: '650px'
     }
   },
