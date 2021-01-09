@@ -18,6 +18,9 @@ const useButtonStyles = createUseStyles(theme => ({
     height: '12px',
     marginLeft: '12px'
   },
+  secondaryIcon: {
+    fill: theme.palette.gray.main
+  },
   primary: {
     border: `1px solid ${theme.palette.orange.main}`,
     background: theme.palette.orange.main,
@@ -37,7 +40,10 @@ const useButtonStyles = createUseStyles(theme => ({
     color: theme.palette.gray.main,
     '&:hover': {
       border: `1px solid ${theme.palette.black}`,
-      color: theme.palette.black
+      color: theme.palette.black,
+      '& $secondaryIcon': {
+        fill: theme.palette.black
+      }
     }
   },
   transparent: {

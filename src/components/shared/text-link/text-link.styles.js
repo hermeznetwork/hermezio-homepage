@@ -6,17 +6,17 @@ const useTextLinkStyles = createUseStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     '&:hover': {
-      color: theme.palette.orange.dark
+      color: theme.palette.orange.dark,
+      '& $linkIcon': {
+        fill: theme.palette.orange.dark
+      }
     }
   },
   linkIcon: {
     width: theme.spacer * 3,
     height: theme.spacer * 3,
     marginLeft: theme.spacer * 2,
-    fill: theme.palette.orange.main,
-    '&:hover': {
-      fill: theme.palette.orange.dark
-    }
+    fill: theme.palette.orange.main
   },
   boxLink: {
     padding: `${theme.spacer * 4}px ${theme.spacer * 5}px`,
