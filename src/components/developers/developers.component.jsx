@@ -81,7 +81,7 @@ const Developers = () => {
             </div>
           </div>
 
-          {/* Following two sections are hidden, and will be made visible once it is decided to do so. */}
+          {/* TODO Following two sections are hidden, and will be made visible once it is decided to do so. */}
 
           {/* <div className={classes.section4SubTitle}>
             <Title>Tools</Title>

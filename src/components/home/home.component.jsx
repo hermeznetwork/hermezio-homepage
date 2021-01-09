@@ -65,7 +65,6 @@ const Home = () => {
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <div className={classes.section5img} />
-              {/* <Section5 /> */}
             </div>
           </div>
         </section>
@@ -111,7 +110,6 @@ const Home = () => {
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <div className={classes.section3img} />
-              {/* <Section3 /> */}
             </div>
           </div>
         </section>
