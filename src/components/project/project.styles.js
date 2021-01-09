@@ -57,6 +57,15 @@ const useProjectStyles = createUseStyles(theme => ({
       }
     }
   },
+  section1img: {
+    backgroundImage: 'url(./project-section1.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '519px',
+    height: '650px'
+  },
   buttonWrapper: {
     display: 'flex',
     justifyContent: 'center',

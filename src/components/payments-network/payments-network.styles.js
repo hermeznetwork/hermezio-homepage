@@ -56,6 +56,15 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       textAlign: 'left'
     }
   },
+  section1img: {
+    backgroundImage: 'url(./payment-network-section1.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '460px'
+  },
   mainTitle: {
     marginTop: theme.spacer * 2,
     [theme.breakpoints.sm]: {
@@ -104,6 +113,15 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     '& $col2': {
       marginLeft: 0
     }
+  },
+  section5img: {
+    backgroundImage: 'url(./payment-network-section5.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '360px'
   },
   section5Text: {
     paddingTop: theme.spacer * 2,

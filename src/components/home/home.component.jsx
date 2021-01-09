@@ -4,11 +4,6 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-// import Section21 from '../../assets/images/home/section2_1.inline.svg'
-// import Section22 from '../../assets/images/home/section2_2.inline.svg'
-// import Section23 from '../../assets/images/home/section2_3.inline.svg'
-// import Section3 from '../../assets/images/home/section3.inline.svg'
-// import Section5 from '../../assets/images/home/section5.inline.svg'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = () => {
@@ -34,17 +29,14 @@ const Home = () => {
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_1img} />
-              {/* <Section21 className={classes.section2Image1} /> */}
               <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_2img} />
-              {/* <Section22 className={classes.section2Image2} /> */}
               <div className={classes.section2Text}>Decentalised and open-source architecture.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_3img} />
-              {/* <Section23 className={classes.section2Image3} /> */}
               <div className={classes.section2Text}>Computational integrity for secure transactions.</div>
             </div>
           </div>

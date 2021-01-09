@@ -53,6 +53,15 @@ const useDevelopersStyles = createUseStyles(theme => ({
       textAlign: 'left'
     }
   },
+  section1img: {
+    backgroundImage: 'url(./technology-section1.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '663px',
+    height: '548px'
+  },
   mainTitle: {
     marginTop: theme.spacer * 2,
     [theme.breakpoints.sm]: {
@@ -96,6 +105,15 @@ const useDevelopersStyles = createUseStyles(theme => ({
     '& $col2': {
       textAlign: 'left'
     }
+  },
+  section3img: {
+    backgroundImage: 'url(./technology-section3.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '390px',
+    height: '390px'
   },
   section3Title: {
     marginBottom: theme.spacer * 2,

@@ -4,8 +4,6 @@ import usedevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-import Section1 from '../../assets/images/developers/section1.inline.svg'
-import Section32 from '../../assets/images/developers/section3_2.inline.svg'
 
 const Developers = () => {
   const classes = usedevelopersStyles()
@@ -21,7 +19,7 @@ const Developers = () => {
             </div>
           </div>
           <div className={classes.col23}>
-            <Section1 />
+            <div className={classes.section1img} />
           </div>
         </section>
       </div>
@@ -61,7 +59,7 @@ const Developers = () => {
               <TextLink to='https://docs.hermez.io/#/faq/pod' text='More in documentation' />
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-              <Section32 />
+              <div className={classes.section3img} />
             </div>
           </div>
         </section>

@@ -3,7 +3,6 @@ import React from 'react'
 import useProjectStyles from './project.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
-import Section1 from '../../assets/images/project/section1.inline.svg'
 
 const Project = () => {
   const classes = useProjectStyles()
@@ -19,7 +18,7 @@ const Project = () => {
             </div>
           </div>
           <div className={classes.col23}>
-            <Section1 />
+            <div className={classes.section1img} />
           </div>
         </section>
       </div>

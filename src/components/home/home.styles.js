@@ -97,6 +97,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2_1img: {
     backgroundImage: 'url(./home-section2_1.png)',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
     width: '142px',
@@ -105,6 +106,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2_2img: {
     backgroundImage: 'url(./home-section2_2.png)',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
     width: '162px',
@@ -113,6 +115,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2_3img: {
     backgroundImage: 'url(./home-section2_3.png)',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
     width: '141px',
@@ -133,6 +136,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section3img: {
     backgroundImage: 'url(./home-section3.png)',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
     width: '415px',
@@ -173,6 +177,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section5img: {
     backgroundImage: 'url(./home-section5.png)',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
     width: '100%',

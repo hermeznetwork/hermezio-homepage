@@ -4,9 +4,7 @@ import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
 // import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
-import Section5 from '../../assets/images/payments-network/section5.inline.svg'
 
 const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
@@ -23,7 +21,7 @@ const PaymentsNetwork = () => {
             </div> */}
           </div>
           <div className={classes.col23}>
-            <Section1 />
+            <div className={classes.section1img} />
           </div>
         </section>
       </div>
@@ -153,7 +151,7 @@ const PaymentsNetwork = () => {
             </div>
           </div>
           <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-            <Section5 />
+            <div className={classes.section5img} />
           </div>
         </section>
       </div>
