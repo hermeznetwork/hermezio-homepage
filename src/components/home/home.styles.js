@@ -185,7 +185,10 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundSize: 'contain',
     margin: 'auto',
     width: '100%',
-    height: '385px'
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      height: '385px'
+    }
   },
   section5Text: {
     marginTop: theme.spacer * 3,
