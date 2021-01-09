@@ -63,8 +63,12 @@ const useProjectStyles = createUseStyles(theme => ({
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: '519px',
-    height: '650px'
+    width: '100%',
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      width: '519px',
+      height: '650px'
+    }
   },
   buttonWrapper: {
     display: 'flex',

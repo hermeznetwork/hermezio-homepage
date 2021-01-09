@@ -59,8 +59,12 @@ const useDevelopersStyles = createUseStyles(theme => ({
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: '663px',
-    height: '548px'
+    width: '100%',
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      width: '663px',
+      height: '548px'
+    }
   },
   mainTitle: {
     marginTop: theme.spacer * 2,
@@ -112,8 +116,12 @@ const useDevelopersStyles = createUseStyles(theme => ({
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: '390px',
-    height: '390px'
+    width: '100%',
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      width: '390px',
+      height: '390px'
+    }
   },
   section3Title: {
     marginBottom: theme.spacer * 2,

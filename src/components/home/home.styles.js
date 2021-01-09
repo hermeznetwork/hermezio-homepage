@@ -139,8 +139,12 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: '415px',
-    height: '390px'
+    width: '100%',
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      width: '415px',
+      height: '390px'
+    }
   },
   section3Text: {
     color: theme.palette.gray.light,
@@ -248,9 +252,13 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: `${theme.spacer * 3}px auto ${theme.spacer * 10}px`
   },
   section8img: {
-    width: '774px',
-    height: '684px',
-    margin: 'auto'
+    margin: 'auto',
+    width: '100%',
+    height: '100%',
+    [theme.breakpoints.sm]: {
+      width: '774px',
+      height: '684px'
+    }
   },
   section8SubTitle: {
     marginTop: theme.spacer * 8,
