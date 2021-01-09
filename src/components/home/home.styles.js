@@ -147,7 +147,6 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section3Text: {
     color: theme.palette.gray.light,
-    lineHeight: '29px',
     margin: `${theme.spacer * 3}px 0`
   },
   section4: {

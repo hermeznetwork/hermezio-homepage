@@ -26,7 +26,6 @@ const useTextLinkStyles = createUseStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    lineHeight: '29px',
     height: theme.spacer * 16,
     marginTop: 0,
     marginBottom: theme.spacer * 2,

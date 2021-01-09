@@ -67,7 +67,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       marginTop: theme.spacer * 1.5
     },
     color: theme.palette.black,
-    fontSize: '15px',
+    fontSize: theme.spacer * 2 - 1,
     lineHeight: `${theme.spacer * 2.5}px`
   },
   link: {
