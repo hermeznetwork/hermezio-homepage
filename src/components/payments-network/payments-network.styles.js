@@ -63,9 +63,11 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     backgroundSize: 'contain',
     margin: 'auto',
     width: '100%',
-    height: '100%',
+    height: '235px',
+    marginBottom: theme.spacer * 4,
     [theme.breakpoints.sm]: {
-      height: '460px'
+      height: '460px',
+      marginBottom: 0
     }
   },
   mainTitle: {

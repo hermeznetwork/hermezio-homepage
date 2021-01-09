@@ -60,7 +60,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     backgroundSize: 'contain',
     margin: 'auto',
     width: '100%',
-    height: '100%',
+    height: '237px',
     [theme.breakpoints.sm]: {
       width: '663px',
       height: '548px'
