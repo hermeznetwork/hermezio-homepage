@@ -139,7 +139,7 @@ const PaymentsNetwork = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-            <Title><a id='hez'>HEZ - Hermez Network token</a></Title>
+            <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
             <p className={classes.section5Text}>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
             <div className={classes.linksWrapper}>
               <div className={classes.link}>
