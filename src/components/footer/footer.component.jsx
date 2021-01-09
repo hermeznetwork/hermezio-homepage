@@ -36,13 +36,13 @@ export const Footer = ({ routes }) => {
               },
               {
                 id: 2,
-                label: 'Payments network',
-                to: '/payments-network'
+                label: 'Payment Network',
+                to: '/payment-network'
               },
               {
                 id: 3,
-                label: 'Technolgy',
-                to: '/technolgy'
+                label: 'Technology',
+                to: '/technology'
               },
               {
                 id: 4,

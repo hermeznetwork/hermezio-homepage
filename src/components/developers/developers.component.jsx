@@ -58,7 +58,7 @@ const Developers = () => {
               <p className={classes.paragraphMargin}>One of the most important things about Hermez is the way it decides who the next block creator should be.</p>
               <p className={classes.paragraphMargin}>In a sentence, block creators are selected via burn auction, except rather than burning tokens, 40% of the winning bid goes back to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.</p>
               <p className={classes.paragraphMargin}>We call this mechanism proof-of-donation.</p>
-              <TextLink to='https://docs.hermez.io/#/' text='More in documentation' />
+              <TextLink to='https://docs.hermez.io/#/faq/pod' text='More in documentation' />
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <Section32 />
@@ -73,7 +73,7 @@ const Developers = () => {
           </div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box to='/' text='Hermez API Reference' />
+              <TextLink box to='http://testapi.hermez.network:8001/' text='Hermez API Reference' />
             </div>
             <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box to='https://docs.hermez.io/' text='Technical Documentation' />

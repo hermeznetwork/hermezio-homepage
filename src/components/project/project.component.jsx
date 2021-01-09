@@ -27,7 +27,7 @@ const Project = () => {
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.title}`}>
-              <Title>Development goals</Title>
+              <Title><a id='development-goals'>Development goals</a></Title>
             </div>
             <div className={classes.col2}>
               <p>Everyone should have universal access to finance.</p>

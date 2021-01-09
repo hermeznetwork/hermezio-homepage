@@ -9,6 +9,7 @@ import useTextLinkStyles from './text-link.styles'
 function TextLink ({
   to,
   text,
+  target,
   box = false,
   white = false
 }) {
@@ -17,7 +18,7 @@ function TextLink ({
   return (
     <a
       href={to}
-      target='_blank'
+      target={!target ? '_blank' : target}
       rel='noopener noreferrer'
       className={clsx({
         [classes.link]: !box,
@@ -35,6 +36,7 @@ function TextLink ({
 TextLink.propTypes = {
   to: PropTypes.string.isRequired,
   text: PropTypes.string,
+  target: PropTypes.string,
   box: PropTypes.bool,
   white: PropTypes.bool
 }

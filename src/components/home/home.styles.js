@@ -51,7 +51,7 @@ const useHomeStyles = createUseStyles(theme => ({
     textAlign: 'center',
     height: theme.spacer * 89,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 27.25,
+      paddingTop: theme.spacer * 39.25,
       paddingBottom: theme.spacer * 20,
       textAlign: 'left',
       height: theme.spacer * 103
@@ -63,12 +63,6 @@ const useHomeStyles = createUseStyles(theme => ({
   section1Text: {
     color: theme.palette.black,
     marginTop: theme.spacer * 2
-  },
-  section1Image1: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    width: '100vw'
   },
   buttonWrapper: {
     display: 'flex',
@@ -100,15 +94,27 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: 0
     }
   },
-  section2Image1: {
+  section2_1img: {
+    backgroundImage: 'url(./home-section2_1.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    margin: 'auto',
     width: '142px',
     height: '147px'
   },
-  section2Image2: {
+  section2_2img: {
+    backgroundImage: 'url(./home-section2_2.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    margin: 'auto',
     width: '162px',
     height: '147px'
   },
-  section2Image3: {
+  section2_3img: {
+    backgroundImage: 'url(./home-section2_3.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    margin: 'auto',
     width: '141px',
     height: '147px'
   },
@@ -123,6 +129,14 @@ const useHomeStyles = createUseStyles(theme => ({
       lineHeight: `${theme.spacer * 4.5 - 1}px`,
       margin: `${theme.spacer * 6.25}px auto 0`
     }
+  },
+  section3img: {
+    backgroundImage: 'url(./home-section3.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '415px',
+    height: '390px'
   },
   section3Text: {
     color: theme.palette.gray.light,
@@ -155,6 +169,14 @@ const useHomeStyles = createUseStyles(theme => ({
         marginRight: 0
       }
     }
+  },
+  section5img: {
+    backgroundImage: 'url(./home-section5.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '385px'
   },
   section5Text: {
     marginTop: theme.spacer * 3,
@@ -211,7 +233,6 @@ const useHomeStyles = createUseStyles(theme => ({
       width: '50%'
     }
   },
-
   section8: {
     textAlign: 'center',
     '& $col2': {
@@ -219,8 +240,12 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section8Text: {
-    margin: `${theme.spacer * 3}px auto ${theme.spacer * 10}px`,
-    maxWidth: theme.spacer * 80
+    margin: `${theme.spacer * 3}px auto ${theme.spacer * 10}px`
+  },
+  section8img: {
+    width: '774px',
+    height: '684px',
+    margin: 'auto'
   },
   section8SubTitle: {
     marginTop: theme.spacer * 8,
@@ -245,8 +270,8 @@ const useHomeStyles = createUseStyles(theme => ({
   box: {
     background: theme.palette.primary.light,
     borderRadius: 20,
-    fontSize: '23px',
-    lineHeight: '35px',
+    fontSize: theme.spacer * 3 - 1,
+    lineHeight: `${theme.spacer * 4.5 - 1}px`,
     color: theme.palette.black,
     padding: theme.spacer * 6,
     textAlign: 'left',
@@ -296,9 +321,9 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   blogTitle: {
     color: theme.palette.black,
-    fontSize: '23px',
+    fontSize: theme.spacer * 3 - 1,
     fontWeight: theme.fontWeights.medium,
-    lineHeight: '35px',
+    lineHeight: `${theme.spacer * 4.5 - 1}px`,
     marginTop: 0,
     display: 'flex',
     position: 'relative',

@@ -4,11 +4,11 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-import Section21 from '../../assets/images/home/section2_1.inline.svg'
-import Section22 from '../../assets/images/home/section2_2.inline.svg'
-import Section23 from '../../assets/images/home/section2_3.inline.svg'
-import Section3 from '../../assets/images/home/section3.inline.svg'
-import Section5 from '../../assets/images/home/section5.inline.svg'
+// import Section21 from '../../assets/images/home/section2_1.inline.svg'
+// import Section22 from '../../assets/images/home/section2_2.inline.svg'
+// import Section23 from '../../assets/images/home/section2_3.inline.svg'
+// import Section3 from '../../assets/images/home/section3.inline.svg'
+// import Section5 from '../../assets/images/home/section5.inline.svg'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = () => {
@@ -19,11 +19,12 @@ const Home = () => {
       <div className={`${classes.sectionWrapper} ${classes.section1Wrapper}`}>
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={classes.col3}>
-            <Title>Open and low-cost payments network for everyone.</Title>
+            <Title>Open and low-cost payment network for everyone.</Title>
             <p className={classes.section1Text}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</p>
-            <div className={classes.buttonWrapper}>
+            {/* TODO "Remove following links temporarily until we can provide this information" */}
+            {/* <div className={classes.buttonWrapper}>
               <Button to='/' text='Create account' />
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
@@ -32,15 +33,18 @@ const Home = () => {
           <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
-              <Section21 className={classes.section2Image1} />
+              <div className={classes.section2_1img} />
+              {/* <Section21 className={classes.section2Image1} /> */}
               <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
-              <Section22 className={classes.section2Image2} />
+              <div className={classes.section2_2img} />
+              {/* <Section22 className={classes.section2Image2} /> */}
               <div className={classes.section2Text}>Decentalised and open-source architecture.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
-              <Section23 className={classes.section2Image3} />
+              <div className={classes.section2_3img} />
+              {/* <Section23 className={classes.section2Image3} /> */}
               <div className={classes.section2Text}>Computational integrity for secure transactions.</div>
             </div>
           </div>
@@ -68,7 +72,8 @@ const Home = () => {
               <div className={classes.barL2} />
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-              <Section5 />
+              <div className={classes.section5img} />
+              {/* <Section5 /> */}
             </div>
           </div>
         </section>
@@ -78,7 +83,9 @@ const Home = () => {
         <section className={`${classes.section} ${classes.section8}`}>
           <Title>Layer 2 scalability solution</Title>
           <p className={classes.section8Text}>Computational integrity and on-chain data availability are guaranteed by zero-knowledge proof technology while preserving the public blockchain properties of Ethereum.</p>
-          <Section8 />
+          <div className={classes.section8img}>
+            <Section8 />
+          </div>
           <div className={classes.section8SubTitle}>
             <Title>Results</Title>
           </div>
@@ -106,12 +113,13 @@ const Home = () => {
         <section className={`${classes.section} ${classes.section3}`}>
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <Title>Prosperitity for all</Title>
+              <Title>People powered payments</Title>
               <p className={classes.section3Text}>Hermez's mission is to create an inclusive, resilient and highly efficient payment network for the next generation of digital currencies to ensure everyone has the freedom to transact.</p>
-              <TextLink to='/' text='Values and guiding principles' />
+              <TextLink to='/project#development-goals' text='Development goals' target='_self' />
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-              <Section3 />
+              <div className={classes.section3img} />
+              {/* <Section3 /> */}
             </div>
           </div>
         </section>
@@ -127,7 +135,7 @@ const Home = () => {
               <Title type='h3'>Hermez is giving back</Title>
               <p>Block creators are selected through a burn auction, however rather than burning tokens, 40% of the winning bid is returned as a donation to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.  We call this mechanism Proof-of-Donation.</p>
               <div className={classes.section6link}>
-                <TextLink to='/' text='More about proof-of-donation' />
+                <TextLink to='https://docs.hermez.io/#/faq/pod' text='More about proof-of-donation' />
               </div>
             </div>
           </div>
@@ -139,7 +147,7 @@ const Home = () => {
               <Title type='h3'>Permissionless auctions for validators</Title>
               <p>Anyone can bid in a decentralized auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
               <div className={classes.section6link}>
-                <TextLink to='/' text='How to become a coordinator' />
+                <TextLink to='https://docs.hermez.io/#/faq/coordinators?id=coordinators' text='More about network coordinators' />
               </div>
             </div>
           </div>
@@ -151,7 +159,7 @@ const Home = () => {
               <Title type='h3'>HEZ Token</Title>
               <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
               <div className={classes.section6link}>
-                <TextLink to='/' text='More about HEZ' />
+                <TextLink to='/payment-network#hez' text='More about HEZ' target='_self' />
               </div>
             </div>
           </div>
@@ -193,7 +201,7 @@ const Home = () => {
           </div>
           <div className={classes.row}>
             <div className={`${classes.buttonWrapper} ${classes.button}`}>
-              <Button internalLink transparent to='/developers' text='Developers' />
+              <Button internalLink transparent to='/technology' text='Technology' />
             </div>
           </div>
         </section>
@@ -205,6 +213,24 @@ const Home = () => {
             <div className={classes.col3}>
               <Title>Blog</Title>
             </div>
+            <div className={classes.col2}>
+              <h3 className={classes.blogTitle}>
+                <a
+                  href='https://blog.hermez.io/hermez-bug-bounty-program/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.blogLink}
+                >
+                  Launching Hermez Bug Bounty Program
+                </a>
+              </h3>
+              <p>08 January 2021</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
@@ -235,24 +261,6 @@ const Home = () => {
                 </a>
               </h3>
               <p>21 December 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-massive-migrations-mechanism/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Introducing the First L2 Interoperability Mechanism with Hermez Massive Migrations
-                </a>
-              </h3>
-              <p>27 November 2020</p>
             </div>
           </div>
           <div className={classes.row}>

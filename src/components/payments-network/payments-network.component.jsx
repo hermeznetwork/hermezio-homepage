@@ -2,7 +2,7 @@ import React from 'react'
 
 import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
-import Button from '../shared/button/button.component'
+// import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Section1 from '../../assets/images/payments-network/section1.inline.svg'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
@@ -17,9 +17,10 @@ const PaymentsNetwork = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={`${classes.col3} ${classes.mainTitle}`}>
             <Title>Secure layer 2 designed for mass adoption</Title>
-            <div className={classes.buttonWrapper}>
+            {/* TODO "Remove following links temporarily until we can provide this information" */}
+            {/* <div className={classes.buttonWrapper}>
               <Button to='/' text='Join Hermez' />
-            </div>
+            </div> */}
           </div>
           <div className={classes.col23}>
             <Section1 />
@@ -140,11 +141,11 @@ const PaymentsNetwork = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-            <Title>HEZ - Hermez Network token</Title>
+            <Title><a id='hez'>HEZ - Hermez Network token</a></Title>
             <p className={classes.section5Text}>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
             <div className={classes.linksWrapper}>
               <div className={classes.link}>
-                <TextLink to='/' text='Token contract' />
+                <TextLink to='https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE' text='Token contract' />
               </div>
               <div className={classes.link}>
                 <TextLink to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
