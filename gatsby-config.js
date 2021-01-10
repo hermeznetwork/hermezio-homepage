@@ -1,5 +1,9 @@
 const theme = require('./src/styles/theme.js')
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
+
 module.exports = {
   siteMetadata: {
     defaultTitle: 'Hermez',
