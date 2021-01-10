@@ -24,7 +24,7 @@ function Button ({
             className={`${classes.root} ${classes.secondary} ${classes.transparent}`}
           >
             {text}
-            {hideIcon ? <></> : <ArrowSecondary className={classes.icon} />}
+            {hideIcon ? <></> : <ArrowSecondary className={`${classes.icon} ${classes.secondaryIcon}`} />}
           </Link>
         )
         : (

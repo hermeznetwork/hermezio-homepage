@@ -55,6 +55,23 @@ const useProjectStyles = createUseStyles(theme => ({
       '& $col23': {
         paddingLeft: theme.spacer * 20
       }
+    },
+    [theme.breakpoints.md]: {
+      '& $col23': {
+        paddingLeft: theme.spacer * 10
+      }
+    }
+  },
+  section1img: {
+    backgroundImage: 'url(./project-section1.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '384px',
+    [theme.breakpoints.sm]: {
+      height: '650px'
     }
   },
   buttonWrapper: {
