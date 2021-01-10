@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Hermez Homepage",
   "author": "iden3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hermeznetwork/hermeznetwork.github.io"
+  },
   "scripts": {
     "build": "gatsby build",
     "lint": "standard",
@@ -38,18 +42,6 @@
     "ignore": [
       "/build/",
       "/public/"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "husky": {
