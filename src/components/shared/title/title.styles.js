@@ -3,15 +3,15 @@ import { createUseStyles } from 'react-jss'
 const useTitleStyles = createUseStyles(theme => ({
   title: {
     fontWeight: theme.fontWeights.bold,
-    fontSize: theme.spacer * 4.25,
-    lineHeight: `${theme.spacer * 5.25}px`,
+    fontSize: theme.spacer * 3.5,
+    lineHeight: `${theme.spacer * 4.5}px`,
     fontStretch: 'normal',
     fontStyle: 'normal',
     letterSpacing: 'normal',
     color: theme.palette.black,
     [theme.breakpoints.sm]: {
-      fontSize: theme.spacer * 3.5,
-      lineHeight: `${theme.spacer * 4.5}px`
+      fontSize: theme.spacer * 4.25,
+      lineHeight: `${theme.spacer * 5.25}px`
     }
   },
   titleSecondary: {

@@ -49,7 +49,7 @@ const useProjectStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.sm]: {
       flexDirection: 'row',
-      paddingTop: theme.spacer * 23,
+      paddingTop: theme.spacer * 19,
       paddingBottom: 'inherit',
       textAlign: 'left',
       '& $col23': {

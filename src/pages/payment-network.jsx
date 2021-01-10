@@ -1,10 +1,14 @@
 import React from 'react'
 
 import PaymentsNetwork from '../components/payments-network/payments-network.component'
+import Seo from '../components/shared/seo/seo.component'
 
 const PaymentsNetworkPage = () => {
   return (
-    <PaymentsNetwork />
+    <>
+      <Seo title='Payment Network' />
+      <PaymentsNetwork />
+    </>
   )
 }
 

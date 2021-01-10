@@ -49,7 +49,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.sm]: {
       flexDirection: 'row',
-      paddingTop: theme.spacer * 23,
+      paddingTop: theme.spacer * 19,
       textAlign: 'left'
     }
   },

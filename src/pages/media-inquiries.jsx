@@ -1,10 +1,14 @@
 import React from 'react'
 
 import MediaInquiries from '../components/media-inquiries/media-inquiries.component'
+import Seo from '../components/shared/seo/seo.component'
 
 const MediaInquiriesPage = () => {
   return (
-    <MediaInquiries />
+    <>
+      <Seo title='Media Inquiries' />
+      <MediaInquiries />
+    </>
   )
 }
 
