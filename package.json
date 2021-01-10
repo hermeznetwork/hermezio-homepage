@@ -11,7 +11,8 @@
     "build": "gatsby build",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "start": "gatsby develop -H 0.0.0.0",
+    "start:dev": "gatsby develop -H 0.0.0.0",
+    "start:prod": "npm run build && npm run serve",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gh-pages -d public"
