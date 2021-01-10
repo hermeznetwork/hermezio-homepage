@@ -68,7 +68,7 @@ const PaymentsNetwork = () => {
             </div>
             <div className={classes.col2}>
               <ul className={classes.list}>
-                <li className={classes.listItem}>Low-cost token transfer ~ 0.1 USD </li>
+                <li className={classes.listItem}>Low-cost token transfer</li>
                 <li className={classes.listItem}>ETH and ERC-20 tokens transfer</li>
                 <li className={classes.listItem}>Atomic swaps</li>
                 <li className={classes.listItem}>Fees payable in single currency</li>
@@ -113,7 +113,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Community</Title>
-              <p>Our smart contracts and Circom circuits are open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
+              <p>Our smart contracts and Circom zero-knowledge circuits are open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -140,7 +140,7 @@ const PaymentsNetwork = () => {
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
             <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
-            <p className={classes.section5Text}>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+            <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
             <div className={classes.linksWrapper}>
               <div className={classes.link}>
                 <TextLink to='https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE' text='Token contract' />

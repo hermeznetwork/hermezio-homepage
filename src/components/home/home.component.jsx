@@ -15,7 +15,7 @@ const Home = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={classes.col3}>
             <Title>Open and low-cost payment network for everyone.</Title>
-            <p className={classes.section1Text}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</p>
+            <p className={classes.section1Text}>Hermez is a trustless ZK-Rollup focused on scaling payments and token transfers on the wings of Ethereum.</p>
             {/* TODO "Remove following links temporarily until we can provide this information" */}
             {/* <div className={classes.buttonWrapper}>
               <Button to='/' text='Create account' />
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_2img} />
-              <div className={classes.section2Text}>Decentalised and open-source architecture.</div>
+              <div className={classes.section2Text}>Decentralised and open-source architecture.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_3img} />
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
           <div>
             <div className={`${classes.buttonWrapper} ${classes.button}`}>
-              <Button internalLink to='/payments-network' text='Hermez Network' />
+              <Button internalLink to='/payment-network' text='Hermez Network' />
             </div>
           </div>
         </section>
@@ -135,7 +135,7 @@ const Home = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Permissionless auctions for validators</Title>
-              <p>Anyone can bid in a decentralized auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
+              <p>Anyone can bid in a decentralised auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
               <div className={classes.section6link}>
                 <TextLink to='https://docs.hermez.io/#/faq/coordinators?id=coordinators' text='More about network coordinators' />
               </div>
@@ -147,7 +147,7 @@ const Home = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>HEZ Token</Title>
-              <p>The Hermez token (HEZ) will act as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <p>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
               <div className={classes.section6link}>
                 <TextLink to='/payment-network#hez' text='More about HEZ' target='_self' />
               </div>

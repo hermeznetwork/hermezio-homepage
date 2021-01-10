@@ -31,7 +31,7 @@ const Project = () => {
             <div className={classes.col2}>
               <p>Everyone should have universal access to finance.</p>
               <p>We are working on an open-source scalability model based on zero-knowledge technology (zk-rollup) to simplify and reduce costs for person-to-person payments, arbitrage opportunities and promote the adoption of digital currencies.</p>
-              <p>The decentralized Hermez protocol will provide a solid cryptographic foundation optimized for low-cost token transfers and enable future payment and financial solutions.</p>
+              <p>The decentralised Hermez protocol will provide a solid cryptographic foundation optimised for low-cost token transfers and enable future payment and financial solutions.</p>
               <p>The development plan includes creating a private self-sovereign identity to support DeFi ecosystem.</p>
             </div>
           </div>
@@ -44,11 +44,11 @@ const Project = () => {
             </div>
             <div className={classes.col2}>
               <div className={classes.subTitle}>
-                <Title type='h4'>Decentralized</Title>
+                <Title type='h4'>Decentralised</Title>
               </div>
-              <p>Hermez is called a network because the model is natively decentralized.</p>
+              <p>Hermez is called a network because the model is natively decentralised.</p>
               <p>It's a layer 2 construction and intends to be able to process thousands of transactions per second, so the consensus algorithm has to be simple for one agent (coordinator) to process this amount of transactions at any given time.</p>
-              <p>Our model allows the network to be permission-less and censorship resistant for user transactions.</p>
+              <p>Our model allows the network to be permissionless and censorship resistant for user transactions.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -59,8 +59,8 @@ const Project = () => {
               <div className={classes.subTitle}>
                 <Title type='h4'>Efficient</Title>
               </div>
-              <p>The decentralized model is implemented through a permissionless auction system for potential coordinators of the network to earn the right to process transactions during a slot of time.</p>
-              <p>The auction model incentivizes the energy and cost efficiency of coordinators. They are pushed to process as many transactions as they can in order to collect the transaction fees, and to do so at the minimum operational cost in order to be able to outbid other coordinators (and make money out of it).</p>
+              <p>The decentralised model is implemented through a permissionless auction system for potential coordinators of the network to earn the right to process transactions during a slot of time.</p>
+              <p>The auction model incentivises the energy and cost efficiency of coordinators. They are pushed to process as many transactions as they can in order to collect the transaction fees, and to do so at the minimum operational cost in order to be able to outbid other coordinators (and make money out of it).</p>
               <p>Hermez implements a zk-rollup based on zk-SNARKs proofs, the most efficient cryptographic construction in terms of batch cost in Ethereum.</p>
             </div>
           </div>
