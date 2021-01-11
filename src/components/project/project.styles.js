@@ -63,7 +63,7 @@ const useProjectStyles = createUseStyles(theme => ({
     }
   },
   section1img: {
-    backgroundImage: 'url(./project-section1.png)',
+    backgroundImage: 'url(../project-section1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
