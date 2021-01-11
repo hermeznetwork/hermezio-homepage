@@ -54,7 +54,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   section1img: {
-    backgroundImage: 'url(./technology-section1.png)',
+    backgroundImage: 'url(../technology-section1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
