@@ -73,7 +73,9 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   mainTitle: {
     marginTop: theme.spacer * 2,
     [theme.breakpoints.sm]: {
-      marginTop: 'auto'
+      marginTop: 'auto',
+      // TODO remove paddingBottom once Join Hermez button is shown again
+      paddingBottom: theme.spacer * 14
     }
   },
   buttonWrapper: {

@@ -154,11 +154,11 @@ const useProjectStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 1.5,
     fontSize: theme.spacer * 2,
     lineHeight: `${theme.spacer * 2.5}px`,
+    fontWeight: theme.fontWeights.medium,
     [theme.breakpoints.sm]: {
       marginTop: theme.spacer * 2,
       marginBottom: theme.spacer * 0.5,
-      fontSize: theme.spacer * 3 - 1,
-      fontWeight: theme.fontWeights.medium
+      fontSize: theme.spacer * 3 - 1
     }
   },
   role: {

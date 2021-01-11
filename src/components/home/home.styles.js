@@ -51,7 +51,7 @@ const useHomeStyles = createUseStyles(theme => ({
     textAlign: 'center',
     height: theme.spacer * 89,
     [theme.breakpoints.sm]: {
-      paddingTop: theme.spacer * 39.25,
+      paddingTop: theme.spacer * 27.25,
       paddingBottom: theme.spacer * 20,
       textAlign: 'left',
       height: theme.spacer * 103
