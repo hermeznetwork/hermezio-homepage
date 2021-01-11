@@ -57,7 +57,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     }
   },
   section1img: {
-    backgroundImage: 'url(./payment-network-section1.png)',
+    backgroundImage: 'url(../payment-network-section1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
