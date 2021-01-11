@@ -172,7 +172,7 @@ export const Footer = ({ routes }) => {
             </span>
           </p>
           <Link to='/legal-disclamer' className={classes.legalLink}>
-              Legal disclamer
+            Legal Disclaimer
           </Link>
         </div>
       </div>

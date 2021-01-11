@@ -71,7 +71,7 @@ const PaymentsNetwork = () => {
                 <li className={classes.listItem}>Low-cost token transfer</li>
                 <li className={classes.listItem}>ETH and ERC-20 tokens transfer</li>
                 <li className={classes.listItem}>Atomic swaps</li>
-                <li className={classes.listItem}>Fees payable in single currency</li>
+                <li className={classes.listItem}>Fees payable in a single currency</li>
                 <li className={classes.listItem}>Low cost deposits and withdrawals</li>
                 <li className={classes.listItem}>Fast capital-efficient exit (withdrawal) in a few minutes</li>
               </ul>

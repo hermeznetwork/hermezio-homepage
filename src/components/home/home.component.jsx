@@ -25,11 +25,11 @@ const Home = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
-          <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of Ethereum ecosystem and enables low-cost token transfers for inclusive economy.</div>
+          <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_1img} />
-              <div className={classes.section2Text}>Cost efficient token transfers and swaps with high throughput.</div>
+              <div className={classes.section2Text}>Cost-efficient token transfers and swaps with high throughput.</div>
             </div>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_2img} />
