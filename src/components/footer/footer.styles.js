@@ -69,7 +69,6 @@ export const useFooterStyles = createUseStyles(theme => ({
     margin: 0,
     marginBottom: theme.spacer * 4,
     width: '45%',
-    textAlign: 'left',
     '&:first-child': {
       marginRight: '10%'
     },

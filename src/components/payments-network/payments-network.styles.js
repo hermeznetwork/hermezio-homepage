@@ -87,8 +87,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   list: {
     marginTop: theme.spacer * 2,
-    paddingInline: theme.spacer * 2,
-    textAlign: 'left'
+    paddingInline: theme.spacer * 2
   },
   listItem: {
     color: theme.palette.gray.main,
