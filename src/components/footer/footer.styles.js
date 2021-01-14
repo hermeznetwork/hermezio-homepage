@@ -16,7 +16,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 11}px ${theme.spacer * 6}px ${theme.spacer * 6}px`
   },
   topSection: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'flex',
       justifyContent: 'space-between'
     }
@@ -24,7 +24,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   bottomSection: {
     flexDirection: 'column',
     alignItems: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     },
     display: 'flex',
@@ -33,12 +33,12 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   col3: {
     display: 'flex',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '33%'
     }
   },
   head: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginRight: '50%'
     },
     marginBottom: theme.spacer * 4,
@@ -53,14 +53,14 @@ export const useFooterStyles = createUseStyles(theme => ({
     '& > *': {
       lineHeight: `${theme.spacer * 3}px`,
       marginBottom: theme.spacer * 0.5,
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         marginBottom: theme.spacer
       }
     }
   },
   listCol: {
     display: 'flex',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'contents'
     }
   },
@@ -72,7 +72,7 @@ export const useFooterStyles = createUseStyles(theme => ({
     '&:first-child': {
       marginRight: '10%'
     },
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginRight: theme.spacer * 13,
       width: 'auto',
       '&:last-child, &:first-child': {
@@ -94,7 +94,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   logoAndText: {
     flexDirection: 'column',
     alignItems: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     },
     color: theme.palette.gray.main,
@@ -102,7 +102,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   text: {
     marginTop: theme.spacer * 2.5,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 0
     },
     marginLeft: theme.spacer * 0.5

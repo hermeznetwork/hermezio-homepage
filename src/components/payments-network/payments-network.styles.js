@@ -4,23 +4,23 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   row: {
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     }
   },
   col23: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '67%'
     }
   },
   col2: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '50%',
       marginLeft: 'auto'
     }
   },
   col3: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       margin: 'auto',
       width: '33%'
     }
@@ -33,7 +33,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       padding: `${theme.spacer * 17}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
@@ -49,7 +49,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     paddingTop: theme.spacer * 8,
     paddingBottom: theme.spacer * 9.5,
     textAlign: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row',
       paddingTop: theme.spacer * 19,
       paddingBottom: theme.spacer * 26,
@@ -65,14 +65,14 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     width: '100%',
     height: '235px',
     marginBottom: theme.spacer * 4,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '460px',
       marginBottom: 0
     }
   },
   mainTitle: {
     marginTop: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'auto',
       // TODO remove paddingBottom once Join Hermez button is shown again
       paddingBottom: theme.spacer * 14
@@ -81,7 +81,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   buttonWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       justifyContent: 'left'
     }
   },
@@ -103,7 +103,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section4: {
     '& $divider': {
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         width: '50%'
       },
       marginLeft: 'auto',
@@ -129,7 +129,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '360px'
     }
   },
@@ -155,25 +155,25 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     background: theme.palette.primary.main,
     marginTop: theme.spacer * 4,
     marginBottom: theme.spacer * 3,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 7,
       marginBottom: theme.spacer * 8
     }
   },
   inlineGraphicText: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'auto',
       marginBottom: 'auto'
     }
   },
   inlineGraphicImage: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       maxHeight: theme.spacer * 48
     }
   },
   onlyDesktop: {
     display: 'none',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'inline-block'
     }
   }

@@ -80,7 +80,7 @@ export const useLayoutStyles = createUseStyles((theme) => ({
       fontSize: theme.spacer * 2,
       lineHeight: `${theme.spacer * 3}px`,
       color: theme.palette.gray.main,
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         fontSize: theme.spacer * 2 + 1,
         lineHeight: `${theme.spacer * 4 - 3}px`
       }
