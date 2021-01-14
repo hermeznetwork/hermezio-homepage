@@ -99,7 +99,8 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     ul: {
       marginBlock: 0,
-      paddingInline: 0
+      paddingInline: 0,
+      paddingInlineStart: 0
     }
   },
   layout: {

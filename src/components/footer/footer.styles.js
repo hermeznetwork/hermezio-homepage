@@ -69,7 +69,6 @@ export const useFooterStyles = createUseStyles(theme => ({
     margin: 0,
     marginBottom: theme.spacer * 4,
     width: '45%',
-    textAlign: 'left',
     '&:first-child': {
       marginRight: '10%'
     },
@@ -103,6 +102,8 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   text: {
     marginTop: theme.spacer * 2.5,
+    width: '100%',
+    textAlign: 'center',
     [theme.breakpoints.md]: {
       marginTop: 0
     },
