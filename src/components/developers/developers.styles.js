@@ -4,23 +4,23 @@ const useDevelopersStyles = createUseStyles(theme => ({
   row: {
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     }
   },
   col23: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '67%'
     }
   },
   col2: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '50%',
       marginLeft: 'auto'
     }
   },
   col3: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       margin: 'auto',
       width: '33%'
     }
@@ -33,7 +33,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
@@ -47,7 +47,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row',
       paddingTop: theme.spacer * 19,
       textAlign: 'left'
@@ -61,13 +61,13 @@ const useDevelopersStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '384px',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '650px'
     }
   },
   mainTitle: {
     marginTop: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'auto',
       marginLeft: 0
     }
@@ -75,13 +75,13 @@ const useDevelopersStyles = createUseStyles(theme => ({
   buttonWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       justifyContent: 'left'
     }
   },
   section2: {
     '& $divider': {
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         width: '50%'
       },
       marginLeft: 'auto',
@@ -91,14 +91,14 @@ const useDevelopersStyles = createUseStyles(theme => ({
   },
   section2Title: {
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       margin: 0
     }
   },
   section2Text: {
     paddingTop: theme.spacer * 2,
     paddingBottom: theme.spacer * 4,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       paddingTop: theme.spacer * 3,
       paddingBottom: theme.spacer * 10
     }
@@ -117,18 +117,18 @@ const useDevelopersStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '390px'
     }
   },
   section3Title: {
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginBottom: theme.spacer * 3
     }
   },
   section4Box: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '31%'
     },
     '&:first-child': {
@@ -144,14 +144,14 @@ const useDevelopersStyles = createUseStyles(theme => ({
     '&:first-child': {
       marginTop: 0
     },
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 0,
       marginBottom: 0
     }
   },
   circomText: {
     marginBottom: theme.spacer * 3,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 4,
       marginBottom: -theme.spacer * 4
     }
@@ -162,7 +162,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     background: theme.palette.primary.main,
     marginTop: 0,
     marginBottom: theme.spacer * 5,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 9,
       marginBottom: theme.spacer * 16
     }
@@ -177,7 +177,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     borderRadius: 30,
     padding: `${theme.spacer * 6}px ${theme.spacer * 3.5}px ${theme.spacer * 4.5}px`,
     marginTop: theme.spacer * 5,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       backgroundImage: 'url(./discord-link-background.svg)',
       padding: theme.spacer * 8,
       marginTop: 0
@@ -188,13 +188,13 @@ const useDevelopersStyles = createUseStyles(theme => ({
     fontWeight: theme.fontWeights.bold,
     fontSize: theme.spacer * 3.5,
     lineHeight: `${theme.spacer * 4.5}px`,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 5.25,
       lineHeight: `${theme.spacer * 7}px`
     }
   },
   discordButton: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       margin: 0,
       alignItems: 'center',
       display: 'flex',
@@ -205,19 +205,19 @@ const useDevelopersStyles = createUseStyles(theme => ({
     }
   },
   inlineGraphicText: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'auto',
       marginBottom: 'auto'
     }
   },
   inlineGraphicImage: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       maxHeight: theme.spacer * 48
     }
   },
   onlyDesktop: {
     display: 'none',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'block'
     }
   }

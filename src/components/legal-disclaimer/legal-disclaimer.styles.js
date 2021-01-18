@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss'
 const useLegalDisclaimerStyles = createUseStyles(theme => ({
   section: {
     padding: `0 ${theme.spacer * 4 - 3}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 9}px`
     },
     background: theme.palette.primary.light,

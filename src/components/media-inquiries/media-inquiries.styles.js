@@ -4,7 +4,7 @@ const useMediaInquiriesStyles = createUseStyles(theme => ({
   section: {
     paddingRight: theme.spacer * 4 - 3,
     paddingLeft: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       paddingRight: 0,
       paddingLeft: 0
     },

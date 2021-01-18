@@ -4,23 +4,23 @@ const useProjectStyles = createUseStyles(theme => ({
   row: {
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     }
   },
   col23: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '67%'
     }
   },
   col2: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '50%',
       marginLeft: 'auto'
     }
   },
   col3: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       margin: 'auto',
       width: '33%'
     }
@@ -33,7 +33,7 @@ const useProjectStyles = createUseStyles(theme => ({
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
@@ -47,16 +47,11 @@ const useProjectStyles = createUseStyles(theme => ({
     display: 'flex',
     flexDirection: 'column-reverse',
     textAlign: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row',
       paddingTop: theme.spacer * 19,
-      paddingBottom: 'inherit',
       textAlign: 'left',
-      '& $col23': {
-        paddingLeft: theme.spacer * 20
-      }
-    },
-    [theme.breakpoints.md]: {
+      paddingBottom: 'inherit',
       '& $col23': {
         paddingLeft: theme.spacer * 10
       }
@@ -70,33 +65,33 @@ const useProjectStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '384px',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '650px'
     }
   },
   buttonWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       justifyContent: 'left'
     }
   },
   section2: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       paddingTop: theme.spacer * 12,
       paddingBottom: theme.spacer * 9
     }
   },
   title: {
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginBottom: 'inherit'
     }
   },
   subTitle: {
     marginTop: theme.spacer * 2,
     marginBottom: theme.spacer * 1,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 0,
       marginBottom: theme.spacer * 2.5
     }
@@ -108,7 +103,7 @@ const useProjectStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 4,
     marginBottom: theme.spacer * 3,
     width: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 4,
       marginBottom: theme.spacer * 5,
       width: '50%'
@@ -116,14 +111,14 @@ const useProjectStyles = createUseStyles(theme => ({
   },
   dividerFullWidth: {
     width: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 10,
       marginBottom: theme.spacer * 8
     }
   },
   profilesTitle: {
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginBottom: 0
     }
   },
@@ -131,7 +126,7 @@ const useProjectStyles = createUseStyles(theme => ({
     justifyContent: 'space-between',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexWrap: 'initial',
       paddingTop: theme.spacer * 7
     }
@@ -139,7 +134,7 @@ const useProjectStyles = createUseStyles(theme => ({
   profile: {
     flex: '0 45%',
     paddingBottom: theme.spacer * 3,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flex: 'initial',
       paddingBottom: 0,
       width: '22.5%'
@@ -155,7 +150,7 @@ const useProjectStyles = createUseStyles(theme => ({
     fontSize: theme.spacer * 2,
     lineHeight: `${theme.spacer * 2.5}px`,
     fontWeight: theme.fontWeights.medium,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 2,
       marginBottom: theme.spacer * 0.5,
       fontSize: theme.spacer * 3 - 1
@@ -165,7 +160,7 @@ const useProjectStyles = createUseStyles(theme => ({
     fontSize: theme.spacer * 2 - 1,
     lineHeight: `${theme.spacer * 2.25}px`,
     letterSpacing: 0,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 2 + 1,
       lineHeight: `${theme.spacer * 4 - 3}px`
     }
