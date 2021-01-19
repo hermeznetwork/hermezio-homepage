@@ -32,7 +32,7 @@ const Project = () => {
               <p>Everyone should have universal access to finance.</p>
               <p>We are working on an open-source scalability model based on zero-knowledge technology (zk-rollup) to simplify and reduce costs for person-to-person payments, arbitrage opportunities and promote the adoption of digital currencies.</p>
               <p>The decentralised Hermez protocol will provide a solid cryptographic foundation optimised for low-cost token transfers and enable future payment and financial solutions.</p>
-              <p>The development plan includes creating a private self-sovereign identity to support DeFi ecosystem.</p>
+              <p>The development plan includes creating a private self-sovereign identity to support the DeFi ecosystem.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -47,7 +47,7 @@ const Project = () => {
                 <Title type='h4'>Decentralised</Title>
               </div>
               <p>Hermez is called a network because the model is natively decentralised.</p>
-              <p>It's a layer 2 construction and intends to be able to process thousands of transactions per second, so the consensus algorithm has to be simple for one agent (coordinator) to process this amount of transactions at any given time.</p>
+              <p>It’s a Layer 2 construction and intends to process thousands of transactions per second, so the consensus algorithm has to be simple for one agent (coordinator) to process this amount of transactions at any given time.</p>
               <p>Our model allows the network to be permissionless and censorship resistant for user transactions.</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Project = () => {
                 <Title type='h4'>Part of the community</Title>
               </div>
               <p>Hermez is designed to contribute to the community, since the project wouldn’t be possible without it. Innovations in scalability are a rare opportunity to realign incentives around the community and the public goods they provide.</p>
-              <p>40% of the generated value in the network will be sent to a donation mechanism designed to benefit the projects behind the ecosystem’s public goods.. It will start by contributing to Gitcoin Grants, but other pools might be enabled in the future.</p>
+              <p>Our Proof-of-Donation consensus algorithm will send 40% of the network’s generated value as a donation to the projects behind the ecosystem’s public goods.</p>
               <p>Hermez will open source all the code of the protocol and the coordinator, is open to contributions, and has committed to contribute to the creation of a L2 ecosystem for initiatives such as better L2 interoperability.</p>
             </div>
           </div>
