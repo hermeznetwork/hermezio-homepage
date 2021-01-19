@@ -4,6 +4,7 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
+import BlogPosts from '../blog-posts/blog-posts.component'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = () => {
@@ -199,6 +200,9 @@ const Home = () => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
+
+          <BlogPosts />
+
           <div className={classes.row}>
             <div className={classes.col3}>
               <Title>Blog</Title>
