@@ -2,7 +2,7 @@ import React from 'react'
 
 import Button from '../shared/button/button.component'
 import Title from '../shared/title/title.component'
-import useCustom404Styles from './custom-404-page.styles'
+import useCustom404Styles from './custom-404.styles'
 
 const Custom404 = () => {
   const classes = useCustom404Styles()

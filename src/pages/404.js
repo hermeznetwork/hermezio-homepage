@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Custom404 from '../components/custom-404-page/custom-404-page.component'
+import Custom404 from '../components/custom-404/custom-404.component'
 import Seo from '../components/shared/seo/seo.component'
 
-const Custom404Page = () => {
+const Page404 = () => {
   return (
     <>
       <Seo title='404 not found' />
@@ -12,4 +12,4 @@ const Custom404Page = () => {
   )
 }
 
-export default Custom404Page
+export default Page404
