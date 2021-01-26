@@ -70,7 +70,8 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     html: {
       minHeight: '100vh',
       height: '100%',
-      margin: 0
+      margin: 0,
+      scrollBehavior: 'smooth'
     },
     body: {
       fontFamily: 'Modern Era',
@@ -80,7 +81,8 @@ export const useLayoutStyles = createUseStyles((theme) => ({
       fontSize: theme.spacer * 2,
       lineHeight: `${theme.spacer * 3}px`,
       color: theme.palette.gray.main,
-      [theme.breakpoints.sm]: {
+      scrollBehavior: 'smooth',
+      [theme.breakpoints.md]: {
         fontSize: theme.spacer * 2 + 1,
         lineHeight: `${theme.spacer * 4 - 3}px`
       }
@@ -99,7 +101,8 @@ export const useLayoutStyles = createUseStyles((theme) => ({
     },
     ul: {
       marginBlock: 0,
-      paddingInline: 0
+      paddingInline: 0,
+      paddingInlineStart: 0
     }
   },
   layout: {

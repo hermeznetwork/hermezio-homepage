@@ -4,18 +4,18 @@ const useHomeStyles = createUseStyles(theme => ({
   row: {
     display: 'flex',
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       flexDirection: 'row'
     }
   },
   col2: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '50%',
       marginLeft: 'auto'
     }
   },
   col3: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '33%'
     }
   },
@@ -26,7 +26,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section1Wrapper: {
     backgroundImage: 'url(./home-background-mobile.png)',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       backgroundImage: 'url(./home-background.png)'
     },
     backgroundPosition: 'bottom',
@@ -35,7 +35,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
       flexDirection: 'row'
     },
@@ -50,7 +50,7 @@ const useHomeStyles = createUseStyles(theme => ({
     paddingTop: theme.spacer * 11,
     textAlign: 'center',
     height: theme.spacer * 89,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       paddingTop: theme.spacer * 27.25,
       paddingBottom: theme.spacer * 20,
       textAlign: 'left',
@@ -67,7 +67,7 @@ const useHomeStyles = createUseStyles(theme => ({
   buttonWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       justifyContent: 'left'
     }
   },
@@ -81,7 +81,7 @@ const useHomeStyles = createUseStyles(theme => ({
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 2.5,
     lineHeight: `${theme.spacer * 4}px`,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 4.25,
       lineHeight: `${theme.spacer * 5.75}px`,
       marginBottom: theme.spacer * 13
@@ -90,7 +90,7 @@ const useHomeStyles = createUseStyles(theme => ({
   section2Box: {
     textAlign: 'center',
     marginTop: theme.spacer * 5,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 0
     }
   },
@@ -127,7 +127,7 @@ const useHomeStyles = createUseStyles(theme => ({
     fontSize: theme.spacer * 2.5,
     lineHeight: `${theme.spacer * 4}px`,
     margin: `${theme.spacer * 3}px auto 0`,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 3 - 1,
       lineHeight: `${theme.spacer * 4.5 - 1}px`,
       margin: `${theme.spacer * 6.25}px auto 0`
@@ -141,7 +141,7 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '390px'
     }
   },
@@ -151,7 +151,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section4: {
     '& $divider': {
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         marginTop: theme.spacer * 7,
         marginBottom: theme.spacer * 8
       }
@@ -162,14 +162,14 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section4BoxWrapper: {
     marginTop: theme.spacer * 5,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'inherit',
       flexDirection: 'row'
     }
   },
   section4Box: {
     marginTop: 0,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginRight: theme.spacer * 4,
       '&:last-child': {
         marginRight: 0
@@ -184,7 +184,7 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '385px'
     }
   },
@@ -213,7 +213,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section6: {
     '& $divider': {
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         marginTop: theme.spacer * 7,
         marginBottom: theme.spacer * 8
       }
@@ -224,13 +224,13 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   section6link: {
     marginTop: theme.spacer * 2.25,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 3.25
     }
   },
   section7: {
     '& $divider': {
-      [theme.breakpoints.sm]: {
+      [theme.breakpoints.md]: {
         marginTop: theme.spacer * 4,
         marginBottom: theme.spacer * 5
       }
@@ -238,7 +238,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   allBlogPostsLink: {
     marginLeft: 0,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginLeft: 'auto',
       width: '50%'
     }
@@ -256,26 +256,26 @@ const useHomeStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     height: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       height: '684px'
     }
   },
   section8SubTitle: {
     marginTop: theme.spacer * 8,
     marginBottom: theme.spacer * 4,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 16,
       marginBottom: theme.spacer * 8
     }
   },
   boxes: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'flex',
       justifyContent: 'space-between'
     }
   },
   boxWrapper: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: '30%',
       margin: 0
     }
@@ -289,7 +289,7 @@ const useHomeStyles = createUseStyles(theme => ({
     padding: theme.spacer * 6,
     textAlign: 'left',
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginBottom: 0,
       minHeight: theme.spacer * 26.5,
       padding: `${theme.spacer * 4}px ${theme.spacer * 7.5}px ${theme.spacer * 5}px ${theme.spacer * 6}px `
@@ -307,7 +307,7 @@ const useHomeStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 4,
     marginBottom: theme.spacer * 3,
     width: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 4,
       marginBottom: theme.spacer * 5,
       width: '50%'
@@ -315,7 +315,7 @@ const useHomeStyles = createUseStyles(theme => ({
   },
   dividerFullWidth: {
     width: '100%',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 9,
       marginBottom: theme.spacer * 16
     }
@@ -328,7 +328,7 @@ const useHomeStyles = createUseStyles(theme => ({
     justifyContent: 'center',
     width: '100%',
     marginTop: theme.spacer * 7,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 12
     }
   },
@@ -363,19 +363,19 @@ const useHomeStyles = createUseStyles(theme => ({
     textOverflow: 'ellipsis'
   },
   inlineGraphicText: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: 'auto',
       marginBottom: 'auto'
     }
   },
   inlineGraphicImage: {
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       maxHeight: theme.spacer * 48
     }
   },
   onlyDesktop: {
     display: 'none',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       display: 'block'
     }
   }

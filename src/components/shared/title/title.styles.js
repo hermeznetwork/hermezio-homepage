@@ -9,7 +9,7 @@ const useTitleStyles = createUseStyles(theme => ({
     fontStyle: 'normal',
     letterSpacing: 'normal',
     color: theme.palette.black,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 4.25,
       lineHeight: `${theme.spacer * 5.25}px`
     }
@@ -20,7 +20,7 @@ const useTitleStyles = createUseStyles(theme => ({
     fontSize: theme.spacer * 2.5,
     lineHeight: `${theme.spacer * 4}px`,
     marginBottom: theme.spacer * 1,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 3 - 1,
       marginBottom: theme.spacer * 2.5
     }
@@ -29,7 +29,7 @@ const useTitleStyles = createUseStyles(theme => ({
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 3,
     lineHeight: 'inherit',
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       fontSize: theme.spacer * 2.5,
       lineHeight: `${theme.spacer * 4}px`
     }

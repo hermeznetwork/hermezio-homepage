@@ -26,7 +26,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     '&:focus': {
       outline: 'none'
     },
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       width: theme.spacer * 50,
       right: 'auto',
       padding: `0 ${theme.spacer * 8}px`
@@ -62,7 +62,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     margin: 0,
     marginTop: theme.spacer * 2,
     paddingLeft: 0,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 4
     }
   },

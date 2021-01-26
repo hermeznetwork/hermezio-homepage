@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss'
 
-const useMediaInquiriesStyles = createUseStyles(theme => ({
+const useCustom404Styles = createUseStyles(theme => ({
   section: {
     paddingRight: theme.spacer * 4 - 3,
     paddingLeft: theme.spacer * 2,
@@ -10,20 +10,20 @@ const useMediaInquiriesStyles = createUseStyles(theme => ({
     },
     background: theme.palette.primary.light,
     color: theme.palette.gray.light,
-    paddingTop: theme.spacer * 34,
+    paddingTop: theme.spacer * 24,
     paddingBottom: theme.spacer * 36,
     textAlign: 'center'
   },
   content: {
-    maxWidth: theme.spacer * 75,
-    margin: 'auto'
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
+    },
+    margin: 'auto',
+    width: '100%'
   },
   title: {
-    marginBottom: theme.spacer * 3
-  },
-  email: {
-    color: theme.palette.orange.main,
-    padding: `0 ${theme.spacer * 1}px`
+    paddingTop: theme.spacer * 10,
+    marginBottom: theme.spacer * 5
   },
   buttonWrapper: {
     display: 'flex',
@@ -31,4 +31,4 @@ const useMediaInquiriesStyles = createUseStyles(theme => ({
   }
 }))
 
-export default useMediaInquiriesStyles
+export default useCustom404Styles

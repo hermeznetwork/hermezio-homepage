@@ -29,7 +29,7 @@ const useTextLinkStyles = createUseStyles(theme => ({
     height: theme.spacer * 16,
     marginTop: 0,
     marginBottom: theme.spacer * 2,
-    [theme.breakpoints.sm]: {
+    [theme.breakpoints.md]: {
       marginTop: theme.spacer * 8,
       marginBottom: theme.spacer * 9
     },
