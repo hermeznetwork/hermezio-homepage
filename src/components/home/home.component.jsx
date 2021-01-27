@@ -4,10 +4,9 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-import BlogPosts from '../blog-posts/blog-posts.component'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
-const Home = () => {
+const Home = ({ blogPosts }) => {
   const classes = useHomeStyles()
 
   return (
@@ -200,9 +199,6 @@ const Home = () => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
-
-          <BlogPosts />
-
           <div className={classes.row}>
             <div className={classes.col3}>
               <Title>Blog</Title>
@@ -210,15 +206,15 @@ const Home = () => {
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
-                  href='https://blog.hermez.io/hermez-bug-bounty-program/'
+                  href={blogPosts[0].url}
                   target='_blank'
                   rel='noopener noreferrer'
                   className={classes.blogLink}
                 >
-                  Launching Hermez Bug Bounty Program
+                  {blogPosts[0].title}
                 </a>
               </h3>
-              <p>08 January 2021</p>
+              <p>{blogPosts[0].published_at}</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -228,15 +224,15 @@ const Home = () => {
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
-                  href='https://blog.hermez.io/hermez-second-audit-by-trail-of-bits/'
+                  href={blogPosts[1].url}
                   target='_blank'
                   rel='noopener noreferrer'
                   className={classes.blogLink}
                 >
-                  Hermez Second Audit, by Trail of Bits
+                  {blogPosts[1].title}
                 </a>
               </h3>
-              <p>30 December 2020</p>
+              <p>{blogPosts[1].published_at}</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -246,15 +242,15 @@ const Home = () => {
             <div className={classes.col2}>
               <h3 className={classes.blogTitle}>
                 <a
-                  href='https://blog.hermez.io/hermez-trusted-setup-phase-2/'
+                  href={blogPosts[2].url}
                   target='_blank'
                   rel='noopener noreferrer'
                   className={classes.blogLink}
                 >
-                  Join Hermez Trusted Setup Phase 2 Ceremony!
+                  {blogPosts[2].title}
                 </a>
               </h3>
-              <p>21 December 2020</p>
+              <p>{new Date(blogPosts[2].published_at)}</p>
             </div>
           </div>
           <div className={classes.row}>

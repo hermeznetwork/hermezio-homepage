@@ -26,6 +26,14 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
+    },
+    {
+      resolve: 'gatsby-source-ghost',
+      options: {
+        apiUrl: 'https://blog.hermez.io',
+        contentApiKey: 'a0bbfb0931ce4534811bee1acf',
+        version: 'v3'
+      }
     }
   ]
 }
