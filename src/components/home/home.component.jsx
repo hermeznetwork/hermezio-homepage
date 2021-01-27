@@ -250,7 +250,7 @@ const Home = ({ blogPosts }) => {
                   {blogPosts[2].title}
                 </a>
               </h3>
-              <p>{new Date(blogPosts[2].published_at)}</p>
+              <p>{blogPosts[2].published_at}</p>
             </div>
           </div>
           <div className={classes.row}>
