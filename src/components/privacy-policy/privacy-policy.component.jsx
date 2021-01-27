@@ -3,7 +3,7 @@ import React from 'react'
 import usePrivacyPolicyStyles from './privacy-policy.styles'
 import Title from '../shared/title/title.component'
 
-const LegalDisclaimer = () => {
+const PrivacyPolicy = () => {
   const classes = usePrivacyPolicyStyles()
 
   return (
@@ -35,16 +35,16 @@ const LegalDisclaimer = () => {
         <Title type='h3'>Purpose of personal information collection</Title>
         <p>Personal Information is collected in order to:</p>
         <ul className={`${classes.list} ${classes.paragraphMargin}`}>
-          <li className={classes.listBullet}>Provide our services efficiently and effectively.</li>
-          <li className={classes.listBullet}>Inform you about lending and financing features.</li>
-          <li className={classes.listBullet}>Develop, enhance, market and deliver products and services to you.</li>
-          <li className={classes.listBullet}>Understand your needs and your eligibility for products and services.</li>
-          <li className={classes.listBullet}>Provide information to you about developments and new products, including changes and enhancements to the Site.</li>
-          <li className={classes.listBullet}>Process billing and collection of any fees.</li>
-          <li className={classes.listBullet}>Conduct surveys and get feedback from you.</li>
-          <li className={classes.listBullet}>Establish and maintain a responsible commercial relationship with you.</li>
-          <li className={classes.listBullet}>Provide you with news and other matters of general interest to you as Hermez Network customer.</li>
-          <li className={classes.listBullet}>Meet Hermez Network legal and regulatory requirements (e.g., information required to verify your identity).</li>
+          <li className={classes.listBullet}>Provide our services efficiently and effectively;</li>
+          <li className={classes.listBullet}>Inform you about lending and financing features;</li>
+          <li className={classes.listBullet}>Develop, enhance, market and deliver products and services to you;</li>
+          <li className={classes.listBullet}>Understand your needs and your eligibility for products and services;</li>
+          <li className={classes.listBullet}>Provide information to you about developments and new products, including changes and enhancements to the Site;</li>
+          <li className={classes.listBullet}>Process billing and collection of any fees;</li>
+          <li className={classes.listBullet}>Conduct surveys and get feedback from you;</li>
+          <li className={classes.listBullet}>Establish and maintain a responsible commercial relationship with you;</li>
+          <li className={classes.listBullet}>Provide you with news and other matters of general interest to you as Hermez Network customer;</li>
+          <li className={classes.listBullet}>Meet Hermez Network legal and regulatory requirements (e.g., information required to verify your identity);</li>
         </ul>
         <Title type='h3'>Security, protection and use of personal information</Title>
         <p>Hermez Network is committed to protecting your privacy. Internally, only employees have access to know Personal Information, or whose duties reasonably require access to it are granted access to Personal Information.</p>
@@ -77,4 +77,4 @@ const LegalDisclaimer = () => {
   )
 }
 
-export default LegalDisclaimer
+export default PrivacyPolicy
