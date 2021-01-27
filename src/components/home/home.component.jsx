@@ -1,4 +1,5 @@
 import React from 'react'
+import dayjs from 'dayjs'
 
 import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
@@ -214,7 +215,7 @@ const Home = ({ blogPosts }) => {
                   {blogPosts[0].title}
                 </a>
               </h3>
-              <p>{blogPosts[0].published_at}</p>
+              <p>{dayjs(blogPosts[0].published_at).format('DD MMMM YYYY')}</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -232,7 +233,7 @@ const Home = ({ blogPosts }) => {
                   {blogPosts[1].title}
                 </a>
               </h3>
-              <p>{blogPosts[1].published_at}</p>
+              <p>{dayjs(blogPosts[1].published_at).format('DD MMMM YYYY')}</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -250,7 +251,7 @@ const Home = ({ blogPosts }) => {
                   {blogPosts[2].title}
                 </a>
               </h3>
-              <p>{blogPosts[2].published_at}</p>
+              <p>{dayjs(blogPosts[2].published_at).format('DD MMMM YYYY')}</p>
             </div>
           </div>
           <div className={classes.row}>
