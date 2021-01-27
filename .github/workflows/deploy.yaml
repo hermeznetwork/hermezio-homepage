@@ -18,6 +18,10 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL }}
+          GHOST_SITE_URL: ${{ secrets.GHOST_SITE_URL }}
+          GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
