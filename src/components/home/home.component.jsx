@@ -200,63 +200,35 @@ const Home = ({ blogPosts }) => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
-          <div className={classes.row}>
-            <div className={classes.col3}>
-              <Title>Blog</Title>
-            </div>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href={blogPosts[0].url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  {blogPosts[0].title}
-                </a>
-              </h3>
-              <p>{dayjs(blogPosts[0].published_at).format('DD MMMM YYYY')}</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href={blogPosts[1].url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  {blogPosts[1].title}
-                </a>
-              </h3>
-              <p>{dayjs(blogPosts[1].published_at).format('DD MMMM YYYY')}</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href={blogPosts[2].url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  {blogPosts[2].title}
-                </a>
-              </h3>
-              <p>{dayjs(blogPosts[2].published_at).format('DD MMMM YYYY')}</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
+          {
+            blogPosts.map((blogPost, index) => (
+              <>
+                <div className={classes.row} key={index}>
+                  {index === 0 && (
+                    <div className={`${classes.col3} ${classes.blogHeaderCol}`}>
+                      <Title>Blog</Title>
+                    </div>
+                  )}
+                  <div className={classes.col2}>
+                    <h3 className={classes.blogTitle}>
+                      <a
+                        href={blogPost.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className={classes.blogLink}
+                      >
+                        {blogPost.title}
+                      </a>
+                    </h3>
+                    <p>{dayjs(blogPost.published_at).format('DD MMMM YYYY')}</p>
+                  </div>
+                </div>
+                <div className={classes.row}>
+                  <span className={classes.divider} />
+                </div>
+              </>
+            ))
+          }
           <div className={`${classes.row} ${classes.allBlogPostsLink}`}>
             <TextLink to='https://blog.hermez.io/' text='View all posts' />
           </div>

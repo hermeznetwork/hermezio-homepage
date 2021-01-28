@@ -12,3 +12,7 @@ node_modules/
 
 # Gatsby
 public/
+
+# Env
+.env*
+!.env.example

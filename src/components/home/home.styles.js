@@ -332,6 +332,10 @@ const useHomeStyles = createUseStyles(theme => ({
       marginTop: theme.spacer * 12
     }
   },
+  blogHeaderCol: {
+    display: 'flex',
+    alignItems: 'center'
+  },
   blogTitle: {
     color: theme.palette.black,
     fontSize: theme.spacer * 3 - 1,
