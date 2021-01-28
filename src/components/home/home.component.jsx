@@ -1,4 +1,5 @@
 import React from 'react'
+import dayjs from 'dayjs'
 
 import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
@@ -6,7 +7,7 @@ import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
-const Home = () => {
+const Home = ({ blogPosts }) => {
   const classes = useHomeStyles()
 
   return (
@@ -199,63 +200,35 @@ const Home = () => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
-          <div className={classes.row}>
-            <div className={classes.col3}>
-              <Title>Blog</Title>
-            </div>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-bug-bounty-program/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Launching Hermez Bug Bounty Program
-                </a>
-              </h3>
-              <p>08 January 2021</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-second-audit-by-trail-of-bits/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Hermez Second Audit, by Trail of Bits
-                </a>
-              </h3>
-              <p>30 December 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
-          <div className={classes.row}>
-            <div className={classes.col2}>
-              <h3 className={classes.blogTitle}>
-                <a
-                  href='https://blog.hermez.io/hermez-trusted-setup-phase-2/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.blogLink}
-                >
-                  Join Hermez Trusted Setup Phase 2 Ceremony!
-                </a>
-              </h3>
-              <p>21 December 2020</p>
-            </div>
-          </div>
-          <div className={classes.row}>
-            <span className={classes.divider} />
-          </div>
+          {
+            blogPosts.map((blogPost, index) => (
+              <>
+                <div className={classes.row} key={index}>
+                  {index === 0 && (
+                    <div className={`${classes.col3} ${classes.blogHeaderCol}`}>
+                      <Title>Blog</Title>
+                    </div>
+                  )}
+                  <div className={classes.col2}>
+                    <h3 className={classes.blogTitle}>
+                      <a
+                        href={blogPost.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className={classes.blogLink}
+                      >
+                        {blogPost.title}
+                      </a>
+                    </h3>
+                    <p>{dayjs(blogPost.published_at).format('DD MMMM YYYY')}</p>
+                  </div>
+                </div>
+                <div className={classes.row}>
+                  <span className={classes.divider} />
+                </div>
+              </>
+            ))
+          }
           <div className={`${classes.row} ${classes.allBlogPostsLink}`}>
             <TextLink to='https://blog.hermez.io/' text='View all posts' />
           </div>
