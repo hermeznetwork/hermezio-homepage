@@ -33,6 +33,13 @@ function Title ({
           {children}
         </h4>
       )
+    case 'h5': {
+      return (
+        <h5 className={`${classes.title} ${classes.subtitle}`}>
+          {children}
+        </h5>
+      )
+    }
     default:
       break
   }

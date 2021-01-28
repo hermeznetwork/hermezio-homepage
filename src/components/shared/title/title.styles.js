@@ -33,6 +33,12 @@ const useTitleStyles = createUseStyles(theme => ({
       fontSize: theme.spacer * 2.5,
       lineHeight: `${theme.spacer * 4}px`
     }
+  },
+  subtitle: {
+    lineHeight: 'inherit',
+    fontSize: theme.spacer * 2 + 1,
+    marginTop: 0,
+    marginBottom: theme.spacer
   }
 }))
 
