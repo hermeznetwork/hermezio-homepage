@@ -14,5 +14,4 @@ node_modules/
 public/
 
 # Env
-.env*
-!.env.example
+.env
