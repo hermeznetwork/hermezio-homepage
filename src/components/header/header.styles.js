@@ -6,18 +6,22 @@ export const useHeaderStyles = createUseStyles(theme => ({
     width: '100%'
   },
   content: {
-    [theme.breakpoints.xl]: {
-      width: theme.spacer * 127.5
-    },
     margin: 'auto',
-    width: '100%',
-    padding: `${theme.spacer * 3}px ${theme.spacer * 2}px 0`
+    padding: `0 ${theme.spacer}px`,
+    [theme.breakpoints.md]: {
+      backgroundColor: theme.palette.black
+    }
   },
   nav: {
+    width: '100%',
     display: 'none',
+    margin: 'auto',
     [theme.breakpoints.md]: {
       display: 'flex',
       alignItems: 'center'
+    },
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5
     }
   },
   mobileMenu: {
@@ -59,15 +63,15 @@ export const useHeaderStyles = createUseStyles(theme => ({
       position: 'relative'
     },
     '&:last-child': {
+      paddingTop: 0,
       display: 'none'// TODO: put it back once Wallet is released, so it can be linked
     },
     '&:last-child a': {
-      border: `2px solid ${theme.palette.black}`,
+      border: `2px solid ${theme.palette.primary.main}`,
       borderRadius: 15,
-      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`,
-      marginTop: theme.spacer * 1.5
+      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`
     },
-    color: theme.palette.black,
+    color: theme.palette.white,
     fontSize: theme.spacer * 2 - 1,
     lineHeight: `${theme.spacer * 2.5}px`
   },
