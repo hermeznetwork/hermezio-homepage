@@ -29,11 +29,6 @@ export const Layout = ({ children }) => {
       id: 4,
       label: 'Project',
       to: '/project'
-    },
-    {
-      id: 5,
-      label: 'Tokenomics',
-      to: '/tokenomics'
     }
   ]
 

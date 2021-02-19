@@ -84,6 +84,11 @@ export const Footer = ({ routes }) => {
                   Mediakit
                 </Link>
               </li>
+              <li className={classes.listItem}>
+                <Link to='/tokenomics'>
+                  Hez token
+                </Link>
+              </li>
             </ul>
           </div>
           <div className={classes.listCol}>
