@@ -44,8 +44,12 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     width: '100%'
   },
   section1: {
+    display: 'flex',
+    flexDirection: 'column-reverse',
     textAlign: 'center',
-    '& $col2': {
+    [theme.breakpoints.md]: {
+      flexDirection: 'row',
+      paddingTop: theme.spacer * 20,
       textAlign: 'left'
     }
   },
@@ -58,29 +62,26 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     width: '100%',
     height: '100%',
     [theme.breakpoints.md]: {
-      height: '390px'
+      height: '385px'
     }
   },
-  section1Title: {
-    marginBottom: theme.spacer * 2,
+  mainTitle: {
+    marginTop: theme.spacer * 2,
     [theme.breakpoints.md]: {
-      marginBottom: theme.spacer * 3
+      margin: 'auto'
     }
   },
-  inlineGraphicImage: {
-    [theme.breakpoints.md]: {
-      maxHeight: theme.spacer * 48
-    }
+  section3Title: {
+    textAlign: 'center',
+    marginTop: theme.spacer * 4,
+    marginBottom: theme.spacer * 9,
+    width: '100%'
   },
-  email: {
-    color: theme.palette.orange.main,
-    padding: `0 ${theme.spacer * 1}px`
+  section3SubTitle: {
+    marginTop: 0
   },
-  onlyDesktop: {
-    display: 'none',
-    [theme.breakpoints.md]: {
-      display: 'block'
-    }
+  section3Headline: {
+    marginTop: theme.spacer * 4
   },
   section4: {
     textAlign: 'center'
@@ -101,14 +102,37 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 3 - 1
   },
-  address: {
-
-  },
   walletsSectionText: {
     color: theme.palette.black,
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 3 - 1,
     lineHeight: `${theme.spacer * 5 - 1}px`
+  },
+  inlineGraphicImage: {
+    [theme.breakpoints.md]: {
+      maxHeight: theme.spacer * 48
+    }
+  },
+  email: {
+    color: theme.palette.orange.main,
+    padding: `0 ${theme.spacer * 1}px`
+  },
+  onlyDesktop: {
+    display: 'none',
+    [theme.breakpoints.md]: {
+      display: 'block'
+    }
+  },
+  divider: {
+    width: '100%',
+    height: '1px',
+    background: theme.palette.primary.main,
+    marginTop: 0,
+    marginBottom: theme.spacer * 5,
+    [theme.breakpoints.md]: {
+      marginTop: theme.spacer * 9,
+      marginBottom: theme.spacer * 16
+    }
   }
 }))
 
