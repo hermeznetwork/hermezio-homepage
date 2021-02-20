@@ -80,14 +80,42 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     marginBottom: theme.spacer * 9,
     width: '100%'
   },
+  boxWrapper: {
+    backgroundColor: theme.palette.primary.light,
+    textAlign: 'center',
+    paddingTop: theme.spacer * 5,
+    paddingBottom: theme.spacer * 7,
+    borderRadius: theme.spacer * 2.5,
+    '&:first-child': {
+      marginRight: theme.spacer * 4.5
+    }
+  },
+  boxTitle: {
+    color: theme.palette.black,
+    fontSize: theme.spacer * 3 - 1,
+    fontWeight: theme.fontWeights.medium,
+    lineHeight: `${theme.spacer * 5 - 1}px`,
+    display: 'block',
+    marginBottom: theme.spacer * 3
+  },
+  boxText: {
+    color: theme.palette.black,
+    fontSize: theme.spacer * 4 + 2,
+    fontWeight: theme.fontWeights.bold,
+    lineHeight: `${theme.spacer * 5 + 2}px`
+  },
   section2MainText: {
     color: theme.palette.black,
     fontSize: theme.spacer * 3 - 1,
     fontWeight: theme.fontWeights.medium,
     lineHeight: `${theme.spacer * 5 - 1}px`,
     textAlign: 'center',
+    marginTop: theme.spacer * 7,
     marginBottom: theme.spacer * 17,
     padding: `0 ${theme.spacer * 20}px`
+  },
+  section2SubTitle: {
+    marginTop: 0
   },
   highlightedText: {
     color: theme.palette.black,
@@ -128,6 +156,10 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     color: theme.palette.black,
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 3 - 1
+  },
+  address: {
+    minWidth: theme.spacer * 52.5,
+    textAlign: 'left'
   },
   walletsSectionText: {
     color: theme.palette.black,

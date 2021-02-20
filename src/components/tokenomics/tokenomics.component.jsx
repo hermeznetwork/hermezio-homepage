@@ -31,22 +31,16 @@ const Tokenomics = () => {
               <Title>Hez supply</Title>
             </div>
           </div>
-
-          <div className={`${classes.row} ${classes.boxes}`}>
+          <div className={classes.row}>
             <div className={`${classes.col2} ${classes.boxWrapper}`}>
-              <div className={classes.box}>
-                <span className={classes.boxTitle}>Max Supply</span>
-                <span className={classes.boxText}>100,000,000 HEZ</span>
-              </div>
+              <span className={classes.boxTitle}>Max Supply</span>
+              <span className={classes.boxText}>100,000,000 HEZ</span>
             </div>
             <div className={`${classes.col2} ${classes.boxWrapper}`}>
-              <div className={classes.box}>
-                <span className={classes.boxTitle}>Verified Circulating Supply</span>
-                <span className={classes.boxText}>36,534,435 HEZ</span>
-              </div>
+              <span className={classes.boxTitle}>Verified Circulating Supply</span>
+              <span className={classes.boxText}>36,534,435 HEZ</span>
             </div>
           </div>
-
           <div className={classes.row}>
             <p className={classes.section2MainText}>HEZ tokenomics are deflationary, as tokens will be burnt through our Proof-of-Donation mechanism.</p>
           </div>
@@ -128,39 +122,39 @@ const Tokenomics = () => {
               <div className={classes.addressList}>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Promotion</div>
-                  <div>0x4D4a7675CC0eb0a3B1d81CbDcd828c4BD0D74155</div>
+                  <div className={classes.address}>0x4D4a7675CC0eb0a3B1d81CbDcd828c4BD0D74155</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Promotion - Vested 2 years</div>
-                  <div>0x3049399e1308db7d2b28488880C6cFE9Aa003275</div>
+                  <div className={classes.address}>0x3049399e1308db7d2b28488880C6cFE9Aa003275</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Developers</div>
-                  <div>0xDd90cA911a5dbfB1624fF7Eb586901a9b4BFC53D</div>
+                  <div className={classes.address}>0xDd90cA911a5dbfB1624fF7Eb586901a9b4BFC53D</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Legal</div>
-                  <div>0x9315F815002d472A3E993ac9dc7461f2601A3c09</div>
+                  <div className={classes.address}>0x9315F815002d472A3E993ac9dc7461f2601A3c09</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Security</div>
-                  <div>0xF96A39d61F6972d8dC0CCd2A3c082eD922E096a7</div>
+                  <div className={classes.address}>0xF96A39d61F6972d8dC0CCd2A3c082eD922E096a7</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Market</div>
-                  <div>0x9CdaeBd2bcEED9EB05a3B3cccd601A40CB0026be</div>
+                  <div className={classes.address}>0x9CdaeBd2bcEED9EB05a3B3cccd601A40CB0026be</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Operations</div>
-                  <div>0xA93Bb239509D16827B7ee9DA7dA6Fc8478837247</div>
+                  <div className={classes.address}>0xA93Bb239509D16827B7ee9DA7dA6Fc8478837247</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Promotion - Vested 3 years</div>
-                  <div>0x99Ae889E171B82BB04FD22E254024716932e5F2f</div>
+                  <div className={classes.address}>0x99Ae889E171B82BB04FD22E254024716932e5F2f</div>
                 </div>
                 <div className={classes.addressRow}>
                   <div className={classes.addressName}>Ecosystem</div>
-                  <div>0xB213aeAeF76f82e42263fe896433A260EF018df2</div>
+                  <div className={classes.address}>0xB213aeAeF76f82e42263fe896433A260EF018df2</div>
                 </div>
               </div>
               <p className={classes.walletsSectionText}>For complete transparency we have listed all HEZ wallets the Hermez project holds as of 16th of February, 2021. These will be labelled and tokens will only move according to the vesting schedule mentioned above. For further information, please contact us at
