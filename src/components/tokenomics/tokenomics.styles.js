@@ -67,13 +67,6 @@ const useTokenomicsStyles = createUseStyles(theme => ({
       marginBottom: theme.spacer * 3
     }
   },
-
-  inlineGraphicText: {
-    [theme.breakpoints.md]: {
-      marginTop: 'auto',
-      marginBottom: 'auto'
-    }
-  },
   inlineGraphicImage: {
     [theme.breakpoints.md]: {
       maxHeight: theme.spacer * 48
@@ -88,6 +81,34 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     [theme.breakpoints.md]: {
       display: 'block'
     }
+  },
+  section4: {
+    textAlign: 'center'
+  },
+  addressList: {
+    marginTop: theme.spacer * 8,
+    marginBottom: theme.spacer * 10
+  },
+  addressRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    borderBottom: `0.8px solid ${theme.palette.primary.main}`,
+    paddingTop: theme.spacer * 2,
+    paddingBottom: theme.spacer * 2.5
+  },
+  addressName: {
+    color: theme.palette.black,
+    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacer * 3 - 1
+  },
+  address: {
+
+  },
+  walletsSectionText: {
+    color: theme.palette.black,
+    fontWeight: theme.fontWeights.medium,
+    fontSize: theme.spacer * 3 - 1,
+    lineHeight: `${theme.spacer * 5 - 1}px`
   }
 }))
 
