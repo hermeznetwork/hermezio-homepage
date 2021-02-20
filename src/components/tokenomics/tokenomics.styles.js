@@ -71,6 +71,33 @@ const useTokenomicsStyles = createUseStyles(theme => ({
       margin: 'auto'
     }
   },
+  section1Paragraph: {
+    marginTop: theme.spacer * 3
+  },
+  section2Title: {
+    textAlign: 'center',
+    marginTop: theme.spacer * 4,
+    marginBottom: theme.spacer * 9,
+    width: '100%'
+  },
+  section2MainText: {
+    color: theme.palette.black,
+    fontSize: theme.spacer * 3 - 1,
+    fontWeight: theme.fontWeights.medium,
+    lineHeight: `${theme.spacer * 5 - 1}px`,
+    textAlign: 'center',
+    marginBottom: theme.spacer * 17,
+    padding: `0 ${theme.spacer * 20}px`
+  },
+  highlightedText: {
+    color: theme.palette.black,
+    fontSize: theme.spacer * 3 - 1,
+    lineHeight: `${theme.spacer * 4 - 3}px`,
+    fontWeight: theme.fontWeights.medium
+  },
+  highlightedParagraph: {
+    marginBottom: theme.spacer * 3 + 3
+  },
   section3Title: {
     textAlign: 'center',
     marginTop: theme.spacer * 4,
@@ -115,7 +142,7 @@ const useTokenomicsStyles = createUseStyles(theme => ({
   },
   email: {
     color: theme.palette.orange.main,
-    padding: `0 ${theme.spacer * 1}px`
+    paddingLeft: theme.spacer * 1
   },
   onlyDesktop: {
     display: 'none',

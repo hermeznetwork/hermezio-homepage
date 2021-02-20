@@ -16,7 +16,7 @@ const Tokenomics = () => {
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.mainTitle}`}>
               <Title>Hermez tokenomics</Title>
-              <p className={classes.paragraphMargin}>The HEZ utility token is used to bid for slots to become a coordinator and portions are donated, burnt, and used to incentivise active network usage and engagement. This is the only economic design built into the core protocol from the start.</p>
+              <p className={classes.section1Paragraph}>The HEZ utility token is used to bid for slots to become a coordinator and portions are donated, burnt, and used to incentivise active network usage and engagement. This is the only economic design built into the core protocol from the start.</p>
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <div className={classes.section1img} />
@@ -27,13 +27,63 @@ const Tokenomics = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
-            <div>
-              <div className={classes.section2Title}>
-                <Title>Hez supply</Title>
-              </div>
-
+            <div className={classes.section2Title}>
+              <Title>Hez supply</Title>
             </div>
           </div>
+
+          <div className={`${classes.row} ${classes.boxes}`}>
+            <div className={`${classes.col2} ${classes.boxWrapper}`}>
+              <div className={classes.box}>
+                <span className={classes.boxTitle}>Max Supply</span>
+                <span className={classes.boxText}>100,000,000 HEZ</span>
+              </div>
+            </div>
+            <div className={`${classes.col2} ${classes.boxWrapper}`}>
+              <div className={classes.box}>
+                <span className={classes.boxTitle}>Verified Circulating Supply</span>
+                <span className={classes.boxText}>36,534,435 HEZ</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.row}>
+            <p className={classes.section2MainText}>HEZ tokenomics are deflationary, as tokens will be burnt through our Proof-of-Donation mechanism.</p>
+          </div>
+          <div className={classes.row}>
+            <div className={`${classes.col3} ${classes.section2SubTitle}`}>
+              <Title>HEZ flows</Title>
+            </div>
+            <div className={classes.col2}>
+              <p>There are two specific ways that HEZ will flow through the network: the auction and user rewards.</p>
+              <p>In the auction, prospective coordinators use HEZ to bid for the right to validate blocks on the L2 network as part of the Proof-of-Donation process.</p>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={classes.divider} />
+          </div>
+          <div className={classes.row}>
+            <div className={`${classes.col3} ${classes.section2SubTitle}`}>
+              <Title>Proof-of-Donation mechanism</Title>
+            </div>
+            <div className={classes.col2}>
+              <p className={classes.highlightedParagraph}>As HEZ tokens come into the system through bids, they will be distributed in the following way:</p>
+              <p className={classes.highlightedParagraph}><span className={classes.highlightedText}>30%</span> of the tokens will be burnt.</p>
+              <p className={classes.highlightedParagraph}><span className={classes.highlightedText}>40%</span> of the tokens will be donated to Ethereum Layer 1 (for further information on why we selected this particular method,
+                <a
+                  className={classes.email}
+                  href='https://blog.hermez.io/hermez-in-depth-the-hermez-token-hez/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  check out this article
+                </a>
+              ).
+              </p>
+              <p className={classes.highlightedParagraph}><span className={classes.highlightedText}>30%</span> will be distributed among the network participants to reward users for onboarding specific tokens onto the network and transacting with them.</p>
+            </div>
+          </div>
+
         </section>
       </div>
       <div className={classes.sectionWrapper}>
