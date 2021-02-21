@@ -2,9 +2,9 @@ import React from 'react'
 
 import useTokenomicsStyles from './tokenomics.styles'
 import Title from '../shared/title/title.component'
-// import Button from '../shared/button/button.component'
-// import TextLink from '../shared/text-link/text-link.component'
-import Section3 from '../../assets/images/tokenomics/section3.inline.svg'
+import Section3Desktop from '../../assets/images/tokenomics/section3desktop.inline.svg'
+import Section31Mobile from '../../assets/images/tokenomics/section31mobile.inline.svg'
+import Section32Mobile from '../../assets/images/tokenomics/section32mobile.inline.svg'
 
 const Tokenomics = () => {
   const classes = useTokenomicsStyles()
@@ -13,12 +13,12 @@ const Tokenomics = () => {
     <>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section1}`}>
-          <div className={classes.row}>
+          <div className={`${classes.row} ${classes.section1Row}`}>
             <div className={`${classes.col2} ${classes.mainTitle}`}>
               <Title>Hermez tokenomics</Title>
               <p className={classes.section1Paragraph}>The HEZ utility token is used to bid for slots to become a coordinator and portions are donated, burnt, and used to incentivise active network usage and engagement. This is the only economic design built into the core protocol from the start.</p>
             </div>
-            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
+            <div className={`${classes.col2} ${classes.inlineGraphicImage}`}>
               <div className={classes.section1img} />
             </div>
           </div>
@@ -28,7 +28,7 @@ const Tokenomics = () => {
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
             <div className={classes.section2Title}>
-              <Title>Hez supply</Title>
+              <Title>HEZ supply</Title>
             </div>
           </div>
           <div className={classes.row}>
@@ -48,7 +48,7 @@ const Tokenomics = () => {
             <div className={`${classes.col3} ${classes.section2SubTitle}`}>
               <Title>HEZ flows</Title>
             </div>
-            <div className={classes.col2}>
+            <div className={`${classes.col2} ${classes.section2SubText}`}>
               <p>There are two specific ways that HEZ will flow through the network: the auction and user rewards.</p>
               <p>In the auction, prospective coordinators use HEZ to bid for the right to validate blocks on the L2 network as part of the Proof-of-Donation process.</p>
             </div>
@@ -84,10 +84,18 @@ const Tokenomics = () => {
         <section className={`${classes.section} ${classes.section3}`}>
           <div className={classes.row}>
             <div className={classes.section3Title}>
-              <Title>Hez distribution</Title>
+              <Title>HEZ distribution</Title>
             </div>
           </div>
-          <Section3 />
+          <div className={`${classes.onlyMobile} ${classes.section3img}`}>
+            <div className={classes.section3img1}>
+              <Section31Mobile />
+            </div>
+            <Section32Mobile />
+          </div>
+          <div className={classes.onlyDesktop}>
+            <Section3Desktop />
+          </div>
           <div className={classes.row}>
             <span className={classes.divider} />
           </div>
