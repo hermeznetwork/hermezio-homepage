@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 289 392">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-15 -2441) translate(16 2441)">
+                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                    <tspan x="25.21" y="52.064">Founders </tspan> <tspan x="85.741" y="52.181" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="99.078" y="52.064"> </tspan> <tspan x="101.792" y="51.96" font-family="ModernEra-Bold, Modern Era" font-weight="bold">20.00%</tspan>
+                </text>
+                <text fill="#2B2B2B" font-family="ModernEra-Bold, Modern Era" font-size="16.008" font-weight="bold">
+                    <tspan x=".364" y="16">Tier 1</tspan>
+                </text>
+                <text fill="#2B2B2B" font-family="ModernEra-Bold, Modern Era" font-size="16.008" font-weight="bold">
+                    <tspan x="0" y="142.812">Tier 2</tspan>
+                </text>
+                <g transform="translate(.764 221.538)">
+                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                        <tspan x="24.446" y="13.104">Promotion </tspan> <tspan x="94.73" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="108.067" y="13.104"> </tspan> <tspan x="110.781" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">19.00%</tspan>
+                    </text>
+                    <rect width="12.223" height="12.223" fill="#EE5F30" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                </g>
+                <g transform="translate(.764 165.772)">
+                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                        <tspan x="24.446" y="13.104">Promotion Vested 2 years </tspan> <tspan x="184.221" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="197.559" y="13.104"> </tspan> <tspan x="200.273" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">17.50%</tspan>
+                    </text>
+                    <rect width="12.223" height="12.223" fill="#F49778" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
+                </g>
+                <g transform="translate(.764 70.281)">
+                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                        <tspan x="24.446" y="13.104">Developers </tspan> <tspan x="96.691" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="110.028" y="13.104"> </tspan> <tspan x="112.742" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">10.00%</tspan>
+                    </text>
+                    <rect width="12.223" height="12.223" fill="#FABEAA" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
+                </g>
+                <g transform="translate(1.528 252.86)">
+                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                        <tspan x="24.446" y="13.104">Legal </tspan> <tspan x="60.549" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="73.886" y="13.104"> </tspan> <tspan x="76.6" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">7.50%</tspan>
+                    </text>
+                    <rect width="12.223" height="12.223" fill="#FFE7BC" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                </g>
+                <g transform="translate(.764 101.602)">
+                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                        <tspan x="24.446" y="13.104">Promotion Vested 3 years </tspan> <tspan x="184.481" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="197.819" y="13.104"> </tspan> <tspan x="200.533" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">6.20%</tspan>
+                    </text>
+                    <rect width="12.223" height="12.223" fill="#FFD07B" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                </g>
+                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                    <tspan x="25.973" y="297.284">Security- Audits and Bug Bounties </tspan> <tspan x="234.047" y="297.401" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="247.384" y="297.284"> </tspan> <tspan x="250.099" y="297.18" font-family="ModernEra-Bold, Modern Era" font-weight="bold">5.00%</tspan>
+                </text>
+                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                    <tspan x="25.973" y="359.926">Operational buffer </tspan> <tspan x="140.945" y="360.043" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="154.282" y="359.926"> </tspan> <tspan x="156.997" y="359.822" font-family="ModernEra-Bold, Modern Era" font-weight="bold">3.00%</tspan>
+                </text>
+                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                    <tspan x="25.973" y="328.605">Market </tspan> <tspan x="72.284" y="328.722" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="85.622" y="328.605"> </tspan> <tspan x="88.336" y="328.501" font-family="ModernEra-Bold, Modern Era" font-weight="bold">9.00%</tspan>
+                </text>
+                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
+                    <tspan x="25.973" y="391.247">Ecosystem </tspan> <tspan x="95.894" y="391.364" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="109.231" y="391.247"> </tspan> <tspan x="111.946" y="391.143" font-family="ModernEra-Bold, Modern Era" font-weight="bold">2.80%</tspan>
+                </text>
+                <rect width="12.223" height="12.223" y="38.96" fill="#E24510" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
+                <rect width="12.223" height="12.223" x="1.528" y="284.18" fill="#FFBC41" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                <rect width="12.223" height="12.223" x="1.528" y="346.822" fill="#FF931D" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                <rect width="12.223" height="12.223" x="1.528" y="315.501" fill="#FFAA0E" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                <rect width="12.223" height="12.223" x="1.528" y="378.143" fill="#F46A28" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                <path stroke="#2B2B2B" stroke-linecap="square" stroke-width=".764" d="M0.764 200.149L287.618 199.003"/>
+            </g>
+        </g>
+    </g>
+</svg>

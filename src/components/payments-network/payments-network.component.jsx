@@ -138,20 +138,25 @@ const PaymentsNetwork = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section5}`}>
-          <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-            <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
-            <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
-            <div className={classes.linksWrapper}>
-              <div className={classes.link}>
-                <TextLink to='https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE' text='Token contract' />
-              </div>
-              <div className={classes.link}>
-                <TextLink to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
-              </div>
+          <div className={classes.row}>
+            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
+              <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
+              <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+            </div>
+            <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
+              <div className={classes.section5img} />
             </div>
           </div>
-          <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
-            <div className={classes.section5img} />
+          <div className={`${classes.row} ${classes.linksWrapper}`}>
+            <div className={`${classes.col3} ${classes.link}`}>
+              <TextLink box white target to='/tokenomics' text='HEZ Tokenomics' />
+            </div>
+            <div className={`${classes.col3} ${classes.link}`}>
+              <TextLink box white to='https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE' text='Token contract' />
+            </div>
+            <div className={`${classes.col3} ${classes.link}`}>
+              <TextLink box white to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
+            </div>
           </div>
         </section>
       </div>

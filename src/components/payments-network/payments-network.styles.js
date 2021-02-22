@@ -118,6 +118,7 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   },
   section5: {
     display: 'flex',
+    flexDirection: 'column',
     '& $col2': {
       marginLeft: 0
     }
@@ -139,16 +140,20 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
     paddingBottom: theme.spacer * 4
   },
   linksWrapper: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexDirection: 'column',
-    [theme.breakpoints.lg]: {
-      flexDirection: 'row',
-      marginRight: theme.spacer * 7.5
+    marginTop: theme.spacer * 5,
+    [theme.breakpoints.md]: {
+      marginTop: 'inherit',
+      flexDirection: 'row'
     }
   },
   link: {
-    marginBottom: theme.spacer * 2
+    marginTop: 0,
+    [theme.breakpoints.md]: {
+      marginRight: theme.spacer * 4,
+      '&:last-child': {
+        marginRight: 0
+      }
+    }
   },
   divider: {
     width: '100%',
