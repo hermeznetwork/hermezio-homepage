@@ -62,15 +62,6 @@ export const useHeaderStyles = createUseStyles(theme => ({
       top: '-3px',
       position: 'relative'
     },
-    '&:last-child': {
-      paddingTop: 0,
-      display: 'none'// TODO: put it back once Wallet is released, so it can be linked
-    },
-    '&:last-child a': {
-      border: `2px solid ${theme.palette.primary.main}`,
-      borderRadius: 15,
-      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`
-    },
     color: theme.palette.white,
     fontSize: theme.spacer * 2 - 1,
     lineHeight: `${theme.spacer * 2.5}px`
@@ -83,7 +74,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       position: 'absolute',
       height: '2px',
       bottom: 0,
-      backgroundColor: theme.palette.black,
+      backgroundColor: theme.palette.white,
       width: 0,
       left: '50%',
       transform: 'translateX(-50%)',
