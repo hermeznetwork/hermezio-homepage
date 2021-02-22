@@ -60,7 +60,7 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     }
   },
   section1img: {
-    backgroundImage: 'url(./tokenomics-section1.png)',
+    backgroundImage: 'url(../tokenomics-section1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
