@@ -4,6 +4,7 @@ const useWalletStyles = createUseStyles(theme => ({
   row: {
     display: 'flex',
     flexDirection: 'column',
+    width: '100%',
     [theme.breakpoints.md]: {
       flexDirection: 'row'
     }
@@ -12,6 +13,12 @@ const useWalletStyles = createUseStyles(theme => ({
     [theme.breakpoints.md]: {
       width: '50%',
       marginLeft: 'auto'
+    }
+  },
+  col3: {
+    [theme.breakpoints.md]: {
+      margin: 'auto',
+      width: '33%'
     }
   },
   sectionWrapper: {
@@ -38,7 +45,6 @@ const useWalletStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.md]: {
       flexDirection: 'row',
-      paddingTop: theme.spacer * 20,
       textAlign: 'left'
     }
   },
@@ -52,12 +58,49 @@ const useWalletStyles = createUseStyles(theme => ({
     height: '100vw',
     marginTop: theme.spacer * 2,
     [theme.breakpoints.md]: {
-      height: '385px',
+      height: '601px',
       marginTop: 0
     }
   },
   mainTitle: {
-    margin: 'auto'
+    margin: 'auto auto auto 0'
+  },
+  buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.md]: {
+      justifyContent: 'left'
+    }
+  },
+  section2: {
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    textAlign: 'center',
+    [theme.breakpoints.md]: {
+      flexDirection: 'row',
+      textAlign: 'left'
+    }
+  },
+  section2img: {
+    backgroundImage: 'url(../wallet-section2.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '100vw',
+    marginTop: theme.spacer * 2,
+    [theme.breakpoints.md]: {
+      height: '577px',
+      marginTop: 0
+    }
+  },
+  section2paragraph: {
+    paddingTop: theme.spacer * 2
+  },
+  checkMark: {
+    color: theme.palette.orange.light,
+    paddingRight: theme.spacer
   }
 }))
 
