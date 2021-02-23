@@ -11,8 +11,8 @@ const Wallet = () => {
     <>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section1}`}>
-          <div className={classes.row}>
-            <div className={`${classes.col3} ${classes.mainTitle}`}>
+          <div className={`${classes.row} ${classes.section1Row}`}>
+            <div className={`${classes.col3} ${classes.section1title}`}>
               <Title>Simple and self-custodial wallet for Hermez Network</Title>
               <div className={classes.buttonWrapper}>
                 {/* TODO add link to the wallet */}
@@ -28,7 +28,7 @@ const Wallet = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
-            <div className={`${classes.col3} ${classes.mainTitle}`}>
+            <div className={`${classes.col3} ${classes.section2title}`}>
               <Title>Hermez Web Wallet</Title>
               <p className={classes.section2paragraph}>
                 <span className={classes.checkMark}>&#10003;</span>Instant deposit to Layer 2
@@ -49,7 +49,7 @@ const Wallet = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
           <div className={classes.row}>
-            <div className={`${classes.col3} ${classes.mainTitle}`}>
+            <div className={`${classes.col3} ${classes.onlyDesktop}`}>
               <Title>Secure and convenient wallet for low-cost token transfers</Title>
             </div>
             <div className={`${classes.col2} ${classes.carousel}`} />
