@@ -21,6 +21,9 @@ const Home = ({ blogPosts }) => {
             {/* <div className={classes.buttonWrapper}>
               <Button to='/' text='Create account' />
             </div> */}
+            <div className={classes.buttonWrapper}>
+              <Button to='https://blog.hermez.io/hermez-testnet-is-now-public/' text='Try testnet' />
+            </div>
           </div>
         </section>
       </div>
@@ -136,7 +139,7 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Permissionless auctions for validators</Title>
-              <p>Anyone can bid in a decentralised auction to create the next batch on Hermez Network. Each successful validation is rewarded with HEZ tokens.</p>
+              <p>Anyone can bid in a decentralised auction to create the next batch on Hermez Network. Each successful validation is rewarded with the collected transaction fees.</p>
               <div className={classes.section6link}>
                 <TextLink to='https://docs.hermez.io/#/faq/coordinators?id=coordinators' text='More about network coordinators' />
               </div>
