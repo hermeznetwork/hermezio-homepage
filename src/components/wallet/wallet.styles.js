@@ -146,8 +146,10 @@ const useWalletStyles = createUseStyles(theme => ({
   carousel: {
     display: 'flex',
     textAlign: 'center',
+    marginBottom: theme.spacer * 3,
     [theme.breakpoints.md]: {
-      textAlign: 'left'
+      textAlign: 'left',
+      marginBottom: 0
     }
   },
   carouselContent: {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100%" height="100%" viewBox="0 0 451 408" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Deposit</title>
+<svg width="100%" height="100%" viewBox="0 0 414 408" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Deposit 1-2</title>
     <defs>
         <filter x="-49.1%" y="-35.8%" width="198.2%" height="171.5%" filterUnits="objectBoundingBox" id="filter-1">
             <feGaussianBlur stdDeviation="34.3574055" in="SourceGraphic"></feGaussianBlur>
@@ -17,8 +17,8 @@
             <feColorMatrix values="0 0 0 0 0.982789855   0 0 0 0 0.930422306   0 0 0 0 0.843143057  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="Deposit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-12-Copy" transform="translate(110.000000, 57.000000)">
+    <g id="Deposit-1-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12-Copy-2" transform="translate(101.000000, 57.000000)">
             <g id="Group-3" opacity="0.828427269" transform="translate(47.922075, 37.841420)">
                 <rect id="Rectangle" fill="#A3B0D5" opacity="0.218432" filter="url(#filter-1)" x="4.1613104" y="0" width="210.01365" height="288.138728"></rect>
                 <rect id="Rectangle-Copy" fill-opacity="0.489565122" fill="#767B8C" opacity="0.129464286" filter="url(#filter-2)" x="0" y="6.7204368" width="182.291848" height="230.17496"></rect>
