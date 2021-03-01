@@ -138,10 +138,22 @@ const useWalletStyles = createUseStyles(theme => ({
     }
   },
   steps: {
-    marginLeft: theme.spacer * 10
+    [theme.breakpoints.md]: {
+      marginLeft: theme.spacer * 10
+    }
+  },
+  carouselContent: {
+    flexDirection: 'column-reverse',
+    [theme.breakpoints.md]: {
+      flexDirection: 'row'
+    }
   },
   carousel: {
-    display: 'flex'
+    display: 'flex',
+    textAlign: 'center',
+    [theme.breakpoints.md]: {
+      textAlign: 'left'
+    }
   },
   carouselTitle: {
     color: theme.palette.black,
