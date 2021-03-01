@@ -9,6 +9,11 @@ const useWalletStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     }
   },
+  col23: {
+    [theme.breakpoints.md]: {
+      width: '67%'
+    }
+  },
   col2: {
     [theme.breakpoints.md]: {
       width: '50%',
@@ -115,6 +120,7 @@ const useWalletStyles = createUseStyles(theme => ({
   },
   section2paragraph: {
     paddingTop: theme.spacer,
+    textAlign: 'left',
     [theme.breakpoints.md]: {
       paddingTop: theme.spacer * 2
     }
@@ -122,6 +128,32 @@ const useWalletStyles = createUseStyles(theme => ({
   checkMark: {
     color: theme.palette.orange.light,
     paddingRight: theme.spacer
+  },
+  section3title: {
+    marginTop: 0,
+    width: '100%',
+    textAlign: 'center',
+    [theme.breakpoints.md]: {
+      marginBottom: theme.spacer * 7.5
+    }
+  },
+  steps: {
+    marginLeft: theme.spacer * 10
+  },
+  carousel: {
+    display: 'flex'
+  },
+  carouselTitle: {
+    color: theme.palette.black,
+    fontSize: theme.spacer * 2.5,
+    lineHeight: `${theme.spacer * 4}px`,
+    marginBottom: theme.spacer,
+    [theme.breakpoints.md]: {
+      fontSize: theme.spacer * 3.5,
+      fontWeight: theme.fontWeights.bold,
+      marginBottom: theme.spacer * 3 - 2,
+      marginTop: -theme.spacer * 10
+    }
   },
   onlyDesktop: {
     display: 'none',

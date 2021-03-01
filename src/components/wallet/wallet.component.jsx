@@ -3,6 +3,10 @@ import React from 'react'
 import useWalletStyles from './wallet.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
+import Carousel1 from '../../assets/images/wallet/carousel1.inline.svg'
+import Carousel2 from '../../assets/images/wallet/carousel2.inline.svg'
+import Carousel3 from '../../assets/images/wallet/carousel3.inline.svg'
+import Carousel4 from '../../assets/images/wallet/carousel4.inline.svg'
 
 const Wallet = () => {
   const classes = useWalletStyles()
@@ -19,7 +23,7 @@ const Wallet = () => {
                 <Button to='' text='Open web wallet' />
               </div>
             </div>
-            <div className={`${classes.col2} ${classes.inlineGraphicImage}`}>
+            <div className={`${classes.col23} ${classes.inlineGraphicImage}`}>
               <div className={classes.section1img} />
             </div>
           </div>
@@ -40,7 +44,7 @@ const Wallet = () => {
                 <span className={classes.checkMark}>&#10003;</span>Global payments
               </p>
             </div>
-            <div className={`${classes.col2} ${classes.inlineGraphicImage}`}>
+            <div className={`${classes.col23} ${classes.inlineGraphicImage}`}>
               <div className={classes.section2img} />
             </div>
           </div>
@@ -49,10 +53,49 @@ const Wallet = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section3}`}>
           <div className={classes.row}>
-            <div className={`${classes.col3} ${classes.onlyDesktop}`}>
+            <div className={`${classes.section3title} ${classes.onlyDesktop}`}>
               <Title>Secure and convenient wallet for low-cost token transfers</Title>
             </div>
-            <div className={`${classes.col2} ${classes.carousel}`} />
+          </div>
+          <div className={`${classes.row} ${classes.steps}`}>
+            <div className={`${classes.col2} ${classes.carousel} ${classes.carousel1}`}>
+              <div className={`${classes.col3}`}>
+                <p className={classes.carouselTitle}>1. Register</p>
+                <p className={classes.carouselText}>Register your Ethereum L1 address into the Hermez network and obtain an internal Hermez address.</p>
+              </div>
+              <div className={`${classes.col23} ${classes.carouselImage}`}>
+                <Carousel1 />
+              </div>
+            </div>
+            <div className={`${classes.col2} ${classes.carousel} ${classes.carousel2}`}>
+              <div className={`${classes.col3}`}>
+                <p className={classes.carouselTitle}>2. Deposit</p>
+                <p className={classes.carouselText}>Deposit L1 tokens into their Hermez Network addresses with a simple transaction.</p>
+              </div>
+              <div className={`${classes.col23} ${classes.carouselImage}`}>
+                <Carousel2 />
+              </div>
+            </div>
+          </div>
+          <div className={`${classes.row} ${classes.steps}`}>
+            <div className={`${classes.col2} ${classes.carousel} ${classes.carousel3}`}>
+              <div className={`${classes.col3}`}>
+                <p className={classes.carouselTitle}>3. Transfer</p>
+                <p className={classes.carouselText}>Start transfering tokens between Hermez addresses for very low fees.</p>
+              </div>
+              <div className={`${classes.col23} ${classes.carouselImage}`}>
+                <Carousel3 />
+              </div>
+            </div>
+            <div className={`${classes.col2} ${classes.carousel} ${classes.carousel4}`}>
+              <div className={`${classes.col3}`}>
+                <p className={classes.carouselTitle}>4. Withdraw</p>
+                <p className={classes.carouselText}>Transfer tokens from Hermez Network addresses back to their chosen L1 addresses. </p>
+              </div>
+              <div className={`${classes.col23} ${classes.carouselImage}`}>
+                <Carousel4 />
+              </div>
+            </div>
           </div>
         </section>
       </div>
