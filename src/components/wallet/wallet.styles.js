@@ -103,7 +103,8 @@ const useWalletStyles = createUseStyles(theme => ({
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: `calc(100% + ${theme.spacer * 2}px)`,
+    width: '100%',
+    // width: `calc(100% + ${theme.spacer * 2}px)`,
     height: '100vw',
     marginTop: theme.spacer * 2,
     [theme.breakpoints.md]: {
@@ -142,12 +143,6 @@ const useWalletStyles = createUseStyles(theme => ({
       marginLeft: theme.spacer * 10
     }
   },
-  carouselContent: {
-    flexDirection: 'column-reverse',
-    [theme.breakpoints.md]: {
-      flexDirection: 'row'
-    }
-  },
   carousel: {
     display: 'flex',
     textAlign: 'center',
@@ -155,16 +150,26 @@ const useWalletStyles = createUseStyles(theme => ({
       textAlign: 'left'
     }
   },
+  carouselContent: {
+    flexDirection: 'column-reverse',
+    [theme.breakpoints.md]: {
+      flexDirection: 'row'
+    }
+  },
   carouselTitle: {
     color: theme.palette.black,
-    fontSize: theme.spacer * 2.5,
     lineHeight: `${theme.spacer * 4}px`,
+    fontWeight: theme.fontWeights.bold,
+    fontSize: theme.spacer * 2.5,
     marginBottom: theme.spacer,
     [theme.breakpoints.md]: {
       fontSize: theme.spacer * 3.5,
-      fontWeight: theme.fontWeights.bold,
-      marginBottom: theme.spacer * 3 - 2,
-      marginTop: -theme.spacer * 10
+      marginBottom: theme.spacer * 3 - 2
+    }
+  },
+  carouselText: {
+    [theme.breakpoints.md]: {
+      marginTop: theme.spacer * 6
     }
   },
   onlyDesktop: {
