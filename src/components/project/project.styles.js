@@ -49,12 +49,7 @@ const useProjectStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.md]: {
       flexDirection: 'row',
-      paddingTop: theme.spacer * 19,
-      textAlign: 'left',
-      paddingBottom: 'inherit',
-      '& $col23': {
-        paddingLeft: theme.spacer * 10
-      }
+      textAlign: 'left'
     }
   },
   section1img: {
@@ -66,7 +61,7 @@ const useProjectStyles = createUseStyles(theme => ({
     width: '100%',
     height: '384px',
     [theme.breakpoints.md]: {
-      height: '650px'
+      height: '600px'
     }
   },
   buttonWrapper: {

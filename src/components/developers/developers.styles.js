@@ -49,7 +49,6 @@ const useDevelopersStyles = createUseStyles(theme => ({
     textAlign: 'center',
     [theme.breakpoints.md]: {
       flexDirection: 'row',
-      paddingTop: theme.spacer * 19,
       textAlign: 'left'
     }
   },
@@ -62,7 +61,7 @@ const useDevelopersStyles = createUseStyles(theme => ({
     width: '100%',
     height: '384px',
     [theme.breakpoints.md]: {
-      height: '650px'
+      height: '600px'
     }
   },
   mainTitle: {
