@@ -38,6 +38,11 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 id: 4,
                 label: 'Project',
                 to: '/project'
+              },
+              {
+                id: 5,
+                label: 'Wallet',
+                to: '/wallet'
               }
               */}
                 {route.id === 1
@@ -67,15 +72,6 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 Network explorer
               </a>
             </li> */}
-            <li className={classes.linkWrapper}>
-              <a
-                href='https://hermez.io/'
-                target='_blank' rel='noopener noreferrer'
-                className={classes.link}
-              >
-                Wallet
-              </a>
-            </li>
           </ul>
         </nav>
         <button className={classes.mobileMenu} onClick={onOpenMobileMenu}>
