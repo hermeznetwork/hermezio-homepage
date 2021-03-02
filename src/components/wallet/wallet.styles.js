@@ -69,7 +69,7 @@ const useWalletStyles = createUseStyles(theme => ({
     height: '100vw',
     marginTop: theme.spacer * 2,
     [theme.breakpoints.md]: {
-      height: '601px',
+      height: '600px',
       marginTop: 0
     }
   },
