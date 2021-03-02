@@ -62,6 +62,20 @@ export const useHeaderStyles = createUseStyles(theme => ({
       top: '-3px',
       position: 'relative'
     },
+    '&:last-child': {
+      paddingTop: 0
+    },
+    '&:last-child a': {
+      border: '2px solid rgba(222, 224, 233, 0.5)',
+      borderRadius: 15,
+      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`,
+      '&:hover': {
+        border: `2px solid ${theme.palette.primary.main}`
+      },
+      '&:hover::after': {
+        width: 0
+      }
+    },
     color: theme.palette.white,
     fontSize: theme.spacer * 2 - 1,
     lineHeight: `${theme.spacer * 2.5}px`
