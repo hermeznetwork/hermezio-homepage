@@ -2,8 +2,13 @@ import { createUseStyles } from 'react-jss'
 
 export const useHeaderStyles = createUseStyles(theme => ({
   header: {
+    width: '100%',
     position: 'absolute',
-    width: '100%'
+    padding: `${theme.spacer * 2}px ${theme.spacer}px`,
+    [theme.breakpoints.md]: {
+      position: 'fixed',
+      padding: 0
+    }
   },
   content: {
     margin: 'auto',
