@@ -19,8 +19,8 @@ const Wallet = () => {
             <div className={`${classes.col3} ${classes.section1title}`}>
               <Title>Simple and self-custodial wallet for Hermez Network</Title>
               <div className={classes.buttonWrapper}>
-                {/* TODO add link to the wallet */}
-                <Button to='' text='Open web wallet' />
+                {/* TODO add link to the mainnet wallet */}
+                <Button to='https://wallet.testnet.hermez.io/' text='Open web wallet' />
               </div>
             </div>
             <div className={`${classes.col23} ${classes.inlineGraphicImage}`}>
