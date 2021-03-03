@@ -48,7 +48,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
   linkList: {
     display: 'flex',
     listStyle: 'none',
-    margin: 0,
+    margin: `${theme.spacer * 1 + 2}px 0`,
     paddingLeft: 0,
     width: '100%',
     alignItems: 'center',
@@ -57,7 +57,8 @@ export const useHeaderStyles = createUseStyles(theme => ({
   linkWrapper: {
     paddingLeft: theme.spacer * 2,
     paddingRight: theme.spacer * 2,
-    paddingTop: theme.spacer * 1.5,
+    color: theme.palette.white,
+    fontSize: theme.spacer * 2 - 1,
     textAlign: 'center',
     '&:first-child': {
       paddingLeft: 0,
@@ -68,27 +69,24 @@ export const useHeaderStyles = createUseStyles(theme => ({
       position: 'relative'
     },
     '&:last-child': {
-      paddingTop: 0
+      paddingTop: 0,
+      paddingLeft: theme.spacer * 1
     },
     '&:last-child a': {
       border: '2px solid rgba(222, 224, 233, 0.5)',
       borderRadius: 15,
-      padding: `${theme.spacer * 1.5}px ${theme.spacer * 3.5}px`,
+      padding: `${theme.spacer * 0.5}px ${theme.spacer * 3 - 2}px`,
       '&:hover': {
         border: `2px solid ${theme.palette.primary.main}`
       },
       '&:hover::after': {
         width: 0
       }
-    },
-    color: theme.palette.white,
-    fontSize: theme.spacer * 2 - 1,
-    lineHeight: `${theme.spacer * 2.5}px`
+    }
   },
   link: {
     display: 'flex',
     position: 'relative',
-    paddingBottom: theme.spacer * 0.75,
     '&::after': {
       position: 'absolute',
       height: '2px',
