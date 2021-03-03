@@ -65,7 +65,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       marginRight: 'auto'
     },
     '&:first-child a': {
-      top: '-3px',
+      top: '5px',
       position: 'relative'
     },
     '&:last-child': {
