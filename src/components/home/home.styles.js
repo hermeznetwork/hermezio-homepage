@@ -343,7 +343,6 @@ const useHomeStyles = createUseStyles(theme => ({
     lineHeight: `${theme.spacer * 4.5 - 1}px`,
     marginTop: 0,
     display: 'flex',
-    position: 'relative',
     '&::after': {
       position: 'absolute',
       height: '2px',
