@@ -1,0 +1,4 @@
+{
+    "networkStatusIndicator": 1,
+    "_comment": "Possible statuses: '1' - Operational; '2' - Degraded Performance; '3' - Network Unavailable"
+}
