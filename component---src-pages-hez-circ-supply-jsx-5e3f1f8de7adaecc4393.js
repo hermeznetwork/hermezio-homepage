@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{OjSR:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a);n.default=function(){return c.a.createElement("pre",{class:"total-hez"},"5600000")}}}]);
+//# sourceMappingURL=component---src-pages-hez-circ-supply-jsx-5e3f1f8de7adaecc4393.js.map
