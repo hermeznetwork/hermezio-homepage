@@ -29,6 +29,22 @@ const Home = ({ blogPosts }) => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
+          <div className={`${classes.section2Title} ${classes.videoTitle}`}>Quick overview of how Hermez works</div>
+          <div className={classes.row}>
+            <div className={classes.videoWrapper}>
+              <iframe
+                className={classes.video}
+                src='https://player.vimeo.com/video/522467320?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+                frameborder='0'
+                allow='autoplay; fullscreen; picture-in-picture'
+                allowfullscreen
+                title='Meet Hermez'
+              />
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
+          </div>
           <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
