@@ -5,6 +5,7 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
+import Video from '../video/video.view'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = ({ blogPosts }) => {
@@ -31,16 +32,10 @@ const Home = ({ blogPosts }) => {
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={`${classes.section2Title} ${classes.videoTitle}`}>Quick overview of how Hermez works</div>
           <div className={classes.row}>
-            <div className={classes.videoWrapper}>
-              <iframe
-                className={classes.video}
-                src='https://player.vimeo.com/video/522467320?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-                frameborder='0'
-                allow='autoplay; fullscreen; picture-in-picture'
-                allowfullscreen
-                title='Meet Hermez'
-              />
-            </div>
+            <Video
+              vimeoSrc='https://player.vimeo.com/video/522467320?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+              title='Meet Hermez'
+            />
           </div>
           <div className={classes.row}>
             <span className={`${classes.divider} ${classes.dividerFullWidth}`} />

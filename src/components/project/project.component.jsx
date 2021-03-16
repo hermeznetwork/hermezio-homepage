@@ -3,6 +3,7 @@ import React from 'react'
 import useProjectStyles from './project.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
+import Video from '../video/video.view'
 
 const Project = () => {
   const classes = useProjectStyles()
@@ -28,16 +29,10 @@ const Project = () => {
             <Title>Quick overview of Hermez technology</Title>
           </div>
           <div className={classes.row}>
-            <div className={classes.videoWrapper}>
-              <iframe
-                className={classes.video}
-                src='https://player.vimeo.com/video/522736342?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-                frameborder='0'
-                allow='autoplay; fullscreen; picture-in-picture'
-                allowfullscreen
-                title='Welcome to Hermez - Introduction to Hermez Network Video 1'
-              />
-            </div>
+            <Video
+              vimeoSrc='https://player.vimeo.com/video/522736342?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+              title='Welcome to Hermez - Introduction to Hermez Network Video 1'
+            />
           </div>
           <div className={classes.row}>
             <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
