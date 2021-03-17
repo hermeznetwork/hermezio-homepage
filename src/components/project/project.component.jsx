@@ -3,6 +3,7 @@ import React from 'react'
 import useProjectStyles from './project.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
+import Video from '../video/video.view'
 
 const Project = () => {
   const classes = useProjectStyles()
@@ -24,6 +25,19 @@ const Project = () => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
+          <div className={`${classes.title} ${classes.videoTitle}`}>
+            <Title>Quick overview of Hermez technology</Title>
+          </div>
+          <div className={classes.row}>
+            <Video
+              vimeoSrc='https://player.vimeo.com/video/522736342?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+              title='Welcome to Hermez - Introduction to Hermez Network Video 1'
+            />
+          </div>
+          <div className={classes.row}>
+            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
+          </div>
+
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.title}`}>
               <Title><a id='development-goals' href='#'>Development goals</a></Title>

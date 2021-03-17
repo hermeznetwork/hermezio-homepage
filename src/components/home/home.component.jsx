@@ -5,6 +5,7 @@ import useHomeStyles from './home.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
+import Video from '../video/video.view'
 import Section8 from '../../assets/images/home/section8.inline.svg'
 
 const Home = ({ blogPosts }) => {
@@ -29,6 +30,16 @@ const Home = ({ blogPosts }) => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
+          <div className={`${classes.section2Title} ${classes.videoTitle}`}>Quick overview of how Hermez works</div>
+          <div className={classes.row}>
+            <Video
+              vimeoSrc='https://player.vimeo.com/video/522467320?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+              title='Meet Hermez'
+            />
+          </div>
+          <div className={classes.row}>
+            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
+          </div>
           <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
