@@ -1,5 +1,5 @@
 {
-    "networkStatusIndicator": 1,
+    "networkStatusIndicator": 2,
     "_comment_networkStatusIndicator": "Possible statuses: '1' - Operational; '2' - Degraded Performance; '3' - Network Unavailable",
     "isBatchExplorerUnderMaintenance": 0,
     "isWalletUnderMaintenance": 0,
