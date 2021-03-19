@@ -84,13 +84,10 @@ const useProjectStyles = createUseStyles(theme => ({
     }
   },
   videoTitle: {
-    fontSize: theme.spacer * 3.5,
-    lineHeight: `${theme.spacer * 4.5}px`,
     marginBottom: theme.spacer * 3,
     textAlign: 'center',
     [theme.breakpoints.md]: {
-      marginBottom: theme.spacer * 5.5,
-      textAlign: 'left'
+      marginBottom: theme.spacer * 5.5
     }
   },
   subTitle: {

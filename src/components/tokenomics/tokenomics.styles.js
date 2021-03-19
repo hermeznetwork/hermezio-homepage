@@ -258,6 +258,7 @@ const useTokenomicsStyles = createUseStyles(theme => ({
   },
   address: {
     textAlign: 'left',
+    wordWrap: 'break-word',
     [theme.breakpoints.md]: {
       minWidth: theme.spacer * 52.5
     }

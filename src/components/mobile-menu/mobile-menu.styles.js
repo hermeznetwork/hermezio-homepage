@@ -39,7 +39,7 @@ export const useMobileMenuStyles = createUseStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingTop: theme.spacer * 3
+    paddingTop: theme.spacer * 2
   },
   title: {
     margin: 0
