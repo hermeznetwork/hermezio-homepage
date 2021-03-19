@@ -4,7 +4,7 @@ const useButtonStyles = createUseStyles(theme => ({
   root: {
     padding: `${theme.spacer * 3.25}px ${theme.spacer * 3.5}px`,
     lineHeight: `${theme.spacer * 2.25}px`,
-    fontWeight: theme.fontWeights.bold,
+    fontWeight: theme.fontWeights.medium,
     borderRadius: 20,
     cursor: 'pointer',
     width: 'fit-content',

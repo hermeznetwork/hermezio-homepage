@@ -15,7 +15,7 @@ const Home = ({ blogPosts }) => {
     <>
       <div className={`${classes.sectionWrapper} ${classes.section1Wrapper}`}>
         <section className={`${classes.section} ${classes.section1}`}>
-          <div className={classes.col3}>
+          <div className={`${classes.col2} ${classes.section1Col}`}>
             <Title>Scalable payments. Decentralised by design, open for everyone.</Title>
             <p className={classes.section1Text}>Hermez is an open-source ZK-Rollup optimised for secure, low-cost and usable token transfers on the wings of Ethereum.</p>
             {/* TODO "Remove following links temporarily until we can provide this information" */}

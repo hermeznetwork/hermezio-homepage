@@ -32,6 +32,12 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundPosition: 'bottom',
     backgroundSize: 'cover'
   },
+  section1Col: {
+    [theme.breakpoints.md]: {
+      marginLeft: 0,
+      marginTop: theme.spacer * 3
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
@@ -88,13 +94,10 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   videoTitle: {
-    fontSize: theme.spacer * 3.5,
-    lineHeight: `${theme.spacer * 4.5}px`,
     marginBottom: theme.spacer * 3,
     textAlign: 'center',
     [theme.breakpoints.md]: {
-      marginBottom: theme.spacer * 5.5,
-      textAlign: 'left'
+      marginBottom: theme.spacer * 5.5
     }
   },
   section2Box: {
