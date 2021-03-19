@@ -32,6 +32,12 @@ const useHomeStyles = createUseStyles(theme => ({
     backgroundPosition: 'bottom',
     backgroundSize: 'cover'
   },
+  section1Col: {
+    [theme.breakpoints.md]: {
+      marginLeft: 0,
+      marginTop: theme.spacer * 3
+    }
+  },
   section: {
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
