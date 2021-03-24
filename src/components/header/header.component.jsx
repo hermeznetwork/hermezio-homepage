@@ -66,7 +66,7 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                       </li>
                       <li className={classes.linkWrapper}>
                         <a
-                          href='https://explorer.testnet.hermez.io/'
+                          href='https://explorer.hermez.io/'
                           target='_blank'
                           rel='noopener noreferrer'
                           className={classes.link}
