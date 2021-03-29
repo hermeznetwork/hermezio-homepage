@@ -358,8 +358,13 @@ const Project = () => {
               <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
-              <span className={classes.name} />
-              <span className={classes.role} />
+              <img
+                className={classes.image}
+                src='/profiles/jeff.png'
+                alt='Jeff "Che" Prestes'
+              />
+              <span className={classes.name}>Jeff 'Che' Prestes</span>
+              <span className={classes.role}>Senior Blockchain Engineer</span>
             </div>
             <div className={classes.profile}>
               <span className={classes.name} />
