@@ -10,9 +10,9 @@ const Video = ({ vimeoSrc, title }) => {
       <iframe
         className={classes.video}
         src={vimeoSrc}
-        frameborder='0'
+        frameBorder='0'
         allow='autoplay; fullscreen; picture-in-picture'
-        allowfullscreen
+        allowFullScreen
         title={title}
       />
     </div>
