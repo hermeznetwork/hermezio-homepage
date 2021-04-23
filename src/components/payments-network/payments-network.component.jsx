@@ -2,7 +2,7 @@ import React from 'react'
 
 import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
-// import Button from '../shared/button/button.component'
+import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Section3 from '../../assets/images/payments-network/section3.inline.svg'
 
@@ -15,10 +15,9 @@ const PaymentsNetwork = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={`${classes.col3} ${classes.mainTitle}`}>
             <Title>Secure layer 2 designed for mass adoption</Title>
-            {/* TODO "Remove following links temporarily until we can provide this information" */}
-            {/* <div className={classes.buttonWrapper}>
-              <Button to='/' text='Join Hermez' />
-            </div> */}
+            <div className={classes.buttonWrapper}>
+              <Button to='https://docs.google.com/forms/d/e/1FAIpQLScK_dpb5GGBYTT3XWTq4iaMTvqlXvnrr0hM3Uogg3B8ukBSqg/viewform' text='Join Hermez' />
+            </div>
           </div>
           <div className={classes.col23}>
             <div className={classes.section1img} />
