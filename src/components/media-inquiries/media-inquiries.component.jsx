@@ -17,11 +17,11 @@ const MediaInquiries = () => {
             Thank you for your interest in learning more about Hermez. For media inquiries, please email us at
           <a
             className={classes.email}
-            href='mailto:hello@hermez.io'
+            href='mailto:hello@hermez.network'
             target='_blank'
             rel='noopener noreferrer'
           >
-            hello@hermez.io
+            hello@hermez.network
           </a>
             and click below to download our media kit for Hermez logos and illustrations kit.
         </p>

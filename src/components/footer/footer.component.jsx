@@ -17,11 +17,11 @@ export const Footer = ({ routes }) => {
               <p>Contact us to learn more about Hermez network.</p>
               <a
                 className={classes.emailLink}
-                href='mailto:hello@hermez.io?&subject=Contact%20from%20the%20website'
+                href='mailto:hello@hermez.network?&subject=Contact%20from%20the%20website'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                hello@hermez.io
+                hello@hermez.network
               </a>
             </div>
           </div>
