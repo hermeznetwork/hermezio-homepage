@@ -358,24 +358,8 @@ const Project = () => {
               <span className={classes.name}>Mário Idival</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
-            <div className={classes.profile}>
-              {/* <img
-                className={classes.image}
-                src=''
-                alt=''
-              /> */}
-              {/* <span className={classes.name}></span>
-              <span className={classes.role}></span> */}
-            </div>
-            <div className={classes.profile}>
-              {/* <img
-                className={classes.image}
-                src=''
-                alt=''
-              /> */}
-              {/* <span className={classes.name}></span>
-              <span className={classes.role}></span> */}
-            </div>
+            <div className={classes.profile} />
+            <div className={classes.profile} />
           </div>
         </section>
       </div>
