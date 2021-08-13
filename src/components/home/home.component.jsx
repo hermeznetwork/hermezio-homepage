@@ -7,6 +7,7 @@ import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Video from '../video/video.view'
 import Section8 from '../../assets/images/home/section8.inline.svg'
+import { MailchimpForm } from '../mailchimp-form/mailchimp-form'
 
 const Home = ({ blogPosts }) => {
   const classes = useHomeStyles()
@@ -242,6 +243,9 @@ const Home = ({ blogPosts }) => {
           <div className={`${classes.row} ${classes.allBlogPostsLink}`}>
             <TextLink to='https://blog.hermez.io/' text='View all posts' />
           </div>
+        </section>
+        <section className={`${classes.section} ${classes.section8}`}>
+          <MailchimpForm />
         </section>
       </div>
     </>
