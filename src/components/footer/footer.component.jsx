@@ -135,7 +135,7 @@ export const Footer = ({ routes }) => {
               </li>
               <li className={classes.listItem}>
                 <a
-                  href='https://t.me/hermez_network'
+                  href='https://t.me/polygonhermez'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -153,11 +153,20 @@ export const Footer = ({ routes }) => {
               </li>
               <li className={classes.listItem}>
                 <a
-                  href='https://twitter.com/hermez_network'
+                  href='https://twitter.com/PolygonHermez'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   Twitter
+                </a>
+              </li>
+              <li className={classes.listItem}>
+                <a
+                  href='https://www.linkedin.com/company/polygonhermez/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Linkedin
                 </a>
               </li>
             </ul>
