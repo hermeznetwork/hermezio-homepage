@@ -1,34 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1021" height="235" viewBox="0 0 1021 235">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="234" viewBox="0 0 1024 234">
     <defs>
-        <linearGradient id="01gm7zvfwb" x1="157.289%" x2="-4.679%" y1="45.43%" y2="52.356%">
+        <linearGradient id="2iw4wqhkhb" x1="157.289%" x2="-4.679%" y1="45.466%" y2="52.338%">
             <stop offset="0%" stop-color="#FAF4EA"/>
             <stop offset="100%" stop-color="#FFA600"/>
         </linearGradient>
-        <linearGradient id="548s9rczuc" x1="-46.411%" x2="99.651%" y1="-48.216%" y2="100%">
+        <linearGradient id="56g6ec9yyc" x1="-47.089%" x2="100%" y1="-48.136%" y2="99.959%">
             <stop offset="0%" stop-color="#FAF4EA"/>
             <stop offset="100%" stop-color="#FFA600"/>
         </linearGradient>
-        <linearGradient id="abfnh3shbe" x1="-46.215%" x2="99.55%" y1="-48.216%" y2="100%">
+        <linearGradient id="85fw4mtple" x1="-46.971%" x2="99.939%" y1="-48.216%" y2="100%">
             <stop offset="0%" stop-color="#FAF4EA"/>
             <stop offset="100%" stop-color="#FFA600"/>
         </linearGradient>
-        <linearGradient id="u3xkv8tvjf" x1="156.518%" x2="-4.286%" y1="-36.825%" y2="94.775%">
+        <linearGradient id="1h8re3qiuf" x1="157.289%" x2="-4.679%" y1="-36.772%" y2="94.747%">
             <stop offset="0%" stop-color="#FAF4EA"/>
             <stop offset="100%" stop-color="#FFA600"/>
         </linearGradient>
-        <rect id="x6utkwyfla" width="1020" height="234" x=".464" y=".388" rx="30"/>
+        <rect id="h5aiv59r3a" width="1024" height="234" x="0" y="0" rx="30"/>
     </defs>
     <g fill="none" fill-rule="evenodd">
         <g>
-            <g transform="translate(-208 -4980) translate(208 4980)">
-                <mask id="uyabs15iid" fill="#fff">
-                    <use xlink:href="#x6utkwyfla"/>
+            <g transform="translate(-208.000000, -8791.000000) translate(208.000000, 8791.000000)">
+                <mask id="vndethdzud" fill="#fff">
+                    <use xlink:href="#h5aiv59r3a"/>
                 </mask>
-                <use fill="url(#01gm7zvfwb)" fill-rule="nonzero" opacity=".278" xlink:href="#x6utkwyfla"/>
-                <ellipse cx="-6" cy="29.25" fill="url(#548s9rczuc)" fill-rule="nonzero" mask="url(#uyabs15iid)" rx="213.75" ry="214.5"/>
-                <ellipse cx="1022.25" cy="239.315" fill="url(#abfnh3shbe)" fill-rule="nonzero" mask="url(#uyabs15iid)" opacity=".599" rx="330.75" ry="332.25"/>
-                <path fill="url(#u3xkv8tvjf)" fill-rule="nonzero" d="M2.234 189.246c-15.412 147.17 90.969 279.014 237.61 294.482 146.64 15.469 278.01-91.297 293.422-238.467 15.412-147.17-90.969-279.015-237.61-294.483C149.017-64.69 17.647 42.075 2.235 189.246z" mask="url(#uyabs15iid)" opacity=".455"/>
-                <path fill="url(#u3xkv8tvjf)" fill-rule="nonzero" d="M934.484 343.746c-15.412 147.17 90.969 279.014 237.61 294.482 146.64 15.469 278.01-91.297 293.422-238.467 15.412-147.17-90.969-279.015-237.61-294.483-146.64-15.468-278.01 91.297-293.422 238.468z" mask="url(#uyabs15iid)" opacity=".21"/>
+                <use fill="url(#2iw4wqhkhb)" fill-rule="nonzero" opacity=".278" xlink:href="#h5aiv59r3a"/>
+                <ellipse cx="19.613" cy="269.862" fill="url(#56g6ec9yyc)" fill-rule="nonzero" mask="url(#vndethdzud)" rx="214.588" ry="214.5"/>
+                <ellipse cx="903.315" cy="406.927" fill="url(#85fw4mtple)" fill-rule="nonzero" mask="url(#vndethdzud)" opacity=".599" rx="332.047" ry="332.25"/>
+                <ellipse cx="1118.154" cy="-39.073" fill="url(#85fw4mtple)" fill-rule="nonzero" mask="url(#vndethdzud)" opacity=".599" rx="332.047" ry="332.25"/>
+                <path fill="url(#1h8re3qiuf)" fill-rule="nonzero" d="M-121.705-103.143c-15.473 147.17 91.325 279.015 238.54 294.483 147.216 15.468 279.1-91.297 294.574-238.468 15.473-147.17-91.325-279.014-238.54-294.483-147.216-15.468-279.101 91.298-294.574 238.468z" mask="url(#vndethdzud)" opacity=".455"/>
+                <path fill="url(#1h8re3qiuf)" fill-rule="nonzero" d="M937.683 343.357c-15.473 147.17 91.325 279.015 238.54 294.483 147.216 15.468 279.101-91.297 294.574-238.468 15.473-147.17-91.325-279.014-238.54-294.483-147.216-15.468-279.101 91.298-294.574 238.468z" mask="url(#vndethdzud)" opacity=".21"/>
             </g>
         </g>
     </g>
