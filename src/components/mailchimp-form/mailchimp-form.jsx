@@ -11,7 +11,7 @@ export const MailchimpForm = () => {
   return (
     <div className={classes.formWrapper}>
       <div className={classes.title}>
-        <Title>Get the latest news from Hermez</Title>
+        <Title>Get the latest news from Polygon Hermez</Title>
       </div>
       <div className={classes.form}>
         <div id='mc_embed_signup'>
