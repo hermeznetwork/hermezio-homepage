@@ -59,18 +59,60 @@ const useWalletStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     }
   },
-  section1img: {
-    backgroundImage: 'url(../wallet-section1.png)',
+  sectionImg: {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     margin: 'auto',
-    width: '100%',
     height: '100vw',
     marginTop: theme.spacer * 2,
+    width: `calc(100% - ${theme.spacer * 4}px)`,
     [theme.breakpoints.md]: {
-      height: '600px',
+      width: '100%',
       marginTop: 0
+    }
+  },
+  section1img: {
+    backgroundImage: 'url(../wallet-section1.png)',
+    [theme.breakpoints.md]: {
+      height: '600px'
+    }
+  },
+  section2img: {
+    backgroundImage: 'url(../wallet-section2.png)',
+    [theme.breakpoints.md]: {
+      height: '577px'
+    }
+  },
+  section4img: {
+    backgroundImage: 'url(../wallet-section4.png)',
+    [theme.breakpoints.md]: {
+      height: '520px'
+    }
+  },
+  section4_2img: {
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    marginTop: theme.spacer * 2,
+    backgroundImage: 'url(../apple-app-store-badge.png)',
+    height: '52px',
+    marginRight: 0,
+    [theme.breakpoints.md]: {
+      marginRight: theme.spacer * 2
+    }
+  },
+  section4_3img: {
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    marginTop: theme.spacer * 2,
+    backgroundImage: 'url(../google-play-badge.png)',
+    height: '52px',
+    [theme.breakpoints.md]: {
+
     }
   },
   mainTitle: {
@@ -97,27 +139,8 @@ const useWalletStyles = createUseStyles(theme => ({
       textAlign: 'left'
     }
   },
-  section2img: {
-    backgroundImage: 'url(../wallet-section2.png)',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'contain',
-    margin: 'auto',
-    width: '100%',
-    // width: `calc(100% + ${theme.spacer * 2}px)`,
-    height: '100vw',
-    marginTop: theme.spacer * 2,
-    [theme.breakpoints.md]: {
-      height: '577px',
-      marginTop: 0,
-      width: '100%'
-    }
-  },
   section2title: {
-    textAlign: 'left',
-    [theme.breakpoints.md]: {
-      textAlign: 'center'
-    }
+    textAlign: 'left'
   },
   section2paragraph: {
     paddingTop: theme.spacer,
@@ -178,6 +201,12 @@ const useWalletStyles = createUseStyles(theme => ({
     display: 'none',
     [theme.breakpoints.md]: {
       display: 'block'
+    }
+  },
+  onlyMobile: {
+    display: 'block',
+    [theme.breakpoints.md]: {
+      display: 'none'
     }
   }
 }))
