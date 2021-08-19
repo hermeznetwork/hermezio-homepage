@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import useJoinUsStyles from './join-us.styles'
 import Title from '../shared/title/title.component'
@@ -32,7 +33,9 @@ const JoinUs = () => {
             </div>
             <div className={classes.col2}>
               <div className={classes.subTitle}>
-                <Title type='h4'>Senior Frontend Developer</Title>
+                <Title type='h4'>
+                  <Link to='/join-us/product-designer' className={classes.legalLink}>Senior Frontend Developer</Link>
+                </Title>
               </div>
               <p>Remote</p>
             </div>
@@ -43,7 +46,9 @@ const JoinUs = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <div className={classes.subTitle}>
-                <Title type='h4'>Mobile Developer</Title>
+                <Title type='h4'>
+                  <Link to='/join-us/product-designer' className={classes.legalLink}>Mobile Developer</Link>
+                </Title>
               </div>
               <p>Remote</p>
             </div>
@@ -57,7 +62,9 @@ const JoinUs = () => {
             </div>
             <div className={classes.col2}>
               <div className={classes.subTitle}>
-                <Title type='h4'>Product Owner</Title>
+                <Title type='h4'>
+                  <Link to='/join-us/product-designer' className={classes.legalLink}>Product Owner</Link>
+                </Title>
               </div>
               <p>Remote</p>
             </div>
@@ -68,7 +75,9 @@ const JoinUs = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <div className={classes.subTitle}>
-                <Title type='h4'>Product Designer</Title>
+                <Title type='h4'>
+                  <Link to='/join-us/product-designer' className={classes.legalLink}>Product Designer</Link>
+                </Title>
               </div>
               <p>Remote</p>
             </div>
