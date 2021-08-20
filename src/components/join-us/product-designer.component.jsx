@@ -2,25 +2,51 @@ import React from 'react'
 
 import useProductDesignerStyles from './product-designer.styles'
 import Title from '../shared/title/title.component'
+import Button from '../shared/button/button.component'
 
 const ProductDesigner = () => {
   const classes = useProductDesignerStyles()
 
   return (
     <>
-      <div className={classes.sectionWrapper}>
-        <section className={`${classes.section} ${classes.section1}`}>
-          <div className={classes.row}>
-            <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <div className={classes.section1Title}>
-                <Title>Join Hermez team</Title>
-              </div>
-              <p className={classes.paragraphMargin}>It’s very exciting times for us here at Hermez Project. Following our successful launch and expansion plans, we are growing massively.</p>
-              <p className={classes.paragraphMargin}>You can see our list of vacancies below, but we’re always looking for top talent, blockchain enthusiasts and if you think you have what it takes to help us achieve our mission, please do get in touch – we always try to work out how we can fit great people into our team.</p>
+      <section className={`${classes.section} ${classes.section1}`}>
+        <div className={`${classes.row} ${classes.headline}`}>
+          <div className={classes.col2}>
+            <div className={classes.section1Title}>
+              <Title>Product Designer</Title>
+            </div>
+            <p>Remote</p>
+          </div>
+          <div className={`${classes.col2} ${classes.actionButton}`}>
+            <div className={classes.buttonWrapper}>
+              <Button to='' text='Apply' hideIcon />
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section className={classes.section}>
+        <div className={classes.row}>
+          <Title type='h4'>Sub Title 1</Title>
+        </div>
+        <div className={classes.row}>
+          <p className={classes.paragraphMargin}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+      <section className={classes.section}>
+        <div className={classes.row}>
+          <Title type='h4'>Sub Title 2</Title>
+        </div>
+        <div className={classes.row}>
+          <p className={classes.paragraphMargin}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+      <section className={`${classes.section} ${classes.lastSection}`}>
+        <div className={classes.row}>
+          <div className={classes.buttonWrapper}>
+            <Button to='' text='Apply' hideIcon />
+          </div>
+        </div>
+      </section>
     </>
   )
 }
