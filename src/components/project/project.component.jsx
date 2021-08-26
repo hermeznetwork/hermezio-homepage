@@ -332,7 +332,7 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/no_photo.png'
+                src='/profiles/mario.png'
                 alt='Mário Idival'
               />
               <span className={classes.name}>Mário Idival</span>
@@ -343,7 +343,7 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/no_photo.png'
+                src='/profiles/adrian.png'
                 alt='Adrián Fernández'
               />
               <span className={classes.name}>Adrián Fernández</span>
