@@ -16,6 +16,9 @@ module.exports = {
       light: '#f3a57e',
       main: '#e75a2b',
       dark: '#d44d20'
+    },
+    purple: {
+      main: '#8248e5'
     }
   },
   fontWeights: {

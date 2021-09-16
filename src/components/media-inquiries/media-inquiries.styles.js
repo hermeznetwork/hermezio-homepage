@@ -22,7 +22,7 @@ const useMediaInquiriesStyles = createUseStyles(theme => ({
     marginBottom: theme.spacer * 3
   },
   email: {
-    color: theme.palette.orange.main,
+    color: theme.palette.purple.main,
     padding: `0 ${theme.spacer * 1}px`
   },
   buttonWrapper: {

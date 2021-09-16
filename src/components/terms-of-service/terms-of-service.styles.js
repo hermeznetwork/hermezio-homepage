@@ -46,7 +46,7 @@ const usePrivacyPolicyStyles = createUseStyles(theme => ({
     }
   },
   mail: {
-    color: theme.palette.orange.main
+    color: theme.palette.purple.main
   }
 }))
 

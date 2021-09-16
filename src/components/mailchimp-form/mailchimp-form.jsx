@@ -53,9 +53,9 @@ export const MailchimpForm = () => {
                   id='mc-embedded-subscribe'
                   class='button'
                   style={{
-                    background: theme.palette.orange.main,
+                    background: theme.palette.purple.main,
                     color: theme.palette.white,
-                    border: `1px solid ${theme.palette.orange.main}`,
+                    border: `1px solid ${theme.palette.purple.main}`,
                     display: 'block',
                     marginTop: `-${theme.spacer * 6.5}px`,
                     width: 'fit-content',
