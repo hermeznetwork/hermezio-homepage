@@ -10,13 +10,16 @@ const useMailchimpFormStyles = createUseStyles(theme => ({
     backgroundSize: 'cover',
     padding: `${theme.spacer * 3}px ${theme.spacer * 1.75}px ${theme.spacer * 2}px`,
     [theme.breakpoints.md]: {
-      backgroundImage: 'url(./discord-link-background.svg)',
+      backgroundImage: 'url(./discord-link-background.png)',
       padding: `${theme.spacer * 4.5}px ${theme.spacer * 7}px ${theme.spacer * 6}px`
     }
   },
   title: {
     marginBottom: theme.spacer * 3,
-    textAlign: 'left'
+    textAlign: 'left',
+    '& h2': {
+      color: theme.palette.white
+    }
   }
 }))
 

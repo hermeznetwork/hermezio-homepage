@@ -177,13 +177,13 @@ const useDevelopersStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 6}px ${theme.spacer * 3.5}px ${theme.spacer * 4.5}px`,
     marginTop: theme.spacer * 5,
     [theme.breakpoints.md]: {
-      backgroundImage: 'url(./discord-link-background.svg)',
+      backgroundImage: 'url(./discord-link-background.png)',
       padding: theme.spacer * 8,
       marginTop: 0
     }
   },
   discordText: {
-    color: theme.palette.black,
+    color: theme.palette.white,
     fontWeight: theme.fontWeights.bold,
     fontSize: theme.spacer * 3.5,
     lineHeight: `${theme.spacer * 4.5}px`,

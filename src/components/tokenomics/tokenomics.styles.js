@@ -275,7 +275,7 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     }
   },
   email: {
-    color: theme.palette.orange.main,
+    color: theme.palette.purple.main,
     paddingLeft: theme.spacer * 1
   },
   onlyDesktop: {
