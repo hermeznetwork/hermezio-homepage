@@ -5,7 +5,7 @@ const useMailchimpFormStyles = createUseStyles(theme => ({
     width: '100%',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundImage: 'url(./discord-link-background-mobile.svg)',
+    backgroundImage: 'url(./mailchimp-link-background-mobile.svg)',
     borderRadius: theme.spacer * 3,
     backgroundSize: 'cover',
     padding: `${theme.spacer * 3}px ${theme.spacer * 1.75}px ${theme.spacer * 2}px`,
