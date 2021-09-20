@@ -1,34 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="352" viewBox="0 0 288 352">
+<svg width="288" height="352" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <linearGradient id="a3pohpy47b" x1="121.822%" x2="13.397%" y1="-36.825%" y2="94.775%">
-            <stop offset="0%" stop-color="#FAF4EA"/>
-            <stop offset="100%" stop-color="#FFA600"/>
+        <linearGradient x1="27.186%" y1="-40.058%" x2="92.171%" y2="105.412%" id="b">
+            <stop stop-color="#6A1BFA" offset="0%"/>
+            <stop stop-color="#71BFFF" offset="100%"/>
         </linearGradient>
-        <linearGradient id="dg2mk6fdec" x1="-46.411%" x2="99.651%" y1="-48.216%" y2="100%">
-            <stop offset="0%" stop-color="#FAF4EA"/>
-            <stop offset="100%" stop-color="#FFA600"/>
+        <linearGradient x1="123.08%" y1="109.81%" x2="42.801%" y2="34.592%" id="c">
+            <stop stop-color="#3197FF" offset="0%"/>
+            <stop stop-color="#6311FE" offset="100%"/>
         </linearGradient>
-        <linearGradient id="o550p8mwhe" x1="-46.215%" x2="99.55%" y1="-48.216%" y2="100%">
-            <stop offset="0%" stop-color="#FAF4EA"/>
-            <stop offset="100%" stop-color="#FFA600"/>
+        <linearGradient x1="-46.215%" y1="-48.216%" x2="99.55%" y2="100%" id="e">
+            <stop stop-color="#EAF0FA" offset="0%"/>
+            <stop stop-color="#4300FF" offset="100%"/>
         </linearGradient>
-        <linearGradient id="v9sg5l3waf" x1="156.31%" x2="-4.179%" y1="-36.825%" y2="94.775%">
-            <stop offset="0%" stop-color="#FAF4EA"/>
-            <stop offset="100%" stop-color="#FFA600"/>
+        <linearGradient x1="105.23%" y1="100%" x2=".457%" y2="-15.748%" id="f">
+            <stop stop-color="#31D9FF" offset="0%"/>
+            <stop stop-color="#6311FE" offset="100%"/>
         </linearGradient>
-        <rect id="z94oifvjva" width="288" height="352" x="0" y="0" rx="24"/>
+        <rect id="a" x="0" y="0" width="288" height="352" rx="24"/>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <g>
-            <g transform="translate(-16 -4272) translate(16 4272)">
-                <mask id="p5kk15pj6d" fill="#fff">
-                    <use xlink:href="#z94oifvjva"/>
-                </mask>
-                <use fill="url(#a3pohpy47b)" fill-rule="nonzero" opacity=".278" xlink:href="#z94oifvjva"/>
-                <ellipse cx="-4.2" cy="20.475" fill="url(#dg2mk6fdec)" fill-rule="nonzero" mask="url(#p5kk15pj6d)" rx="149.625" ry="150.15"/>
-                <ellipse cx="286.575" cy="401.521" fill="url(#o550p8mwhe)" fill-rule="nonzero" mask="url(#p5kk15pj6d)" opacity=".767" rx="231.525" ry="232.575"/>
-                <path fill="url(#v9sg5l3waf)" fill-rule="nonzero" d="M-2.017 116.315c-12.555 120.003 74.104 227.51 193.558 240.123S418.01 281.994 430.565 161.99C443.12 41.987 356.46-65.52 237.007-78.133S10.538-3.688-2.017 116.315z" mask="url(#p5kk15pj6d)" opacity=".418"/>
-            </g>
-        </g>
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" fill-rule="nonzero" opacity=".621" xlink:href="#a"/>
+        <ellipse fill="url(#c)" fill-rule="nonzero" opacity=".867" mask="url(#d)" cx="-4.2" cy="20.475" rx="149.625" ry="150.15"/>
+        <ellipse fill="url(#e)" fill-rule="nonzero" opacity=".343" mask="url(#d)" transform="rotate(-90 286.575 401.52)" cx="286.575" cy="401.521" rx="231.525" ry="232.575"/>
+        <path d="M-2.017 116.315c-12.555 120.003 74.104 227.51 193.558 240.123S418.01 281.994 430.565 161.99C443.12 41.987 356.46-65.52 237.007-78.133S10.538-3.688-2.017 116.315z" fill="url(#f)" fill-rule="nonzero" opacity=".589" mask="url(#d)"/>
     </g>
 </svg>
