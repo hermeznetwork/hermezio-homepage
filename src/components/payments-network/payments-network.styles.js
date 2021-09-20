@@ -102,6 +102,20 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
   section3Title: {
     marginBottom: theme.spacer * 9
   },
+  section3img: {
+    backgroundImage: 'url(../payment-network-section3.png)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'contain',
+    margin: 'auto',
+    width: '100%',
+    height: '150px',
+    marginBottom: theme.spacer * 4,
+    [theme.breakpoints.md]: {
+      height: '352px',
+      marginBottom: 0
+    }
+  },
   section4: {
     '& $divider': {
       [theme.breakpoints.md]: {
