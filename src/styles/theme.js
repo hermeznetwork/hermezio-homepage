@@ -18,7 +18,8 @@ module.exports = {
       dark: '#d44d20'
     },
     purple: {
-      main: '#8248e5'
+      main: '#8248e5',
+      dark: '#6d00f1'
     }
   },
   fontWeights: {

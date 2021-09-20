@@ -28,8 +28,8 @@ const useButtonStyles = createUseStyles(theme => ({
     marginTop: theme.spacer * 5,
     display: 'block',
     '&:hover': {
-      border: `1px solid ${theme.palette.orange.dark}`,
-      background: theme.palette.orange.dark
+      border: `1px solid ${theme.palette.purple.dark}`,
+      background: theme.palette.purple.dark
     }
   },
   secondary: {

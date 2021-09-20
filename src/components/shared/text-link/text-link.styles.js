@@ -6,9 +6,9 @@ const useTextLinkStyles = createUseStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     '&:hover': {
-      color: theme.palette.orange.dark,
+      color: theme.palette.purple.dark,
       '& $linkIcon': {
-        fill: theme.palette.orange.dark
+        fill: theme.palette.purple.dark
       }
     }
   },
