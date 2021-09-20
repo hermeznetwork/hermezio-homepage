@@ -1,6 +1,6 @@
-<svg width="288" height="352" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="288" height="236" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <linearGradient x1="27.186%" y1="-40.058%" x2="92.171%" y2="105.412%" id="b">
+        <linearGradient x1="15.92%" y1="-10.473%" x2="112.996%" y2="87.209%" id="b">
             <stop stop-color="#6A1BFA" offset="0%"/>
             <stop stop-color="#71BFFF" offset="100%"/>
         </linearGradient>
@@ -16,15 +16,15 @@
             <stop stop-color="#31D9FF" offset="0%"/>
             <stop stop-color="#6311FE" offset="100%"/>
         </linearGradient>
-        <rect id="a" x="0" y="0" width="288" height="352" rx="24"/>
+        <rect id="a" x="0" y="0" width="288" height="236" rx="24"/>
     </defs>
     <g fill="none" fill-rule="evenodd">
         <mask id="d" fill="#fff">
             <use xlink:href="#a"/>
         </mask>
         <use fill="url(#b)" fill-rule="nonzero" opacity=".621" xlink:href="#a"/>
-        <ellipse fill="url(#c)" fill-rule="nonzero" opacity=".867" mask="url(#d)" cx="-4.2" cy="20.475" rx="149.625" ry="150.15"/>
-        <ellipse fill="url(#e)" fill-rule="nonzero" opacity=".343" mask="url(#d)" transform="rotate(-90 286.575 401.52)" cx="286.575" cy="401.521" rx="231.525" ry="232.575"/>
-        <path d="M-2.017 116.315c-12.555 120.003 74.104 227.51 193.558 240.123S418.01 281.994 430.565 161.99C443.12 41.987 356.46-65.52 237.007-78.133S10.538-3.688-2.017 116.315z" fill="url(#f)" fill-rule="nonzero" opacity=".589" mask="url(#d)"/>
+        <ellipse fill="url(#c)" fill-rule="nonzero" opacity=".867" mask="url(#d)" cx="19.8" cy="-75.525" rx="149.625" ry="150.15"/>
+        <ellipse fill="url(#e)" fill-rule="nonzero" opacity=".343" mask="url(#d)" transform="rotate(-90 286.575 329.52)" cx="286.575" cy="329.521" rx="231.525" ry="232.575"/>
+        <path d="M69.983 36.315c-12.555 120.003 74.104 227.51 193.558 240.123S490.01 201.994 502.565 81.99C515.12-38.013 428.46-145.52 309.007-158.133S82.538-83.688 69.983 36.315z" fill="url(#f)" fill-rule="nonzero" opacity=".589" mask="url(#d)"/>
     </g>
 </svg>
