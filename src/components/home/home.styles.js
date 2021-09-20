@@ -220,7 +220,7 @@ const useHomeStyles = createUseStyles(theme => ({
   barL2: {
     borderRadius: 15,
     height: theme.spacer * 2,
-    background: theme.palette.orange.main,
+    background: theme.palette.purple.main,
     marginTop: theme.spacer * 1.5,
     width: '10%'
   },

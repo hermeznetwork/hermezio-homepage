@@ -5,7 +5,7 @@ module.exports = {
       main: '#dee0e9'
     },
     white: '#ffffff',
-    black: '#2b2b2b',
+    black: '#081132',
     gray: {
       lighter: '#8d95a3',
       light: '#778499',
@@ -16,6 +16,9 @@ module.exports = {
       light: '#f3a57e',
       main: '#e75a2b',
       dark: '#d44d20'
+    },
+    purple: {
+      main: '#8248e5'
     }
   },
   fontWeights: {

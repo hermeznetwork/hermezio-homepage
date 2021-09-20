@@ -115,7 +115,7 @@ export const useFooterStyles = createUseStyles(theme => ({
   },
   emailLink: {
     '&:hover': {
-      color: theme.palette.orange.main
+      color: theme.palette.purple.main
     }
   }
 }))

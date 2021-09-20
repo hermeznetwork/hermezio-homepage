@@ -22,8 +22,8 @@ const useButtonStyles = createUseStyles(theme => ({
     fill: theme.palette.gray.main
   },
   primary: {
-    border: `1px solid ${theme.palette.orange.main}`,
-    background: theme.palette.orange.main,
+    border: `1px solid ${theme.palette.purple.main}`,
+    background: theme.palette.purple.main,
     color: theme.palette.white,
     marginTop: theme.spacer * 5,
     display: 'block',

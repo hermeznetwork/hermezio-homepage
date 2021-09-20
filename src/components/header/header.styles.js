@@ -73,7 +73,7 @@ export const useHeaderStyles = createUseStyles(theme => ({
       paddingLeft: theme.spacer * 1
     },
     '&:last-child a': {
-      border: '2px solid rgba(222, 224, 233, 0.5)',
+      background: 'rgba(157, 107, 255, 0.25)',
       borderRadius: 15,
       padding: `${theme.spacer * 0.5}px ${theme.spacer * 3 - 2}px`,
       '&:hover': {
