@@ -175,15 +175,6 @@ export const Footer = ({ routes }) => {
         <div className={classes.bottomSection}>
           <p className={classes.logoAndText}>
             <Logo />
-            <span className={classes.text}>
-              <a
-                href='https://iden3.io/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Powered by Iden3
-              </a>
-            </span>
           </p>
           <Link to='/legal-disclaimer' className={classes.legalLink}>
             Legal Disclaimer

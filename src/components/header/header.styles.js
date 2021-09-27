@@ -74,10 +74,10 @@ export const useHeaderStyles = createUseStyles(theme => ({
     },
     '&:last-child a': {
       background: 'rgba(157, 107, 255, 0.25)',
-      borderRadius: 15,
+      borderRadius: theme.spacer * 2,
       padding: `${theme.spacer * 0.5}px ${theme.spacer * 3 - 2}px`,
       '&:hover': {
-        border: `2px solid ${theme.palette.primary.main}`
+        background: theme.palette.purple.main
       },
       '&:hover::after': {
         width: 0

@@ -4,7 +4,6 @@ import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
-import Section3 from '../../assets/images/payments-network/section3.inline.svg'
 
 const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
@@ -83,7 +82,7 @@ const PaymentsNetwork = () => {
           <div className={classes.section3Title}>
             <Title>Scalable payments and universal settlement layer for moving token-based digital currencies.</Title>
           </div>
-          <Section3 />
+          <div className={classes.section3img} />
         </section>
       </div>
       <div className={classes.sectionWrapper}>

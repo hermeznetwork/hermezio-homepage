@@ -25,7 +25,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section1Wrapper: {
-    backgroundImage: 'url(./home-background-mobile.png)',
+    backgroundImage: 'url(./home-background-mobile.svg)',
     [theme.breakpoints.md]: {
       backgroundImage: 'url(./home-background.svg)'
     },

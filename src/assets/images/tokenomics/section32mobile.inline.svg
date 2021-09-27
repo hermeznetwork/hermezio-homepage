@@ -1,64 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 289 392">
-    <g fill="none" fill-rule="evenodd">
-        <g>
-            <g transform="translate(-15 -2441) translate(16 2441)">
-                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                    <tspan x="25.21" y="52.064">Founders </tspan> <tspan x="85.741" y="52.181" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="99.078" y="52.064"> </tspan> <tspan x="101.792" y="51.96" font-family="ModernEra-Bold, Modern Era" font-weight="bold">20.00%</tspan>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 289 393" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokenomics---Mobile--" transform="translate(-15.000000, -2440.000000)">
+            <g id="Group" transform="translate(16.000000, 2440.994324)">
+                <text id="Founders-—-20.00%-Copy" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                    <tspan x="25.2095491" y="52.055515">Founders </tspan>
+                    <tspan x="85.7407321" y="52.1723956" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                    <tspan x="99.0781114" y="52.055515"> </tspan>
+                    <tspan x="101.79234" y="51.9516211" font-family="ModernEra-Bold, Modern Era" font-weight="bold">20.00%</tspan>
                 </text>
-                <text fill="#2B2B2B" font-family="ModernEra-Bold, Modern Era" font-size="16.008" font-weight="bold">
-                    <tspan x=".364" y="16">Tier 1</tspan>
+                <text id="Tier-1-Copy" font-family="ModernEra-Bold, Modern Era" font-size="16.0080637" font-weight="bold" line-spacing="30.9489231" fill="#2B2B2B">
+                    <tspan x="0.364247427" y="16">Tier 1</tspan>
                 </text>
-                <text fill="#2B2B2B" font-family="ModernEra-Bold, Modern Era" font-size="16.008" font-weight="bold">
-                    <tspan x="0" y="142.812">Tier 2</tspan>
+                <text id="Tier-2-Copy" font-family="ModernEra-Bold, Modern Era" font-size="16.0080637" font-weight="bold" line-spacing="30.9489231" fill="#2B2B2B">
+                    <tspan x="0" y="142.819187">Tier 2</tspan>
                 </text>
-                <g transform="translate(.764 221.538)">
-                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                        <tspan x="24.446" y="13.104">Promotion </tspan> <tspan x="94.73" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="108.067" y="13.104"> </tspan> <tspan x="110.781" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">19.00%</tspan>
+                <g id="Group-9-Copy" transform="translate(0.763926, 221.547353)">
+                    <text id="Promotion-—-19.00%" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                        <tspan x="24.4456233" y="13.1038939">Promotion  </tspan>
+                        <tspan x="94.7298462" y="13.2207745" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                        <tspan x="108.067225" y="13.1038939"> </tspan>
+                        <tspan x="110.781454" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">19.00%</tspan>
                     </text>
-                    <rect width="12.223" height="12.223" fill="#EE5F30" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                    <rect id="Rectangle-Copy" stroke="#0C0830" stroke-width="1.14588859" fill="#8248E5" x="0" y="0" width="12.2228117" height="12.222989" rx="3.81962865"></rect>
                 </g>
-                <g transform="translate(.764 165.772)">
-                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                        <tspan x="24.446" y="13.104">Promotion Vested 2 years </tspan> <tspan x="184.221" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="197.559" y="13.104"> </tspan> <tspan x="200.273" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">17.50%</tspan>
+                <g id="Group-4-Copy" transform="translate(0.763926, 165.779965)">
+                    <text id="Promotion-Vested-2-y" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                        <tspan x="24.4456233" y="13.1038939">Promotion Vested 2 years </tspan>
+                        <tspan x="184.221454" y="13.2207745" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                        <tspan x="197.558833" y="13.1038939"> </tspan>
+                        <tspan x="200.273061" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">17.50%</tspan>
                     </text>
-                    <rect width="12.223" height="12.223" fill="#F49778" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
+                    <rect id="Rectangle-Copy-3" stroke="#0C0830" stroke-width="1.14588859" fill="#A977FF" x="0" y="0" width="12.2228117" height="12.222989" rx="3.81962865"></rect>
                 </g>
-                <g transform="translate(.764 70.281)">
-                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                        <tspan x="24.446" y="13.104">Developers </tspan> <tspan x="96.691" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="110.028" y="13.104"> </tspan> <tspan x="112.742" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">10.00%</tspan>
+                <g id="Group-6-Copy" transform="translate(0.763926, 70.287863)">
+                    <text id="Developers-—-10.00%" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                        <tspan x="24.4456233" y="13.1038939">Developers </tspan>
+                        <tspan x="96.6908435" y="13.2207745" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                        <tspan x="110.028223" y="13.1038939"> </tspan>
+                        <tspan x="112.742451" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">10.00%</tspan>
                     </text>
-                    <rect width="12.223" height="12.223" fill="#FABEAA" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
+                    <rect id="Rectangle-Copy-4" stroke="#0C0830" stroke-width="1.14588859" fill="#C9A9FF" x="0" y="0" width="12.2228117" height="12.222989" rx="3.81962865"></rect>
                 </g>
-                <g transform="translate(1.528 252.86)">
-                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                        <tspan x="24.446" y="13.104">Legal </tspan> <tspan x="60.549" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="73.886" y="13.104"> </tspan> <tspan x="76.6" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">7.50%</tspan>
+                <g id="Group-8-Copy" transform="translate(1.527851, 252.868762)">
+                    <text id="Legal-—-7.50%" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                        <tspan x="24.4456233" y="13.1038939">Legal </tspan>
+                        <tspan x="60.5487533" y="13.2207745" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                        <tspan x="73.8861326" y="13.1038939"> </tspan>
+                        <tspan x="76.6003607" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">7.50%</tspan>
                     </text>
-                    <rect width="12.223" height="12.223" fill="#FFE7BC" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                    <rect id="Rectangle-Copy-5" stroke="#0C0830" stroke-width="1.14588859" fill="#E7D3FF" x="0" y="0" width="12.2228117" height="12.222989" rx="3.81962865"></rect>
                 </g>
-                <g transform="translate(.764 101.602)">
-                    <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                        <tspan x="24.446" y="13.104">Promotion Vested 3 years </tspan> <tspan x="184.481" y="13.221" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="197.819" y="13.104"> </tspan> <tspan x="200.533" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">6.20%</tspan>
+                <g id="Group-7-Copy" transform="translate(0.763926, 101.609273)">
+                    <text id="Promotion-Vested-3-y" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                        <tspan x="24.4456233" y="13.1038939">Promotion Vested 3 years </tspan>
+                        <tspan x="184.481188" y="13.2207745" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                        <tspan x="197.818568" y="13.1038939"> </tspan>
+                        <tspan x="200.532796" y="13" font-family="ModernEra-Bold, Modern Era" font-weight="bold">6.20%</tspan>
                     </text>
-                    <rect width="12.223" height="12.223" fill="#FFD07B" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
+                    <rect id="Rectangle-Copy-6" stroke="#0C0830" stroke-width="1.14588859" fill="#E7EAFF" x="0" y="0" width="12.2228117" height="12.222989" rx="3.81962865"></rect>
                 </g>
-                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                    <tspan x="25.973" y="297.284">Security- Audits and Bug Bounties </tspan> <tspan x="234.047" y="297.401" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="247.384" y="297.284"> </tspan> <tspan x="250.099" y="297.18" font-family="ModernEra-Bold, Modern Era" font-weight="bold">5.00%</tspan>
+                <text id="Security--Audits-and-Copy" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                    <tspan x="25.9734748" y="297.29416">Security- Audits and Bug Bounties </tspan>
+                    <tspan x="234.046981" y="297.41104" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                    <tspan x="247.384361" y="297.29416"> </tspan>
+                    <tspan x="250.098589" y="297.190266" font-family="ModernEra-Bold, Modern Era" font-weight="bold">5.00%</tspan>
                 </text>
-                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                    <tspan x="25.973" y="359.926">Operational buffer </tspan> <tspan x="140.945" y="360.043" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="154.282" y="359.926"> </tspan> <tspan x="156.997" y="359.822" font-family="ModernEra-Bold, Modern Era" font-weight="bold">3.00%</tspan>
+                <text id="Operational-buffer-—-Copy" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                    <tspan x="25.9734748" y="359.936978">Operational buffer </tspan>
+                    <tspan x="140.945061" y="360.053859" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                    <tspan x="154.28244" y="359.936978"> </tspan>
+                    <tspan x="156.996668" y="359.833085" font-family="ModernEra-Bold, Modern Era" font-weight="bold">3.00%</tspan>
                 </text>
-                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                    <tspan x="25.973" y="328.605">Market </tspan> <tspan x="72.284" y="328.722" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="85.622" y="328.605"> </tspan> <tspan x="88.336" y="328.501" font-family="ModernEra-Bold, Modern Era" font-weight="bold">9.00%</tspan>
+                <text id="Market-—-9.00%-Copy" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                    <tspan x="25.9734748" y="328.615569">Market </tspan>
+                    <tspan x="72.2841804" y="328.73245" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                    <tspan x="85.6215597" y="328.615569"> </tspan>
+                    <tspan x="88.3357878" y="328.511675" font-family="ModernEra-Bold, Modern Era" font-weight="bold">9.00%</tspan>
                 </text>
-                <text fill="#2B2B2B" font-family="ModernEra-Medium, Modern Era" font-size="12.987" font-weight="400">
-                    <tspan x="25.973" y="391.247">Ecosystem </tspan> <tspan x="95.894" y="391.364" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan> <tspan x="109.231" y="391.247"> </tspan> <tspan x="111.946" y="391.143" font-family="ModernEra-Bold, Modern Era" font-weight="bold">2.80%</tspan>
+                <text id="Ecosystem-—-2.80%-Copy" font-family="ModernEra-Medium, Modern Era" font-size="12.9867374" font-weight="400" line-spacing="12.9867374" fill="#2B2B2B">
+                    <tspan x="25.9734748" y="391.258388">Ecosystem </tspan>
+                    <tspan x="95.894069" y="391.375269" font-family="ModernEra-Regular, Modern Era" font-weight="normal">—</tspan>
+                    <tspan x="109.231448" y="391.258388"> </tspan>
+                    <tspan x="111.945676" y="391.154494" font-family="ModernEra-Bold, Modern Era" font-weight="bold">2.80%</tspan>
                 </text>
-                <rect width="12.223" height="12.223" y="38.96" fill="#E24510" stroke="#2B2B2B" stroke-width="1.146" rx="3.82"/>
-                <rect width="12.223" height="12.223" x="1.528" y="284.18" fill="#FFBC41" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
-                <rect width="12.223" height="12.223" x="1.528" y="346.822" fill="#FF931D" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
-                <rect width="12.223" height="12.223" x="1.528" y="315.501" fill="#FFAA0E" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
-                <rect width="12.223" height="12.223" x="1.528" y="378.143" fill="#F46A28" stroke="#231F20" stroke-width="1.146" rx="3.82"/>
-                <path stroke="#2B2B2B" stroke-linecap="square" stroke-width=".764" d="M0.764 200.149L287.618 199.003"/>
+                <rect id="Rectangle-Copy-12" stroke="#2B2B2B" stroke-width="1.14588859" fill="#7D12FF" x="0" y="38.9656886" width="12.2228117" height="12.222749" rx="3.81962865"></rect>
+                <rect id="Rectangle-Copy-13" stroke="#0C0830" stroke-width="1.14588859" fill="#AEB8FF" x="1.52785146" y="284.184591" width="12.2228117" height="12.222749" rx="3.81962865"></rect>
+                <rect id="Rectangle-Copy-14" stroke="#0C0830" stroke-width="1.14588859" fill="#4B61FF" x="1.52785146" y="346.82618" width="12.2228117" height="12.222749" rx="3.81962865"></rect>
+                <rect id="Rectangle-Copy-15" stroke="#0C0830" stroke-width="1.14588859" fill="#7687FF" x="1.52785146" y="315.505385" width="12.2228117" height="12.222749" rx="3.81962865"></rect>
+                <rect id="Rectangle-Copy-16" stroke="#0C0830" stroke-width="1.14588859" fill="#3034FF" x="1.52785146" y="378.146974" width="12.2228117" height="12.222749" rx="3.81962865"></rect>
+                <line x1="0.763925729" y1="200.153191" x2="287.618037" y2="199.007309" id="Line-6" stroke="#2B2B2B" stroke-width="0.763925729" stroke-linecap="square"></line>
             </g>
         </g>
     </g>
