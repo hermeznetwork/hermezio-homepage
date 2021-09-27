@@ -211,6 +211,21 @@ const Home = ({ blogPosts }) => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
+          <div className={`${classes.row} ${classes.section7title}`}>
+            <Title>As seen in the media</Title>
+          </div>
+          <div className={classes.row}>
+            <div className={classes.col3}>
+  1
+            </div>
+            <div className={classes.col3}>
+  2
+            </div>
+            <div className={classes.col3}>
+  3
+            </div>
+          </div>
+          <span className={classes.divider} />
           {
             blogPosts.map((blogPost, index) => (
               <>

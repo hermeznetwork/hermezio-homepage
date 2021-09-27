@@ -249,6 +249,9 @@ const useHomeStyles = createUseStyles(theme => ({
       }
     }
   },
+  section7title: {
+    justifyContent: 'center'
+  },
   allBlogPostsLink: {
     marginLeft: 0,
     [theme.breakpoints.md]: {
