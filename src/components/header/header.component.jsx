@@ -6,6 +6,9 @@ import { useHeaderStyles } from './header.styles'
 import { useTheme } from 'react-jss'
 import Logo from '../../assets/images/logo.inline.svg'
 import LogoWithText from '../../assets/images/logo-text.inline.svg'
+import HezIcon from '../../assets/images/hez-icon.inline.svg'
+import SwapArrow from '../../assets/images/swap-arrow.inline.svg'
+import ToTokenIcon from '../../assets/images/to-token-icon.inline.svg'
 
 export const Header = ({ routes, onOpenMobileMenu }) => {
   const theme = useTheme()
@@ -72,6 +75,20 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                           className={classes.link}
                         >
                             Network explorer
+                        </a>
+                      </li>
+                      <li className={classes.linkWrapper}>
+                        <a
+                          href='https://heztomatic.hermez.io/'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className={classes.link}
+                        >
+                          <div className={classes.tokenLogos}>
+                            <HezIcon />
+                            <SwapArrow className={classes.swapArrow} />
+                            <ToTokenIcon />
+                          </div>
                         </a>
                       </li>
                       <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
