@@ -252,6 +252,21 @@ const useHomeStyles = createUseStyles(theme => ({
   section7title: {
     justifyContent: 'center'
   },
+  mediaLogos: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: `${theme.spacer * 2}px auto 0`,
+    [theme.breakpoints.md]: {
+      margin: `${theme.spacer * 9}px auto ${theme.spacer * 14}px`
+    }
+  },
+  mediaLogo: {
+    margin: `${theme.spacer * 3}px auto ${theme.spacer * 3}px 0`,
+    [theme.breakpoints.md]: {
+      margin: 0
+    }
+  },
   allBlogPostsLink: {
     marginLeft: 0,
     [theme.breakpoints.md]: {

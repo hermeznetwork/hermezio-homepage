@@ -7,6 +7,9 @@ import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Video from '../video/video.view'
 import Section8 from '../../assets/images/home/section8.inline.svg'
+import Section71 from '../../assets/images/home/cointelegraph-logo.inline.svg'
+import Section72 from '../../assets/images/home/coindesk-logo.inline.svg'
+import Section73 from '../../assets/images/home/the-block-logo.inline.svg'
 import { MailchimpForm } from '../mailchimp-form/mailchimp-form'
 
 const Home = ({ blogPosts }) => {
@@ -214,18 +217,38 @@ const Home = ({ blogPosts }) => {
           <div className={`${classes.row} ${classes.section7title}`}>
             <Title>As seen in the media</Title>
           </div>
-          <div className={classes.row}>
-            <div className={classes.col3}>
-  1
+          <div className={`${classes.row} ${classes.mediaLogos}`}>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://cointelegraph.com/news/ethereum-layer-two-network-to-offer-batched-tether-payments'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section71 />
+              </a>
             </div>
-            <div className={classes.col3}>
-  2
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://www.coindesk.com/tech/2021/03/24/ethereum-rollup-hermez-network-to-be-used-by-tether-goes-live/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section72 />
+              </a>
             </div>
-            <div className={classes.col3}>
-  3
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://www.theblockcrypto.com/post/99191/hermez-network-mainnet-launch-ethereum-layer-2-zk-rollups'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section73 />
+              </a>
             </div>
           </div>
-          <span className={classes.divider} />
+          <div className={classes.row}>
+            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
+          </div>
           {
             blogPosts.map((blogPost, index) => (
               <>
