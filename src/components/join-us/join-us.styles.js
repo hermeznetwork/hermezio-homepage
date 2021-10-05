@@ -8,6 +8,11 @@ const useJoinUsStyles = createUseStyles(theme => ({
       flexDirection: 'row'
     }
   },
+  rowReverse: {
+    [theme.breakpoints.md]: {
+      flexDirection: 'row-reverse'
+    }
+  },
   col23: {
     [theme.breakpoints.md]: {
       width: '67%'
@@ -59,7 +64,8 @@ const useJoinUsStyles = createUseStyles(theme => ({
     backgroundSize: 'contain',
     margin: 'auto',
     width: '100%',
-    height: '100%',
+    height: '288px',
+    marginBottom: theme.spacer * 2,
     [theme.breakpoints.md]: {
       height: '384px'
     }
@@ -77,10 +83,8 @@ const useJoinUsStyles = createUseStyles(theme => ({
     }
   },
   title: {
-    marginBottom: theme.spacer * 2,
-    [theme.breakpoints.md]: {
-      marginBottom: 'inherit'
-    }
+    marginBottom: theme.spacer * 12,
+    textAlign: 'center'
   },
   videoTitle: {
     marginBottom: theme.spacer * 3,
@@ -106,8 +110,7 @@ const useJoinUsStyles = createUseStyles(theme => ({
     width: '100%',
     [theme.breakpoints.md]: {
       marginTop: theme.spacer * 4,
-      marginBottom: theme.spacer * 5,
-      width: '50%'
+      marginBottom: theme.spacer * 5
     }
   },
   dividerFullWidth: {
@@ -116,7 +119,7 @@ const useJoinUsStyles = createUseStyles(theme => ({
       marginTop: theme.spacer * 10,
       marginBottom: theme.spacer * 8
     }
-  },
+  }
 }))
 
 export default useJoinUsStyles
