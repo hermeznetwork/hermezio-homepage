@@ -8,7 +8,7 @@ import positions from './open-positions.json'
 
 export default function JoinUs () {
   const classes = useJoinUsStyles()
-  console.log(positions.departments)
+
   return (
     <>
       <div className={classes.sectionWrapper}>

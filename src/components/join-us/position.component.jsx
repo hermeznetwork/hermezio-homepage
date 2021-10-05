@@ -4,12 +4,11 @@ import usePositionStyles from './position.styles'
 import Title from '../shared/title/title.component'
 
 const Position = ({ openPosition }) => {
-  console.log(openPosition)
   const classes = usePositionStyles()
   const formPath =
     'https://docs.google.com/forms/d/e/1FAIpQLSdzw22j4_HtzWGlZCtth-39v899HPt0rLJbspygGYZICh8afQ/viewform?usp=pp_url&entry.725962123=' +
     openPosition.title.split(' ').join('+')
-  console.log(formPath)
+
   return (
     <>
       <section className={`${classes.section} ${classes.section1}`}>

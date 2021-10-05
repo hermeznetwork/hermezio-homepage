@@ -5,7 +5,6 @@ import Position from '../../../components/join-us/position.component'
 import Seo from '../../../components/shared/seo/seo.component'
 
 const PositionPage = (props) => {
-  console.log(props)
   const openPosition = props.location.state
   if (!openPosition)  {
     navigate("/404")
