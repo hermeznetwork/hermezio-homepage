@@ -10,6 +10,7 @@ import Section8 from '../../assets/images/home/section8.inline.svg'
 import Section71 from '../../assets/images/home/cointelegraph-logo.inline.svg'
 import Section72 from '../../assets/images/home/coindesk-logo.inline.svg'
 import Section73 from '../../assets/images/home/the-block-logo.inline.svg'
+import Section74 from '../../assets/images/home/newsbit-logo.inline.svg'
 import { MailchimpForm } from '../mailchimp-form/mailchimp-form'
 
 const Home = ({ blogPosts }) => {
@@ -243,6 +244,15 @@ const Home = ({ blogPosts }) => {
                 rel='noopener noreferrer'
               >
                 <Section73 />
+              </a>
+            </div>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://newsbit.nl/polygon-hermez-uw-digitale-activa-op-de-meest-efficiente-manier-overdragen/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section74 />
               </a>
             </div>
           </div>
