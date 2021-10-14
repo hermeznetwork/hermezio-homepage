@@ -43,15 +43,15 @@ export default function JoinUs () {
             <Title>Open positions</Title>
           </div>
           {positions.departments.map((department, dIndex) => (
-            <>
-              <div className={classes.row} key={department.path}>
+            <div key={department.path}>
+              <div className={classes.row}>
                 <div className={classes.col2}>
                   <Title>{department.title}</Title>
                 </div>
                 <div className={classes.col2}>
                   {department.positions.map((position, pIndex) => (
-                    <>
-                      <div key={position.path}>
+                    <div key={position.path}>
+                      <div>
                         <div className={classes.subTitle}>
                           <Title type='h4'>
                             <Link
@@ -68,22 +68,25 @@ export default function JoinUs () {
                       {pIndex + 1 !==
                         Object.keys(department.positions).length &&
                         (
-                          <div className={classes.row}>
+                          <div className={classes.row} key={`lastPosition-${position.path}`}>
                             <span className={classes.divider} />
                           </div>
                         )}
-                    </>
+                    </div>
                   ))}
                 </div>
               </div>
               {dIndex + 1 !== Object.values(positions.departments).length && (
-                <div className={classes.row}>
+                <div
+                  className={classes.row}
+                  key={`lastDepartment-${department.path}`}
+                >
                   <span
                     className={`${classes.divider} ${classes.dividerFullWidth}`}
                   />
                 </div>
               )}
-            </>
+            </div>
           ))}
         </section>
       </div>

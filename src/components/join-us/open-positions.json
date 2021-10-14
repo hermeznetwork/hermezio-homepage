@@ -2,41 +2,12 @@
   "departments": [{
       "title": "Engineering",
       "path": "engineering",
-      "positions": [{
-          "title": "Backend Golang Engineer",
-          "location": "Remote",
-          "path": "backend-golang-engineer",
-          "description": "We're looking for a Backend Golang Engineer to develop our core technology. You'll work with the engineering team to research, spec, and implement blockchain-based solutions that power zprivacy-first identities. In addition, as a Backend Golang Engineer, you will collaborate with team members in making architectural decisions, choosing best practices, and bringing in new ideas.",
-          "responsabilities": [
-            "Design and implement quality frontend and backend architectures that connect with blockchain platforms like Hermez and Ethereum.",
-            "Work with our design, product teams and partners to transform ideas and designs into great products.",
-            "Develop high-quality, performant, modern, clean and readable code within tight deadlines.",
-            "Take ownership of the development and maintenance of the project from ideation to deployment.",
-            "Work with the engineering, design, and product teams collaboratively, contributing ideas that add value to our product roadmap and company goals."
-          ],
-          "skills": [
-            "Minimum 3 years experience in designing and implementing quality backend architectures",
-            "Minimum 1-year experience working with Golang. Previous experience with Goroutines, SQL Database and service APIs are also required. Messaging services, cryptography, and GRPC is a plus.",
-            "Knowledge in Ethereum blockchain. Smart Contract Development in Solidity is an advantage.",
-            "Experience in taking ownership of the development and maintenance of the backend stack.",
-            "Experience working with product teams to transform ideas and designs into great solutions.",
-            "Develop high-quality, performant, modern, clean and readable code.",
-            "Previous experience working with the Kanban task management framework is nice to have.",
-            "Good written and verbal communication skills in English."
-          ],
-          "niceToHave": [
-            "Experienced working in projects using cryptography, complex maths and complex database structures.",
-            "Experienced in designing blockchain architectures.",
-            "Familiar with existing L2 blockchain solutions.",
-            "Familiar with Zero-Knowledge algorithms.",
-            "Familiar with DevOps stack."
-          ]
-        },
+      "positions": [
         {
-          "title": "Full Stack Integration Engineer",
+          "title": "JS Frontend Developer - Integration Team",
           "location": "Remote",
-          "path": "full-stack-integration-engineer",
-          "description": "We're looking for a Full Stack Engineer to integrate Polygon Hermez into our partners’ applications. You'll work with different engineering teams to design, spec, and implement Web Apps and APIs that showcase the potential of the Polygon Hermez network, as well as optimizing and improving the backend to adapt to new requirements.",
+          "path": "js-frontend-developer-integration-team",
+          "description": "We're looking for a Front End Engineer to develop product interfaces for the different Hermez integrations with our partners’ applications. You'll work with different engineering teams to design, spec, and implement Web Apps and APIs that showcase the potential of the Hermez network, as well as optimizing and improving the backend to adapt to new requirements.",
           "responsabilities": [
             "Design and implement quality frontend and backend architectures that connect with blockchain platforms like Hermez and Ethereum.",
             "Work with our design, product teams and partners to transform ideas and designs into great products.",
@@ -45,11 +16,10 @@
             "Work with the engineering, design, and product teams collaboratively, contributing ideas that add value to our product roadmap and company goals."
           ],
           "skills": [
-            "3 years experience working as Consultant or Project Lead.",
-            "3-4 years experience working with modern JavaScript tools like ES6+, Vue, React, Angular development tools, and service APIs.",
-            "Experience in taking ownership of the development and maintenance of the backend stack. Knowledge of golang is a plus.",
-            "Minimum one year experience working with backend blockchain stack: web3, ethers, truffle and/or hardhat.",
-            "Minimum one-year experience with Ethereum blockchain architecture and smart contract development with Solidity.",
+            "Minimum 3 years experience in software development.",
+            "Strong experience in designing and implementing quality apps.",
+            "Experience working with modern JavaScript tools like ES6+, Vue, React, Angular development tools, and service APIs.",
+            "Working knowledge of web3, ethers, truffle and/or hardhat is a plus.",
             "Passion about privacy and decentralization.",
             "Develop high-quality, performant, modern, clean and readable code.",
             "Good written and verbal communication skills in English."
@@ -59,7 +29,7 @@
             "Experienced in designing blockchain architectures.",
             "Familiar with existing L2 blockchain solutions.",
             "Familiar with Zero-Knowledge algorithms.",
-            "Familiar with DevOps stack."
+            "Familiar with devOps stack."
           ]
         },
         {
