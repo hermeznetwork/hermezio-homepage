@@ -44,6 +44,11 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
               },
               {
                 id: 5,
+                label: 'Join Us',
+                to: '/join-us'
+              },
+              {
+                id: 6,
                 label: 'Wallet',
                 to: '/wallet'
               }
@@ -52,10 +57,10 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
                 {route.id === 1
                   ? <li key={index} className={classes.linkWrapper}><Link to={route.to}><LogoWithText /></Link></li>
                   : ''}
-                {route.id > 1 && route.id < 5
+                {route.id > 1 && route.id < 6
                   ? <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
                   : ''}
-                {route.id === 5
+                {route.id === 6
                   ? <>
                       <li className={classes.linkWrapper}>
                         <a
