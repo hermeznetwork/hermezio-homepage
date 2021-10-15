@@ -1,7 +1,9 @@
 import { navigate } from 'gatsby'
 
 const DeparmentPage = props => {
-  navigate('/404')
+  if (typeof window !== 'undefined') {
+    navigate('/404')
+  }
   return null
 }
 
