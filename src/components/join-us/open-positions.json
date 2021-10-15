@@ -33,10 +33,10 @@
           ]
         },
         {
-          "title": "Blockchain Backend Engineer",
+          "title": "Blockchain JS Engineer - Backend Protocol Team",
           "location": "Remote",
-          "path": "blockchain-backend-engineer",
-          "description": "We're looking for an experienced Blockchain Engineer to develop our core technology. You'll  work with the engineering team to research, spec, and implement blockchain-based solutions that power L2 scaling solutions. In addition, as a software engineer, you will collaborate with team members in making architectural decisions.",
+          "path": "blockchain-js-engineer-backend-protocol-team",
+          "description": "We're looking for an experienced JS Blockchain Engineer to develop our core technology. You'll work with the engineering team to research, spec, and implement blockchain-based solutions that power L2 scaling solutions. In addition, as a software engineer, you will collaborate with team members in making architectural decisions.",
           "responsabilities": [
             "Participate in designing blockchain scaling architectures.",
             "Write high-quality, clean, commented and testing solidity smart contract code.",
