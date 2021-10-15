@@ -4,10 +4,12 @@ import React from 'react'
 import Position from '../../../components/join-us/position.component'
 import Seo from '../../../components/shared/seo/seo.component'
 
-const PositionPage = (props) => {
+const PositionPage = props => {
   const openPosition = props.location.state
-  if (!openPosition)  {
-    navigate("/404")
+  if (!openPosition) {
+    if (typeof window !== 'undefined') {
+      navigate('/404')
+    }
     return null
   }
   return (
