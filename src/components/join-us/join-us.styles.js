@@ -58,7 +58,7 @@ const useJoinUsStyles = createUseStyles(theme => ({
     }
   },
   section1img: {
-    backgroundImage: 'url(./join-us-section1.png)',
+    backgroundImage: 'url(../join-us-section1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'contain',
