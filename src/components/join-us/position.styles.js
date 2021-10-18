@@ -30,7 +30,6 @@ const useProductDesignerStyles = createUseStyles(theme => ({
     margin: 'auto',
     width: '100%',
     '& strong': {
-      display: 'block',
       fontSize: theme.spacer * 2.12,
       color: theme.palette.black
     }
@@ -76,7 +75,11 @@ const useProductDesignerStyles = createUseStyles(theme => ({
     }
   },
   paragraphMargin: {
-    marginBottom: theme.spacer * 2
+    marginBottom: theme.spacer * 2,
+    '& a': {
+      fontWeight: theme.fontWeights.medium,
+      color: theme.palette.purple.main
+    }
   },
   lastSection: {
     display: 'flex',
