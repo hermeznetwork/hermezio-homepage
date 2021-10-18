@@ -29,65 +29,41 @@ const Position = ({ openPosition }) => {
         </div>
       </section>
       <section className={classes.section}>
-        <div className={classes.row}>
-          <p className={classes.paragraphMargin}>{openPosition.description}</p>
-        </div>
-        <div className={classes.row}>
-          <Title type='h3'>Why Hermez?</Title>
-        </div>
         <div>
           <p className={classes.paragraphMargin}>
-            We are a ~30 person startup based in Zug, Switzerland, and
-            Barcelona, Spain. We value positive communication, accountability,
-            and working collaboratively.
-          </p>
-          <p className={classes.paragraphMargin}>
-            Our goals are to give communities and individuals the freedom to
-            self-organise, and every human the power to be themselves,
-            preserving their user privacy; as well as to improve the scalability
-            of the Ethereum blockchain creating an inclusive and accessible
-            blockchain payment network, both using ZK-proof technology.
-          </p>
-          <p className={classes.paragraphMargin}>
-            We currently have a number of products:
-          </p>
-          <p className={classes.paragraphMargin}>
-            <strong>iden3</strong>iden3 An open-source set of tools for creating
-            and managing self-sovereign identities; for more information, please
-            go to{' '}
+            Polygon Hermez is a blockchain startup formed by over 35
+            professionals. The team is spread all over the world, and we have
+            offices in Switzerland and Spain. Polygon Hermez is a proud member
+            of the Polygon ecosystem, you can read more{' '}
             <a
-              href='https://iden3.io/'
+              href='https://blog.hermez.io/polygon-hermez-merge/'
               target='_blank'
               rel='noopener noreferrer'
             >
-              https://iden3.io/
+              here
             </a>
+            .
           </p>
           <p className={classes.paragraphMargin}>
-            <strong>Hermez</strong> Decentralized zero-knowledge rollup that
-            greatly scales the Ethereum network and lowers the cost of
-            transactions. We do this while enhancing the user experience and
-            giving back to the blockchain community. More information can be
-            found here (
+            Our goal is to give communities and individuals the freedom to
+            self-organise. Every human should have the power to be themselves
+            and preserve their privacy. We aim to improve the scalability of the
+            Ethereum blockchain, creating an inclusive and accessible blockchain
+            payment network by using ZK-proof technology.
+          </p>
+          <p className={classes.paragraphMargin}>
+            Our protocol <strong>Polygon Hermez</strong> is a decentralised
+            zero-knowledge rollup that scales the Ethereum network and lowers
+            the cost of transactions. We do this while enhancing user experience
+            and giving back to the blockchain community. More information can be
+            found here{' '}
             <a
-              href='https://hermez.io/'
+              href='https://hermez.io'
               target='_blank'
               rel='noopener noreferrer'
             >
-              https://hermez.io/
+              https://hermez.io
             </a>
-            );
-          </p>
-          <p className={classes.paragraphMargin}>
-            <strong>Privado.Network</strong> Will provide a zero-knowledge based
-            solution to identity & document verification, ensuring user´s
-            personal data privacy and security. More information is soon to be
-            released.
-          </p>
-          <p className={classes.paragraphMargin}>
-            We aim to deliver products that are open source, easy-to-use,
-            reliable, stable, flexible, quick-time-to-market, innovative,
-            scalable and cost efficient.
           </p>
           <p className={classes.paragraphMargin}>
             We offer remote and flexible work. You can expect a warm welcome
@@ -96,11 +72,17 @@ const Position = ({ openPosition }) => {
             take an active part in the blockchain space and contribute to the
             decentralization of the future.
           </p>
+          <p className={classes.paragraphMargin}>{openPosition.description}</p>
+          <p className={classes.paragraphMargin}>
+            This is an exciting opportunity to take an active part in the
+            blockchain space and contribute to the decentralization of the
+            future.
+          </p>
         </div>
       </section>
       <section className={classes.section}>
         <div className={classes.row}>
-          <Title type='h3'>What will you be doing?</Title>
+          <Title type='h3'>What will you do?</Title>
         </div>
         <ul className={classes.list}>
           {openPosition.responsabilities.map(responsability => (
@@ -110,7 +92,9 @@ const Position = ({ openPosition }) => {
       </section>
       <section className={classes.section}>
         <div className={classes.row}>
-          <Title type='h3'>We want you to have:</Title>
+          <Title type='h3'>
+            We are looking for someone with the following skills and knowledge:
+          </Title>
         </div>
         <ul className={classes.list}>
           {openPosition.skills.map(skill => (
@@ -120,13 +104,24 @@ const Position = ({ openPosition }) => {
       </section>
       <section className={classes.section}>
         <div className={classes.row}>
-          <Title type='h3'>It would be a bonus if you had:</Title>
+          <Title type='h3'>It will be nice if you are:</Title>
         </div>
         <ul className={classes.list}>
           {openPosition.niceToHave.map(has => (
             <li key={has}>{has}</li>
           ))}
         </ul>
+      </section>
+      <section className={classes.section}>
+        <div className={classes.row}>
+          <Title type='h3'>Last but not least:</Title>
+        </div>
+        <p className={classes.paragraphMargin}>
+          We are looking for positive, optimistic, proactive, and creative
+          people who are looking forward to building innovative technology. If
+          you think that your profile matches this position, please send your
+          details.
+        </p>
       </section>
       <section className={`${classes.section} ${classes.lastSection}`}>
         <div className={classes.row}>
