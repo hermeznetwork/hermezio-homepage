@@ -27,7 +27,7 @@ export default function JoinUs () {
                 are growing massively.
               </p>
               <p className={classes.paragraphMargin}>
-                You can see our list of vacancies below. In addition, we’re
+                You can see our list of vacancies below. In addition, we're
                 always looking for top talent, blockchain enthusiasts and if
                 this sounds interesting to you, please do get in touch – we
                 always try to work out how we can fit great people into our
