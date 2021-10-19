@@ -19,12 +19,12 @@ export default function JoinUs () {
             </div>
             <div className={classes.col2}>
               <div className={classes.section1Title}>
-                <Title>Join Hermez team</Title>
+                <Title>Join Polygon Hermez</Title>
               </div>
               <p className={classes.paragraphMargin}>
-                It’s very exciting times for us here at Hermez Project.
-                Following our successful launch and expansion plans, we are
-                growing massively.
+                It’s very exciting times for us here at the Polygon Hermez
+                Project. Following our successful launch and expansion plans, we
+                are growing massively.
               </p>
               <p className={classes.paragraphMargin}>
                 You can see our list of vacancies below. In addition, we're
@@ -68,7 +68,10 @@ export default function JoinUs () {
                       {pIndex + 1 !==
                         Object.keys(department.positions).length &&
                         (
-                          <div className={classes.row} key={`lastPosition-${position.path}`}>
+                          <div
+                            className={classes.row}
+                            key={`lastPosition-${position.path}`}
+                          >
                             <span className={classes.divider} />
                           </div>
                         )}
