@@ -10,7 +10,7 @@ const PositionPage = ({ params }) => {
   const openPosition = department.positions.find(position => position.path === params.position)
 
   if (!openPosition) {
-      if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       navigate('/404')
     }
     return null
