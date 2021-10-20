@@ -7,7 +7,7 @@ import positions from '../../../components/join-us/open-positions.json'
 
 const PositionPage = ({ params }) => {
   const department = positions.departments.find(department => department.path === params.department)
-  const openPosition = department.positions.find(position => position.path === params.position)
+  const openPosition = department?.positions.find(position => position.path === params.position)
 
   if (!openPosition) {
     if (typeof window !== 'undefined') {
