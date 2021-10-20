@@ -57,7 +57,6 @@ export default function JoinUs () {
                             <Link
                               to={`/join-us/${department.path}/${position.path}`}
                               className={classes.legalLink}
-                              state={position}
                             >
                               {position.title}
                             </Link>
