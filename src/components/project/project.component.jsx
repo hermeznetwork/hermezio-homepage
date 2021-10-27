@@ -199,11 +199,11 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/jeff.png'
-                alt='Jeff "Che" Prestes'
+                src='/profiles/arnaub.png'
+                alt='Arnau Bennassar'
               />
-              <span className={classes.name}>Jeff 'Che' Prestes</span>
-              <span className={classes.role}>Senior Blockchain Engineer</span>
+              <span className={classes.name}>Arnau Bennassar</span>
+              <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
               <img
@@ -217,10 +217,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/arnaub.png'
-                alt='Arnau Bennassar'
+                src='/profiles/raul.png'
+                alt='Raul Jareño'
               />
-              <span className={classes.name}>Arnau Bennassar</span>
+              <span className={classes.name}>Raul Jareño</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
           </div>
@@ -246,10 +246,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/raul.png'
-                alt='Raul Jareño'
+                src='/profiles/elias.png'
+                alt='Elías García'
               />
-              <span className={classes.name}>Raul Jareño</span>
+              <span className={classes.name}>Elías García</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
@@ -263,7 +263,6 @@ const Project = () => {
             </div>
           </div>
           <div className={`${classes.row} ${classes.profilesRow}`}>
-
             <div className={classes.profile}>
               <img
                 className={classes.image}
@@ -276,10 +275,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/elias.png'
-                alt='Elías García'
+                src='/profiles/alonso.png'
+                alt='Alonso Rodríguez'
               />
-              <span className={classes.name}>Elías García</span>
+              <span className={classes.name}>Alonso Rodríguez</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
@@ -294,10 +293,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/alonso.png'
-                alt='Alonso Rodríguez'
+                src='/profiles/michael.png'
+                alt='Michael Wall'
               />
-              <span className={classes.name}>Alonso Rodríguez</span>
+              <span className={classes.name}>Michael Wall</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
           </div>
@@ -305,10 +304,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/michael.png'
-                alt='Michael Wall'
+                src='/profiles/alex.png'
+                alt='Àlex Monsó'
               />
-              <span className={classes.name}>Michael Wall</span>
+              <span className={classes.name}>Àlex Monsó</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
@@ -323,11 +322,11 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/marcelo.png'
-                alt='Marcelo Castellani'
+                src='/profiles/davidroga.png'
+                alt='David Rodríguez'
               />
-              <span className={classes.name}>Marcelo Castellani</span>
-              <span className={classes.role}>Senior Backend Developer</span>
+              <span className={classes.name}>David Rodríguez</span>
+              <span className={classes.role}>Software Engineer</span>
             </div>
             <div className={classes.profile}>
               <img
@@ -343,39 +342,15 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/mario.png'
-                alt='Mário Idival'
-              />
-              <span className={classes.name}>Mário Idival</span>
-              <span className={classes.role}>Software Engineer</span>
-            </div>
-            <div className={classes.profile}>
-              <img
-                className={classes.image}
-                src='/profiles/alex.png'
-                alt='Àlex Monsó'
-              />
-              <span className={classes.name}>Àlex Monsó</span>
-              <span className={classes.role}>Software Engineer</span>
-            </div>
-            <div className={classes.profile}>
-              <img
-                className={classes.image}
                 src='/profiles/adrian.png'
                 alt='Adrián Fernández'
               />
               <span className={classes.name}>Adrián Fernández</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
-            <div className={classes.profile}>
-              <img
-                className={classes.image}
-                src='/profiles/davidroga.png'
-                alt='David Rodríguez'
-              />
-              <span className={classes.name}>David Rodríguez</span>
-              <span className={classes.role}>Software Engineer</span>
-            </div>
+            <div className={classes.profile} />
+            <div className={classes.profile} />
+            <div className={classes.profile} />
           </div>
         </section>
       </div>
