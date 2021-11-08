@@ -153,7 +153,7 @@ export const Footer = ({ routes }) => {
               </li>
               <li className={classes.listItem}>
                 <a
-                  href='https://twitter.com/PolygonHermez'
+                  href='https://twitter.com/0xPolygonHermez'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
