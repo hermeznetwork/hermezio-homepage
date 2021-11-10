@@ -58,6 +58,36 @@
             "Familiar with DevOps stack.",
             "Experienced with other programming tools, especially on open source projects."
           ]
+        },
+        {
+          "title": "Senior Go Developer - Backend Node Team",
+          "location": "Remote",
+          "path": "senior-backend-golang-engineer",
+          "description": "We're looking for a Senior Backend Golang Engineer to develop our core technology. You'll work with the engineering team to research, spec, and implement blockchain scalability solutions that enable mass adoption. In addition, as a Backend Golang Engineer, you will collaborate with team members in making architectural decisions, choosing best practices, and bringing in new ideas.",
+          "responsabilities": [
+            "Design and implement quality backend architectures that connect with blockchain platforms like Hermez and Ethereum.",
+            "Develop high-quality, performant, modern, clean and readable code within tight deadlines.",
+            "Take ownership of the development and maintenance of the project from ideation to deployment.",
+            "Work with the engineering, design, and product teams collaboratively, contributing ideas that add value to our product roadmap and company goals"
+          ],
+          "skills": [
+            "Minimum 7-8 years experience in designing and implementing quality backend architectures.",
+            "Min 2-3 years experience working with Golang.",
+            "Previous experience working with SQL, noSQL Database and service APIs. Messaging services, cryptography, and GRPC are a plus.",
+            "Knowledge in Ethereum blockchain. Smart Contract Development in Solidity is an advantage.",
+            "Experience in taking ownership of the development and maintenance of the backend stack.",
+            "Experience working with product teams to transform ideas and designs into great solutions.",
+            "Develop high-quality, performant, modern, clean and readable code",
+            "Previous experience working with Kanban task management framework is nice to have",
+            "Good written and verbal communication skills in English"
+          ],
+          "niceToHave": [
+            "Experienced working in projects using cryptography, complex maths and complex database structures.",
+            "Experienced in designing blockchain architectures.",
+            "Familiar with existing L2 blockchain solutions.",
+            "Familiar with DevOps stack.",
+            "Familiar with Zero-Knowledge technology."
+          ]
         }
       ]
     }
