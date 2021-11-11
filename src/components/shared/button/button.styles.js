@@ -22,14 +22,14 @@ const useButtonStyles = createUseStyles(theme => ({
     fill: theme.palette.gray.main
   },
   primary: {
-    border: `1px solid ${theme.palette.orange.main}`,
-    background: theme.palette.orange.main,
+    border: `1px solid ${theme.palette.purple.main}`,
+    background: theme.palette.purple.main,
     color: theme.palette.white,
     marginTop: theme.spacer * 5,
     display: 'block',
     '&:hover': {
-      border: `1px solid ${theme.palette.orange.dark}`,
-      background: theme.palette.orange.dark
+      border: `1px solid ${theme.palette.purple.dark}`,
+      background: theme.palette.purple.dark
     }
   },
   secondary: {

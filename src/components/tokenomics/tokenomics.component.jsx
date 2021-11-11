@@ -93,7 +93,7 @@ const Tokenomics = () => {
             </div>
             <Section32Mobile />
           </div>
-          <div className={classes.onlyDesktop}>
+          <div className={`${classes.onlyDesktop} ${classes.section3img2}`}>
             <Section3Desktop />
           </div>
           <div className={classes.row}>

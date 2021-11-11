@@ -2,13 +2,13 @@ import { createUseStyles } from 'react-jss'
 
 const useTextLinkStyles = createUseStyles(theme => ({
   link: {
-    color: theme.palette.orange.main,
+    color: theme.palette.purple.main,
     display: 'flex',
     alignItems: 'center',
     '&:hover': {
-      color: theme.palette.orange.dark,
+      color: theme.palette.purple.dark,
       '& $linkIcon': {
-        fill: theme.palette.orange.dark
+        fill: theme.palette.purple.dark
       }
     }
   },
@@ -16,7 +16,7 @@ const useTextLinkStyles = createUseStyles(theme => ({
     width: theme.spacer * 3,
     height: theme.spacer * 3,
     marginLeft: theme.spacer * 2,
-    fill: theme.palette.orange.main
+    fill: theme.palette.purple.main
   },
   boxLink: {
     padding: `${theme.spacer * 4}px ${theme.spacer * 5}px`,

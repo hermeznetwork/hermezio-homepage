@@ -210,6 +210,11 @@ const useTokenomicsStyles = createUseStyles(theme => ({
       marginBottom: 0
     }
   },
+  section3img2: {
+    [theme.breakpoints.md]: {
+      height: theme.spacer * 65
+    }
+  },
   section4: {
     textAlign: 'center'
   },
@@ -275,7 +280,7 @@ const useTokenomicsStyles = createUseStyles(theme => ({
     }
   },
   email: {
-    color: theme.palette.orange.main,
+    color: theme.palette.purple.main,
     paddingLeft: theme.spacer * 1
   },
   onlyDesktop: {

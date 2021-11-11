@@ -24,7 +24,7 @@ const Wallet = () => {
               </div>
             </div>
             <div className={`${classes.col23} ${classes.inlineGraphicImage}`}>
-              <div className={classes.section1img} />
+              <div className={`${classes.sectionImg} ${classes.section1img}`} />
             </div>
           </div>
         </section>
@@ -45,7 +45,7 @@ const Wallet = () => {
               </p>
             </div>
             <div className={`${classes.col23} ${classes.inlineGraphicImage}`}>
-              <div className={classes.section2img} />
+              <div className={`${classes.sectionImg} ${classes.section2img}`} />
             </div>
           </div>
         </section>
@@ -103,6 +103,52 @@ const Wallet = () => {
                   <Carousel4 />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className={classes.sectionWrapper}>
+        <section className={`${classes.section} ${classes.section4}`}>
+          <div className={classes.row}>
+            <div className={`${classes.col3} ${classes.section2title}`}>
+              <Title>Mobile App</Title>
+              <p className={classes.section2paragraph}>
+                <span className={classes.checkMark}>&#10003;</span>Transfers between Layer 1 and Layer 2
+              </p>
+              <p className={classes.section2paragraph}>
+                <span className={classes.checkMark}>&#10003;</span>Intuitive user interface
+              </p>
+              <p className={classes.section2paragraph}>
+                <span className={classes.checkMark}>&#10003;</span>Global payments
+              </p>
+
+              <div className={`${classes.col23} ${classes.inlineGraphicImage} ${classes.onlyMobile}`}>
+                <div className={`${classes.sectionImg} ${classes.section4img}`} />
+              </div>
+
+              <div className={classes.row}>
+                <div className={classes.col2}>
+                  <a
+                    href='https://apps.apple.com/us/app/hermez/id1562893161#?platform=iphone'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <div className={classes.section4_2img} />
+                  </a>
+                </div>
+                <div className={classes.col2}>
+                  <a
+                    href='https://play.google.com/store/apps/details?id=com.iden3.hermezwallet'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <div className={classes.section4_3img} />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className={`${classes.col23} ${classes.inlineGraphicImage} ${classes.onlyDesktop}`}>
+              <div className={`${classes.sectionImg} ${classes.section4img}`} />
             </div>
           </div>
         </section>

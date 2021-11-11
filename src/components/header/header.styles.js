@@ -73,11 +73,11 @@ export const useHeaderStyles = createUseStyles(theme => ({
       paddingLeft: theme.spacer * 1
     },
     '&:last-child a': {
-      border: '2px solid rgba(222, 224, 233, 0.5)',
-      borderRadius: 15,
+      background: 'rgba(157, 107, 255, 0.25)',
+      borderRadius: theme.spacer * 2,
       padding: `${theme.spacer * 0.5}px ${theme.spacer * 3 - 2}px`,
       '&:hover': {
-        border: `2px solid ${theme.palette.primary.main}`
+        background: theme.palette.purple.main
       },
       '&:hover::after': {
         width: 0
@@ -101,5 +101,16 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:hover::after': {
       width: '33%'
     }
+  },
+  tokenLogos: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: theme.spacer * 2,
+    margin: `${theme.spacer}px 0`
+  },
+  swapArrow: {
+    margin: `0 ${theme.spacer * 0.5}px`,
+    height: theme.spacer * 1.5
   }
 }))

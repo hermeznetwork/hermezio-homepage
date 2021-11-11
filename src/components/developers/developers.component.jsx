@@ -1,12 +1,12 @@
 import React from 'react'
 
-import usedevelopersStyles from './developers.styles'
+import useDevelopersStyles from './developers.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 
 const Developers = () => {
-  const classes = usedevelopersStyles()
+  const classes = useDevelopersStyles()
 
   return (
     <>

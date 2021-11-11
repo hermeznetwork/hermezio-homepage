@@ -32,6 +32,11 @@ export const Layout = ({ children }) => {
     },
     {
       id: 5,
+      label: 'Join Us',
+      to: '/join-us'
+    },
+    {
+      id: 6,
       label: 'Wallet',
       to: '/wallet'
     }

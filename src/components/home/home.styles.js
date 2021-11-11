@@ -25,7 +25,7 @@ const useHomeStyles = createUseStyles(theme => ({
     }
   },
   section1Wrapper: {
-    backgroundImage: 'url(./home-background-mobile.png)',
+    backgroundImage: 'url(./home-background-mobile.svg)',
     [theme.breakpoints.md]: {
       backgroundImage: 'url(./home-background.svg)'
     },
@@ -220,7 +220,7 @@ const useHomeStyles = createUseStyles(theme => ({
   barL2: {
     borderRadius: 15,
     height: theme.spacer * 2,
-    background: theme.palette.orange.main,
+    background: theme.palette.purple.main,
     marginTop: theme.spacer * 1.5,
     width: '10%'
   },
@@ -247,6 +247,24 @@ const useHomeStyles = createUseStyles(theme => ({
         marginTop: theme.spacer * 4,
         marginBottom: theme.spacer * 5
       }
+    }
+  },
+  section7title: {
+    justifyContent: 'center'
+  },
+  mediaLogos: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: `${theme.spacer * 2}px auto 0`,
+    [theme.breakpoints.md]: {
+      margin: `${theme.spacer * 9}px auto ${theme.spacer * 14}px`
+    }
+  },
+  mediaLogo: {
+    margin: `${theme.spacer * 3}px auto ${theme.spacer * 3}px 0`,
+    [theme.breakpoints.md]: {
+      margin: 0
     }
   },
   allBlogPostsLink: {

@@ -7,6 +7,11 @@ import Button from '../shared/button/button.component'
 import TextLink from '../shared/text-link/text-link.component'
 import Video from '../video/video.view'
 import Section8 from '../../assets/images/home/section8.inline.svg'
+import Section71 from '../../assets/images/home/cointelegraph-logo.inline.svg'
+import Section72 from '../../assets/images/home/coindesk-logo.inline.svg'
+import Section73 from '../../assets/images/home/the-block-logo.inline.svg'
+import Section74 from '../../assets/images/home/newsbit-logo.inline.svg'
+import { MailchimpForm } from '../mailchimp-form/mailchimp-form'
 
 const Home = ({ blogPosts }) => {
   const classes = useHomeStyles()
@@ -210,6 +215,50 @@ const Home = ({ blogPosts }) => {
 
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section7}`}>
+          <div className={`${classes.row} ${classes.section7title}`}>
+            <Title>As seen in the media</Title>
+          </div>
+          <div className={`${classes.row} ${classes.mediaLogos}`}>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://cointelegraph.com/news/ethereum-layer-two-network-to-offer-batched-tether-payments'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section71 />
+              </a>
+            </div>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://www.coindesk.com/tech/2021/03/24/ethereum-rollup-hermez-network-to-be-used-by-tether-goes-live/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section72 />
+              </a>
+            </div>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://www.theblockcrypto.com/post/99191/hermez-network-mainnet-launch-ethereum-layer-2-zk-rollups'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section73 />
+              </a>
+            </div>
+            <div className={classes.mediaLogo}>
+              <a
+                href='https://newsbit.nl/polygon-hermez-uw-digitale-activa-op-de-meest-efficiente-manier-overdragen/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Section74 />
+              </a>
+            </div>
+          </div>
+          <div className={classes.row}>
+            <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
+          </div>
           {
             blogPosts.map((blogPost, index) => (
               <>
@@ -242,6 +291,9 @@ const Home = ({ blogPosts }) => {
           <div className={`${classes.row} ${classes.allBlogPostsLink}`}>
             <TextLink to='https://blog.hermez.io/' text='View all posts' />
           </div>
+        </section>
+        <section className={`${classes.section} ${classes.section8}`}>
+          <MailchimpForm />
         </section>
       </div>
     </>
