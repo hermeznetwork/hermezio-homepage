@@ -371,7 +371,7 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/no_photo.png'
+                src='/profiles/francesc.png'
                 alt='Francesc Romero'
               />
               <span className={classes.name}>Francesc Romero</span>
@@ -382,7 +382,7 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/no_photo.png'
+                src='/profiles/ignasi.png'
                 alt='Ignasi Ramos'
               />
               <span className={classes.name}>Ignasi Ramos</span>
