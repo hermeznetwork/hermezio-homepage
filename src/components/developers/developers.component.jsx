@@ -116,7 +116,7 @@ const Developers = () => {
             </div>
             <div className={`${classes.col3} ${classes.discordButton}`}>
               <div className={classes.buttonWrapper}>
-                <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
+                <Button to='https://discord.gg/polygon' text='Discord chat' />
               </div>
             </div>
           </div>
