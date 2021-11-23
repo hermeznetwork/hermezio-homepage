@@ -15,7 +15,7 @@ const Project = () => {
           <div className={classes.col3}>
             <Title>Unlocking the full potential of Ethereum for the common good</Title>
             <div className={classes.buttonWrapper}>
-              <Button to='https://discord.com/invite/AczuUXDA2N' text='Discord chat' />
+              <Button to='https://discord.gg/polygon' text='Discord chat' />
             </div>
           </div>
           <div className={classes.col23}>

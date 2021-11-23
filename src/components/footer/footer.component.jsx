@@ -144,7 +144,7 @@ export const Footer = ({ routes }) => {
               </li>
               <li className={classes.listItem}>
                 <a
-                  href='https://discord.com/invite/AczuUXDA2N'
+                  href='https://discord.gg/polygon'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
