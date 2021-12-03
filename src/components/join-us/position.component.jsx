@@ -102,16 +102,17 @@ const Position = ({ openPosition }) => {
           ))}
         </ul>
       </section>
-      <section className={classes.section}>
-        <div className={classes.row}>
-          <Title type='h3'>It will be nice if you are:</Title>
-        </div>
-        <ul className={classes.list}>
-          {openPosition.niceToHave.map(has => (
-            <li key={has}>{has}</li>
-          ))}
-        </ul>
-      </section>
+      {openPosition.niceToHave.length > 0 && (
+        <section className={classes.section}>
+          <div className={classes.row}>
+            <Title type='h3'>It will be nice if you are:</Title>
+          </div>
+          <ul className={classes.list}>
+            {openPosition.niceToHave.map(has => (
+              <li key={has}>{has}</li>
+            ))}
+          </ul>
+        </section>)}
       <section className={classes.section}>
         <div className={classes.row}>
           <Title type='h3'>Last but not least:</Title>
