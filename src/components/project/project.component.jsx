@@ -269,7 +269,7 @@ const Project = () => {
                 src='/profiles/toni.png'
                 alt='Toni Ramírez'
               />
-              <span className={classes.name}>Raul Jareño</span>
+              <span className={classes.name}>Toni Ramírez</span>
               <span className={classes.role}>Software Engineer</span>
             </div>
 
