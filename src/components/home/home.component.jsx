@@ -22,7 +22,7 @@ const Home = ({ blogPosts }) => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={`${classes.col2} ${classes.section1Col}`}>
             <Title>Scalable payments. Decentralised by design, open for everyone.</Title>
-            <p className={classes.section1Text}>Hermez is an open-source ZK-Rollup optimised for secure, low-cost and usable token transfers on the wings of Ethereum.</p>
+            <p className={classes.section1Text}>Polygon Hermez is an open-source ZK-Rollup optimised for secure, low-cost and usable token transfers on the wings of Ethereum.</p>
             <div className={classes.buttonWrapper}>
               <Button to='https://wallet.hermez.io/' text='Create account' />
             </div>
@@ -31,17 +31,17 @@ const Home = ({ blogPosts }) => {
       </div>
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
-          <div className={`${classes.section2Title} ${classes.videoTitle}`}>Quick overview of how Hermez works</div>
+          <div className={`${classes.section2Title} ${classes.videoTitle}`}>Quick overview of how Polygon Hermez works</div>
           <div className={classes.row}>
             <Video
               vimeoSrc='https://player.vimeo.com/video/522467320?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-              title='Meet Hermez'
+              title='Meet Polygon Hermez'
             />
           </div>
           <div className={classes.row}>
             <span className={`${classes.divider} ${classes.dividerFullWidth}`} />
           </div>
-          <div className={classes.section2Title}>Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</div>
+          <div className={classes.section2Title}>Polygon Hermez seamlessly integrates into the fabric of the Ethereum ecosystem and enables low-cost token transfers for an inclusive economy.</div>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2Box}`}>
               <div className={classes.section2_1img} />
@@ -58,7 +58,7 @@ const Home = ({ blogPosts }) => {
           </div>
           <div>
             <div className={`${classes.buttonWrapper} ${classes.button}`}>
-              <Button internalLink to='/payment-network' text='Hermez Network' />
+              <Button internalLink to='/payment-network' text='Polygon Hermez Network' />
             </div>
           </div>
         </section>
@@ -75,7 +75,7 @@ const Home = ({ blogPosts }) => {
               </p>
               <div className={classes.barL1} />
               <p className={classes.barText}>
-                L2 Hermez
+                L2 Polygon Hermez
               </p>
               <div className={classes.barL2} />
             </div>
@@ -121,7 +121,7 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <Title>People powered payments</Title>
-              <p className={classes.section3Text}>Hermez's mission is to create an inclusive, resilient and highly efficient payment network for the next generation of digital currencies to ensure everyone has the freedom to transact.</p>
+              <p className={classes.section3Text}>Polygon Hermez's mission is to create an inclusive, resilient and highly efficient payment network for the next generation of digital currencies to ensure everyone has the freedom to transact.</p>
               <TextLink to='/project#development-goals' text='Development goals' target='_self' />
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
@@ -138,7 +138,7 @@ const Home = ({ blogPosts }) => {
               <Title>Designed for collaborative economy</Title>
             </div>
             <div className={classes.col2}>
-              <Title type='h3'>Hermez is giving back</Title>
+              <Title type='h3'>Polygon Hermez is giving back</Title>
               <p>Block creators are selected through a burn auction, however rather than burning tokens, 40% of the winning bid is returned as a donation to be reinvested in Ethereum public goods through Gitcoin quadratic funding grants.  We call this mechanism Proof-of-Donation.</p>
               <div className={classes.section6link}>
                 <TextLink to='https://docs.hermez.io/#/faq/pod' text='More about proof-of-donation' />
@@ -151,7 +151,7 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Permissionless auctions for validators</Title>
-              <p>Anyone can bid in a decentralised auction to create the next batch on Hermez Network. Each successful validation is rewarded with the collected transaction fees.</p>
+              <p>Anyone can bid in a decentralised auction to create the next batch on Polygon Hermez Network. Each successful validation is rewarded with the collected transaction fees.</p>
               <div className={classes.section6link}>
                 <TextLink to='https://docs.hermez.io/#/faq/coordinators?id=coordinators' text='More about network coordinators' />
               </div>
@@ -163,7 +163,7 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>HEZ Token</Title>
-              <p>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <p>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Polygon Hermez Network to the highest bidders.</p>
               <div className={classes.section6link}>
                 <TextLink to='/payment-network#hez' text='More about HEZ' target='_self' />
               </div>
@@ -180,7 +180,7 @@ const Home = ({ blogPosts }) => {
             </div>
             <div className={classes.col2}>
               <Title type='h3'>Zero-knowledge cryptography</Title>
-              <p>Hermez zk-rollup is a layer 2 construction on top of Ethereum that solves its scalability through mass transfer processing rolled into a single transaction.</p>
+              <p>Polygon Hermez zk-rollup is a layer 2 construction on top of Ethereum that solves its scalability through mass transfer processing rolled into a single transaction.</p>
               <p>The "zero-knowledge proof" (ZK) technology is used to present and publicly record the validity and correctness of the rolled transfers processed on the Ethereum blockchain. By storing just the proof and the compressed data of a batch of transfers, the efficiency and the throughput of the network is multiplied.</p>
             </div>
           </div>
@@ -190,13 +190,13 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Universal scalability with validity proofs</Title>
-              <p>The consensus of status between Ethereum and Hermez is leveraging on zk-SNARKs validity proofs. Since validity is enforced by the zero-knowledge circuits, the L2 network status and the transactions can be considered as valid instantly once the corresponding block containing the proof is mined in L1.</p>
-              <p>All the data availability required to reconstruct the full state of Hermez network is implemented on Ethereum, and so any permissionless node can be deployed and synchronized from it.</p>
+              <p>The consensus of status between Ethereum and Polygon Hermez is leveraging on zk-SNARKs validity proofs. Since validity is enforced by the zero-knowledge circuits, the L2 network status and the transactions can be considered as valid instantly once the corresponding block containing the proof is mined in L1.</p>
+              <p>All the data availability required to reconstruct the full state of Polygon Hermez network is implemented on Ethereum, and so any permissionless node can be deployed and synchronized from it.</p>
             </div>
           </div>
           <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
             <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box white to='/hermez-whitepaper.pdf' text='Hermez Network White Paper' />
+              <TextLink box white to='/hermez-whitepaper.pdf' text='Polygon Hermez Network White Paper' />
             </div>
             <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box white to='https://docs.hermez.io/' text='Technical Documentation' />
