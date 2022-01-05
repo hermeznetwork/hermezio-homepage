@@ -62,7 +62,7 @@ const Wallet = () => {
               <div className={`${classes.row} ${classes.carouselContent}`}>
                 <div className={`${classes.col3} ${classes.carouselText}`}>
                   <p className={classes.carouselTitle}>1. Register</p>
-                  <p>Register your Ethereum L1 address into the Polygon Hermez network and obtain an internal Polygon Hermez address.</p>
+                  <p>Register your Ethereum L1 address into the Polygon Hermez Network and obtain an internal Polygon Hermez address.</p>
                 </div>
                 <div className={`${classes.col23} ${classes.carouselImage}`}>
                   <Carousel1 />

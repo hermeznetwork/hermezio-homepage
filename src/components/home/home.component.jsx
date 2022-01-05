@@ -191,7 +191,7 @@ const Home = ({ blogPosts }) => {
             <div className={classes.col2}>
               <Title type='h3'>Universal scalability with validity proofs</Title>
               <p>The consensus of status between Ethereum and Polygon Hermez is leveraging on zk-SNARKs validity proofs. Since validity is enforced by the zero-knowledge circuits, the L2 network status and the transactions can be considered as valid instantly once the corresponding block containing the proof is mined in L1.</p>
-              <p>All the data availability required to reconstruct the full state of Polygon Hermez network is implemented on Ethereum, and so any permissionless node can be deployed and synchronized from it.</p>
+              <p>All the data availability required to reconstruct the full state of Polygon Hermez Network is implemented on Ethereum, and so any permissionless node can be deployed and synchronized from it.</p>
             </div>
           </div>
           <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
