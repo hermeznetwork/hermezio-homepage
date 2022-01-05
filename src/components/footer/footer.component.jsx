@@ -14,7 +14,7 @@ export const Footer = ({ routes }) => {
           <div className={classes.col3}>
             <div className={classes.head}>
               <p>Start your integration</p>
-              <p>Contact us to learn more about Hermez network.</p>
+              <p>Contact us to learn more about Polygon Hermez Network.</p>
               <a
                 className={classes.emailLink}
                 href='mailto:hello@hermez.network?&subject=Contact%20from%20the%20website'
@@ -28,7 +28,7 @@ export const Footer = ({ routes }) => {
           <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
-                Hermez
+                Polygon Hermez
               </li>
               <li className={classes.listItem}>
                 {/* Routes are passed from layout component
