@@ -26,12 +26,12 @@ const Project = () => {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={`${classes.title} ${classes.videoTitle}`}>
-            <Title>Quick overview of Hermez technology</Title>
+            <Title>Quick overview of Polygon Hermez technology</Title>
           </div>
           <div className={classes.row}>
             <Video
               vimeoSrc='https://player.vimeo.com/video/522736342?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-              title='Welcome to Hermez - Introduction to Hermez Network Video 1'
+              title='Welcome to Polygon Hermez - Introduction to Polygon Hermez Network Video 1'
             />
           </div>
           <div className={classes.row}>
@@ -45,7 +45,7 @@ const Project = () => {
             <div className={classes.col2}>
               <p>Everyone should have universal access to finance.</p>
               <p>We are working on an open-source scalability model based on zero-knowledge technology (zk-rollup) to simplify and reduce costs for person-to-person payments, arbitrage opportunities and promote the adoption of digital currencies.</p>
-              <p>The decentralised Hermez protocol will provide a solid cryptographic foundation optimised for low-cost token transfers and enable future payment and financial solutions.</p>
+              <p>The decentralised Polygon Hermez protocol will provide a solid cryptographic foundation optimised for low-cost token transfers and enable future payment and financial solutions.</p>
               <p>The development plan includes creating a private self-sovereign identity to support the DeFi ecosystem.</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Project = () => {
               <div className={classes.subTitle}>
                 <Title type='h4'>Decentralised</Title>
               </div>
-              <p>Hermez is called a network because the model is natively decentralised.</p>
+              <p>Polygon Hermez is called a network because the model is natively decentralised.</p>
               <p>It’s a Layer 2 construction and intends to process thousands of transactions per second, so the consensus algorithm has to be simple for one agent (coordinator) to process this amount of transactions at any given time.</p>
               <p>Our model allows the network to be permissionless and censorship resistant for user transactions.</p>
             </div>
@@ -75,7 +75,7 @@ const Project = () => {
               </div>
               <p>The decentralised model is implemented through a permissionless auction system for potential coordinators of the network to earn the right to process transactions during a slot of time.</p>
               <p>The auction model incentivises the energy and cost efficiency of coordinators. They are pushed to process as many transactions as they can in order to collect the transaction fees, and to do so at the minimum operational cost in order to be able to outbid other coordinators (and make money out of it).</p>
-              <p>Hermez implements a zk-rollup based on zk-SNARKs proofs, the most efficient cryptographic construction in terms of batch cost in Ethereum.</p>
+              <p>Polygon Hermez implements a zk-rollup based on zk-SNARKs proofs, the most efficient cryptographic construction in terms of batch cost in Ethereum.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -86,8 +86,8 @@ const Project = () => {
               <div className={classes.subTitle}>
                 <Title type='h4'>Security in mind</Title>
               </div>
-              <p>Hermez is a layer 2 construction that leverages Ethereum not only by using its native tokens, but also by borrowing its security as a strong public blockchain. Every Hermez Network batch can be securely reconstructed from the proof and data posted in the Ethereum Blockchain.</p>
-              <p>Hermez’ implementation is based in iden3’s own technology (Circom and SnarkJS libraries) and the cryptographic technology which has been proven as the most robust so far, as used in the ZCash blockchain.</p>
+              <p>Polygon Hermez is a layer 2 construction that leverages Ethereum not only by using its native tokens, but also by borrowing its security as a strong public blockchain. Every Polygon Hermez Network batch can be securely reconstructed from the proof and data posted in the Ethereum Blockchain.</p>
+              <p>Polygon Hermez’ implementation is based in iden3’s own technology (Circom and SnarkJS libraries) and the cryptographic technology which has been proven as the most robust so far, as used in the ZCash blockchain.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -98,9 +98,9 @@ const Project = () => {
               <div className={classes.subTitle}>
                 <Title type='h4'>Part of the community</Title>
               </div>
-              <p>Hermez is designed to contribute to the community, since the project wouldn’t be possible without it. Innovations in scalability are a rare opportunity to realign incentives around the community and the public goods they provide.</p>
+              <p>Polygon Hermez is designed to contribute to the community, since the project wouldn’t be possible without it. Innovations in scalability are a rare opportunity to realign incentives around the community and the public goods they provide.</p>
               <p>Our Proof-of-Donation consensus algorithm will send 40% of the network’s generated value as a donation to the projects behind the ecosystem’s public goods.</p>
-              <p>Hermez will open source all the code of the protocol and the coordinator, is open to contributions, and has committed to contribute to the creation of a L2 ecosystem for initiatives such as better L2 interoperability.</p>
+              <p>Polygon Hermez will open source all the code of the protocol and the coordinator, is open to contributions, and has committed to contribute to the creation of a L2 ecosystem for initiatives such as better L2 interoperability.</p>
             </div>
           </div>
         </section>

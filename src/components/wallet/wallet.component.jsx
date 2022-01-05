@@ -17,7 +17,7 @@ const Wallet = () => {
         <section className={`${classes.section} ${classes.section1}`}>
           <div className={`${classes.row} ${classes.section1Row}`}>
             <div className={`${classes.col3} ${classes.section1title}`}>
-              <Title>Simple and self-custodial wallet for Hermez Network</Title>
+              <Title>Simple and self-custodial wallet for Polygon Hermez Network</Title>
               <div className={classes.buttonWrapper}>
                 {/* TODO add link to the mainnet wallet */}
                 <Button to='https://wallet.hermez.io/' text='Open web wallet' />
@@ -33,7 +33,7 @@ const Wallet = () => {
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section2title}`}>
-              <Title>Hermez Web Wallet</Title>
+              <Title>Polygon Hermez Web Wallet</Title>
               <p className={classes.section2paragraph}>
                 <span className={classes.checkMark}>&#10003;</span>Instant deposit to Layer 2
               </p>
@@ -62,7 +62,7 @@ const Wallet = () => {
               <div className={`${classes.row} ${classes.carouselContent}`}>
                 <div className={`${classes.col3} ${classes.carouselText}`}>
                   <p className={classes.carouselTitle}>1. Register</p>
-                  <p>Register your Ethereum L1 address into the Hermez network and obtain an internal Hermez address.</p>
+                  <p>Register your Ethereum L1 address into the Polygon Hermez Network and obtain an internal Polygon Hermez address.</p>
                 </div>
                 <div className={`${classes.col23} ${classes.carouselImage}`}>
                   <Carousel1 />
@@ -73,7 +73,7 @@ const Wallet = () => {
               <div className={`${classes.row} ${classes.carouselContent}`}>
                 <div className={`${classes.col3} ${classes.carouselText}`}>
                   <p className={classes.carouselTitle}>2. Deposit</p>
-                  <p>Deposit L1 tokens into their Hermez Network addresses with a simple transaction.</p>
+                  <p>Deposit L1 tokens into their Polygon Hermez Network addresses with a simple transaction.</p>
                 </div>
                 <div className={`${classes.col23} ${classes.carouselImage}`}>
                   <Carousel2 />
@@ -86,7 +86,7 @@ const Wallet = () => {
               <div className={`${classes.row} ${classes.carouselContent}`}>
                 <div className={`${classes.col3} ${classes.carouselText}`}>
                   <p className={classes.carouselTitle}>3. Transfer</p>
-                  <p>Start transfering tokens between Hermez addresses for very low fees.</p>
+                  <p>Start transfering tokens between Polygon Hermez addresses for very low fees.</p>
                 </div>
                 <div className={`${classes.col23} ${classes.carouselImage}`}>
                   <Carousel3 />
@@ -97,7 +97,7 @@ const Wallet = () => {
               <div className={`${classes.row} ${classes.carouselContent}`}>
                 <div className={`${classes.col3} ${classes.carouselText}`}>
                   <p className={classes.carouselTitle}>4. Withdraw</p>
-                  <p>Transfer tokens from Hermez Network addresses back to their chosen L1 addresses. </p>
+                  <p>Transfer tokens from Polygon Hermez Network addresses back to their chosen L1 addresses. </p>
                 </div>
                 <div className={`${classes.col23} ${classes.carouselImage}`}>
                   <Carousel4 />

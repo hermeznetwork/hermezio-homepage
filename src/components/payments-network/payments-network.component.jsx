@@ -15,7 +15,7 @@ const PaymentsNetwork = () => {
           <div className={`${classes.col3} ${classes.mainTitle}`}>
             <Title>Secure layer 2 designed for mass adoption</Title>
             <div className={classes.buttonWrapper}>
-              <Button to='https://docs.google.com/forms/d/e/1FAIpQLScK_dpb5GGBYTT3XWTq4iaMTvqlXvnrr0hM3Uogg3B8ukBSqg/viewform' text='Join Hermez' />
+              <Button to='https://docs.google.com/forms/d/e/1FAIpQLScK_dpb5GGBYTT3XWTq4iaMTvqlXvnrr0hM3Uogg3B8ukBSqg/viewform' text='Join Polygon Hermez' />
             </div>
           </div>
           <div className={classes.col23}>
@@ -49,7 +49,7 @@ const PaymentsNetwork = () => {
             <div className={classes.col2}>
               <ul className={classes.list}>
                 <li className={classes.listItem}>Fully open source and community-driven</li>
-                <li className={classes.listItem}>Seamless integration with Hermez REST API</li>
+                <li className={classes.listItem}>Seamless integration with Polygon Hermez REST API</li>
                 <li className={classes.listItem}>Permissionless network of coordinators</li>
                 <li className={classes.listItem}>Decentralised auction model with validation reward token</li>
                 <li className={classes.listItem}>Strategy towards governance minimisation</li>
@@ -89,7 +89,7 @@ const PaymentsNetwork = () => {
         <section className={`${classes.section} ${classes.section4}`}>
           <div className={classes.row}>
             <div className={`${classes.col3} ${classes.section4Title}`}>
-              <Title>Benefits of integration and using Hermez</Title>
+              <Title>Benefits of integration and using Polygon Hermez</Title>
             </div>
             <div className={classes.col2}>
               <Title type='h3'>Users</Title>
@@ -111,7 +111,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Community</Title>
-              <p>Our smart contracts and Circom zero-knowledge circuits are open-source. Additionally, Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
+              <p>Our smart contracts and Circom zero-knowledge circuits are open-source. Additionally, Polygon Hermez supports the development of the Ethereum ecosystem with the Proof-of-Donation mechanism for the common good.</p>
             </div>
           </div>
           <div className={classes.row}>
@@ -129,7 +129,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>Token Issuers</Title>
-              <p>Add your token to Hermez Network to be available for scalable payments.</p>
+              <p>Add your token to Polygon Hermez Network to be available for scalable payments.</p>
             </div>
           </div>
         </section>
@@ -139,7 +139,7 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
-              <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Hermez Network to the highest bidders.</p>
+              <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Polygon Hermez Network to the highest bidders.</p>
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <div className={classes.section5img} />
