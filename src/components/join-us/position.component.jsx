@@ -80,16 +80,18 @@ const Position = ({ openPosition }) => {
           </p>
         </div>
       </section>
-      <section className={classes.section}>
-        <div className={classes.row}>
-          <Title type='h3'>What will you do?</Title>
-        </div>
-        <ul className={classes.list}>
-          {openPosition.responsabilities.map(responsability => (
-            <li key={responsability}>{responsability}</li>
-          ))}
-        </ul>
-      </section>
+      {openPosition.responsabilities.length > 0 && (
+        <section className={classes.section}>
+          <div className={classes.row}>
+            <Title type='h3'>What will you do?</Title>
+          </div>
+          <ul className={classes.list}>
+            {openPosition.responsabilities.map(responsability => (
+              <li key={responsability}>{responsability}</li>
+            ))}
+          </ul>
+        </section>
+      )}
       <section className={classes.section}>
         <div className={classes.row}>
           <Title type='h3'>
