@@ -91,38 +91,32 @@
         }
       ]
     },{
-      "title": "Human Resources",
-      "path": "hr",
+      "title": "Product",
+      "path": "product",
       "positions": [
         {
-          "title": "Tech Recruiter - 6 Months Maternity Cover",
+          "title": "Tech Writer",
           "location": "Remote",
-          "path": "tech-recruiter-hr",
-          "description": "We're looking for a 6 months maternity cover tech recruiter to join our growing team. You'll work with the Admin, Customer and Technical Teams to source, interview and hire the best talents across Europe and Brazil. You'll be responsible for accomplishing results through the execution and delivery of the end to end, full-cycle recruitment process for a wide range of roles. A significant portion of your efforts will be focused on recruitment marketing and sourcing while determining innovative ways to attract and engage top talent as we continue to grow",
-          "responsabilities": [
-            "Search and headhunt for a wide range of roles using different talent acquisition tools and techniques",
-            "Interview and coordinate interviews with hiring managers and founders",
-            "Partner and support managers in conversations with hiring managers",
-            "Lead and energize the recruitment process, from candidate sourcing through to the offer stage",
-            "Delivering great candidate experience throughout the process",
-            "Play an active part in building our employer brand across Europe and Brazil",
-            "Share market insights and provide new ideas to management and advise on how to attract the best talent",
-            "Initiate innovative ideas regarding the hiring process",
-            "Attend online hiring events"
-          ],
+          "path": "tech-writer-product",
+          "description": "We're looking for a Technical Writer to join our project. You'll work closely with our developers to understand and document our technologies and provide information, content and code examples to an audience of technical engineers and the wide blockchain community. You will take part in testing our products and documentation to ensure accuracy and consistency. You will also own our open-source documentation.",
+          "responsabilities": [],
           "skills": [
-            "3+ years of recruiting experience working for a fast-paced tech startup",
-            "Experience integrating and executing marketing plans into recruiting strategy",
-            "You have the know-how approach to come up with creative sourcing techniques to attract the right talent and know your way around different sourcing tools like LinkedIn, social media and virtual platforms and job boards",
-            "Proven experience in delivering full-cycle / end to end recruiting, you should be confident in slotting into a high performing team",
-            "Demonstrated and proven ability to manage and priorities multiple requisitions/roles with an extremely high standard of accuracy and precision",
-            "A keen interest in staying in the know in the Tech industry, adopting new recruitment and other recruitment tech tools",
+            "2+ years of experience as a technical writer on complex products/projects (preferably in blockchain space)",
+            "2-3 years of experience working as developer",
+            "Excellent writing and proofreading skills in English language",
+            "Experience owning the end-to-end documentation creation process",
+            "Demonstrated and proven ability to run multiple tasks, self manage a high volume of tasks, priorities, and set yourself high standard of accuracy, proficiency and precision",
+            "Demonstrable experience in collaborating with a wide range of people, teams and community members. Strong communication skills and team spirit",
             "Demonstrable experience in Talent Acquisition for a wide range of roles",
             "Client-focused, partnering approach with both our business leaders, hiring managers and candidates to deliver a first-class experience for all stakeholders",
-            "Demonstrate curiosity and learning agility to develop a strong knowledge of our business, products and services",
-            "Good written and verbal communication skills in English"
+            "Natural curiosity and learning agility. Willingness to develop, change and evolve"
           ],
-          "niceToHave": []
+          "niceToHave": [
+            "Familiar with blockchain and/or zero-knowledge concepts",
+            "Experienced as a technical writer on open source software",
+            "Posses great teaching skills that translate into amazing written work",
+            "Experienced with some of the following: Docs-as-code tooling and environments, Documenting SaaS products, and/or Programming or other technical experience"
+          ]
         }
       ]
     }
