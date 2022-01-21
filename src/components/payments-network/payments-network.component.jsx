@@ -3,7 +3,6 @@ import React from 'react'
 import usePaymentsNetworkStyles from './payments-network.styles'
 import Title from '../shared/title/title.component'
 import Button from '../shared/button/button.component'
-import TextLink from '../shared/text-link/text-link.component'
 
 const PaymentsNetwork = () => {
   const classes = usePaymentsNetworkStyles()
@@ -139,21 +138,23 @@ const PaymentsNetwork = () => {
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
               <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
-              <p className={classes.section5Text}>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Polygon Hermez Network to the highest bidders.</p>
+              <p className={classes.section5Text}>After Hermez Network merged with Polygon, the HEZ token has been indexed to MATIC token. Polygon's native token MATIC will become the utility token of the Polygon Hermez zkRollup.</p>
+              <p className={classes.section5Text}>HEZ holders can swap their HEZ for MATIC tokens using a web app. You can follow our step by step tutorial that is explained in{' '}
+                <a
+                  href='https://blog.hermez.io/how-to-swap-hez-for-matic/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.textLink}
+                >
+                  this blog post
+                </a>.
+              </p>
+              <div className={`${classes.buttonWrapper} ${classes.button}`}>
+                <Button internalLink to='https://heztomatic.hermez.io/' text='Convert HEZ to MATIC' />
+              </div>
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>
               <div className={classes.section5img} />
-            </div>
-          </div>
-          <div className={`${classes.row} ${classes.linksWrapper}`}>
-            <div className={`${classes.col3} ${classes.link}`}>
-              <TextLink box white target to='/tokenomics' text='HEZ Tokenomics' />
-            </div>
-            <div className={`${classes.col3} ${classes.link}`}>
-              <TextLink box white to='https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE' text='Token contract' />
-            </div>
-            <div className={`${classes.col3} ${classes.link}`}>
-              <TextLink box white to='https://coinmarketcap.com/currencies/hermez-network/' text='HEZ in Coinmarketcap' />
             </div>
           </div>
         </section>

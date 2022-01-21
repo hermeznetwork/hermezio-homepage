@@ -191,6 +191,9 @@ const usePaymentsNetworkStyles = createUseStyles(theme => ({
       maxHeight: theme.spacer * 48
     }
   },
+  textLink: {
+    color: theme.palette.purple.main
+  },
   onlyDesktop: {
     display: 'none',
     [theme.breakpoints.md]: {
