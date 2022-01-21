@@ -163,7 +163,18 @@ const Home = ({ blogPosts }) => {
           <div className={classes.row}>
             <div className={classes.col2}>
               <Title type='h3'>HEZ Token</Title>
-              <p>The Hermez token (HEZ) acts as the vehicle for bidding in the auction to award exploitation rights to slots of the Polygon Hermez Network to the highest bidders.</p>
+              <p>After Hermez Network merged with Polygon, the HEZ token has been indexed to MATIC token. Polygon's native token MATIC will become the utility token of the Polygon Hermez zkRollup.</p>
+              <p>
+                Holders can exchange HEZ to MATIC{' '}
+                <a
+                  href='https://heztomatic.hermez.io/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={classes.textLink}
+                >
+                  here
+                </a>.
+              </p>
               <div className={classes.section6link}>
                 <TextLink to='/payment-network#hez' text='More about HEZ' target='_self' />
               </div>
