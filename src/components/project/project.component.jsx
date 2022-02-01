@@ -40,7 +40,7 @@ const Project = () => {
 
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.title}`}>
-              <Title><a id='development-goals' href='#'>Development goals</a></Title>
+              <Title>Development goals</Title>
             </div>
             <div className={classes.col2}>
               <p>Everyone should have universal access to finance.</p>

@@ -19,88 +19,60 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
       <div className={classes.content}>
         <nav className={classes.nav}>
           <ul className={classes.linkList}>
-            {routes.map((route, index) => (
-              <>
-                {/* Routes are passed from layout component
-              {
-                id: 1,
-                label: 'Hermez',
-                to: '/'
-              },
-              {
-                id: 2,
-                label: 'Payment Network',
-                to: '/payment-network'
-              },
-              {
-                id: 3,
-                label: 'Technology',
-                to: '/technology'
-              },
-              {
-                id: 4,
-                label: 'Project',
-                to: '/project'
-              },
-              {
-                id: 5,
-                label: 'Join Us',
-                to: '/join-us'
-              },
-              {
-                id: 6,
-                label: 'Wallet',
-                to: '/wallet'
+            {routes.map((route, index) => {
+              if (route.id === 1) {
+                return <li key={index} className={classes.linkWrapper}><Link to={route.to}><LogoWithText /></Link></li>
               }
-              */}
 
-                {route.id === 1
-                  ? <li key={index} className={classes.linkWrapper}><Link to={route.to}><LogoWithText /></Link></li>
-                  : ''}
-                {route.id > 1 && route.id < 6
-                  ? <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
-                  : ''}
-                {route.id === 6
-                  ? <>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://blog.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                            Blog
-                        </a>
-                      </li>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://explorer.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                            Network explorer
-                        </a>
-                      </li>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://heztomatic.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                          <div className={classes.tokenLogos}>
-                            <HezIcon />
-                            <SwapArrow className={classes.swapArrow} />
-                            <ToTokenIcon />
-                          </div>
-                        </a>
-                      </li>
-                      <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
-                    </>
-                  : ''}
-              </>
-            ))}
+              if (route.id > 1 && route.id < 6) {
+                return <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
+              }
+
+              if (route.id === 6) {
+                return (
+                  <>
+                    <li key={index} className={classes.linkWrapper}>
+                      <a
+                        href='https://blog.hermez.io/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className={classes.link}
+                      >
+                          Blog
+                      </a>
+                    </li>
+                    <li key={index} className={classes.linkWrapper}>
+                      <a
+                        href='https://explorer.hermez.io/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className={classes.link}
+                      >
+                          Network explorer
+                      </a>
+                    </li>
+                    <li key={index} className={classes.linkWrapper}>
+                      <a
+                        href='https://heztomatic.hermez.io/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className={classes.link}
+                      >
+                        <div className={classes.tokenLogos}>
+                          <HezIcon />
+                          <SwapArrow className={classes.swapArrow} />
+                          <ToTokenIcon />
+                        </div>
+                      </a>
+                    </li>
+                    <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
+                  </>
+                )
+              }
+
+              return <></>
+            }
+            )}
           </ul>
         </nav>
         <button className={classes.mobileMenu} onClick={onOpenMobileMenu}>

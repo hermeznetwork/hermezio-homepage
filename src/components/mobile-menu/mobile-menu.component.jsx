@@ -62,16 +62,16 @@ export const MobileMenu = ({ routes, isOpen, onClose }) => {
                 </Link>
               </li>
             ))}
-              <li className={classes.linkWrapper}>
-                <a
-                  href='https://heztomatic.hermez.io/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={classes.link}
-                >
+            <li className={classes.linkWrapper}>
+              <a
+                href='https://heztomatic.hermez.io/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={classes.link}
+              >
                   HEZ to MATIC
-                </a>
-              </li>
+              </a>
+            </li>
           </ul>
         </div>
       </>
