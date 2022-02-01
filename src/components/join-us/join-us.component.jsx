@@ -4,11 +4,9 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import useJoinUsStyles from './join-us.styles'
 import Title from '../shared/title/title.component'
 
-import positions from './open-positions.json'
-
 export default function JoinUs () {
   const classes = useJoinUsStyles()
-  const positionsQuery = useStaticQuery(graphql`
+  const { gcms: { departments } } = useStaticQuery(graphql`
     {
       gcms {
         departments {
@@ -18,14 +16,14 @@ export default function JoinUs () {
             slug
             location
             description
-            responsabilities
+            responsibilities
           }
         }
       }
     }
   `)
 
-  console.log(positionsQuery)
+  console.log(departments)
 
   return (
     <>
@@ -60,7 +58,7 @@ export default function JoinUs () {
           <div className={classes.title}>
             <Title>Open positions</Title>
           </div>
-          {positionsQuery.gcms.departments.map((department, dIndex) => (
+          {departments.map((department, dIndex) => (
             <div key={department.path}>
               <div className={classes.row}>
                 <div className={classes.col2}>
@@ -96,7 +94,7 @@ export default function JoinUs () {
                   ))}
                 </div>
               </div>
-              {dIndex + 1 !== Object.values(positions.departments).length && (
+              {dIndex + 1 !== Object.values(departments).length && (
                 <div
                   className={classes.row}
                   key={`lastDepartment-${department.path}`}

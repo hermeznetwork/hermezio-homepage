@@ -45,6 +45,9 @@
   },
   "standard": {
     "parser": "babel-eslint",
+    "react":{
+      "version": "17"
+    },
     "env": [
       "browser"
     ],
