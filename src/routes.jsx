@@ -66,7 +66,14 @@ const headerRoutes = [
         />
         <ToTokenIcon />
       </div>
-    )
+    ),
+    hideOnMobile: true
+  },
+  {
+    type: 'external',
+    to: 'https://heztomatic.hermez.io',
+    label: 'HEZ to MATIC',
+    hideOnDesktop: true
   },
   sharedRoutes.wallet
 ]

@@ -17,11 +17,14 @@ export const Layout = ({ children }) => {
 
   return (
     <div className={classes.layout}>
-      <Header onOpenMobileMenu={handleMobileMenuToggle} routes={headerRoutes} />
+      <Header
+        routes={headerRoutes.filter(route => !route.hideOnDesktop)}
+        onOpenMobileMenu={handleMobileMenuToggle}
+      />
       <MobileMenu
         isOpen={isMobileMenuOpen}
         onClose={handleMobileMenuToggle}
-        routes={headerRoutes}
+        routes={headerRoutes.filter(route => !route.hideOnMobile)}
       />
       <Main>{children}</Main>
       <Footer routes={footerRoutes} />

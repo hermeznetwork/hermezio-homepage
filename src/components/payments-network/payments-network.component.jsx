@@ -150,7 +150,7 @@ const PaymentsNetwork = () => {
                 </a>.
               </p>
               <div className={`${classes.buttonWrapper} ${classes.button}`}>
-                <Button internalLink to='https://heztomatic.hermez.io/' text='Convert HEZ to MATIC' />
+                <Button to='https://heztomatic.hermez.io/' text='Convert HEZ to MATIC' />
               </div>
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>

@@ -12,7 +12,6 @@ const Video = ({ vimeoSrc, title }) => {
         src={vimeoSrc}
         frameBorder='0'
         allow='autoplay; fullscreen; picture-in-picture'
-        allowFullScreen
         title={title}
       />
     </div>

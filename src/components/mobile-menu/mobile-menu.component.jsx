@@ -1,9 +1,9 @@
 import React from 'react'
 import { X } from 'react-feather'
 import { useTheme } from 'react-jss'
-import { Link } from 'gatsby'
 
 import { useMobileMenuStyles } from './mobile-menu.styles'
+import PageLink from '../page-link/page-link.component'
 import Logo from '../../assets/images/logo.inline.svg'
 
 const CLOSE_KEY = 'Escape'
@@ -52,26 +52,9 @@ export const MobileMenu = ({ routes, isOpen, onClose }) => {
           <ul className={classes.linkList}>
             {routes.map((route, index) => (
               <li key={index} className={classes.linkWrapper}>
-                <Link
-                  to={route.to}
-                  className={classes.link}
-                  activeClassName={classes.activeLink}
-                  onClick={onClose}
-                >
-                  {route.label}
-                </Link>
+                <PageLink route={route} className={classes.link} />
               </li>
             ))}
-            <li className={classes.linkWrapper}>
-              <a
-                href='https://heztomatic.hermez.io/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className={classes.link}
-              >
-                  HEZ to MATIC
-              </a>
-            </li>
           </ul>
         </div>
       </>
