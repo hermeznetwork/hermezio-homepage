@@ -10,8 +10,10 @@ export default function JoinUs () {
     {
       gcms {
         departments {
+          id
           name
           positions {
+            id
             title
             slug
             location
@@ -57,14 +59,14 @@ export default function JoinUs () {
             <Title>Open positions</Title>
           </div>
           {departments.map((department, dIndex) => (
-            <div key={department.path}>
+            <div key={department.id}>
               <div className={classes.row}>
                 <div className={classes.col2}>
                   <Title>{department.name}</Title>
                 </div>
                 <div className={classes.col2}>
                   {department.positions.map((position, pIndex) => (
-                    <div key={position.path}>
+                    <div key={position.id}>
                       <div>
                         <div className={classes.subTitle}>
                           <Title type='h4'>
@@ -78,25 +80,19 @@ export default function JoinUs () {
                         </div>
                         <p>Remote</p>
                       </div>
-                      {pIndex + 1 !==
-                        Object.keys(department.positions).length &&
-                        (
-                          <div
-                            className={classes.row}
-                            key={`lastPosition-${position.path}`}
-                          >
+                      {
+                        department.positions[pIndex + 1] && (
+                          <div className={classes.row}>
                             <span className={classes.divider} />
                           </div>
-                        )}
+                        )
+                      }
                     </div>
                   ))}
                 </div>
               </div>
-              {dIndex + 1 !== Object.values(departments).length && (
-                <div
-                  className={classes.row}
-                  key={`lastDepartment-${department.path}`}
-                >
+              {departments[dIndex + 1] && (
+                <div className={classes.row}>
                   <span
                     className={`${classes.divider} ${classes.dividerFullWidth}`}
                   />
