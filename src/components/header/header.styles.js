@@ -101,16 +101,5 @@ export const useHeaderStyles = createUseStyles(theme => ({
     '&:hover::after': {
       width: '33%'
     }
-  },
-  tokenLogos: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: theme.spacer * 2,
-    margin: `${theme.spacer}px 0`
-  },
-  swapArrow: {
-    margin: `0 ${theme.spacer * 0.5}px`,
-    height: theme.spacer * 1.5
   }
 }))
