@@ -23,8 +23,6 @@ export default function JoinUs () {
     }
   `)
 
-  console.log(departments)
-
   return (
     <>
       <div className={classes.sectionWrapper}>
