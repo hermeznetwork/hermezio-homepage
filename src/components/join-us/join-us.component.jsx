@@ -16,9 +16,6 @@ export default function JoinUs () {
             id
             title
             slug
-            location
-            description
-            responsibilities
           }
         }
       }
