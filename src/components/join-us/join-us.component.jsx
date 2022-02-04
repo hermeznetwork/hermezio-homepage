@@ -1,13 +1,26 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import useJoinUsStyles from './join-us.styles'
 import Title from '../shared/title/title.component'
 
-import positions from './open-positions.json'
-
 export default function JoinUs () {
   const classes = useJoinUsStyles()
+  const { gcms: { departments } } = useStaticQuery(graphql`
+    {
+      gcms {
+        departments {
+          id
+          name
+          positions {
+            id
+            title
+            slug
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <>
@@ -42,20 +55,20 @@ export default function JoinUs () {
           <div className={classes.title}>
             <Title>Open positions</Title>
           </div>
-          {positions.departments.map((department, dIndex) => (
-            <div key={department.path}>
+          {departments.map((department, dIndex) => (
+            <div key={department.id}>
               <div className={classes.row}>
                 <div className={classes.col2}>
-                  <Title>{department.title}</Title>
+                  <Title>{department.name}</Title>
                 </div>
                 <div className={classes.col2}>
                   {department.positions.map((position, pIndex) => (
-                    <div key={position.path}>
+                    <div key={position.id}>
                       <div>
                         <div className={classes.subTitle}>
                           <Title type='h4'>
                             <Link
-                              to={`/join-us/${department.path}/${position.path}`}
+                              to={`/join-us/${position.slug}`}
                               className={classes.legalLink}
                             >
                               {position.title}
@@ -64,25 +77,19 @@ export default function JoinUs () {
                         </div>
                         <p>Remote</p>
                       </div>
-                      {pIndex + 1 !==
-                        Object.keys(department.positions).length &&
-                        (
-                          <div
-                            className={classes.row}
-                            key={`lastPosition-${position.path}`}
-                          >
+                      {
+                        department.positions[pIndex + 1] && (
+                          <div className={classes.row}>
                             <span className={classes.divider} />
                           </div>
-                        )}
+                        )
+                      }
                     </div>
                   ))}
                 </div>
               </div>
-              {dIndex + 1 !== Object.values(positions.departments).length && (
-                <div
-                  className={classes.row}
-                  key={`lastDepartment-${department.path}`}
-                >
+              {departments[dIndex + 1] && (
+                <div className={classes.row}>
                   <span
                     className={`${classes.divider} ${classes.dividerFullWidth}`}
                   />

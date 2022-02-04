@@ -137,7 +137,7 @@ const PaymentsNetwork = () => {
         <section className={`${classes.section} ${classes.section5}`}>
           <div className={classes.row}>
             <div className={`${classes.col2} ${classes.inlineGraphicText}`}>
-              <Title><a id='hez' href='#'>HEZ - Hermez Network token</a></Title>
+              <Title>HEZ - Hermez Network token</Title>
               <p className={classes.section5Text}>After Hermez Network merged with Polygon, the HEZ token has been indexed to MATIC token. Polygon's native token MATIC will become the utility token of the Polygon Hermez zkRollup.</p>
               <p className={classes.section5Text}>HEZ holders can swap their HEZ for MATIC tokens using a web app. You can follow our step by step tutorial that is explained in{' '}
                 <a
@@ -150,7 +150,7 @@ const PaymentsNetwork = () => {
                 </a>.
               </p>
               <div className={`${classes.buttonWrapper} ${classes.button}`}>
-                <Button internalLink to='https://heztomatic.hermez.io/' text='Convert HEZ to MATIC' />
+                <Button to='https://heztomatic.hermez.io/' text='Convert HEZ to MATIC' />
               </div>
             </div>
             <div className={`${classes.col2} ${classes.onlyDesktop} ${classes.inlineGraphicImage}`}>

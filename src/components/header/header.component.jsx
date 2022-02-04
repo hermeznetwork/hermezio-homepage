@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Menu } from 'react-feather'
+import { useTheme } from 'react-jss'
 
 import { useHeaderStyles } from './header.styles'
-import { useTheme } from 'react-jss'
+import PageLink from '../page-link/page-link.component'
 import Logo from '../../assets/images/logo.inline.svg'
 import LogoWithText from '../../assets/images/logo-text.inline.svg'
-import HezIcon from '../../assets/images/hez-icon.inline.svg'
-import SwapArrow from '../../assets/images/swap-arrow.inline.svg'
-import ToTokenIcon from '../../assets/images/to-token-icon.inline.svg'
 
 export const Header = ({ routes, onOpenMobileMenu }) => {
   const theme = useTheme()
@@ -19,87 +17,15 @@ export const Header = ({ routes, onOpenMobileMenu }) => {
       <div className={classes.content}>
         <nav className={classes.nav}>
           <ul className={classes.linkList}>
+            <li className={classes.linkWrapper}>
+              <Link to='/'>
+                <LogoWithText />
+              </Link>
+            </li>
             {routes.map((route, index) => (
-              <>
-                {/* Routes are passed from layout component
-              {
-                id: 1,
-                label: 'Hermez',
-                to: '/'
-              },
-              {
-                id: 2,
-                label: 'Payment Network',
-                to: '/payment-network'
-              },
-              {
-                id: 3,
-                label: 'Technology',
-                to: '/technology'
-              },
-              {
-                id: 4,
-                label: 'Project',
-                to: '/project'
-              },
-              {
-                id: 5,
-                label: 'Join Us',
-                to: '/join-us'
-              },
-              {
-                id: 6,
-                label: 'Wallet',
-                to: '/wallet'
-              }
-              */}
-
-                {route.id === 1
-                  ? <li key={index} className={classes.linkWrapper}><Link to={route.to}><LogoWithText /></Link></li>
-                  : ''}
-                {route.id > 1 && route.id < 6
-                  ? <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
-                  : ''}
-                {route.id === 6
-                  ? <>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://blog.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                            Blog
-                        </a>
-                      </li>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://explorer.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                            Network explorer
-                        </a>
-                      </li>
-                      <li className={classes.linkWrapper}>
-                        <a
-                          href='https://heztomatic.hermez.io/'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className={classes.link}
-                        >
-                          <div className={classes.tokenLogos}>
-                            <HezIcon />
-                            <SwapArrow className={classes.swapArrow} />
-                            <ToTokenIcon />
-                          </div>
-                        </a>
-                      </li>
-                      <li key={index} className={classes.linkWrapper}><Link className={classes.link} to={route.to}>{route.label}</Link></li>
-                    </>
-                  : ''}
-              </>
+              <li key={index} className={classes.linkWrapper}>
+                <PageLink route={route} className={classes.link} />
+              </li>
             ))}
           </ul>
         </nav>

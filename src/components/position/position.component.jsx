@@ -3,11 +3,11 @@ import React from 'react'
 import usePositionStyles from './position.styles'
 import Title from '../shared/title/title.component'
 
-const Position = ({ openPosition }) => {
+const Position = ({ title, location, description, responsibilities, skills, niceToHave }) => {
   const classes = usePositionStyles()
   const formPath =
     'https://docs.google.com/forms/d/e/1FAIpQLSdzw22j4_HtzWGlZCtth-39v899HPt0rLJbspygGYZICh8afQ/viewform?usp=pp_url&entry.725962123=' +
-    openPosition.title.split(' ').join('+')
+    title.split(' ').join('+')
 
   return (
     <>
@@ -15,9 +15,9 @@ const Position = ({ openPosition }) => {
         <div className={classes.row}>
           <div className={classes.col2}>
             <div className={classes.section1Title}>
-              <Title>{openPosition.title}</Title>
+              <Title>{title}</Title>
             </div>
-            <p>{openPosition.location}</p>
+            <p>{location}</p>
           </div>
           <div className={`${classes.col2} ${classes.actionButton}`}>
             <div className={classes.buttonWrapper}>
@@ -72,7 +72,7 @@ const Position = ({ openPosition }) => {
             take an active part in the blockchain space and contribute to the
             decentralization of the future.
           </p>
-          <p className={classes.paragraphMargin}>{openPosition.description}</p>
+          <p className={classes.paragraphMargin}>{description}</p>
           <p className={classes.paragraphMargin}>
             This is an exciting opportunity to take an active part in the
             blockchain space and contribute to the decentralization of the
@@ -80,13 +80,13 @@ const Position = ({ openPosition }) => {
           </p>
         </div>
       </section>
-      {openPosition.responsabilities.length > 0 && (
+      {responsibilities.length > 0 && (
         <section className={classes.section}>
           <div className={classes.row}>
             <Title type='h3'>What will you do?</Title>
           </div>
           <ul className={classes.list}>
-            {openPosition.responsabilities.map(responsability => (
+            {responsibilities.map(responsability => (
               <li key={responsability}>{responsability}</li>
             ))}
           </ul>
@@ -99,18 +99,18 @@ const Position = ({ openPosition }) => {
           </Title>
         </div>
         <ul className={classes.list}>
-          {openPosition.skills.map(skill => (
+          {skills.map(skill => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
       </section>
-      {openPosition.niceToHave.length > 0 && (
+      {niceToHave.length > 0 && (
         <section className={classes.section}>
           <div className={classes.row}>
             <Title type='h3'>It will be nice if you are:</Title>
           </div>
           <ul className={classes.list}>
-            {openPosition.niceToHave.map(has => (
+            {niceToHave.map(has => (
               <li key={has}>{has}</li>
             ))}
           </ul>

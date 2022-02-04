@@ -272,7 +272,7 @@ const Home = ({ blogPosts }) => {
           </div>
           {
             blogPosts.map((blogPost, index) => (
-              <>
+              <div key={index}>
                 <div className={classes.row} key={index}>
                   {index === 0 && (
                     <div className={`${classes.col3} ${classes.blogHeaderCol}`}>
@@ -296,7 +296,7 @@ const Home = ({ blogPosts }) => {
                 <div className={classes.row}>
                   <span className={classes.divider} />
                 </div>
-              </>
+              </div>
             ))
           }
           <div className={`${classes.row} ${classes.allBlogPostsLink}`}>

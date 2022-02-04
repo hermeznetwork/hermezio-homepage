@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import { useFooterStyles } from './footer.styles'
+import PageLink from '../page-link/page-link.component'
 import Logo from '../../assets/images/logo-black-and-white.inline.svg'
 
 export const Footer = ({ routes }) => {
   const classes = useFooterStyles()
+  const polygonHermezRoutes = routes.filter(route => route.section === 'polygon-hermez')
+  const projectRoutes = routes.filter(route => route.section === 'project')
+  const specificationRoutes = routes.filter(route => route.section === 'specification')
+  const socialRoutes = routes.filter(route => route.section === 'social')
+  const legalRoute = routes.find(route => route.section === 'legal')
 
   return (
     <footer className={classes.footer}>
@@ -30,140 +35,39 @@ export const Footer = ({ routes }) => {
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Polygon Hermez
               </li>
-              <li className={classes.listItem}>
-                {/* Routes are passed from layout component
-              {
-                id: 1,
-                label: 'Hermez',
-                to: '/'
-              },
-              {
-                id: 2,
-                label: 'Payment Network',
-                to: '/payment-network'
-              },
-              {
-                id: 3,
-                label: 'Technology',
-                to: '/technology'
-              },
-              {
-                id: 4,
-                label: 'Project',
-                to: '/project'
-              }
-              */}
-                <Link to={routes.find(el => el.id === 2).to}>
-                  {routes.find(el => el.id === 2).label}
-                </Link>
-              </li>
-              {/* TODO show Wallet link, once Wallet is published */}
-              {/* <li className={classes.listItem}>
-                <Link to={routes.find(el => el.label === "Hermez Wallet").to}>
-                  {routes.find(el => el.label === "Hermez Wallet").label}
-                </Link>
-              </li> */}
-              {/* TODO show Network explorer link, once Network explorer is published */}
-              {/* <li className={classes.listItem}>
-                <Link to={routes.find(el => el.label === "Network explorer").to}>
-                  {routes.find(el => el.label === "Network explorer").label}
-                </Link>
-              </li> */}
+              {polygonHermezRoutes.map((route, index) => (
+                <li key={index} className={classes.listItem}>
+                  <PageLink route={route} />
+                </li>
+              ))}
             </ul>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>
                 Project
               </li>
-              <li className={classes.listItem}>
-                <Link to='/project'>
-                  About us
-                </Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link to='/media-inquiries'>
-                  Mediakit
-                </Link>
-              </li>
+              {projectRoutes.map((route, index) => (
+                <li key={index} className={classes.listItem}>
+                  <PageLink route={route} />
+                </li>
+              ))}
             </ul>
           </div>
           <div className={classes.listCol}>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Specification</li>
-              <li className={classes.listItem}>
-                <a
-                  href='/hermez-whitepaper.pdf'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Whitepaper
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://docs.hermez.io/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Documentation
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://github.com/hermeznetwork/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Github
-                </a>
-              </li>
+              {specificationRoutes.map((route, index) => (
+                <li key={index} className={classes.listItem}>
+                  <PageLink route={route} />
+                </li>
+              ))}
             </ul>
             <ul className={classes.list}>
               <li className={`${classes.listItem} ${classes.listItemHead}`}>Social</li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://blog.hermez.io/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Blog
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://t.me/polygonhermez'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Telegram
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://discord.gg/polygon'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Discord
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://twitter.com/0xPolygonHermez'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Twitter
-                </a>
-              </li>
-              <li className={classes.listItem}>
-                <a
-                  href='https://www.linkedin.com/company/polygonhermez/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Linkedin
-                </a>
-              </li>
+              {socialRoutes.map((route, index) => (
+                <li key={index} className={classes.listItem}>
+                  <PageLink route={route} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -171,9 +75,7 @@ export const Footer = ({ routes }) => {
           <p className={classes.logoAndText}>
             <Logo />
           </p>
-          <Link to='/legal-disclaimer' className={classes.legalLink}>
-            Legal Disclaimer
-          </Link>
+          <PageLink route={legalRoute} />
         </div>
       </div>
     </footer>
