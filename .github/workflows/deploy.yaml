@@ -22,6 +22,7 @@ jobs:
           GATSBY_SITE_URL: ${{ secrets.GATSBY_SITE_URL }}
           GHOST_SITE_URL: ${{ secrets.GHOST_SITE_URL }}
           GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
+          GRAPHCMS_API_URL: ${{ secrets.GRAPHCMS_API_URL }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
