@@ -145,7 +145,7 @@ const Project = () => {
                 alt='Miriam Sancho'
               />
               <span className={classes.name}>Miriam Sancho</span>
-              <span className={classes.role} />
+              <span className={classes.role}>Executive Director</span>
             </div>
           </div>
           <div className={`${classes.row} ${classes.profilesRow}`}>
