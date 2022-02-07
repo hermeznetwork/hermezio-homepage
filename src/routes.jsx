@@ -105,7 +105,7 @@ const footerRoutes = [
   {
     type: 'internal',
     label: 'Whitepaper',
-    to: '/hermez-whitepaper.pdf',
+    to: '/polygon-hermez-whitepaper.pdf',
     section: 'specification'
   },
   {

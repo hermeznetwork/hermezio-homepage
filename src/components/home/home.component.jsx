@@ -207,7 +207,7 @@ const Home = ({ blogPosts }) => {
           </div>
           <div className={`${classes.row} ${classes.section4BoxWrapper}`}>
             <div className={`${classes.col3} ${classes.section4Box}`}>
-              <TextLink box white to='/hermez-whitepaper.pdf' text='Polygon Hermez Network White Paper' />
+              <TextLink box white to='/polygon-hermez-whitepaper.pdf' text='Polygon Hermez Network White Paper' />
             </div>
             <div className={`${classes.col3} ${classes.section4Box}`}>
               <TextLink box white to='https://docs.hermez.io/' text='Technical Documentation' />
