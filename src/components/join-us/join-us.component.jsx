@@ -16,6 +16,7 @@ export default function JoinUs () {
             id
             title
             slug
+            location
           }
         }
       }
@@ -53,20 +54,62 @@ export default function JoinUs () {
       <div className={classes.sectionWrapper}>
         <section className={`${classes.section} ${classes.section2}`}>
           <div className={classes.title}>
+            <Title>Benefits for your growth</Title>
+          </div>
+          <ul className={classes.benefits}>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>1</p>
+              <Title type='h3'>Personal development</Title>
+              <p className={classes.benefitContent}>Enjoy a budget for your professional & personal growth</p>
+            </li>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>2</p>
+              <Title type='h3'>Flexible working hours</Title>
+              <p className={classes.benefitContent}>Work according to your schedules and preference</p>
+            </li>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>3</p>
+              <Title type='h3'>Competitive Salary</Title>
+              <p className={classes.benefitContent}>Compensation inline with the Blockchain space</p>
+            </li>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>4</p>
+              <Title type='h3'>Work from anywhere</Title>
+              <p className={classes.benefitContent}>Work from home or visit our offices in Barcelona and Zug  </p>
+            </li>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>5</p>
+              <Title type='h3'>Awesome work culture</Title>
+              <p className={classes.benefitContent}>Fun, engaging team and cutting edge technology projects</p>
+            </li>
+            <li className={classes.benefitWrapper}>
+              <p className={classes.benefitNumber}>6</p>
+              <Title type='h3'>Flexible vacation policy</Title>
+              <p className={classes.benefitContent}>Take your holiday on any day of the year</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div className={classes.row}><span className={`${classes.divider} ${classes.dividerFullWidth}`} /></div>
+
+      <div className={classes.sectionWrapper}>
+        <section className={`${classes.section} ${classes.section2}`}>
+          <div className={classes.title}>
             <Title>Open positions</Title>
           </div>
           {departments.map((department, dIndex) => (
-            <div key={department.id}>
+            <div className={classes.department} key={department.id}>
               <div className={classes.row}>
                 <div className={classes.col2}>
                   <Title>{department.name}</Title>
                 </div>
                 <div className={classes.col2}>
                   {department.positions.map((position, pIndex) => (
-                    <div key={position.id}>
-                      <div>
+                    <>
+                      <div className={classes.position} key={position.id}>
                         <div className={classes.subTitle}>
-                          <Title type='h4'>
+                          <Title type='h3'>
                             <Link
                               to={`/join-us/${position.slug}`}
                               className={classes.legalLink}
@@ -75,23 +118,19 @@ export default function JoinUs () {
                             </Link>
                           </Title>
                         </div>
-                        <p>Remote</p>
+                        <p>{position.location}</p>
                       </div>
-                      {
-                        department.positions[pIndex + 1] && (
-                          <div className={classes.row}>
-                            <span className={classes.divider} />
-                          </div>
-                        )
-                      }
-                    </div>
+                      {department.positions[pIndex + 1] && (
+                        <div className={classes.row}><span className={classes.divider} /></div>
+                      )}
+                    </>
                   ))}
                 </div>
               </div>
               {departments[dIndex + 1] && (
                 <div className={classes.row}>
                   <span
-                    className={`${classes.divider} ${classes.dividerFullWidth}`}
+                    className={`${classes.divider}`}
                   />
                 </div>
               )}

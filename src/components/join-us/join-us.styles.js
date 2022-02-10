@@ -31,7 +31,7 @@ const useJoinUsStyles = createUseStyles(theme => ({
     }
   },
   sectionWrapper: {
-    '&:nth-child(odd)': {
+    '&:first-child': {
       backgroundColor: theme.palette.primary.light
     }
   },
@@ -39,7 +39,7 @@ const useJoinUsStyles = createUseStyles(theme => ({
     padding: `${theme.spacer * 8}px ${theme.spacer * 2}px ${theme.spacer * 6}px ${theme.spacer * 2}px`,
     flexDirection: 'column',
     [theme.breakpoints.md]: {
-      padding: `${theme.spacer * 12}px ${theme.spacer * 2.5}px`,
+      padding: `${theme.spacer * 17}px 0 ${theme.spacer * 16}px`,
       flexDirection: 'row'
     },
     [theme.breakpoints.xl]: {
@@ -71,20 +71,23 @@ const useJoinUsStyles = createUseStyles(theme => ({
     }
   },
   section1Title: {
-    marginBottom: theme.spacer * 2,
+    marginBottom: theme.spacer,
     [theme.breakpoints.md]: {
       marginBottom: theme.spacer * 3
     }
   },
   section2: {
+    paddingTop: theme.spacer * 5,
     [theme.breakpoints.md]: {
-      paddingTop: theme.spacer * 12,
-      paddingBottom: theme.spacer * 9
+      paddingTop: theme.spacer * 17
     }
   },
   title: {
-    marginBottom: theme.spacer * 12,
-    textAlign: 'center'
+    marginBottom: theme.spacer * 4,
+    textAlign: 'center',
+    [theme.breakpoints.md]: {
+      marginBottom: theme.spacer * 10
+    }
   },
   videoTitle: {
     marginBottom: theme.spacer * 3,
@@ -101,23 +104,66 @@ const useJoinUsStyles = createUseStyles(theme => ({
       marginBottom: theme.spacer * 2.5
     }
   },
+  benefits: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    rowGap: theme.spacer * 4.5,
+    listStyle: 'none'
+  },
+  benefitWrapper: {
+    width: theme.spacer * 39.5,
+    display: 'flex',
+    flexDirection: 'column',
+    padding: theme.spacer * 4,
+    borderRadius: '20px',
+    backgroundColor: theme.palette.primary.light
+  },
+  benefitNumber: {
+    backgroundColor: theme.palette.black,
+    color: theme.palette.primary.light,
+    marginBottom: theme.spacer * 2,
+    width: theme.spacer * 3.5,
+    height: theme.spacer * 3.5,
+    textAlign: 'center',
+    borderRadius: '20px'
+  },
+  benefitContent: {
+    marginTop: `-${theme.spacer * 1.5}px`
+  },
+  department: {
+    marginTop: theme.spacer * 3,
+    [theme.breakpoints.md]: {
+      marginTop: theme.spacer * 8
+    }
+  },
+  position: {
+    marginTop: theme.spacer * 3,
+    paddingBottom: theme.spacer * 4,
+    '&:first-child': {
+      marginTop: 0
+    },
+    [theme.breakpoints.md]: {
+      marginTop: theme.spacer * 5,
+      paddingBottom: theme.spacer * 4,
+      '&:last-child': {
+        paddingBottom: theme.spacer * 7
+      }
+    }
+  },
   divider: {
     background: theme.palette.primary.main,
     height: '1px',
     marginLeft: 'auto',
-    marginTop: theme.spacer * 4,
-    marginBottom: theme.spacer * 3,
-    width: '100%',
-    [theme.breakpoints.md]: {
-      marginTop: theme.spacer * 4,
-      marginBottom: theme.spacer * 5
-    }
+    width: '100%'
   },
   dividerFullWidth: {
-    width: '100%',
-    [theme.breakpoints.md]: {
-      marginTop: theme.spacer * 10,
-      marginBottom: theme.spacer * 8
+    margin: `0 ${theme.spacer * 2}px`,
+    width: 'auto',
+    [theme.breakpoints.xl]: {
+      width: theme.spacer * 127.5,
+      margin: 'auto'
     }
   }
 }))

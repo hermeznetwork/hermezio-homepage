@@ -29,10 +29,7 @@ const useTitleStyles = createUseStyles(theme => ({
     fontWeight: theme.fontWeights.medium,
     fontSize: theme.spacer * 3,
     lineHeight: 'inherit',
-    [theme.breakpoints.md]: {
-      fontSize: theme.spacer * 2.5,
-      lineHeight: `${theme.spacer * 4}px`
-    }
+    marginBottom: theme.spacer * 1
   },
   subtitle: {
     lineHeight: 'inherit',
