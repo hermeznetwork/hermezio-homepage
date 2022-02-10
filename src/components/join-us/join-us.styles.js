@@ -106,21 +106,31 @@ const useJoinUsStyles = createUseStyles(theme => ({
   },
   benefits: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    rowGap: theme.spacer * 4.5,
-    listStyle: 'none'
+    rowGap: theme.spacer * 2,
+    listStyle: 'none',
+    [theme.breakpoints.md]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      rowGap: theme.spacer * 4.5
+    }
   },
   benefitWrapper: {
-    width: theme.spacer * 39.5,
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     padding: theme.spacer * 4,
     borderRadius: '20px',
-    backgroundColor: theme.palette.primary.light
+    backgroundColor: theme.palette.primary.light,
+    [theme.breakpoints.md]: {
+      width: theme.spacer * 39.5
+    }
   },
   benefitNumber: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: theme.palette.black,
     color: theme.palette.primary.light,
     marginBottom: theme.spacer * 2,
