@@ -37,7 +37,8 @@ module.exports = {
       options: {
         typeName: 'GraphCMS',
         fieldName: 'gcms',
-        url: process.env.GRAPHCMS_API_URL
+        url: process.env.GRAPHCMS_API_URL,
+        refetchInterval: 60
       }
     }
   ]
