@@ -237,10 +237,10 @@ const Project = () => {
             <div className={classes.profile}>
               <img
                 className={classes.image}
-                src='/profiles/antonio.png'
-                alt='Antonio Vázquez'
+                src='/profiles/tony.png'
+                alt='Tony T'
               />
-              <span className={classes.name}>Antonio Vázquez</span>
+              <span className={classes.name}>Tony T</span>
               <span className={classes.role}>Head of Communications</span>
             </div>
             <div className={classes.profile}>
