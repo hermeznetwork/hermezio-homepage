@@ -14,8 +14,7 @@ exports.createPages = async function ({ actions, graphql }) {
     actions.createPage({
       path: `join-us/${position.slug}`,
       component: require.resolve('./src/templates/position.template.jsx'),
-      context: { id: position.id },
-      defer: true
+      context: { id: position.id }
     })
   })
 }
