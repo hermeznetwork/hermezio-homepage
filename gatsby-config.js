@@ -31,15 +31,6 @@ module.exports = {
         apiUrl: process.env.GHOST_SITE_URL,
         contentApiKey: process.env.GHOST_CONTENT_API_KEY
       }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'GraphCMS',
-        fieldName: 'gcms',
-        url: process.env.GRAPHCMS_API_URL,
-        refetchInterval: 60
-      }
     }
   ]
 }

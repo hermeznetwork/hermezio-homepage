@@ -1,28 +1,11 @@
-import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import React, { Fragment } from 'react'
+import { Link } from 'gatsby'
 
 import useJoinUsStyles from './join-us.styles'
 import Title from '../shared/title/title.component'
 
-export default function JoinUs () {
+export default function JoinUs ({ data }) {
   const classes = useJoinUsStyles()
-  const { gcms: { departments } } = useStaticQuery(graphql`
-    {
-      gcms {
-        departments {
-          id
-          name
-          positions {
-            id
-            title
-            slug
-            location
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div className={classes.sectionWrapper}>
@@ -98,7 +81,7 @@ export default function JoinUs () {
           <div className={classes.title}>
             <Title>Open positions</Title>
           </div>
-          {departments.map((department, dIndex) => (
+          {data?.departments && data.departments.map((department, dIndex) => (
             <div className={classes.department} key={department.id}>
               <div className={classes.row}>
                 <div className={classes.col2}>
@@ -106,8 +89,8 @@ export default function JoinUs () {
                 </div>
                 <div className={classes.col2}>
                   {department.positions.map((position, pIndex) => (
-                    <>
-                      <div className={classes.position} key={position.id}>
+                    <Fragment key={position.id}>
+                      <div className={classes.position}>
                         <div className={classes.subTitle}>
                           <Title type='h3'>
                             <Link
@@ -123,11 +106,11 @@ export default function JoinUs () {
                       {department.positions[pIndex + 1] && (
                         <div className={classes.row}><span className={classes.divider} /></div>
                       )}
-                    </>
+                    </Fragment>
                   ))}
                 </div>
               </div>
-              {departments[dIndex + 1] && (
+              {data.departments[dIndex + 1] && (
                 <div className={classes.row}>
                   <span
                     className={`${classes.divider}`}
