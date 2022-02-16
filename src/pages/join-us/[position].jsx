@@ -17,11 +17,10 @@ const POSITION = gql`
   }
 `
 export default function PositionPage ({ params }) {
-  console.log(params.position)
-  const { loading, error, data } = useQuery(POSITION, {
+  const { error, data } = useQuery(POSITION, {
     variables: { slug: params.position }
   })
-  console.log(loading, error, data)
+
   if (data?.position) {
     const { position } = data
     return <Position {...position} />
