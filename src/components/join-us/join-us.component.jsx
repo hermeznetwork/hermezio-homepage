@@ -94,7 +94,7 @@ export default function JoinUs ({ data }) {
                         <div className={classes.subTitle}>
                           <Title type='h3'>
                             <Link
-                              to={`/join-us/${position.slug}`}
+                              to={`/join-us/position?open=${position.slug}`}
                               className={classes.legalLink}
                             >
                               {position.title}

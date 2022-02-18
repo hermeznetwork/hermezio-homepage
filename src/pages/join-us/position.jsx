@@ -16,9 +16,11 @@ const POSITION = gql`
     }
   }
 `
-export default function PositionPage ({ params }) {
+export default function PositionPage ({ location }) {
+  const params = new URLSearchParams(location.search)
+  const position = params.get('open')
   const { error, data } = useQuery(POSITION, {
-    variables: { slug: params.position }
+    variables: { slug: position }
   })
 
   if (data?.position) {
