@@ -1,6 +1,6 @@
 # Hermez.io
 
-Source code for the Hermez website.
+Source code for the Polygon Hermez website.
 
 ## Development
 
