@@ -4,9 +4,9 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    defaultTitle: 'Hermez',
-    titleTemplate: '%s | Hermez',
-    defaultDescription: 'Hermez is a trustless ZK-Rollup focused on scaling payments and token transfers on the wings of Ethereum.',
+    defaultTitle: 'Polygon Hermez',
+    titleTemplate: '%s | Polygon Hermez',
+    defaultDescription: 'Polygon Hermez is a trustless ZK-Rollup focused on scaling payments and token transfers on the wings of Ethereum.',
     siteUrl: process.env.GATSBY_SITE_URL,
     twitterUsername: '0xPolygonHermez'
   },
