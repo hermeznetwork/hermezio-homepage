@@ -48,7 +48,7 @@ const useProductDesignerStyles = createUseStyles(theme => ({
       alignItems: 'center'
     }
   },
-  buttonWrapper: {
+  button: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

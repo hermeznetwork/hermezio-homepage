@@ -20,11 +20,9 @@ const Position = ({ title, location, description, responsibilities, skills, nice
             <p>{location}</p>
           </div>
           <div className={`${classes.col2} ${classes.actionButton}`}>
-            <div className={classes.buttonWrapper}>
-              <a href={formPath} target='_blank' rel='noopener noreferrer'>
-                Apply
-              </a>
-            </div>
+            <a className={classes.button} href={formPath} target='_blank' rel='noopener noreferrer'>
+              Apply
+            </a>
           </div>
         </div>
       </section>
